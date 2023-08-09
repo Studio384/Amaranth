@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Valkyrie";
-  src: url("./fonts/Valkyrie.woff?8690219cc7a86ddc93e05f00c9bacdfd") format("woff"), url("./fonts/Valkyrie.woff2?8690219cc7a86ddc93e05f00c9bacdfd") format("woff2");
+  src: url("./fonts/Valkyrie.woff?957e99c26049e93f9ab3a46329a830ad") format("woff"), url("./fonts/Valkyrie.woff2?957e99c26049e93f9ab3a46329a830ad") format("woff2");
 }
 .vi {
   -moz-osx-font-smoothing: grayscale;
@@ -1087,6 +1087,62 @@
 
 .vi.vi-key:before {
   content: "\f200";
+}
+
+.vi.vi-azure:before {
+  content: "\f201";
+}
+
+.vi.vi-bars-staggered:before {
+  content: "\f202";
+}
+
+.vi.vi-branch:before {
+  content: "\f203";
+}
+
+.vi.vi-change-windows:before {
+  content: "\f204";
+}
+
+.vi.vi-chip:before {
+  content: "\f205";
+}
+
+.vi.vi-disc:before {
+  content: "\f206";
+}
+
+.vi.vi-display-cam:before {
+  content: "\f207";
+}
+
+.vi.vi-patreon:before {
+  content: "\f208";
+}
+
+.vi.vi-smartphone-hinge:before {
+  content: "\f209";
+}
+
+.vi.vi-twitter:before {
+  content: "\f20a";
+}
+
+.vi.vi-virtual-reality:before {
+  content: "\f20b";
+}
+
+.vi.vi-visual-studio:before {
+  content: "\f20c";
+}
+
+.vi.vi-windows:before {
+  content: "\f20d";
+}
+
+.vi.vi-xbox:before {
+  content: "\f20e";
 }
 
 /*# sourceMappingURL=Valkyrie.css.map */

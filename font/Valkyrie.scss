@@ -2,8 +2,8 @@ $Valkyrie-font: "Valkyrie";
 
 @font-face {
   font-family: $Valkyrie-font;
-  src: url("./fonts/Valkyrie.woff?8690219cc7a86ddc93e05f00c9bacdfd") format("woff"),
-url("./fonts/Valkyrie.woff2?8690219cc7a86ddc93e05f00c9bacdfd") format("woff2");
+  src: url("./fonts/Valkyrie.woff?957e99c26049e93f9ab3a46329a830ad") format("woff"),
+url("./fonts/Valkyrie.woff2?957e99c26049e93f9ab3a46329a830ad") format("woff2");
 }
 
 .vi {
@@ -327,6 +327,20 @@ $Valkyrie-map: (
   "chalkboard-person": "\f1fe",
   "life-ring": "\f1ff",
   "key": "\f200",
+  "azure": "\f201",
+  "bars-staggered": "\f202",
+  "branch": "\f203",
+  "change-windows": "\f204",
+  "chip": "\f205",
+  "disc": "\f206",
+  "display-cam": "\f207",
+  "patreon": "\f208",
+  "smartphone-hinge": "\f209",
+  "twitter": "\f20a",
+  "virtual-reality": "\f20b",
+  "visual-studio": "\f20c",
+  "windows": "\f20d",
+  "xbox": "\f20e",
 );
 
 .vi.vi-a-gum:before {
@@ -1096,4 +1110,46 @@ $Valkyrie-map: (
 }
 .vi.vi-key:before {
   content: map-get($Valkyrie-map, "key");
+}
+.vi.vi-azure:before {
+  content: map-get($Valkyrie-map, "azure");
+}
+.vi.vi-bars-staggered:before {
+  content: map-get($Valkyrie-map, "bars-staggered");
+}
+.vi.vi-branch:before {
+  content: map-get($Valkyrie-map, "branch");
+}
+.vi.vi-change-windows:before {
+  content: map-get($Valkyrie-map, "change-windows");
+}
+.vi.vi-chip:before {
+  content: map-get($Valkyrie-map, "chip");
+}
+.vi.vi-disc:before {
+  content: map-get($Valkyrie-map, "disc");
+}
+.vi.vi-display-cam:before {
+  content: map-get($Valkyrie-map, "display-cam");
+}
+.vi.vi-patreon:before {
+  content: map-get($Valkyrie-map, "patreon");
+}
+.vi.vi-smartphone-hinge:before {
+  content: map-get($Valkyrie-map, "smartphone-hinge");
+}
+.vi.vi-twitter:before {
+  content: map-get($Valkyrie-map, "twitter");
+}
+.vi.vi-virtual-reality:before {
+  content: map-get($Valkyrie-map, "virtual-reality");
+}
+.vi.vi-visual-studio:before {
+  content: map-get($Valkyrie-map, "visual-studio");
+}
+.vi.vi-windows:before {
+  content: map-get($Valkyrie-map, "windows");
+}
+.vi.vi-xbox:before {
+  content: map-get($Valkyrie-map, "xbox");
 }
