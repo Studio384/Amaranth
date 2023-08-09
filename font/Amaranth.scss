@@ -2,8 +2,8 @@ $Amaranth-font: "Amaranth";
 
 @font-face {
   font-family: $Amaranth-font;
-  src: url("./fonts/Amaranth.woff?24b7adf071806282fc8e4bf5d4fd7f56") format("woff"),
-url("./fonts/Amaranth.woff2?24b7adf071806282fc8e4bf5d4fd7f56") format("woff2");
+  src: url("./fonts/Amaranth.woff?50c28683b8d6200ebb0ad9bf6f370fae") format("woff"),
+url("./fonts/Amaranth.woff2?50c28683b8d6200ebb0ad9bf6f370fae") format("woff2");
 }
 
 .ai {
@@ -341,6 +341,10 @@ $Amaranth-map: (
   "visual-studio": "\f20c",
   "windows": "\f20d",
   "xbox": "\f20e",
+  "alarm-clock": "\f20f",
+  "arrows-down-left-right-up-center": "\f210",
+  "beer": "\f211",
+  "bel": "\f212",
 );
 
 .ai.ai-a-gum:before {
@@ -1152,4 +1156,16 @@ $Amaranth-map: (
 }
 .ai.ai-xbox:before {
   content: map-get($Amaranth-map, "xbox");
+}
+.ai.ai-alarm-clock:before {
+  content: map-get($Amaranth-map, "alarm-clock");
+}
+.ai.ai-arrows-down-left-right-up-center:before {
+  content: map-get($Amaranth-map, "arrows-down-left-right-up-center");
+}
+.ai.ai-beer:before {
+  content: map-get($Amaranth-map, "beer");
+}
+.ai.ai-bel:before {
+  content: map-get($Amaranth-map, "bel");
 }
