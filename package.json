@@ -1,7 +1,7 @@
 {
-  "name": "@sippy-platform/valkyrie",
-  "version": "1.0.0-alpha.26",
-  "description": "The iconography of Sippy.",
+  "name": "@studio384/amaranth",
+  "version": "1.0.0-alpha.1",
+  "description": "The iconography.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
@@ -17,12 +17,12 @@
     "pages": "node build/generate-pages.js --verbose",
     "prod": "npm run icons && npm run fonts && npm run build && npm run scss",
     "scss": "npm run scss:compile && npm run scss:prefix",
-    "scss:compile": "sass font/Valkyrie.scss font/Valkyrie.css --no-source-map",
+    "scss:compile": "sass font/Amaranth.scss font/Amaranth.css --no-source-map",
     "scss:prefix": "postcss -u autoprefixer -r ./font/*.css --map"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sippy-platform/valkyrie.git"
+    "url": "git+https://github.com/studio384/amaranth.git"
   },
   "files": [
     "/icons",
@@ -37,9 +37,9 @@
   "author": "",
   "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/sippy-platform/valkyrie/issues"
+    "url": "https://github.com/studio384/amaranth/issues"
   },
-  "homepage": "https://sippy-platform.github.io/valkyrie",
+  "homepage": "https://studio384.github.io/amaranth",
   "peerDependencies": {
     "@emotion/react": ">=11.x",
     "@emotion/styled": ">=11.x",

@@ -1,10 +1,10 @@
-import { IValkyrieIcon } from "./";
+import { IAmaranthIcon } from ".";
 import { Box, SxProps } from "@mui/system";
 import { keyframes } from "@emotion/react";
 import HTMLReactParser from "html-react-parser";
 
 interface ValkyrieProps {
-  icon: IValkyrieIcon;
+  icon: IAmaranthIcon;
   rotate?: 0 | 90 | 180 | 270 | false;
   flip?: true | "x" | "y" | false;
   spin?: boolean;

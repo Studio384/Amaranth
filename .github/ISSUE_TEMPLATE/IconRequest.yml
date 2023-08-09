@@ -32,7 +32,7 @@ body:
       options:
         - label: This is a single icon or part of an expected pair (e.g. `eye` and `eye-slashed`).
           required: true
-        - label: I have [searched the issues](https://github.com/sippy-platform/valkyrie/issues) for any possible duplications of this icon request.
+        - label: I have [searched the issues](https://github.com/studio384/amaranth/issues) for any possible duplications of this icon request.
           required: true
         - label: An example image is included if available.
           required: false

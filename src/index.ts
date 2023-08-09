@@ -1,4 +1,4 @@
-export * from './Valkyrie';
-import ValkyrieIcon from './ValkyrieIcon';
+export * from './Amaranth';
+import AmaranthIcon from './AmaranthIcon';
 
-export default ValkyrieIcon;
+export default AmaranthIcon;

@@ -1,6 +1,6 @@
 "use strict";
 
-const codepoints = require("./font/valkyrie.json");
+const codepoints = require("./font/amaranth.json");
 
 module.exports = {
   inputDir: "./icons",
@@ -8,18 +8,18 @@ module.exports = {
   fontTypes: ["woff", "woff2"],
   assetTypes: ["scss", "json"],
   fontsUrl: "./fonts",
-  name: "Valkyrie",
-  prefix: "vi",
-  selector: ".vi",
+  name: "Amaranth",
+  prefix: "am",
+  selector: ".am",
   codepoints,
   descent: 26,
   templates: {
     scss: "./build/templates/scss.hbs",
   },
   pathOptions: {
-    woff: "./font/fonts/Valkyrie.woff",
-    woff2: "./font/fonts/Valkyrie.woff2",
-    scss: "./font/Valkyrie.scss",
-    json: "./font/valkyrie.json",
+    woff: "./font/fonts/Amaranth.woff",
+    woff2: "./font/fonts/Amaranth.woff2",
+    scss: "./font/Amaranth.scss",
+    json: "./font/amaranth.json",
   },
 };

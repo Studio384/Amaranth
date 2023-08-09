@@ -1,0 +1,1155 @@
+$Amaranth-font: "Amaranth";
+
+@font-face {
+  font-family: $Amaranth-font;
+  src: url("./fonts/Amaranth.woff?24b7adf071806282fc8e4bf5d4fd7f56") format("woff"),
+url("./fonts/Amaranth.woff2?24b7adf071806282fc8e4bf5d4fd7f56") format("woff2");
+}
+
+.am {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-family: Amaranth !important;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal !important;
+  height: 1em;
+  width: 1em;
+  line-height: 1;
+  text-rendering: auto;
+  box-sizing: content-box;
+  position: relative;
+  overflow: visible;
+  vertical-align: 0;
+  flex-shrink: 0;
+}
+
+.am-spin {
+  animation-name: animate-spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+.am-rotate-90 {
+  transform: rotate(90deg);
+}
+
+.am-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.am-rotate-270 {
+  transform: rotate(270deg);
+}
+
+.am-flip-x {
+  transform: scaleX(-1);
+}
+
+.am-flip-y {
+  transform: scaleY(-1);
+}
+
+.am-flip {
+  transform: scale(-1);
+}
+
+@keyframes animate-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+$Amaranth-map: (
+  "a-gum": "\f101",
+  "address-book": "\f102",
+  "angle-down": "\f103",
+  "angle-left": "\f104",
+  "angle-right": "\f105",
+  "angle-up": "\f106",
+  "angles-y": "\f107",
+  "apple-app-store": "\f108",
+  "arrow-down-short-wide": "\f109",
+  "arrow-down-to-line": "\f10a",
+  "arrow-down-wide-short": "\f10b",
+  "arrow-down": "\f10c",
+  "arrow-left-from-bracket": "\f10d",
+  "arrow-left-to-bracket": "\f10e",
+  "arrow-left-to-line": "\f10f",
+  "arrow-left": "\f110",
+  "arrow-pointer": "\f111",
+  "arrow-right-from-bracket": "\f112",
+  "arrow-right-prohibited": "\f113",
+  "arrow-right-to-bracket": "\f114",
+  "arrow-right-to-line": "\f115",
+  "arrow-right": "\f116",
+  "arrow-rotate-right": "\f117",
+  "arrow-up-short-wide": "\f118",
+  "arrow-up-to-line": "\f119",
+  "arrow-up-wide-short": "\f11a",
+  "arrow-up": "\f11b",
+  "arrows-rotate-right": "\f11c",
+  "asterisk": "\f11d",
+  "at": "\f11e",
+  "backward": "\f11f",
+  "bars": "\f120",
+  "blf": "\f121",
+  "bold": "\f122",
+  "book": "\f123",
+  "box-open-full": "\f124",
+  "brackets-curly": "\f125",
+  "bug": "\f126",
+  "building": "\f127",
+  "calendar-stars": "\f128",
+  "calendar": "\f129",
+  "chain-slash": "\f12a",
+  "chain": "\f12b",
+  "chart-pie": "\f12c",
+  "check": "\f12d",
+  "chevron-down": "\f12e",
+  "chevron-left": "\f12f",
+  "chevron-right": "\f130",
+  "chevron-up": "\f131",
+  "chrome": "\f132",
+  "circle-check": "\f133",
+  "circle-exclamation": "\f134",
+  "circle-info": "\f135",
+  "circle-plus": "\f136",
+  "circle-question": "\f137",
+  "circle-user": "\f138",
+  "circle-xmark": "\f139",
+  "city": "\f13a",
+  "clock-rotate-left": "\f13b",
+  "clock": "\f13c",
+  "code": "\f13d",
+  "codeblock": "\f13e",
+  "compass": "\f13f",
+  "compress": "\f140",
+  "copy": "\f141",
+  "devices": "\f142",
+  "display": "\f143",
+  "earth": "\f144",
+  "eclipse": "\f145",
+  "edge": "\f146",
+  "ellipsis": "\f147",
+  "envelope": "\f148",
+  "ethernet": "\f149",
+  "euro": "\f14a",
+  "expand": "\f14b",
+  "eye-slash": "\f14c",
+  "eye": "\f14d",
+  "facebook-messenger": "\f14e",
+  "facebook": "\f14f",
+  "fast-backward": "\f150",
+  "fast-forward": "\f151",
+  "fax": "\f152",
+  "file": "\f153",
+  "files-list": "\f154",
+  "files": "\f155",
+  "filmstrip": "\f156",
+  "filter-plus": "\f157",
+  "filter-xmark": "\f158",
+  "filter": "\f159",
+  "fingerprint": "\f15a",
+  "firefox": "\f15b",
+  "flag-checkered": "\f15c",
+  "flag": "\f15d",
+  "floppy-disk": "\f15e",
+  "folder": "\f15f",
+  "forward": "\f160",
+  "gauge": "\f161",
+  "gear": "\f162",
+  "gift": "\f163",
+  "github": "\f164",
+  "google-play": "\f165",
+  "grid": "\f166",
+  "grip-lines": "\f167",
+  "heading-1": "\f168",
+  "heading-2": "\f169",
+  "heading-3": "\f16a",
+  "heading-4": "\f16b",
+  "heading-5": "\f16c",
+  "heading-6": "\f16d",
+  "headset": "\f16e",
+  "heart-crack": "\f16f",
+  "heart-half": "\f170",
+  "heart": "\f171",
+  "house": "\f172",
+  "id-card": "\f173",
+  "image": "\f174",
+  "italic": "\f175",
+  "laptop": "\f176",
+  "layers-plus": "\f177",
+  "layers": "\f178",
+  "lightbulb-on": "\f179",
+  "lightbulb": "\f17a",
+  "line": "\f17b",
+  "linkedin": "\f17c",
+  "list-checks": "\f17d",
+  "list-clock": "\f17e",
+  "list-ordered-clock": "\f17f",
+  "list-ordered": "\f180",
+  "list": "\f181",
+  "location-pin-dot": "\f182",
+  "location-pin-slash": "\f183",
+  "location-pin": "\f184",
+  "location-pins-route": "\f185",
+  "lock-open": "\f186",
+  "lock": "\f187",
+  "magnifying-glass": "\f188",
+  "megaphone": "\f189",
+  "message-pen": "\f18a",
+  "message-smile": "\f18b",
+  "message-text": "\f18c",
+  "message": "\f18d",
+  "microphone": "\f18e",
+  "moon": "\f18f",
+  "music": "\f190",
+  "network": "\f191",
+  "numpad": "\f192",
+  "paper-plane": "\f193",
+  "parachute-box": "\f194",
+  "paragraph": "\f195",
+  "pause": "\f196",
+  "pen": "\f197",
+  "people-circle": "\f198",
+  "people": "\f199",
+  "person-clock": "\f19a",
+  "person-gear": "\f19b",
+  "person-headset": "\f19c",
+  "person-list": "\f19d",
+  "person-lock": "\f19e",
+  "person-plus": "\f19f",
+  "person": "\f1a0",
+  "phone-arrow-down-left-prohibited": "\f1a1",
+  "phone-arrow-down-left": "\f1a2",
+  "phone-arrow-up-right-prohibited": "\f1a3",
+  "phone-arrow-up-right": "\f1a4",
+  "phone-clock": "\f1a5",
+  "phone-gear": "\f1a6",
+  "phone-list": "\f1a7",
+  "phone-office": "\f1a8",
+  "phone-volume": "\f1a9",
+  "phone": "\f1aa",
+  "play-pause": "\f1ab",
+  "play": "\f1ac",
+  "plus": "\f1ad",
+  "power": "\f1ae",
+  "prohibited": "\f1af",
+  "puzzle-piece": "\f1b0",
+  "quote": "\f1b1",
+  "redo": "\f1b2",
+  "repeat-once": "\f1b3",
+  "repeat": "\f1b4",
+  "safari": "\f1b5",
+  "server": "\f1b6",
+  "shield-keyhole": "\f1b7",
+  "shield-plus": "\f1b8",
+  "shield-xmark": "\f1b9",
+  "shield": "\f1ba",
+  "shuffle": "\f1bb",
+  "sim-card": "\f1bc",
+  "sippy": "\f1bd",
+  "sliders": "\f1be",
+  "smartphone-arrow-right": "\f1bf",
+  "smartphone": "\f1c0",
+  "spinner-third": "\f1c1",
+  "spy": "\f1c2",
+  "square-gum": "\f1c3",
+  "star": "\f1c4",
+  "stop": "\f1c5",
+  "store": "\f1c6",
+  "strikethrough": "\f1c7",
+  "sun": "\f1c8",
+  "swatchbook": "\f1c9",
+  "table-clock": "\f1ca",
+  "table": "\f1cb",
+  "tag": "\f1cc",
+  "tower-broadcast": "\f1cd",
+  "trash-can": "\f1ce",
+  "triangle-exclamation": "\f1cf",
+  "underline": "\f1d0",
+  "undo": "\f1d1",
+  "valkyrie-sword": "\f1d2",
+  "video": "\f1d3",
+  "voicemail": "\f1d4",
+  "volume-0": "\f1d5",
+  "volume-1": "\f1d6",
+  "volume-2": "\f1d7",
+  "volume-3": "\f1d8",
+  "volume-slash": "\f1d9",
+  "wallpaper": "\f1da",
+  "waveform": "\f1db",
+  "webhooks-clock": "\f1dc",
+  "webhooks": "\f1dd",
+  "window": "\f1de",
+  "xmark": "\f1df",
+  "music-pause": "\f1e0",
+  "list-checks-xmark": "\f1e1",
+  "circle-person": "\f1e2",
+  "circle-half-inner": "\f1e3",
+  "circle-half": "\f1e4",
+  "calendar-clock": "\f1e5",
+  "calendar-range": "\f1e6",
+  "table-header-column": "\f1e7",
+  "table-header-row": "\f1e8",
+  "calendar-range-clock": "\f1e9",
+  "next": "\f1ea",
+  "previous": "\f1eb",
+  "tag-plus": "\f1ec",
+  "tag-gear": "\f1ed",
+  "p-square": "\f1ee",
+  "translate": "\f1ef",
+  "square-p": "\f1f0",
+  "rectangle-p": "\f1f1",
+  "pager": "\f1f2",
+  "speaker-grill": "\f1f3",
+  "circle-dashed": "\f1f4",
+  "share": "\f1f5",
+  "door": "\f1f6",
+  "pin-slash": "\f1f7",
+  "pin": "\f1f8",
+  "sidebar-left": "\f1f9",
+  "sidebar-right": "\f1fa",
+  "toggle-off": "\f1fb",
+  "toggle-on": "\f1fc",
+  "logo-white": "\f1fd",
+  "chalkboard-person": "\f1fe",
+  "life-ring": "\f1ff",
+  "key": "\f200",
+  "azure": "\f201",
+  "bars-staggered": "\f202",
+  "branch": "\f203",
+  "change-windows": "\f204",
+  "chip": "\f205",
+  "disc": "\f206",
+  "display-cam": "\f207",
+  "patreon": "\f208",
+  "smartphone-hinge": "\f209",
+  "twitter": "\f20a",
+  "virtual-reality": "\f20b",
+  "visual-studio": "\f20c",
+  "windows": "\f20d",
+  "xbox": "\f20e",
+);
+
+.am.am-a-gum:before {
+  content: map-get($Amaranth-map, "a-gum");
+}
+.am.am-address-book:before {
+  content: map-get($Amaranth-map, "address-book");
+}
+.am.am-angle-down:before {
+  content: map-get($Amaranth-map, "angle-down");
+}
+.am.am-angle-left:before {
+  content: map-get($Amaranth-map, "angle-left");
+}
+.am.am-angle-right:before {
+  content: map-get($Amaranth-map, "angle-right");
+}
+.am.am-angle-up:before {
+  content: map-get($Amaranth-map, "angle-up");
+}
+.am.am-angles-y:before {
+  content: map-get($Amaranth-map, "angles-y");
+}
+.am.am-apple-app-store:before {
+  content: map-get($Amaranth-map, "apple-app-store");
+}
+.am.am-arrow-down-short-wide:before {
+  content: map-get($Amaranth-map, "arrow-down-short-wide");
+}
+.am.am-arrow-down-to-line:before {
+  content: map-get($Amaranth-map, "arrow-down-to-line");
+}
+.am.am-arrow-down-wide-short:before {
+  content: map-get($Amaranth-map, "arrow-down-wide-short");
+}
+.am.am-arrow-down:before {
+  content: map-get($Amaranth-map, "arrow-down");
+}
+.am.am-arrow-left-from-bracket:before {
+  content: map-get($Amaranth-map, "arrow-left-from-bracket");
+}
+.am.am-arrow-left-to-bracket:before {
+  content: map-get($Amaranth-map, "arrow-left-to-bracket");
+}
+.am.am-arrow-left-to-line:before {
+  content: map-get($Amaranth-map, "arrow-left-to-line");
+}
+.am.am-arrow-left:before {
+  content: map-get($Amaranth-map, "arrow-left");
+}
+.am.am-arrow-pointer:before {
+  content: map-get($Amaranth-map, "arrow-pointer");
+}
+.am.am-arrow-right-from-bracket:before {
+  content: map-get($Amaranth-map, "arrow-right-from-bracket");
+}
+.am.am-arrow-right-prohibited:before {
+  content: map-get($Amaranth-map, "arrow-right-prohibited");
+}
+.am.am-arrow-right-to-bracket:before {
+  content: map-get($Amaranth-map, "arrow-right-to-bracket");
+}
+.am.am-arrow-right-to-line:before {
+  content: map-get($Amaranth-map, "arrow-right-to-line");
+}
+.am.am-arrow-right:before {
+  content: map-get($Amaranth-map, "arrow-right");
+}
+.am.am-arrow-rotate-right:before {
+  content: map-get($Amaranth-map, "arrow-rotate-right");
+}
+.am.am-arrow-up-short-wide:before {
+  content: map-get($Amaranth-map, "arrow-up-short-wide");
+}
+.am.am-arrow-up-to-line:before {
+  content: map-get($Amaranth-map, "arrow-up-to-line");
+}
+.am.am-arrow-up-wide-short:before {
+  content: map-get($Amaranth-map, "arrow-up-wide-short");
+}
+.am.am-arrow-up:before {
+  content: map-get($Amaranth-map, "arrow-up");
+}
+.am.am-arrows-rotate-right:before {
+  content: map-get($Amaranth-map, "arrows-rotate-right");
+}
+.am.am-asterisk:before {
+  content: map-get($Amaranth-map, "asterisk");
+}
+.am.am-at:before {
+  content: map-get($Amaranth-map, "at");
+}
+.am.am-backward:before {
+  content: map-get($Amaranth-map, "backward");
+}
+.am.am-bars:before {
+  content: map-get($Amaranth-map, "bars");
+}
+.am.am-blf:before {
+  content: map-get($Amaranth-map, "blf");
+}
+.am.am-bold:before {
+  content: map-get($Amaranth-map, "bold");
+}
+.am.am-book:before {
+  content: map-get($Amaranth-map, "book");
+}
+.am.am-box-open-full:before {
+  content: map-get($Amaranth-map, "box-open-full");
+}
+.am.am-brackets-curly:before {
+  content: map-get($Amaranth-map, "brackets-curly");
+}
+.am.am-bug:before {
+  content: map-get($Amaranth-map, "bug");
+}
+.am.am-building:before {
+  content: map-get($Amaranth-map, "building");
+}
+.am.am-calendar-stars:before {
+  content: map-get($Amaranth-map, "calendar-stars");
+}
+.am.am-calendar:before {
+  content: map-get($Amaranth-map, "calendar");
+}
+.am.am-chain-slash:before {
+  content: map-get($Amaranth-map, "chain-slash");
+}
+.am.am-chain:before {
+  content: map-get($Amaranth-map, "chain");
+}
+.am.am-chart-pie:before {
+  content: map-get($Amaranth-map, "chart-pie");
+}
+.am.am-check:before {
+  content: map-get($Amaranth-map, "check");
+}
+.am.am-chevron-down:before {
+  content: map-get($Amaranth-map, "chevron-down");
+}
+.am.am-chevron-left:before {
+  content: map-get($Amaranth-map, "chevron-left");
+}
+.am.am-chevron-right:before {
+  content: map-get($Amaranth-map, "chevron-right");
+}
+.am.am-chevron-up:before {
+  content: map-get($Amaranth-map, "chevron-up");
+}
+.am.am-chrome:before {
+  content: map-get($Amaranth-map, "chrome");
+}
+.am.am-circle-check:before {
+  content: map-get($Amaranth-map, "circle-check");
+}
+.am.am-circle-exclamation:before {
+  content: map-get($Amaranth-map, "circle-exclamation");
+}
+.am.am-circle-info:before {
+  content: map-get($Amaranth-map, "circle-info");
+}
+.am.am-circle-plus:before {
+  content: map-get($Amaranth-map, "circle-plus");
+}
+.am.am-circle-question:before {
+  content: map-get($Amaranth-map, "circle-question");
+}
+.am.am-circle-user:before {
+  content: map-get($Amaranth-map, "circle-user");
+}
+.am.am-circle-xmark:before {
+  content: map-get($Amaranth-map, "circle-xmark");
+}
+.am.am-city:before {
+  content: map-get($Amaranth-map, "city");
+}
+.am.am-clock-rotate-left:before {
+  content: map-get($Amaranth-map, "clock-rotate-left");
+}
+.am.am-clock:before {
+  content: map-get($Amaranth-map, "clock");
+}
+.am.am-code:before {
+  content: map-get($Amaranth-map, "code");
+}
+.am.am-codeblock:before {
+  content: map-get($Amaranth-map, "codeblock");
+}
+.am.am-compass:before {
+  content: map-get($Amaranth-map, "compass");
+}
+.am.am-compress:before {
+  content: map-get($Amaranth-map, "compress");
+}
+.am.am-copy:before {
+  content: map-get($Amaranth-map, "copy");
+}
+.am.am-devices:before {
+  content: map-get($Amaranth-map, "devices");
+}
+.am.am-display:before {
+  content: map-get($Amaranth-map, "display");
+}
+.am.am-earth:before {
+  content: map-get($Amaranth-map, "earth");
+}
+.am.am-eclipse:before {
+  content: map-get($Amaranth-map, "eclipse");
+}
+.am.am-edge:before {
+  content: map-get($Amaranth-map, "edge");
+}
+.am.am-ellipsis:before {
+  content: map-get($Amaranth-map, "ellipsis");
+}
+.am.am-envelope:before {
+  content: map-get($Amaranth-map, "envelope");
+}
+.am.am-ethernet:before {
+  content: map-get($Amaranth-map, "ethernet");
+}
+.am.am-euro:before {
+  content: map-get($Amaranth-map, "euro");
+}
+.am.am-expand:before {
+  content: map-get($Amaranth-map, "expand");
+}
+.am.am-eye-slash:before {
+  content: map-get($Amaranth-map, "eye-slash");
+}
+.am.am-eye:before {
+  content: map-get($Amaranth-map, "eye");
+}
+.am.am-facebook-messenger:before {
+  content: map-get($Amaranth-map, "facebook-messenger");
+}
+.am.am-facebook:before {
+  content: map-get($Amaranth-map, "facebook");
+}
+.am.am-fast-backward:before {
+  content: map-get($Amaranth-map, "fast-backward");
+}
+.am.am-fast-forward:before {
+  content: map-get($Amaranth-map, "fast-forward");
+}
+.am.am-fax:before {
+  content: map-get($Amaranth-map, "fax");
+}
+.am.am-file:before {
+  content: map-get($Amaranth-map, "file");
+}
+.am.am-files-list:before {
+  content: map-get($Amaranth-map, "files-list");
+}
+.am.am-files:before {
+  content: map-get($Amaranth-map, "files");
+}
+.am.am-filmstrip:before {
+  content: map-get($Amaranth-map, "filmstrip");
+}
+.am.am-filter-plus:before {
+  content: map-get($Amaranth-map, "filter-plus");
+}
+.am.am-filter-xmark:before {
+  content: map-get($Amaranth-map, "filter-xmark");
+}
+.am.am-filter:before {
+  content: map-get($Amaranth-map, "filter");
+}
+.am.am-fingerprint:before {
+  content: map-get($Amaranth-map, "fingerprint");
+}
+.am.am-firefox:before {
+  content: map-get($Amaranth-map, "firefox");
+}
+.am.am-flag-checkered:before {
+  content: map-get($Amaranth-map, "flag-checkered");
+}
+.am.am-flag:before {
+  content: map-get($Amaranth-map, "flag");
+}
+.am.am-floppy-disk:before {
+  content: map-get($Amaranth-map, "floppy-disk");
+}
+.am.am-folder:before {
+  content: map-get($Amaranth-map, "folder");
+}
+.am.am-forward:before {
+  content: map-get($Amaranth-map, "forward");
+}
+.am.am-gauge:before {
+  content: map-get($Amaranth-map, "gauge");
+}
+.am.am-gear:before {
+  content: map-get($Amaranth-map, "gear");
+}
+.am.am-gift:before {
+  content: map-get($Amaranth-map, "gift");
+}
+.am.am-github:before {
+  content: map-get($Amaranth-map, "github");
+}
+.am.am-google-play:before {
+  content: map-get($Amaranth-map, "google-play");
+}
+.am.am-grid:before {
+  content: map-get($Amaranth-map, "grid");
+}
+.am.am-grip-lines:before {
+  content: map-get($Amaranth-map, "grip-lines");
+}
+.am.am-heading-1:before {
+  content: map-get($Amaranth-map, "heading-1");
+}
+.am.am-heading-2:before {
+  content: map-get($Amaranth-map, "heading-2");
+}
+.am.am-heading-3:before {
+  content: map-get($Amaranth-map, "heading-3");
+}
+.am.am-heading-4:before {
+  content: map-get($Amaranth-map, "heading-4");
+}
+.am.am-heading-5:before {
+  content: map-get($Amaranth-map, "heading-5");
+}
+.am.am-heading-6:before {
+  content: map-get($Amaranth-map, "heading-6");
+}
+.am.am-headset:before {
+  content: map-get($Amaranth-map, "headset");
+}
+.am.am-heart-crack:before {
+  content: map-get($Amaranth-map, "heart-crack");
+}
+.am.am-heart-half:before {
+  content: map-get($Amaranth-map, "heart-half");
+}
+.am.am-heart:before {
+  content: map-get($Amaranth-map, "heart");
+}
+.am.am-house:before {
+  content: map-get($Amaranth-map, "house");
+}
+.am.am-id-card:before {
+  content: map-get($Amaranth-map, "id-card");
+}
+.am.am-image:before {
+  content: map-get($Amaranth-map, "image");
+}
+.am.am-italic:before {
+  content: map-get($Amaranth-map, "italic");
+}
+.am.am-laptop:before {
+  content: map-get($Amaranth-map, "laptop");
+}
+.am.am-layers-plus:before {
+  content: map-get($Amaranth-map, "layers-plus");
+}
+.am.am-layers:before {
+  content: map-get($Amaranth-map, "layers");
+}
+.am.am-lightbulb-on:before {
+  content: map-get($Amaranth-map, "lightbulb-on");
+}
+.am.am-lightbulb:before {
+  content: map-get($Amaranth-map, "lightbulb");
+}
+.am.am-line:before {
+  content: map-get($Amaranth-map, "line");
+}
+.am.am-linkedin:before {
+  content: map-get($Amaranth-map, "linkedin");
+}
+.am.am-list-checks:before {
+  content: map-get($Amaranth-map, "list-checks");
+}
+.am.am-list-clock:before {
+  content: map-get($Amaranth-map, "list-clock");
+}
+.am.am-list-ordered-clock:before {
+  content: map-get($Amaranth-map, "list-ordered-clock");
+}
+.am.am-list-ordered:before {
+  content: map-get($Amaranth-map, "list-ordered");
+}
+.am.am-list:before {
+  content: map-get($Amaranth-map, "list");
+}
+.am.am-location-pin-dot:before {
+  content: map-get($Amaranth-map, "location-pin-dot");
+}
+.am.am-location-pin-slash:before {
+  content: map-get($Amaranth-map, "location-pin-slash");
+}
+.am.am-location-pin:before {
+  content: map-get($Amaranth-map, "location-pin");
+}
+.am.am-location-pins-route:before {
+  content: map-get($Amaranth-map, "location-pins-route");
+}
+.am.am-lock-open:before {
+  content: map-get($Amaranth-map, "lock-open");
+}
+.am.am-lock:before {
+  content: map-get($Amaranth-map, "lock");
+}
+.am.am-magnifying-glass:before {
+  content: map-get($Amaranth-map, "magnifying-glass");
+}
+.am.am-megaphone:before {
+  content: map-get($Amaranth-map, "megaphone");
+}
+.am.am-message-pen:before {
+  content: map-get($Amaranth-map, "message-pen");
+}
+.am.am-message-smile:before {
+  content: map-get($Amaranth-map, "message-smile");
+}
+.am.am-message-text:before {
+  content: map-get($Amaranth-map, "message-text");
+}
+.am.am-message:before {
+  content: map-get($Amaranth-map, "message");
+}
+.am.am-microphone:before {
+  content: map-get($Amaranth-map, "microphone");
+}
+.am.am-moon:before {
+  content: map-get($Amaranth-map, "moon");
+}
+.am.am-music:before {
+  content: map-get($Amaranth-map, "music");
+}
+.am.am-network:before {
+  content: map-get($Amaranth-map, "network");
+}
+.am.am-numpad:before {
+  content: map-get($Amaranth-map, "numpad");
+}
+.am.am-paper-plane:before {
+  content: map-get($Amaranth-map, "paper-plane");
+}
+.am.am-parachute-box:before {
+  content: map-get($Amaranth-map, "parachute-box");
+}
+.am.am-paragraph:before {
+  content: map-get($Amaranth-map, "paragraph");
+}
+.am.am-pause:before {
+  content: map-get($Amaranth-map, "pause");
+}
+.am.am-pen:before {
+  content: map-get($Amaranth-map, "pen");
+}
+.am.am-people-circle:before {
+  content: map-get($Amaranth-map, "people-circle");
+}
+.am.am-people:before {
+  content: map-get($Amaranth-map, "people");
+}
+.am.am-person-clock:before {
+  content: map-get($Amaranth-map, "person-clock");
+}
+.am.am-person-gear:before {
+  content: map-get($Amaranth-map, "person-gear");
+}
+.am.am-person-headset:before {
+  content: map-get($Amaranth-map, "person-headset");
+}
+.am.am-person-list:before {
+  content: map-get($Amaranth-map, "person-list");
+}
+.am.am-person-lock:before {
+  content: map-get($Amaranth-map, "person-lock");
+}
+.am.am-person-plus:before {
+  content: map-get($Amaranth-map, "person-plus");
+}
+.am.am-person:before {
+  content: map-get($Amaranth-map, "person");
+}
+.am.am-phone-arrow-down-left-prohibited:before {
+  content: map-get($Amaranth-map, "phone-arrow-down-left-prohibited");
+}
+.am.am-phone-arrow-down-left:before {
+  content: map-get($Amaranth-map, "phone-arrow-down-left");
+}
+.am.am-phone-arrow-up-right-prohibited:before {
+  content: map-get($Amaranth-map, "phone-arrow-up-right-prohibited");
+}
+.am.am-phone-arrow-up-right:before {
+  content: map-get($Amaranth-map, "phone-arrow-up-right");
+}
+.am.am-phone-clock:before {
+  content: map-get($Amaranth-map, "phone-clock");
+}
+.am.am-phone-gear:before {
+  content: map-get($Amaranth-map, "phone-gear");
+}
+.am.am-phone-list:before {
+  content: map-get($Amaranth-map, "phone-list");
+}
+.am.am-phone-office:before {
+  content: map-get($Amaranth-map, "phone-office");
+}
+.am.am-phone-volume:before {
+  content: map-get($Amaranth-map, "phone-volume");
+}
+.am.am-phone:before {
+  content: map-get($Amaranth-map, "phone");
+}
+.am.am-play-pause:before {
+  content: map-get($Amaranth-map, "play-pause");
+}
+.am.am-play:before {
+  content: map-get($Amaranth-map, "play");
+}
+.am.am-plus:before {
+  content: map-get($Amaranth-map, "plus");
+}
+.am.am-power:before {
+  content: map-get($Amaranth-map, "power");
+}
+.am.am-prohibited:before {
+  content: map-get($Amaranth-map, "prohibited");
+}
+.am.am-puzzle-piece:before {
+  content: map-get($Amaranth-map, "puzzle-piece");
+}
+.am.am-quote:before {
+  content: map-get($Amaranth-map, "quote");
+}
+.am.am-redo:before {
+  content: map-get($Amaranth-map, "redo");
+}
+.am.am-repeat-once:before {
+  content: map-get($Amaranth-map, "repeat-once");
+}
+.am.am-repeat:before {
+  content: map-get($Amaranth-map, "repeat");
+}
+.am.am-safari:before {
+  content: map-get($Amaranth-map, "safari");
+}
+.am.am-server:before {
+  content: map-get($Amaranth-map, "server");
+}
+.am.am-shield-keyhole:before {
+  content: map-get($Amaranth-map, "shield-keyhole");
+}
+.am.am-shield-plus:before {
+  content: map-get($Amaranth-map, "shield-plus");
+}
+.am.am-shield-xmark:before {
+  content: map-get($Amaranth-map, "shield-xmark");
+}
+.am.am-shield:before {
+  content: map-get($Amaranth-map, "shield");
+}
+.am.am-shuffle:before {
+  content: map-get($Amaranth-map, "shuffle");
+}
+.am.am-sim-card:before {
+  content: map-get($Amaranth-map, "sim-card");
+}
+.am.am-sippy:before {
+  content: map-get($Amaranth-map, "sippy");
+}
+.am.am-sliders:before {
+  content: map-get($Amaranth-map, "sliders");
+}
+.am.am-smartphone-arrow-right:before {
+  content: map-get($Amaranth-map, "smartphone-arrow-right");
+}
+.am.am-smartphone:before {
+  content: map-get($Amaranth-map, "smartphone");
+}
+.am.am-spinner-third:before {
+  content: map-get($Amaranth-map, "spinner-third");
+}
+.am.am-spy:before {
+  content: map-get($Amaranth-map, "spy");
+}
+.am.am-square-gum:before {
+  content: map-get($Amaranth-map, "square-gum");
+}
+.am.am-star:before {
+  content: map-get($Amaranth-map, "star");
+}
+.am.am-stop:before {
+  content: map-get($Amaranth-map, "stop");
+}
+.am.am-store:before {
+  content: map-get($Amaranth-map, "store");
+}
+.am.am-strikethrough:before {
+  content: map-get($Amaranth-map, "strikethrough");
+}
+.am.am-sun:before {
+  content: map-get($Amaranth-map, "sun");
+}
+.am.am-swatchbook:before {
+  content: map-get($Amaranth-map, "swatchbook");
+}
+.am.am-table-clock:before {
+  content: map-get($Amaranth-map, "table-clock");
+}
+.am.am-table:before {
+  content: map-get($Amaranth-map, "table");
+}
+.am.am-tag:before {
+  content: map-get($Amaranth-map, "tag");
+}
+.am.am-tower-broadcast:before {
+  content: map-get($Amaranth-map, "tower-broadcast");
+}
+.am.am-trash-can:before {
+  content: map-get($Amaranth-map, "trash-can");
+}
+.am.am-triangle-exclamation:before {
+  content: map-get($Amaranth-map, "triangle-exclamation");
+}
+.am.am-underline:before {
+  content: map-get($Amaranth-map, "underline");
+}
+.am.am-undo:before {
+  content: map-get($Amaranth-map, "undo");
+}
+.am.am-valkyrie-sword:before {
+  content: map-get($Amaranth-map, "valkyrie-sword");
+}
+.am.am-video:before {
+  content: map-get($Amaranth-map, "video");
+}
+.am.am-voicemail:before {
+  content: map-get($Amaranth-map, "voicemail");
+}
+.am.am-volume-0:before {
+  content: map-get($Amaranth-map, "volume-0");
+}
+.am.am-volume-1:before {
+  content: map-get($Amaranth-map, "volume-1");
+}
+.am.am-volume-2:before {
+  content: map-get($Amaranth-map, "volume-2");
+}
+.am.am-volume-3:before {
+  content: map-get($Amaranth-map, "volume-3");
+}
+.am.am-volume-slash:before {
+  content: map-get($Amaranth-map, "volume-slash");
+}
+.am.am-wallpaper:before {
+  content: map-get($Amaranth-map, "wallpaper");
+}
+.am.am-waveform:before {
+  content: map-get($Amaranth-map, "waveform");
+}
+.am.am-webhooks-clock:before {
+  content: map-get($Amaranth-map, "webhooks-clock");
+}
+.am.am-webhooks:before {
+  content: map-get($Amaranth-map, "webhooks");
+}
+.am.am-window:before {
+  content: map-get($Amaranth-map, "window");
+}
+.am.am-xmark:before {
+  content: map-get($Amaranth-map, "xmark");
+}
+.am.am-music-pause:before {
+  content: map-get($Amaranth-map, "music-pause");
+}
+.am.am-list-checks-xmark:before {
+  content: map-get($Amaranth-map, "list-checks-xmark");
+}
+.am.am-circle-person:before {
+  content: map-get($Amaranth-map, "circle-person");
+}
+.am.am-circle-half-inner:before {
+  content: map-get($Amaranth-map, "circle-half-inner");
+}
+.am.am-circle-half:before {
+  content: map-get($Amaranth-map, "circle-half");
+}
+.am.am-calendar-clock:before {
+  content: map-get($Amaranth-map, "calendar-clock");
+}
+.am.am-calendar-range:before {
+  content: map-get($Amaranth-map, "calendar-range");
+}
+.am.am-table-header-column:before {
+  content: map-get($Amaranth-map, "table-header-column");
+}
+.am.am-table-header-row:before {
+  content: map-get($Amaranth-map, "table-header-row");
+}
+.am.am-calendar-range-clock:before {
+  content: map-get($Amaranth-map, "calendar-range-clock");
+}
+.am.am-next:before {
+  content: map-get($Amaranth-map, "next");
+}
+.am.am-previous:before {
+  content: map-get($Amaranth-map, "previous");
+}
+.am.am-tag-plus:before {
+  content: map-get($Amaranth-map, "tag-plus");
+}
+.am.am-tag-gear:before {
+  content: map-get($Amaranth-map, "tag-gear");
+}
+.am.am-p-square:before {
+  content: map-get($Amaranth-map, "p-square");
+}
+.am.am-translate:before {
+  content: map-get($Amaranth-map, "translate");
+}
+.am.am-square-p:before {
+  content: map-get($Amaranth-map, "square-p");
+}
+.am.am-rectangle-p:before {
+  content: map-get($Amaranth-map, "rectangle-p");
+}
+.am.am-pager:before {
+  content: map-get($Amaranth-map, "pager");
+}
+.am.am-speaker-grill:before {
+  content: map-get($Amaranth-map, "speaker-grill");
+}
+.am.am-circle-dashed:before {
+  content: map-get($Amaranth-map, "circle-dashed");
+}
+.am.am-share:before {
+  content: map-get($Amaranth-map, "share");
+}
+.am.am-door:before {
+  content: map-get($Amaranth-map, "door");
+}
+.am.am-pin-slash:before {
+  content: map-get($Amaranth-map, "pin-slash");
+}
+.am.am-pin:before {
+  content: map-get($Amaranth-map, "pin");
+}
+.am.am-sidebar-left:before {
+  content: map-get($Amaranth-map, "sidebar-left");
+}
+.am.am-sidebar-right:before {
+  content: map-get($Amaranth-map, "sidebar-right");
+}
+.am.am-toggle-off:before {
+  content: map-get($Amaranth-map, "toggle-off");
+}
+.am.am-toggle-on:before {
+  content: map-get($Amaranth-map, "toggle-on");
+}
+.am.am-logo-white:before {
+  content: map-get($Amaranth-map, "logo-white");
+}
+.am.am-chalkboard-person:before {
+  content: map-get($Amaranth-map, "chalkboard-person");
+}
+.am.am-life-ring:before {
+  content: map-get($Amaranth-map, "life-ring");
+}
+.am.am-key:before {
+  content: map-get($Amaranth-map, "key");
+}
+.am.am-azure:before {
+  content: map-get($Amaranth-map, "azure");
+}
+.am.am-bars-staggered:before {
+  content: map-get($Amaranth-map, "bars-staggered");
+}
+.am.am-branch:before {
+  content: map-get($Amaranth-map, "branch");
+}
+.am.am-change-windows:before {
+  content: map-get($Amaranth-map, "change-windows");
+}
+.am.am-chip:before {
+  content: map-get($Amaranth-map, "chip");
+}
+.am.am-disc:before {
+  content: map-get($Amaranth-map, "disc");
+}
+.am.am-display-cam:before {
+  content: map-get($Amaranth-map, "display-cam");
+}
+.am.am-patreon:before {
+  content: map-get($Amaranth-map, "patreon");
+}
+.am.am-smartphone-hinge:before {
+  content: map-get($Amaranth-map, "smartphone-hinge");
+}
+.am.am-twitter:before {
+  content: map-get($Amaranth-map, "twitter");
+}
+.am.am-virtual-reality:before {
+  content: map-get($Amaranth-map, "virtual-reality");
+}
+.am.am-visual-studio:before {
+  content: map-get($Amaranth-map, "visual-studio");
+}
+.am.am-windows:before {
+  content: map-get($Amaranth-map, "windows");
+}
+.am.am-xbox:before {
+  content: map-get($Amaranth-map, "xbox");
+}

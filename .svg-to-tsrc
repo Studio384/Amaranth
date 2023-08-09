@@ -1,11 +1,11 @@
 {
   "srcFiles": ["./icons/**/*.svg"],
   "outputDirectory": "./src",
-  "interfaceName": "IValkyrieIcon",
-  "typeName": "Valkyrie",
-  "prefix": "vi",
-  "fileName": "Valkyrie",
+  "interfaceName": "IAmaranthIcon",
+  "typeName": "Amaranth",
+  "prefix": "am",
+  "fileName": "Amaranth",
   "additionalModelFile": "./src",
   "compileSources": true,
-  "completeIconSetName": "valkyrieSet"
+  "completeIconSetName": "amaranthSet"
 }
