@@ -10,7 +10,8 @@ import {
   Input,
   Link,
   Stack,
-  Typography
+  Typography,
+  useColorScheme
 } from "@mui/joy";
 import Head from "next/head";
 import AmarantIcon from "@studio384/amaranth";
@@ -18,9 +19,10 @@ import * as Icons from "@studio384/amaranth";
 import NextLink from "next/link";
 
 function PostTemplate({ data, slug }) {
+  const { mode, setMode } = useColorScheme();
   const frontmatter = data;
 
-  const icon = `am${slug
+  const icon = `ai${slug
     .split("-")
     .map(word => {
       return word[0].toUpperCase() + word.substring(1);
@@ -39,7 +41,7 @@ function PostTemplate({ data, slug }) {
         <Stack
           direction="row"
           spacing={1}
-          justifyContent="flex-start"
+          justifyContent="space-between"
           alignItems="center"
         >
           <Typography
@@ -53,6 +55,25 @@ function PostTemplate({ data, slug }) {
           >
             Amaranth
           </Typography>
+          <IconButton
+            variant="outlined"
+            size="sm"
+            onClick={() =>
+              setMode(
+                mode === "light" ? "dark" : mode === "dark" ? "system" : "light"
+              )
+            }
+          >
+            <AmarantIcon
+              icon={
+                mode === "light"
+                  ? Icons.aiSun
+                  : mode === "dark"
+                  ? Icons.aiMoon
+                  : Icons.aiCircleHalfInner
+              }
+            />
+          </IconButton>
         </Stack>
         <Stack
           direction="row"
@@ -61,17 +82,11 @@ function PostTemplate({ data, slug }) {
           alignItems="center"
         >
           <Stack direction="row" alignContent="center" spacing={1}>
-            <Typography
-              level="h2"
-              fontSize="xl2"
-              fontWeight="md"
-            >
+            <Typography level="h2" fontSize="xl2" fontWeight="md">
               <NextLink href="/">
                 <Link color="neutral">Icons</Link>
               </NextLink>{" "}
-              <Typography fontWeight="xl">
-                {frontmatter.title}
-              </Typography>
+              <Typography fontWeight="xl">{frontmatter.title}</Typography>
             </Typography>
           </Stack>
         </Stack>
@@ -99,9 +114,8 @@ function PostTemplate({ data, slug }) {
               alignItems: "center",
               justifyContent: "center",
               borderRadius: 8,
-              backgroundColor: "#fdfdfd",
               backgroundImage:
-                "radial-gradient(circle, #ddd 1px, rgba(0, 0, 0, 0) 1px)",
+                "radial-gradient(circle, var(--joy-palette-neutral-500) 1px, rgba(0, 0, 0, 0) 1px)",
               backgroundSize: "1rem 1rem",
               backgroundPosition: "calc(.5rem - 1px) calc(.5rem - 1px)",
               fontSize: "10rem",
@@ -138,7 +152,7 @@ function PostTemplate({ data, slug }) {
               HTML
             </Typography>
             <Card variant="outlined" sx={{ py: 2 }}>
-              <code>{`<i class="am am-${slug.replaceAll(
+              <code>{`<i class="ai ai-${slug.replaceAll(
                 " ",
                 "-"
               )}"></i>`}</code>

@@ -6,7 +6,8 @@ import {
   Typography,
   Stack,
   Sheet,
-  IconButton
+  IconButton,
+  useColorScheme
 } from "@mui/joy";
 import Head from "next/head";
 import fs from "fs";
@@ -30,7 +31,7 @@ export async function getStaticProps() {
       name: slug.replaceAll("-", " "),
       categories: data.categories?.join(" ") ?? "",
       tags: data.tags?.join(" ") ?? "",
-      amIcon: `am${slug
+      aiIcon: `ai${slug
         .split("-")
         .map(word => {
           return word[0].toUpperCase() + word.substring(1);
@@ -47,6 +48,8 @@ export async function getStaticProps() {
 }
 
 export default function Home({ icons }) {
+  const { mode, setMode } = useColorScheme();
+
   const [page, setPage] = useState(0);
 
   const { result, needle, setNeedle } = useSearch(icons, [
@@ -67,7 +70,7 @@ export default function Home({ icons }) {
         <Stack
           direction="row"
           spacing={1}
-          justifyContent="flex-start"
+          justifyContent="space-between"
           alignItems="center"
         >
           <Typography
@@ -81,6 +84,25 @@ export default function Home({ icons }) {
           >
             Amaranth
           </Typography>
+          <IconButton
+            variant="outlined"
+            size="sm"
+            onClick={() =>
+              setMode(
+                mode === "light" ? "dark" : mode === "dark" ? "system" : "light"
+              )
+            }
+          >
+            <AmaranthIcon
+              icon={
+                mode === "light"
+                  ? Icons.aiSun
+                  : mode === "dark"
+                  ? Icons.aiMoon
+                  : Icons.aiCircleHalfInner
+              }
+            />
+          </IconButton>
         </Stack>
         <Stack
           direction="row"
@@ -98,7 +120,7 @@ export default function Home({ icons }) {
           </Stack>
 
           <Input
-            startDecorator={<AmaranthIcon icon={Icons.amMagnifyingGlass} />}
+            startDecorator={<AmaranthIcon icon={Icons.aiMagnifyingGlass} />}
             placeholder="Search"
             value={needle}
             onChange={e => {
@@ -117,7 +139,7 @@ export default function Home({ icons }) {
         >
           {result
             .slice(page * 180, (page + 1) * 180)
-            .map(({ slug, amIcon }) => (
+            .map(({ slug, aiIcon }) => (
               <Sheet
                 key="slug"
                 variant="outlined"
@@ -140,8 +162,8 @@ export default function Home({ icons }) {
                   alignItems="center"
                   sx={{ pt: 3, pb: 1 }}
                 >
-                  {Icons?.[amIcon] && (
-                    <AmaranthIcon icon={Icons[amIcon]} sx={{ fontSize: 32 }} />
+                  {Icons?.[aiIcon] && (
+                    <AmaranthIcon icon={Icons[aiIcon]} sx={{ fontSize: 32 }} />
                   )}
                   <Link
                     overlay
@@ -164,7 +186,7 @@ export default function Home({ icons }) {
                           "SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace"
                       }}
                     >
-                      {amIcon}
+                      {aiIcon}
                     </Typography>
                   </Link>
                 </Stack>
@@ -183,7 +205,7 @@ export default function Home({ icons }) {
             onClick={() => setPage(prev => prev - 1)}
             disabled={page === 0}
           >
-            <AmaranthIcon icon={Icons.amChevronLeft} />
+            <AmaranthIcon icon={Icons.aiChevronLeft} />
           </IconButton>
           <IconButton
             variant="solid"
@@ -191,7 +213,7 @@ export default function Home({ icons }) {
             onClick={() => setPage(prev => prev + 1)}
             disabled={page === Math.ceil(result.length / 180) - 1}
           >
-            <AmaranthIcon icon={Icons.amChevronRight} />
+            <AmaranthIcon icon={Icons.aiChevronRight} />
           </IconButton>
         </Stack>
       </Stack>

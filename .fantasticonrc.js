@@ -9,8 +9,8 @@ module.exports = {
   assetTypes: ["scss", "json"],
   fontsUrl: "./fonts",
   name: "Amaranth",
-  prefix: "am",
-  selector: ".am",
+  prefix: "ai",
+  selector: ".ai",
   codepoints,
   descent: 26,
   templates: {

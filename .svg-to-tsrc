@@ -3,7 +3,7 @@
   "outputDirectory": "./src",
   "interfaceName": "IAmaranthIcon",
   "typeName": "Amaranth",
-  "prefix": "am",
+  "prefix": "ai",
   "fileName": "Amaranth",
   "additionalModelFile": "./src",
   "compileSources": true,
