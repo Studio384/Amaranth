@@ -1,10 +1,9 @@
 ---
-title: Brackets curly
+title: Bootstrap
 categories:
-  - coding
+  - brand
 tags:
-  - code
-  - developer
+  - coding
 created: 1.0.0-alpha.1
 udpated: 1.0.0-alpha.1
 ---

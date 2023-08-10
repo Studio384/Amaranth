@@ -1,10 +1,10 @@
 ---
-title: Brackets curly
+title: Box
 categories:
-  - coding
+  - logistics
 tags:
-  - code
-  - developer
+  - cardboard
+  - package
 created: 1.0.0-alpha.1
 udpated: 1.0.0-alpha.1
 ---

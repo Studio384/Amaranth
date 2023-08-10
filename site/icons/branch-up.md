@@ -1,10 +1,10 @@
 ---
-title: Brackets curly
+title: Branch up
 categories:
   - coding
 tags:
   - code
-  - developer
+  - git
 created: 1.0.0-alpha.1
 udpated: 1.0.0-alpha.1
 ---

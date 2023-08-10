@@ -1,10 +1,10 @@
 ---
-title: Brackets curly
+title: Book open
 categories:
-  - coding
+  - education
 tags:
-  - code
-  - developer
+  - read
+  - magazine
 created: 1.0.0-alpha.1
 udpated: 1.0.0-alpha.1
 ---
