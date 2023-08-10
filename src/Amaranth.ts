@@ -328,20 +328,6 @@ export const aiBracketsCurly: {
   name: 'brackets_curly',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M4.75 1A2.75 2.75 0 0 0 2 3.75v1.922c0 .331-.132.649-.366.883L.79 7.4a.85.85 0 0 0 0 1.202l.844.844c.234.234.366.552.366.883v1.922A2.75 2.75 0 0 0 4.75 15h.5a.75.75 0 0 0 0-1.5h-.5c-.69 0-1.25-.56-1.25-1.25v-1.922c0-.729-.29-1.428-.805-1.944L2.31 8l.384-.384A2.75 2.75 0 0 0 3.5 5.672V3.75c0-.69.56-1.25 1.25-1.25h.5a.75.75 0 0 0 0-1.5h-.5Zm6.5 14A2.75 2.75 0 0 0 14 12.25v-1.922c0-.331.132-.649.366-.883l.844-.844a.85.85 0 0 0 0-1.202l-.844-.844A1.25 1.25 0 0 1 14 5.672V3.75A2.75 2.75 0 0 0 11.25 1h-.5a.75.75 0 0 0 0 1.5h.5c.69 0 1.25.56 1.25 1.25v1.922c0 .729.29 1.428.805 1.944L13.69 8l-.384.384a2.75 2.75 0 0 0-.805 1.944v1.922c0 .69-.56 1.25-1.25 1.25h-.5a.75.75 0 0 0 0 1.5h.5Z"/></svg>`
 };
-export const aiBranchUp: {
-  name: 'branch_up';
-  data: string;
-} = {
-  name: 'branch_up',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M7 3a3.001 3.001 0 0 1-2.25 2.905V7.55c.375-.192.8-.3 1.25-.3h2.775l-1.5 1.5H6c-.69 0-1.25.56-1.25 1.25v.095a3.001 3.001 0 1 1-1.5 0v-4.19A3.001 3.001 0 0 1 4 0a3 3 0 0 1 3 3ZM4 4.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm0 10a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm7.25-9a1.75 1.75 0 0 0-.68.138A3 3 0 0 1 12 0a3 3 0 0 1 .75 5.905V6c0 .089-.004.176-.012.263l-.25-.25A1.75 1.75 0 0 0 11.25 5.5ZM13.5 3a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z"/><path d="M11.78 6.72a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l1.72-1.72v6.19a.75.75 0 0 0 1.5 0V9.06l1.72 1.72a.75.75 0 0 0 1.06-1.06l-3-3Z"/></svg>`
-};
-export const aiBranch: {
-  name: 'branch';
-  data: string;
-} = {
-  name: 'branch',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M7 3a3.001 3.001 0 0 1-2.25 2.905V7.55c.375-.192.8-.3 1.25-.3h4c.69 0 1.25-.56 1.25-1.25v-.095A3.001 3.001 0 0 1 12 0a3 3 0 0 1 .75 5.905V6A2.75 2.75 0 0 1 10 8.75H6c-.69 0-1.25.56-1.25 1.25v.095a3.001 3.001 0 1 1-1.5 0v-4.19A3.001 3.001 0 0 1 4 0a3 3 0 0 1 3 3ZM4 4.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm0 10a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM13.5 3a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z"/></svg>`
-};
 export const aiBug: {
   name: 'bug';
   data: string;
@@ -579,6 +565,20 @@ export const aiClock: {
 } = {
   name: 'clock',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M8.75 3.75a.75.75 0 0 0-1.5 0V8c0 .199.079.39.22.53l2.25 2.25a.75.75 0 1 0 1.06-1.06L8.75 7.69V3.75Z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0Z"/></svg>`
+};
+export const aiCodeBranchUp: {
+  name: 'code_branch_up';
+  data: string;
+} = {
+  name: 'code_branch_up',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M7 3a3.001 3.001 0 0 1-2.25 2.905V7.55c.375-.192.8-.3 1.25-.3h2.775l-1.5 1.5H6c-.69 0-1.25.56-1.25 1.25v.095a3.001 3.001 0 1 1-1.5 0v-4.19A3.001 3.001 0 0 1 4 0a3 3 0 0 1 3 3ZM4 4.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm0 10a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm7.25-9a1.75 1.75 0 0 0-.68.138A3 3 0 0 1 12 0a3 3 0 0 1 .75 5.905V6c0 .089-.004.176-.012.263l-.25-.25A1.75 1.75 0 0 0 11.25 5.5ZM13.5 3a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z"/><path d="M11.78 6.72a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l1.72-1.72v6.19a.75.75 0 0 0 1.5 0V9.06l1.72 1.72a.75.75 0 0 0 1.06-1.06l-3-3Z"/></svg>`
+};
+export const aiCodeBranch: {
+  name: 'code_branch';
+  data: string;
+} = {
+  name: 'code_branch',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M7 3a3.001 3.001 0 0 1-2.25 2.905V7.55c.375-.192.8-.3 1.25-.3h4c.69 0 1.25-.56 1.25-1.25v-.095A3.001 3.001 0 0 1 12 0a3 3 0 0 1 .75 5.905V6A2.75 2.75 0 0 1 10 8.75H6c-.69 0-1.25.56-1.25 1.25v.095a3.001 3.001 0 1 1-1.5 0v-4.19A3.001 3.001 0 0 1 4 0a3 3 0 0 1 3 3ZM4 4.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm0 10a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM13.5 3a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z"/></svg>`
 };
 export const aiCode: {
   name: 'code';
@@ -1986,8 +1986,6 @@ export type Amaranth =
   | 'box_open_full'
   | 'box'
   | 'brackets_curly'
-  | 'branch_up'
-  | 'branch'
   | 'bug'
   | 'building'
   | 'calendar_clock'
@@ -2022,6 +2020,8 @@ export type Amaranth =
   | 'city'
   | 'clock_rotate_left'
   | 'clock'
+  | 'code_branch_up'
+  | 'code_branch'
   | 'code'
   | 'codeblock'
   | 'compass'
@@ -2271,8 +2271,6 @@ export const amaranthSet = [
   aiBoxOpenFull,
   aiBox,
   aiBracketsCurly,
-  aiBranchUp,
-  aiBranch,
   aiBug,
   aiBuilding,
   aiCalendarClock,
@@ -2307,6 +2305,8 @@ export const amaranthSet = [
   aiCity,
   aiClockRotateLeft,
   aiClock,
+  aiCodeBranchUp,
+  aiCodeBranch,
   aiCode,
   aiCodeblock,
   aiCompass,

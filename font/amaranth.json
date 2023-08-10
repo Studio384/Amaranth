@@ -279,5 +279,7 @@
     "box": 61974,
     "branch-up": 61975,
     "calendar-day": 61976,
-    "calendar-week": 61977
+    "calendar-week": 61977,
+    "code-branch-up": 61978,
+    "code-branch": 61979
 }
