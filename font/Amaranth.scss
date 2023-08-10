@@ -2,8 +2,8 @@ $Amaranth-font: "Amaranth";
 
 @font-face {
   font-family: $Amaranth-font;
-  src: url("./fonts/Amaranth.woff?6255d0f79fd91edb374efe09b081a4a4") format("woff"),
-url("./fonts/Amaranth.woff2?6255d0f79fd91edb374efe09b081a4a4") format("woff2");
+  src: url("./fonts/Amaranth.woff?d4fea2a2cd8d58252ce51e9e9b0fa153") format("woff"),
+url("./fonts/Amaranth.woff2?d4fea2a2cd8d58252ce51e9e9b0fa153") format("woff2");
 }
 
 .ai {
@@ -350,6 +350,8 @@ $Amaranth-map: (
   "bootstrap": "\f215",
   "box": "\f216",
   "branch-up": "\f217",
+  "calendar-day": "\f218",
+  "calendar-week": "\f219",
 );
 
 .ai.ai-a-gum:before {
@@ -1188,4 +1190,10 @@ $Amaranth-map: (
 }
 .ai.ai-branch-up:before {
   content: map-get($Amaranth-map, "branch-up");
+}
+.ai.ai-calendar-day:before {
+  content: map-get($Amaranth-map, "calendar-day");
+}
+.ai.ai-calendar-week:before {
+  content: map-get($Amaranth-map, "calendar-week");
 }

@@ -167,6 +167,25 @@ function PostTemplate({ data, slug }) {
             </Card>
           </Box>
         </Stack>
+        <Stack
+          direction="row"
+          spacing={3}
+          alignItems="center"
+          justifyContent="center"
+        >
+          {frontmatter.created && (
+            <Stack direction="row" spacing={1} alignItems="baseline">
+              <Typography color="neutral">Created</Typography>{" "}
+              <Chip size="sm">{frontmatter.created}</Chip>
+            </Stack>
+          )}
+          {frontmatter.updated && (
+            <Stack direction="row" spacing={1} alignItems="baseline">
+              <Typography color="neutral">Last updated</Typography>{" "}
+              <Chip size="sm">{frontmatter.updated}</Chip>
+            </Stack>
+          )}
+        </Stack>
       </Stack>
     </Container>
   );
