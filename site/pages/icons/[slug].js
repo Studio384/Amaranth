@@ -14,7 +14,7 @@ import {
   useColorScheme
 } from "@mui/joy";
 import Head from "next/head";
-import AmarantIcon from "@studio384/amaranth";
+import AmaranthIcon from "@studio384/amaranth";
 import * as Icons from "@studio384/amaranth";
 import NextLink from "next/link";
 
@@ -64,7 +64,7 @@ function PostTemplate({ data, slug }) {
               )
             }
           >
-            <AmarantIcon
+            <AmaranthIcon
               icon={
                 mode === "light"
                   ? Icons.aiSun
@@ -123,25 +123,25 @@ function PostTemplate({ data, slug }) {
               height: "20rem"
             }}
           >
-            <AmarantIcon icon={Icons[icon]} />
+            <AmaranthIcon icon={Icons[icon]} />
           </Card>
           <Card variant="outlined" sx={{ flexGrow: 1 }}>
             <Typography level="h3" sx={{ mb: 3 }}>
-              <AmarantIcon icon={Icons[icon]} /> Heading icon
+              <AmaranthIcon icon={Icons[icon]} /> Heading icon
             </Typography>
             <Typography level="body-md" sx={{ mb: 3 }}>
-              <AmarantIcon icon={Icons[icon]} /> Inline icon
+              <AmaranthIcon icon={Icons[icon]} /> Inline icon
             </Typography>
             <Box sx={{ mb: 3, display: "flex", gap: 1 }}>
-              <Button startDecorator={<AmarantIcon icon={Icons[icon]} />}>
+              <Button startDecorator={<AmaranthIcon icon={Icons[icon]} />}>
                 Button icon
               </Button>
               <IconButton color="primary" variant="soft">
-                <AmarantIcon icon={Icons[icon]} />
+                <AmaranthIcon icon={Icons[icon]} />
               </IconButton>
             </Box>
             <Input
-              startDecorator={<AmarantIcon icon={Icons[icon]} />}
+              startDecorator={<AmaranthIcon icon={Icons[icon]} />}
               placeholder={frontmatter.title}
             />
           </Card>
@@ -163,7 +163,7 @@ function PostTemplate({ data, slug }) {
               React
             </Typography>
             <Card variant="outlined" sx={{ py: 2 }}>
-              <code>{`<AmarantIcon icon={${icon}} />`}</code>
+              <code>{`<AmaranthIcon icon={${icon}} />`}</code>
             </Card>
           </Box>
         </Stack>
