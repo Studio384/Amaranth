@@ -1,5 +1,5 @@
 ---
-title: Github
+title: Amaranth
 categories:
   - brands
 tags:

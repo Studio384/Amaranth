@@ -1,7 +1,7 @@
 ---
-title: Github
+title: Coin
 categories:
-  - brands
+  - money
 tags:
 created: 1.0.0
 updated: 1.0.0

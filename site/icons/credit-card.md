@@ -1,10 +1,9 @@
 ---
-title: Chip
+title: Credit card
 categories:
-  - coding
-  - devices
+  - money
+  - shopping
 tags:
-  - microchip
 created: 1.0.0
 updated: 1.0.0
 ---

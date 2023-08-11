@@ -2,8 +2,8 @@ $Amaranth-font: "Amaranth";
 
 @font-face {
   font-family: $Amaranth-font;
-  src: url("./fonts/Amaranth.woff?0f0c4d87cf01af4fe027abb5acf0ee7e") format("woff"),
-url("./fonts/Amaranth.woff2?0f0c4d87cf01af4fe027abb5acf0ee7e") format("woff2");
+  src: url("./fonts/Amaranth.woff?bdb43b5518dbe610c5c98295f9f7efbd") format("woff"),
+url("./fonts/Amaranth.woff2?bdb43b5518dbe610c5c98295f9f7efbd") format("woff2");
 }
 
 .ai {
@@ -356,6 +356,12 @@ $Amaranth-map: (
   "code-branch": "\f21b",
   "campfire": "\f21c",
   "car": "\f21d",
+  "amaranth": "\f21e",
+  "coin": "\f21f",
+  "compass-drafting": "\f220",
+  "credit-card": "\f221",
+  "microchip": "\f222",
+  "terminal": "\f223",
 );
 
 .ai.ai-a-gum:before {
@@ -1212,4 +1218,22 @@ $Amaranth-map: (
 }
 .ai.ai-car:before {
   content: map-get($Amaranth-map, "car");
+}
+.ai.ai-amaranth:before {
+  content: map-get($Amaranth-map, "amaranth");
+}
+.ai.ai-coin:before {
+  content: map-get($Amaranth-map, "coin");
+}
+.ai.ai-compass-drafting:before {
+  content: map-get($Amaranth-map, "compass-drafting");
+}
+.ai.ai-credit-card:before {
+  content: map-get($Amaranth-map, "credit-card");
+}
+.ai.ai-microchip:before {
+  content: map-get($Amaranth-map, "microchip");
+}
+.ai.ai-terminal:before {
+  content: map-get($Amaranth-map, "terminal");
 }

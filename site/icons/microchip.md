@@ -1,8 +1,10 @@
 ---
-title: Github
+title: Microchip
 categories:
-  - brands
+  - coding
+  - devices
 tags:
+  - chip
 created: 1.0.0
 updated: 1.0.0
 ---
