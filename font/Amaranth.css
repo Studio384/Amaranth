@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Amaranth";
-  src: url("./fonts/Amaranth.woff?6c574262e1e60aaa99d3cc0d0b2a6fd5") format("woff"), url("./fonts/Amaranth.woff2?6c574262e1e60aaa99d3cc0d0b2a6fd5") format("woff2");
+  src: url("./fonts/Amaranth.woff?0f0c4d87cf01af4fe027abb5acf0ee7e") format("woff"), url("./fonts/Amaranth.woff2?0f0c4d87cf01af4fe027abb5acf0ee7e") format("woff2");
 }
 .ai {
   -moz-osx-font-smoothing: grayscale;
@@ -1195,6 +1195,14 @@
 
 .ai.ai-code-branch:before {
   content: "\f21b";
+}
+
+.ai.ai-campfire:before {
+  content: "\f21c";
+}
+
+.ai.ai-car:before {
+  content: "\f21d";
 }
 
 /*# sourceMappingURL=Amaranth.css.map */

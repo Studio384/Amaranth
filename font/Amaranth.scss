@@ -2,8 +2,8 @@ $Amaranth-font: "Amaranth";
 
 @font-face {
   font-family: $Amaranth-font;
-  src: url("./fonts/Amaranth.woff?6c574262e1e60aaa99d3cc0d0b2a6fd5") format("woff"),
-url("./fonts/Amaranth.woff2?6c574262e1e60aaa99d3cc0d0b2a6fd5") format("woff2");
+  src: url("./fonts/Amaranth.woff?0f0c4d87cf01af4fe027abb5acf0ee7e") format("woff"),
+url("./fonts/Amaranth.woff2?0f0c4d87cf01af4fe027abb5acf0ee7e") format("woff2");
 }
 
 .ai {
@@ -354,6 +354,8 @@ $Amaranth-map: (
   "calendar-week": "\f219",
   "code-branch-up": "\f21a",
   "code-branch": "\f21b",
+  "campfire": "\f21c",
+  "car": "\f21d",
 );
 
 .ai.ai-a-gum:before {
@@ -1204,4 +1206,10 @@ $Amaranth-map: (
 }
 .ai.ai-code-branch:before {
   content: map-get($Amaranth-map, "code-branch");
+}
+.ai.ai-campfire:before {
+  content: map-get($Amaranth-map, "campfire");
+}
+.ai.ai-car:before {
+  content: map-get($Amaranth-map, "car");
 }
