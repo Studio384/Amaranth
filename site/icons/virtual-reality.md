@@ -1,7 +1,11 @@
 ---
 title: Virtual reality
 categories:
+  - devices
 tags:
-created: 1.0.0-alpha.1
-updated: 1.0.0-alpha.1
+  - mixed reality
+  - headset
+  - augmented reality
+created: 1.0.0
+updated: 1.0.0
 ---

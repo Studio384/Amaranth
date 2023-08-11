@@ -1,7 +1,11 @@
 ---
 title: Numpad
 categories:
+  - coding
+  - devices
+  - writing
 tags:
-created: 1.0.0-alpha.1
-updated: 1.0.0-alpha.1
+  - ten keys
+created: 1.0.0
+updated: 1.0.0
 ---

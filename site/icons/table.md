@@ -1,7 +1,11 @@
 ---
 title: Table
 categories:
+  - editor
+  - business
+  - files
 tags:
-created: 1.0.0-alpha.1
-updated: 1.0.0-alpha.1
+  - spreadsheet
+created: 1.0.0
+updated: 1.0.0
 ---

@@ -1,7 +1,11 @@
 ---
 title: Spy
 categories:
+  - security
+  - people
 tags:
-created: 1.0.0-alpha.1
-updated: 1.0.0-alpha.1
+  - secret
+  - agent
+created: 1.0.0
+updated: 1.0.0
 ---

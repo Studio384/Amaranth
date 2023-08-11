@@ -1,7 +1,11 @@
 ---
 title: Bel
 categories:
+  - alert
+  - education
+  - social
 tags:
-created: 1.0.0-alpha.1
-updated: 1.0.0-alpha.1
+  - notification
+created: 1.0.0
+updated: 1.0.0
 ---

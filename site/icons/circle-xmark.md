@@ -1,7 +1,11 @@
 ---
-title: Circle xmark
+title: Circle X mark
 categories:
+  - alerts
+  - mathematics
 tags:
-created: 1.0.0-alpha.1
-updated: 1.0.0-alpha.1
+  - warning
+  - danger
+created: 1.0.0
+updated: 1.0.0
 ---

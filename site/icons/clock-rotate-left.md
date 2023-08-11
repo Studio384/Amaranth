@@ -1,7 +1,10 @@
 ---
 title: Clock rotate left
 categories:
+  - time
+  - arrows
 tags:
-created: 1.0.0-alpha.1
-updated: 1.0.0-alpha.1
+  - history
+created: 1.0.0
+updated: 1.0.0
 ---

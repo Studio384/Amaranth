@@ -1,7 +1,10 @@
 ---
 title: Arrow up short wide
 categories:
+  - arrows
 tags:
-created: 1.0.0-alpha.1
-updated: 1.0.0-alpha.1
+  - sort
+  - ascending
+created: 1.0.0
+updated: 1.0.0
 ---

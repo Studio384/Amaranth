@@ -1,7 +1,10 @@
 ---
-title: Id card
+title: ID card
 categories:
+  - security
+  - people
 tags:
-created: 1.0.0-alpha.1
-updated: 1.0.0-alpha.1
+  - identification
+created: 1.0.0
+updated: 1.0.0
 ---

@@ -1,7 +1,10 @@
 ---
 title: Megaphone
 categories:
+  - business
+  - communication
 tags:
-created: 1.0.0-alpha.1
-updated: 1.0.0-alpha.1
+  - bullhorn
+created: 1.0.0
+updated: 1.0.0
 ---

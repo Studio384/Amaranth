@@ -1,7 +1,11 @@
 ---
 title: Arrow right from bracket
 categories:
+  - arrows
 tags:
-created: 1.0.0-alpha.1
-updated: 1.0.0-alpha.1
+  - direction
+  - leave
+  - signout
+created: 1.0.0
+updated: 1.0.0
 ---

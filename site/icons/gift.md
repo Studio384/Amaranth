@@ -1,7 +1,10 @@
 ---
 title: Gift
 categories:
+  - holidays
+  - maps
 tags:
-created: 1.0.0-alpha.1
-updated: 1.0.0-alpha.1
+  - present
+created: 1.0.0
+updated: 1.0.0
 ---

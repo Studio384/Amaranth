@@ -1,7 +1,12 @@
 ---
 title: Message
 categories:
+  - communication
+  - social
 tags:
-created: 1.0.0-alpha.1
-updated: 1.0.0-alpha.1
+  - speech bubble
+  - chat
+  - text
+created: 1.0.0
+updated: 1.0.0
 ---

@@ -1,7 +1,10 @@
 ---
 title: Person lock
 categories:
+  - people
+  - security
 tags:
-created: 1.0.0-alpha.1
-updated: 1.0.0-alpha.1
+  - user
+created: 1.0.0
+updated: 1.0.0
 ---

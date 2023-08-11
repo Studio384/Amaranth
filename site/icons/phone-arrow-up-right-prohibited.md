@@ -1,7 +1,13 @@
 ---
 title: Phone arrow up right prohibited
 categories:
+  - business
+  - communication
+  - maps
 tags:
-created: 1.0.0-alpha.1
-updated: 1.0.0-alpha.1
+  - telephone
+  - call
+  - outgoing
+created: 1.0.0
+updated: 1.0.0
 ---

@@ -1,11 +1,12 @@
 ---
-title: Compass
+title: Thumbstack
 categories:
+  - business
   - maps
-  - camping
-  - spinners
+  - social
+  - writing
 tags:
-  - location
+  - pin
 created: 1.0.0
 updated: 1.0.0
 ---

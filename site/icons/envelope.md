@@ -1,7 +1,15 @@
 ---
 title: Envelope
 categories:
+  - business
+  - communication
+  - social
+  - writing
 tags:
-created: 1.0.0-alpha.1
-updated: 1.0.0-alpha.1
+  - email
+  - message
+  - mail
+  - letter
+created: 1.0.0
+updated: 1.0.0
 ---
