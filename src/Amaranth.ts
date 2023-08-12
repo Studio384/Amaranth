@@ -615,6 +615,13 @@ export const aiCoin: {
   name: 'coin',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M13.5 6.5c0 1.243-2.462 2.25-5.5 2.25S2.5 7.743 2.5 6.5 4.962 4.25 8 4.25s5.5 1.007 5.5 2.25Zm-2.179-.203C10.547 5.981 9.373 5.75 8 5.75c-1.373 0-2.547.23-3.321.547-.172.07-.311.14-.42.203.109.063.248.132.42.203.774.316 1.948.547 3.321.547 1.373 0 2.547-.23 3.321-.547.172-.07.311-.14.42-.203a3.464 3.464 0 0 0-.42-.203Z"/><path d="M0 10V6.5C0 4.015 3.582 2 8 2s8 2.015 8 4.5V10c0 2.21-3.582 4-8 4s-8-1.79-8-4Zm14.5-3.5c0-.46-.347-1.182-1.579-1.875C11.738 3.96 10.002 3.5 8 3.5c-2 0-3.737.46-4.921 1.125C1.847 5.318 1.5 6.04 1.5 6.5c0 .46.347 1.182 1.579 1.875C4.263 9.04 5.999 9.5 8 9.5c2 0 3.737-.46 4.921-1.125C14.153 7.682 14.5 6.96 14.5 6.5Zm0 2.624a7.537 7.537 0 0 1-1.75.997V11.6c.08-.037.16-.074.236-.112C14.274 10.843 14.5 10.23 14.5 10v-.876Zm-3.25 2.99v-1.5c-.776.193-1.617.32-2.5.366v1.5a12.884 12.884 0 0 0 2.5-.366Zm-4 .367v-1.5a12.865 12.865 0 0 1-3-.505v1.498c.864.266 1.883.45 3 .507Zm-4.5-1.134V9.896a7.082 7.082 0 0 1-1.25-.772V10c0 .214.194.756 1.25 1.347Z"/></svg>`
 };
+export const aiCompactDisc: {
+  name: 'compact_disc';
+  data: string;
+} = {
+  name: 'compact_disc',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M8 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13ZM8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16Z"/><path d="M8 6.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5ZM5.25 8a2.75 2.75 0 1 1 5.5 0 2.75 2.75 0 0 1-5.5 0Zm7.5 0c.414 0 .755-.338.7-.748A5.503 5.503 0 0 0 8.748 2.55c-.41-.055-.748.286-.748.7s.339.743.746.82a4.004 4.004 0 0 1 3.185 3.184c.076.407.405.746.819.746Z"/></svg>`
+};
 export const aiCompassDrafting: {
   name: 'compass_drafting';
   data: string;
@@ -657,13 +664,6 @@ export const aiDevices: {
   name: 'devices',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.75 1.5c-.69 0-1.25.56-1.25 1.25V9H7v2H1.25C.56 11 0 10.44 0 9.75A.75.75 0 0 1 .75 9H1V2.75A2.75 2.75 0 0 1 3.75 0h8.5A2.75 2.75 0 0 1 15 2.75v.683a3.727 3.727 0 0 0-1.5-.425V2.75c0-.69-.56-1.25-1.25-1.25h-8.5ZM9.5 6.75c0-.69.56-1.25 1.25-1.25h2.5c.69 0 1.25.56 1.25 1.25v6.5c0 .69-.56 1.25-1.25 1.25h-2.5c-.69 0-1.25-.56-1.25-1.25v-6.5ZM10.75 4A2.75 2.75 0 0 0 8 6.75v6.5A2.75 2.75 0 0 0 10.75 16h2.5A2.75 2.75 0 0 0 16 13.25v-6.5A2.75 2.75 0 0 0 13.25 4h-2.5Z"/></svg>`
 };
-export const aiDisc: {
-  name: 'disc';
-  data: string;
-} = {
-  name: 'disc',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M8 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13ZM8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16Z"/><path d="M8 6.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5ZM5.25 8a2.75 2.75 0 1 1 5.5 0 2.75 2.75 0 0 1-5.5 0Zm7.5 0c.414 0 .755-.338.7-.748A5.503 5.503 0 0 0 8.748 2.55c-.41-.055-.748.286-.748.7s.339.743.746.82a4.004 4.004 0 0 1 3.185 3.184c.076.407.405.746.819.746Z"/></svg>`
-};
 export const aiDisplayCam: {
   name: 'display_cam';
   data: string;
@@ -705,6 +705,13 @@ export const aiEdge: {
 } = {
   name: 'edge',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M3.753 1.171A7.796 7.796 0 0 1 7.97.001C13.219.001 16 3.87 16 6.861a3.888 3.888 0 0 1-3.831 3.881c-2.35 0-2.86-.722-2.86-1 0-.12.038-.194.15-.294l.032-.038.012-.05A1.91 1.91 0 0 0 10 8.06c0-2.459-2.569-4.459-5.75-4.459a6.895 6.895 0 0 0-3.36.84c.844-1.797 2.585-3.05 2.854-3.244.025-.017.01-.026.01-.026Zm.488 9.94a6.158 6.158 0 0 0 .512 2.724c.425.825 1.022 1.594 1.766 2.166-1.86-.36-3.484-1.372-4.669-2.79A8.104 8.104 0 0 1 0 8.06c0-1.6 1.95-2.95 4.25-2.95a5.2 5.2 0 0 1 3.181 1.021l-.112.038c-1.61.55-3.078 2.834-3.078 4.94Zm10.44 1.39-.022.003a7.057 7.057 0 0 1-1.318 1.547c-.963.875-2.128 1.422-3.4 1.56-.582.009-1.15-.1-1.682-.357-.8-.322-1.472-.937-1.925-1.656a4.209 4.209 0 0 1-.593-2.488c-.02-.628.168-1.259.468-1.818a5.576 5.576 0 0 0 5.281 3.419 6.29 6.29 0 0 0 2.82-.641l.059-.028c.122-.072.24-.122.362 0 .14.153.056.287-.037.437-.007.006-.01.016-.013.022Z"/></svg>`
+};
+export const aiEllipsisV: {
+  name: 'ellipsis_v';
+  data: string;
+} = {
+  name: 'ellipsis_v',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M9.5 2a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/></svg>`
 };
 export const aiEllipsis: {
   name: 'ellipsis';
@@ -874,12 +881,26 @@ export const aiFloppyDisk: {
   name: 'floppy_disk',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M1 3.75A2.75 2.75 0 0 1 3.75 1h6.422c.729 0 1.428.29 1.944.805l2.079 2.079A2.75 2.75 0 0 1 15 5.828v6.422A2.75 2.75 0 0 1 12.25 15h-8.5A2.75 2.75 0 0 1 1 12.25v-8.5ZM3.75 2.5c-.69 0-1.25.56-1.25 1.25v8.5c0 .69.56 1.25 1.25 1.25H4v-3.25c0-.966.784-1.75 1.75-1.75h4.5c.966 0 1.75.784 1.75 1.75v3.25h.25c.69 0 1.25-.56 1.25-1.25V5.828a1.25 1.25 0 0 0-.366-.883l-2.079-2.079a1.25 1.25 0 0 0-.555-.322V3.75A1.75 1.75 0 0 1 8.75 5.5h-3A1.75 1.75 0 0 1 4 3.75V2.5h-.25Zm1.75 0v1.25c0 .138.112.25.25.25h3A.25.25 0 0 0 9 3.75V2.5H5.5Zm5 11v-3.25a.25.25 0 0 0-.25-.25h-4.5a.25.25 0 0 0-.25.25v3.25h5Z"/></svg>`
 };
+export const aiFolderImage: {
+  name: 'folder_image';
+  data: string;
+} = {
+  name: 'folder_image',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M11.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/><path d="M0 4.25A2.75 2.75 0 0 1 2.75 1.5h2.72c.95 0 1.777.647 2.008 1.568a.57.57 0 0 0 .553.432h5.219A2.75 2.75 0 0 1 16 6.25v5.5a2.75 2.75 0 0 1-2.75 2.75H2.75A2.75 2.75 0 0 1 0 11.75v-7.5ZM2.75 3c-.69 0-1.25.56-1.25 1.25v6.69l2.763-2.763a1.75 1.75 0 0 1 2.474 0l4.793 4.793-.03.03h1.75c.69 0 1.25-.56 1.25-1.25v-5.5c0-.69-.56-1.25-1.25-1.25H8.03a2.07 2.07 0 0 1-2.008-1.568A.57.57 0 0 0 5.47 3H2.75Zm0 10h6.69L5.676 9.237a.25.25 0 0 0-.354 0l-3.426 3.427c.223.208.523.336.853.336Z"/></svg>`
+};
 export const aiFolder: {
   name: 'folder';
   data: string;
 } = {
   name: 'folder',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M0 4.25A2.75 2.75 0 0 1 2.75 1.5h2.72c.95 0 1.777.647 2.008 1.568a.57.57 0 0 0 .553.432h5.219A2.75 2.75 0 0 1 16 6.25v5.5a2.75 2.75 0 0 1-2.75 2.75H2.75A2.75 2.75 0 0 1 0 11.75v-7.5ZM2.75 3c-.69 0-1.25.56-1.25 1.25v7.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-5.5c0-.69-.56-1.25-1.25-1.25H8.03a2.07 2.07 0 0 1-2.008-1.568A.57.57 0 0 0 5.47 3H2.75Z"/></svg>`
+};
+export const aiFontAwesome: {
+  name: 'font_awesome';
+  data: string;
+} = {
+  name: 'font_awesome',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M15 1.5V12c-1.969.719-2.563 1-3.719 1-1.969 0-2.719-1-4.687-1-.625 0-1.125.125-1.594.25v-2c.469-.125.969-.25 1.594-.25 1.968 0 2.718 1 4.687 1 .625 0 1.094-.094 1.719-.281v-6.5c-.625.187-1.094.281-1.719.281-1.969 0-2.719-1-4.687-1C5 3.5 4.25 4.156 3 4.406V14c0 .563-.438 1-1 1-.563 0-1-.438-1-1V2c0-.563.438-1 1-1 .563 0 1 .438 1 1v.406c1.25-.25 2-.906 3.594-.906 1.968 0 2.718 1 4.687 1 1.156 0 1.75-.281 3.719-1Z"/></svg>`
 };
 export const aiForward: {
   name: 'forward';
@@ -2062,19 +2083,20 @@ export type Amaranth =
   | 'code'
   | 'codeblock'
   | 'coin'
+  | 'compact_disc'
   | 'compass_drafting'
   | 'compass'
   | 'compress'
   | 'copy'
   | 'credit_card'
   | 'devices'
-  | 'disc'
   | 'display_cam'
   | 'display'
   | 'door'
   | 'earth'
   | 'eclipse'
   | 'edge'
+  | 'ellipsis_v'
   | 'ellipsis'
   | 'envelope'
   | 'ethernet'
@@ -2099,7 +2121,9 @@ export type Amaranth =
   | 'flag_checkered'
   | 'flag'
   | 'floppy_disk'
+  | 'folder_image'
   | 'folder'
+  | 'font_awesome'
   | 'forward'
   | 'gauge'
   | 'gear'
@@ -2352,19 +2376,20 @@ export const amaranthSet = [
   aiCode,
   aiCodeblock,
   aiCoin,
+  aiCompactDisc,
   aiCompassDrafting,
   aiCompass,
   aiCompress,
   aiCopy,
   aiCreditCard,
   aiDevices,
-  aiDisc,
   aiDisplayCam,
   aiDisplay,
   aiDoor,
   aiEarth,
   aiEclipse,
   aiEdge,
+  aiEllipsisV,
   aiEllipsis,
   aiEnvelope,
   aiEthernet,
@@ -2389,7 +2414,9 @@ export const amaranthSet = [
   aiFlagCheckered,
   aiFlag,
   aiFloppyDisk,
+  aiFolderImage,
   aiFolder,
+  aiFontAwesome,
   aiForward,
   aiGauge,
   aiGear,

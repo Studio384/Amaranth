@@ -1,5 +1,5 @@
 ---
-title: Disc
+title: Compact disc
 categories:
   - devices
   - spinners

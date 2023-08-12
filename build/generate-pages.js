@@ -26,8 +26,8 @@ async function main(file) {
 title: ${iconTitle}
 categories:
 tags:
-created: ${version}
-updated: ${version}
+created: ${version.substring(0, version.indexOf('-'))}
+updated: ${version.substring(0, version.indexOf('-'))}
 ---
 `
 

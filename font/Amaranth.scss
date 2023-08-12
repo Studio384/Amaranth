@@ -2,8 +2,8 @@ $Amaranth-font: "Amaranth";
 
 @font-face {
   font-family: $Amaranth-font;
-  src: url("./fonts/Amaranth.woff?bdb43b5518dbe610c5c98295f9f7efbd") format("woff"),
-url("./fonts/Amaranth.woff2?bdb43b5518dbe610c5c98295f9f7efbd") format("woff2");
+  src: url("./fonts/Amaranth.woff?bb5a22970c40931c6b5642bc0af4876a") format("woff"),
+url("./fonts/Amaranth.woff2?bb5a22970c40931c6b5642bc0af4876a") format("woff2");
 }
 
 .ai {
@@ -362,6 +362,10 @@ $Amaranth-map: (
   "credit-card": "\f221",
   "microchip": "\f222",
   "terminal": "\f223",
+  "compact-disc": "\f224",
+  "ellipsis-v": "\f225",
+  "folder-image": "\f226",
+  "font-awesome": "\f227",
 );
 
 .ai.ai-a-gum:before {
@@ -1236,4 +1240,16 @@ $Amaranth-map: (
 }
 .ai.ai-terminal:before {
   content: map-get($Amaranth-map, "terminal");
+}
+.ai.ai-compact-disc:before {
+  content: map-get($Amaranth-map, "compact-disc");
+}
+.ai.ai-ellipsis-v:before {
+  content: map-get($Amaranth-map, "ellipsis-v");
+}
+.ai.ai-folder-image:before {
+  content: map-get($Amaranth-map, "folder-image");
+}
+.ai.ai-font-awesome:before {
+  content: map-get($Amaranth-map, "font-awesome");
 }
