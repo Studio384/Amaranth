@@ -2,8 +2,8 @@ $Amaranth-font: "Amaranth";
 
 @font-face {
   font-family: $Amaranth-font;
-  src: url("./fonts/Amaranth.woff?bb5a22970c40931c6b5642bc0af4876a") format("woff"),
-url("./fonts/Amaranth.woff2?bb5a22970c40931c6b5642bc0af4876a") format("woff2");
+  src: url("./fonts/Amaranth.woff?272b63512cca7085d3b1adec637a0d79") format("woff"),
+url("./fonts/Amaranth.woff2?272b63512cca7085d3b1adec637a0d79") format("woff2");
 }
 
 .ai {
@@ -366,6 +366,12 @@ $Amaranth-map: (
   "ellipsis-v": "\f225",
   "folder-image": "\f226",
   "font-awesome": "\f227",
+  "gamepad": "\f228",
+  "horizontal-line": "\f229",
+  "hourglass-empty": "\f22a",
+  "hourglass-end": "\f22b",
+  "hourglass-half": "\f22c",
+  "hourglass-start": "\f22d",
 );
 
 .ai.ai-a-gum:before {
@@ -1252,4 +1258,22 @@ $Amaranth-map: (
 }
 .ai.ai-font-awesome:before {
   content: map-get($Amaranth-map, "font-awesome");
+}
+.ai.ai-gamepad:before {
+  content: map-get($Amaranth-map, "gamepad");
+}
+.ai.ai-horizontal-line:before {
+  content: map-get($Amaranth-map, "horizontal-line");
+}
+.ai.ai-hourglass-empty:before {
+  content: map-get($Amaranth-map, "hourglass-empty");
+}
+.ai.ai-hourglass-end:before {
+  content: map-get($Amaranth-map, "hourglass-end");
+}
+.ai.ai-hourglass-half:before {
+  content: map-get($Amaranth-map, "hourglass-half");
+}
+.ai.ai-hourglass-start:before {
+  content: map-get($Amaranth-map, "hourglass-start");
 }

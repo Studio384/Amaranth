@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Amaranth";
-  src: url("./fonts/Amaranth.woff?bb5a22970c40931c6b5642bc0af4876a") format("woff"), url("./fonts/Amaranth.woff2?bb5a22970c40931c6b5642bc0af4876a") format("woff2");
+  src: url("./fonts/Amaranth.woff?272b63512cca7085d3b1adec637a0d79") format("woff"), url("./fonts/Amaranth.woff2?272b63512cca7085d3b1adec637a0d79") format("woff2");
 }
 .ai {
   -moz-osx-font-smoothing: grayscale;
@@ -1243,6 +1243,30 @@
 
 .ai.ai-font-awesome:before {
   content: "\f227";
+}
+
+.ai.ai-gamepad:before {
+  content: "\f228";
+}
+
+.ai.ai-horizontal-line:before {
+  content: "\f229";
+}
+
+.ai.ai-hourglass-empty:before {
+  content: "\f22a";
+}
+
+.ai.ai-hourglass-end:before {
+  content: "\f22b";
+}
+
+.ai.ai-hourglass-half:before {
+  content: "\f22c";
+}
+
+.ai.ai-hourglass-start:before {
+  content: "\f22d";
 }
 
 /*# sourceMappingURL=Amaranth.css.map */

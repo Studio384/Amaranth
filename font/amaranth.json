@@ -293,5 +293,11 @@
     "compact-disc": 61988,
     "ellipsis-v": 61989,
     "folder-image": 61990,
-    "font-awesome": 61991
+    "font-awesome": 61991,
+    "gamepad": 61992,
+    "horizontal-line": 61993,
+    "hourglass-empty": 61994,
+    "hourglass-end": 61995,
+    "hourglass-half": 61996,
+    "hourglass-start": 61997
 }

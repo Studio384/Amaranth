@@ -909,6 +909,13 @@ export const aiForward: {
   name: 'forward',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M8.23 1.174A.75.75 0 0 0 7 1.75v12.5a.75.75 0 0 0 1.23.576l7.5-6.25a.75.75 0 0 0 0-1.152l-7.5-6.25ZM14.078 8 8.5 12.649V3.35L14.079 8ZM1.23 1.174 6 5.149V7.1L1.5 3.35v9.298L6 8.899v1.952l-4.77 3.975A.75.75 0 0 1 0 14.25V1.75a.75.75 0 0 1 1.23-.576Z"/></svg>`
 };
+export const aiGamepad: {
+  name: 'gamepad';
+  data: string;
+} = {
+  name: 'gamepad',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M3.75 6h.75v-.75a.75.75 0 0 1 1.5 0V6h.75a.75.75 0 0 1 0 1.5H6v.75a.75.75 0 0 1-1.5 0V7.5h-.75a.75.75 0 0 1 0-1.5ZM11 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm1 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M.79 5.103a5.087 5.087 0 0 1 3.294-3.464A12.443 12.443 0 0 1 8 1c1.325 0 2.659.22 3.916.639a5.087 5.087 0 0 1 3.294 3.464l.222.813c.377 1.383.568 2.81.568 4.244v1.525a3.314 3.314 0 0 1-6.36 1.306L9.213 12a.825.825 0 0 0-.758-.5h-.912a.825.825 0 0 0-.758.5l-.425.991A3.315 3.315 0 0 1 0 11.685V10.16C0 8.727.191 7.3.568 5.916l.222-.813Zm12.973.395a3.588 3.588 0 0 0-2.322-2.436A10.943 10.943 0 0 0 8 2.5c-1.161 0-2.335.193-3.441.562a3.587 3.587 0 0 0-2.322 2.436l-.221.812a14.632 14.632 0 0 0-.516 3.85v1.525a1.814 1.814 0 0 0 3.482.715l.425-.99A2.325 2.325 0 0 1 7.544 10h.912c.93 0 1.77.554 2.137 1.41l.425.99a1.814 1.814 0 0 0 3.482-.715V10.16c0-1.3-.173-2.595-.516-3.85l-.221-.812Z"/></svg>`
+};
 export const aiGauge: {
   name: 'gauge';
   data: string;
@@ -1027,6 +1034,41 @@ export const aiHeart: {
 } = {
   name: 'heart',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M6.445 2.964A2.847 2.847 0 0 0 1.5 4.887v.591c0 .974.378 1.91 1.055 2.61L8 13.722l5.445-5.632A3.756 3.756 0 0 0 14.5 5.48v-.592a2.847 2.847 0 0 0-4.945-1.923L8 4.66 6.445 2.964ZM2.581.915a4.347 4.347 0 0 1 4.97 1.035L8 2.44l.449-.49A4.347 4.347 0 0 1 16 4.887v.591c0 1.363-.53 2.673-1.477 3.653l-5.984 6.19a.75.75 0 0 1-1.078 0l-5.984-6.19A5.256 5.256 0 0 1 0 5.478v-.59A4.347 4.347 0 0 1 2.581.914Z"/></svg>`
+};
+export const aiHorizontalLine: {
+  name: 'horizontal_line';
+  data: string;
+} = {
+  name: 'horizontal_line',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M0 8a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 8Z"/></svg>`
+};
+export const aiHourglassEmpty: {
+  name: 'hourglass_empty';
+  data: string;
+} = {
+  name: 'hourglass_empty',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M2 .75A.75.75 0 0 1 2.75 0h10.5a.75.75 0 0 1 0 1.5H13v1.538a5.75 5.75 0 0 1-2.244 4.558L10.23 8l.526.404A5.75 5.75 0 0 1 13 12.962V14.5h.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H3v-1.538c0-1.785.83-3.47 2.244-4.558L5.77 8l-.526-.404A5.75 5.75 0 0 1 3 3.038V1.5h-.25A.75.75 0 0 1 2 .75Zm2.5.75v1.538a4.25 4.25 0 0 0 1.659 3.369l1.04.8a1 1 0 0 1 0 1.586l-1.04.8A4.25 4.25 0 0 0 4.5 12.962V14.5h7v-1.538a4.25 4.25 0 0 0-1.659-3.369l-1.04-.8a1 1 0 0 1 0-1.586l1.04-.8A4.25 4.25 0 0 0 11.5 3.038V1.5h-7Z"/></svg>`
+};
+export const aiHourglassEnd: {
+  name: 'hourglass_end';
+  data: string;
+} = {
+  name: 'hourglass_end',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M2.75 0a.75.75 0 0 0 0 1.5H3v1.538c0 1.785.83 3.47 2.244 4.558L5.77 8l-.526.404A5.75 5.75 0 0 0 3 12.962V14.5h-.25a.75.75 0 0 0 0 1.5h10.5a.75.75 0 0 0 0-1.5H13v-1.538a5.75 5.75 0 0 0-2.244-4.558L10.23 8l.526-.404A5.75 5.75 0 0 0 13 3.038V1.5h.25a.75.75 0 0 0 0-1.5H2.75ZM4.5 3.038V1.5h7v1.538a4.25 4.25 0 0 1-1.659 3.369l-1.04.8A.996.996 0 0 0 8.41 8h-.82a.994.994 0 0 0-.39-.793l-1.041-.8A4.25 4.25 0 0 1 4.5 3.038Z"/></svg>`
+};
+export const aiHourglassHalf: {
+  name: 'hourglass_half';
+  data: string;
+} = {
+  name: 'hourglass_half',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M2.75 0a.75.75 0 0 0 0 1.5H3v1.538c0 1.785.83 3.47 2.244 4.558L5.77 8l-.526.404A5.75 5.75 0 0 0 3 12.962V14.5h-.25a.75.75 0 0 0 0 1.5h10.5a.75.75 0 0 0 0-1.5H13v-1.538a5.75 5.75 0 0 0-2.244-4.558L10.23 8l.526-.404A5.75 5.75 0 0 0 13 3.038V1.5h.25a.75.75 0 0 0 0-1.5H2.75ZM4.5 3.038V1.5h7v1.538c0 .445-.07.88-.202 1.295-.32.29-1.15.667-3.298.667s-2.977-.377-3.298-.667A4.248 4.248 0 0 1 4.5 3.038Zm2.75 5.713v3.274c-1.481.102-2.303.503-2.75.861a4.25 4.25 0 0 1 1.66-3.293l1.04-.8c.018-.014.035-.027.051-.042Zm1.5 3.274V8.75l.05.042 1.041.8a4.25 4.25 0 0 1 1.658 3.293c-.446-.358-1.268-.759-2.749-.861Z"/></svg>`
+};
+export const aiHourglassStart: {
+  name: 'hourglass_start';
+  data: string;
+} = {
+  name: 'hourglass_start',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M2.75 0a.75.75 0 0 0 0 1.5H3v1.538c0 1.785.83 3.47 2.244 4.558L5.77 8l-.526.404A5.75 5.75 0 0 0 3 12.962V14.5h-.25a.75.75 0 0 0 0 1.5h10.5a.75.75 0 0 0 0-1.5H13v-1.538a5.75 5.75 0 0 0-2.244-4.558L10.23 8l.526-.404A5.75 5.75 0 0 0 13 3.038V1.5h.25a.75.75 0 0 0 0-1.5H2.75Zm4.84 8h.82c0 .296.13.592.39.793l1.041.8a4.25 4.25 0 0 1 1.659 3.369V14.5h-7v-1.538a4.25 4.25 0 0 1 1.659-3.369l1.04-.8c.26-.2.391-.497.391-.793Z"/></svg>`
 };
 export const aiHouse: {
   name: 'house';
@@ -2125,6 +2167,7 @@ export type Amaranth =
   | 'folder'
   | 'font_awesome'
   | 'forward'
+  | 'gamepad'
   | 'gauge'
   | 'gear'
   | 'gift'
@@ -2142,6 +2185,11 @@ export type Amaranth =
   | 'heart_crack'
   | 'heart_half'
   | 'heart'
+  | 'horizontal_line'
+  | 'hourglass_empty'
+  | 'hourglass_end'
+  | 'hourglass_half'
+  | 'hourglass_start'
   | 'house'
   | 'id_card'
   | 'image'
@@ -2418,6 +2466,7 @@ export const amaranthSet = [
   aiFolder,
   aiFontAwesome,
   aiForward,
+  aiGamepad,
   aiGauge,
   aiGear,
   aiGift,
@@ -2435,6 +2484,11 @@ export const amaranthSet = [
   aiHeartCrack,
   aiHeartHalf,
   aiHeart,
+  aiHorizontalLine,
+  aiHourglassEmpty,
+  aiHourglassEnd,
+  aiHourglassHalf,
+  aiHourglassStart,
   aiHouse,
   aiIdCard,
   aiImage,
