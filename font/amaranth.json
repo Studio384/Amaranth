@@ -309,5 +309,7 @@
     "plate-utensils": 62004,
     "printer": 62005,
     "notes": 62006,
-    "kite": 62007
+    "kite": 62007,
+    "thumbstack-slash": 62008,
+    "thumbstack": 62009
 }
