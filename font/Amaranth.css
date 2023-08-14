@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Amaranth";
-  src: url("./fonts/Amaranth.woff?272b63512cca7085d3b1adec637a0d79") format("woff"), url("./fonts/Amaranth.woff2?272b63512cca7085d3b1adec637a0d79") format("woff2");
+  src: url("./fonts/Amaranth.woff?75537cd97fd0a8fb75933ef150559ddc") format("woff"), url("./fonts/Amaranth.woff2?75537cd97fd0a8fb75933ef150559ddc") format("woff2");
 }
 .ai {
   -moz-osx-font-smoothing: grayscale;
@@ -1267,6 +1267,46 @@
 
 .ai.ai-hourglass-start:before {
   content: "\f22d";
+}
+
+.ai.ai-instagram:before {
+  content: "\f22e";
+}
+
+.ai.ai-jester-hat:before {
+  content: "\f22f";
+}
+
+.ai.ai-laravel:before {
+  content: "\f230";
+}
+
+.ai.ai-min:before {
+  content: "\f231";
+}
+
+.ai.ai-paper:before {
+  content: "\f232";
+}
+
+.ai.ai-plane:before {
+  content: "\f233";
+}
+
+.ai.ai-plate-utensils:before {
+  content: "\f234";
+}
+
+.ai.ai-printer:before {
+  content: "\f235";
+}
+
+.ai.ai-notes:before {
+  content: "\f236";
+}
+
+.ai.ai-kite:before {
+  content: "\f237";
 }
 
 /*# sourceMappingURL=Amaranth.css.map */

@@ -2,8 +2,8 @@ $Amaranth-font: "Amaranth";
 
 @font-face {
   font-family: $Amaranth-font;
-  src: url("./fonts/Amaranth.woff?272b63512cca7085d3b1adec637a0d79") format("woff"),
-url("./fonts/Amaranth.woff2?272b63512cca7085d3b1adec637a0d79") format("woff2");
+  src: url("./fonts/Amaranth.woff?75537cd97fd0a8fb75933ef150559ddc") format("woff"),
+url("./fonts/Amaranth.woff2?75537cd97fd0a8fb75933ef150559ddc") format("woff2");
 }
 
 .ai {
@@ -372,6 +372,16 @@ $Amaranth-map: (
   "hourglass-end": "\f22b",
   "hourglass-half": "\f22c",
   "hourglass-start": "\f22d",
+  "instagram": "\f22e",
+  "jester-hat": "\f22f",
+  "laravel": "\f230",
+  "min": "\f231",
+  "paper": "\f232",
+  "plane": "\f233",
+  "plate-utensils": "\f234",
+  "printer": "\f235",
+  "notes": "\f236",
+  "kite": "\f237",
 );
 
 .ai.ai-a-gum:before {
@@ -1276,4 +1286,34 @@ $Amaranth-map: (
 }
 .ai.ai-hourglass-start:before {
   content: map-get($Amaranth-map, "hourglass-start");
+}
+.ai.ai-instagram:before {
+  content: map-get($Amaranth-map, "instagram");
+}
+.ai.ai-jester-hat:before {
+  content: map-get($Amaranth-map, "jester-hat");
+}
+.ai.ai-laravel:before {
+  content: map-get($Amaranth-map, "laravel");
+}
+.ai.ai-min:before {
+  content: map-get($Amaranth-map, "min");
+}
+.ai.ai-paper:before {
+  content: map-get($Amaranth-map, "paper");
+}
+.ai.ai-plane:before {
+  content: map-get($Amaranth-map, "plane");
+}
+.ai.ai-plate-utensils:before {
+  content: map-get($Amaranth-map, "plate-utensils");
+}
+.ai.ai-printer:before {
+  content: map-get($Amaranth-map, "printer");
+}
+.ai.ai-notes:before {
+  content: map-get($Amaranth-map, "notes");
+}
+.ai.ai-kite:before {
+  content: map-get($Amaranth-map, "kite");
 }

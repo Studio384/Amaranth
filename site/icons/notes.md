@@ -1,9 +1,10 @@
 ---
-title: Facebook Messenger
+title: Notes
 categories:
-  - brands
+  - writing
 tags:
-  - meta
+  - sticky
+  - post-it
 created: 1.0.0
 updated: 1.0.0
 ---

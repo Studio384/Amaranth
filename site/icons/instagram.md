@@ -1,5 +1,5 @@
 ---
-title: Facebook Messenger
+title: Instagram
 categories:
   - brands
 tags:
