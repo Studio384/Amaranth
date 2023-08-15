@@ -2,8 +2,8 @@ $Amaranth-font: "Amaranth";
 
 @font-face {
   font-family: $Amaranth-font;
-  src: url("./fonts/Amaranth.woff?b7dfbc6c0fea047cbf2019680c758158") format("woff"),
-url("./fonts/Amaranth.woff2?b7dfbc6c0fea047cbf2019680c758158") format("woff2");
+  src: url("./fonts/Amaranth.woff?b0eee2d63702d16cea446abf49d597b8") format("woff"),
+url("./fonts/Amaranth.woff2?b0eee2d63702d16cea446abf49d597b8") format("woff2");
 }
 
 .ai {
@@ -391,6 +391,10 @@ $Amaranth-map: (
   "stopwatch": "\f23e",
   "tiktok": "\f23f",
   "tent": "\f240",
+  "receipt": "\f241",
+  "rocket": "\f242",
+  "scouting": "\f243",
+  "ticket": "\f244",
 );
 
 .ai.ai-a-gum:before {
@@ -1352,4 +1356,16 @@ $Amaranth-map: (
 }
 .ai.ai-tent:before {
   content: map-get($Amaranth-map, "tent");
+}
+.ai.ai-receipt:before {
+  content: map-get($Amaranth-map, "receipt");
+}
+.ai.ai-rocket:before {
+  content: map-get($Amaranth-map, "rocket");
+}
+.ai.ai-scouting:before {
+  content: map-get($Amaranth-map, "scouting");
+}
+.ai.ai-ticket:before {
+  content: map-get($Amaranth-map, "ticket");
 }

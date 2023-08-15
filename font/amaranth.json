@@ -318,5 +318,9 @@
     "starscout": 62013,
     "stopwatch": 62014,
     "tiktok": 62015,
-    "tent": 62016
+    "tent": 62016,
+    "receipt": 62017,
+    "rocket": 62018,
+    "scouting": 62019,
+    "ticket": 62020
 }
