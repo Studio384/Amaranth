@@ -2,8 +2,8 @@ $Amaranth-font: "Amaranth";
 
 @font-face {
   font-family: $Amaranth-font;
-  src: url("./fonts/Amaranth.woff?f1c5afb838f12b90046a1712b8bd00c7") format("woff"),
-url("./fonts/Amaranth.woff2?f1c5afb838f12b90046a1712b8bd00c7") format("woff2");
+  src: url("./fonts/Amaranth.woff?35a080fe81020cc33d5e3a50c780dfab") format("woff"),
+url("./fonts/Amaranth.woff2?35a080fe81020cc33d5e3a50c780dfab") format("woff2");
 }
 
 .ai {
@@ -384,6 +384,10 @@ $Amaranth-map: (
   "kite": "\f237",
   "thumbstack-slash": "\f238",
   "thumbstack": "\f239",
+  "shoe-prints": "\f23a",
+  "signature": "\f23b",
+  "star-half": "\f23c",
+  "starscout": "\f23d",
 );
 
 .ai.ai-a-gum:before {
@@ -1324,4 +1328,16 @@ $Amaranth-map: (
 }
 .ai.ai-thumbstack:before {
   content: map-get($Amaranth-map, "thumbstack");
+}
+.ai.ai-shoe-prints:before {
+  content: map-get($Amaranth-map, "shoe-prints");
+}
+.ai.ai-signature:before {
+  content: map-get($Amaranth-map, "signature");
+}
+.ai.ai-star-half:before {
+  content: map-get($Amaranth-map, "star-half");
+}
+.ai.ai-starscout:before {
+  content: map-get($Amaranth-map, "starscout");
 }
