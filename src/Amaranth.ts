@@ -1861,6 +1861,13 @@ export const aiStop: {
   name: 'stop',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M1 3.75A2.75 2.75 0 0 1 3.75 1h8.5A2.75 2.75 0 0 1 15 3.75v8.5A2.75 2.75 0 0 1 12.25 15h-8.5A2.75 2.75 0 0 1 1 12.25v-8.5ZM3.75 2.5c-.69 0-1.25.56-1.25 1.25v8.5c0 .69.56 1.25 1.25 1.25h8.5c.69 0 1.25-.56 1.25-1.25v-8.5c0-.69-.56-1.25-1.25-1.25h-8.5Z"/></svg>`
 };
+export const aiStopwatch: {
+  name: 'stopwatch';
+  data: string;
+} = {
+  name: 'stopwatch',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M8.75 7.25a.75.75 0 0 0-1.5 0V9.5c0 .199.079.39.22.53l1 1a.75.75 0 1 0 1.06-1.06l-.78-.78V7.25Z"/><path d="M5.25 0a.75.75 0 0 0 0 1.5h2v1.543a6.501 6.501 0 1 0 5.846 2.422L14.53 4.03a.75.75 0 0 0-1.06-1.06l-1.435 1.434A6.468 6.468 0 0 0 8.75 3.043V1.5h2a.75.75 0 0 0 0-1.5h-5.5ZM8 4.5a5 5 0 1 1 0 10 5 5 0 0 1 0-10Z"/></svg>`
+};
 export const aiStore: {
   name: 'store';
   data: string;
@@ -1938,6 +1945,13 @@ export const aiTag: {
   name: 'tag',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M5 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M3.75 1A2.75 2.75 0 0 0 1 3.75v2.672c0 .729.29 1.428.805 1.944l5.5 5.5a2.75 2.75 0 0 0 3.89 0l2.695-2.695a2.75 2.75 0 0 0 .033-3.856L8.629 1.839A2.75 2.75 0 0 0 6.652 1H3.75ZM2.5 3.75c0-.69.56-1.25 1.25-1.25h2.902c.339 0 .663.138.898.381l5.294 5.476a1.25 1.25 0 0 1-.015 1.753l-2.695 2.696a1.25 1.25 0 0 1-1.768 0l-5.5-5.5a1.25 1.25 0 0 1-.366-.884V3.75Z"/></svg>`
 };
+export const aiTent: {
+  name: 'tent';
+  data: string;
+} = {
+  name: 'tent',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M5.339.123a.75.75 0 0 1 1.038.216L8 2.816 9.623.339a.75.75 0 0 1 1.254.822l-1.98 3.023 6.473 9.881A1.25 1.25 0 0 1 14.325 16H1.675A1.25 1.25 0 0 1 .63 14.065l6.473-9.88-1.98-3.024A.75.75 0 0 1 5.339.123ZM8 5.553 2.138 14.5h2.207l2.191-3.345a1.75 1.75 0 0 1 2.928 0l2.191 3.345h2.207L8 5.553ZM9.862 14.5l-1.653-2.523a.25.25 0 0 0-.418 0L6.138 14.5h3.724Z"/></svg>`
+};
 export const aiTerminal: {
   name: 'terminal';
   data: string;
@@ -1958,6 +1972,13 @@ export const aiThumbstack: {
 } = {
   name: 'thumbstack',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M12.493.683A2 2 0 0 0 9.55.808L6.877 3.981a1.25 1.25 0 0 1-.71.42l-2.482.497c-1.37.274-1.882 1.965-.894 2.954L4.939 10 .22 14.72a.75.75 0 1 0 1.061 1.06L6 11.06l2.148 2.15c.989.987 2.68.475 2.954-.895l.496-2.481a1.25 1.25 0 0 1 .42-.711l3.173-2.672a2 2 0 0 0 .126-2.944L12.493.683Zm-1.796 1.092a.5.5 0 0 1 .736-.032l2.824 2.824a.5.5 0 0 1-.032.736l-3.172 2.672a2.75 2.75 0 0 0-.926 1.564l-.496 2.482a.25.25 0 0 1-.422.127L3.852 6.791a.25.25 0 0 1 .127-.422l2.482-.496a2.75 2.75 0 0 0 1.564-.925l2.671-3.173Z"/></svg>`
+};
+export const aiTiktok: {
+  name: 'tiktok';
+  data: string;
+} = {
+  name: 'tiktok',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M14.996 6.56a6.564 6.564 0 0 1-3.837-1.227v5.585a5.08 5.08 0 1 1-4.382-5.033v2.809a2.332 2.332 0 1 0 1.632 2.224V0h2.75c-.002.232.018.464.058.693A3.82 3.82 0 0 0 12.902 3.2c.621.41 1.35.63 2.094.63v2.73Z"/></svg>`
 };
 export const aiToggleOff: {
   name: 'toggle_off';
@@ -2415,6 +2436,7 @@ export type Amaranth =
   | 'star'
   | 'starscout'
   | 'stop'
+  | 'stopwatch'
   | 'store'
   | 'strikethrough'
   | 'sun'
@@ -2426,9 +2448,11 @@ export type Amaranth =
   | 'tag_gear'
   | 'tag_plus'
   | 'tag'
+  | 'tent'
   | 'terminal'
   | 'thumbstack_slash'
   | 'thumbstack'
+  | 'tiktok'
   | 'toggle_off'
   | 'toggle_on'
   | 'tower_broadcast'
@@ -2730,6 +2754,7 @@ export const amaranthSet = [
   aiStar,
   aiStarscout,
   aiStop,
+  aiStopwatch,
   aiStore,
   aiStrikethrough,
   aiSun,
@@ -2741,9 +2766,11 @@ export const amaranthSet = [
   aiTagGear,
   aiTagPlus,
   aiTag,
+  aiTent,
   aiTerminal,
   aiThumbstackSlash,
   aiThumbstack,
+  aiTiktok,
   aiToggleOff,
   aiToggleOn,
   aiTowerBroadcast,

@@ -2,8 +2,8 @@ $Amaranth-font: "Amaranth";
 
 @font-face {
   font-family: $Amaranth-font;
-  src: url("./fonts/Amaranth.woff?35a080fe81020cc33d5e3a50c780dfab") format("woff"),
-url("./fonts/Amaranth.woff2?35a080fe81020cc33d5e3a50c780dfab") format("woff2");
+  src: url("./fonts/Amaranth.woff?b7dfbc6c0fea047cbf2019680c758158") format("woff"),
+url("./fonts/Amaranth.woff2?b7dfbc6c0fea047cbf2019680c758158") format("woff2");
 }
 
 .ai {
@@ -388,6 +388,9 @@ $Amaranth-map: (
   "signature": "\f23b",
   "star-half": "\f23c",
   "starscout": "\f23d",
+  "stopwatch": "\f23e",
+  "tiktok": "\f23f",
+  "tent": "\f240",
 );
 
 .ai.ai-a-gum:before {
@@ -1340,4 +1343,13 @@ $Amaranth-map: (
 }
 .ai.ai-starscout:before {
   content: map-get($Amaranth-map, "starscout");
+}
+.ai.ai-stopwatch:before {
+  content: map-get($Amaranth-map, "stopwatch");
+}
+.ai.ai-tiktok:before {
+  content: map-get($Amaranth-map, "tiktok");
+}
+.ai.ai-tent:before {
+  content: map-get($Amaranth-map, "tent");
 }
