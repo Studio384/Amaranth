@@ -322,5 +322,10 @@
     "receipt": 62017,
     "rocket": 62018,
     "scouting": 62019,
-    "ticket": 62020
+    "ticket": 62020,
+    "tree": 62021,
+    "trekking-backpack": 62022,
+    "trophy": 62023,
+    "universal-access": 62024,
+    "wallet": 62025
 }

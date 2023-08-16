@@ -2043,12 +2043,33 @@ export const aiTrashCan: {
   name: 'trash_can',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M5 1.75C5 .784 5.784 0 6.75 0h2.5C10.216 0 11 .784 11 1.75v.75h3.25a.75.75 0 0 1 0 1.5h-.31l-.79 9.478A2.75 2.75 0 0 1 10.41 16H5.59a2.75 2.75 0 0 1-2.74-2.522L2.06 4h-.31a.75.75 0 0 1 0-1.5H5v-.75Zm1.5.75h3v-.75a.25.25 0 0 0-.25-.25h-2.5a.25.25 0 0 0-.25.25v.75ZM3.565 4l.78 9.354A1.25 1.25 0 0 0 5.59 14.5h4.82a1.25 1.25 0 0 0 1.245-1.146L12.435 4h-8.87ZM6.25 5.5a.75.75 0 0 1 .75.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 .75-.75Zm3.5 0a.75.75 0 0 1 .75.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 .75-.75Z"/></svg>`
 };
+export const aiTree: {
+  name: 'tree';
+  data: string;
+} = {
+  name: 'tree',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M7.25 12H3a3 3 0 0 1-1.615-5.529 3 3 0 0 1 2.988-4.448C5.009.828 6.394 0 8 0c1.846 0 3.4 1.094 3.861 2.582a2.5 2.5 0 0 1 2.69 3.849A3.008 3.008 0 0 1 16 9a3 3 0 0 1-3 3H8.75v3.25a.75.75 0 0 1-1.5 0V12ZM2.194 7.735A1.5 1.5 0 0 0 3 10.5h4.25V9.31L5.47 7.53a.75.75 0 0 1 1.06-1.06l.72.72V6a.75.75 0 0 1 1.5 0v2.19l.72-.72a.75.75 0 1 1 1.06 1.06l-1.78 1.78v.19H13a1.5 1.5 0 0 0 .774-2.785l-1.372-.83.919-1.314a1 1 0 0 0-1.078-1.539l-1.39.367-.425-1.373C10.19 2.256 9.288 1.5 8 1.5c-1.108 0-1.953.57-2.304 1.228l-.484.91-1.024-.126a1.5 1.5 0 0 0-1.497 2.223l.697 1.235-1.194.765Z"/></svg>`
+};
+export const aiTrekkingBackpack: {
+  name: 'trekking_backpack';
+  data: string;
+} = {
+  name: 'trekking_backpack',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M3.25 1.5a.25.25 0 0 0-.25.25v2c0 .138.112.25.25.25H5.5V1.5H3.25ZM7 1.5V4h2V1.5H7Zm3.5 0V4h2.25a.25.25 0 0 0 .25-.25v-2a.25.25 0 0 0-.25-.25H10.5ZM9 5.5H7v1.25a.75.75 0 0 1-1.5 0V5.5H4v8a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-8h-1.5v1.25a.75.75 0 0 1-1.5 0V5.5Zm-6.5-.168a1.75 1.75 0 0 1-1-1.582v-2C1.5.784 2.284 0 3.25 0h9.5c.966 0 1.75.784 1.75 1.75v2c0 .698-.409 1.3-1 1.582V8.75h.75c.966 0 1.75.784 1.75 1.75v2a1.75 1.75 0 0 1-1.75 1.75h-.864A2.501 2.501 0 0 1 11 16H5a2.501 2.501 0 0 1-2.386-1.75H1.75A1.75 1.75 0 0 1 0 12.5v-1.75C0 9.784.784 9 1.75 9h.75V5.332Zm0 5.168h-.75a.25.25 0 0 0-.25.25v1.75c0 .138.112.25.25.25h.75V10.5Zm11 2.25h.75a.25.25 0 0 0 .25-.25v-2a.25.25 0 0 0-.25-.25h-.75v2.5ZM7 10h2v1.25a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25V10Zm-1.5-.25v1.5c0 .966.784 1.75 1.75 1.75h1.5a1.75 1.75 0 0 0 1.75-1.75v-1.5c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25Z"/></svg>`
+};
 export const aiTriangleExclamation: {
   name: 'triangle_exclamation';
   data: string;
 } = {
   name: 'triangle_exclamation',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M8 5.5a.75.75 0 0 1 .75.75V9a.75.75 0 0 1-1.5 0V6.25A.75.75 0 0 1 8 5.5Zm0 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M8 1a.75.75 0 0 1 .649.374l7.25 12.5A.75.75 0 0 1 15.25 15H.75a.75.75 0 0 1-.649-1.126l7.25-12.5A.75.75 0 0 1 8 1Zm5.948 12.5L8 3.245 2.052 13.5h11.896Z"/></svg>`
+};
+export const aiTrophy: {
+  name: 'trophy';
+  data: string;
+} = {
+  name: 'trophy',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M4.75 0c-.963 0-1.747.776-1.77 1.731-.011.44-.02.954-.01 1.519H1.75c-.946 0-1.792.779-1.713 1.806.11 1.435.507 2.915 1.703 4.27 1.109 1.255 2.849 2.34 5.51 3.222V14.5H5A.75.75 0 0 0 5 16h6a.75.75 0 1 0 0-1.5H8.75v-1.952c2.661-.883 4.4-1.967 5.51-3.223 1.196-1.354 1.593-2.834 1.703-4.269.079-1.027-.767-1.806-1.713-1.806h-1.221a33.83 33.83 0 0 0-.008-1.519A1.777 1.777 0 0 0 11.25 0h-6.5Zm-3 4.75h1.297c.082 1.054.25 2.256.752 3.48a8.66 8.66 0 0 0 .808 1.514c-.755-.457-1.319-.932-1.743-1.412-.916-1.037-1.238-2.17-1.332-3.39a.153.153 0 0 1 .048-.124.238.238 0 0 1 .17-.068Zm11.386 3.582c-.424.48-.988.955-1.743 1.412.335-.5.599-1.007.807-1.514.504-1.224.67-2.426.753-3.48h1.297c.072 0 .131.029.17.068.037.037.05.079.047.124-.093 1.22-.415 2.353-1.331 3.39Zm-2.323-.673C10.346 8.797 9.523 9.975 8 11.086c-1.523-1.111-2.346-2.29-2.813-3.427-.516-1.255-.62-2.508-.688-3.701a26.422 26.422 0 0 1-.02-2.19.277.277 0 0 1 .271-.268h6.5c.142 0 .267.12.271.268.015.628.026 1.371-.02 2.19-.067 1.193-.172 2.446-.688 3.701Z"/></svg>`
 };
 export const aiTwitter: {
   name: 'twitter';
@@ -2070,6 +2091,13 @@ export const aiUndo: {
 } = {
   name: 'undo',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M5.641 2.298a4.75 4.75 0 0 1 6.718 0l.343.343a4.75 4.75 0 0 1 0 6.718L7.28 14.78a.75.75 0 0 1-1.06-1.06l5.421-5.422a3.25 3.25 0 0 0 0-4.596l-.343-.343a3.25 3.25 0 0 0-4.596 0L4.56 5.5h2.69a.75.75 0 1 1 0 1.5h-4.5A.75.75 0 0 1 2 6.25v-4.5a.75.75 0 1 1 1.5 0v2.69l2.141-2.142Z"/></svg>`
+};
+export const aiUniversalAccess: {
+  name: 'universal_access';
+  data: string;
+} = {
+  name: 'universal_access',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M8 4a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/><path d="M2.116 3.596a.75.75 0 1 0-.733 1.308A13.53 13.53 0 0 0 6 6.482v3.608a2.43 2.43 0 0 0-.128.305L4.29 15.007a.75.75 0 1 0 1.42.486l1.58-4.611c.232-.676 1.188-.676 1.42 0l1.58 4.611a.75.75 0 0 0 1.42-.486l-1.582-4.612A2.428 2.428 0 0 0 10 10.09V6.482a13.53 13.53 0 0 0 4.616-1.578.75.75 0 1 0-.733-1.308 12.041 12.041 0 0 1-11.767 0Z"/></svg>`
 };
 export const aiValkyrieSword: {
   name: 'valkyrie_sword';
@@ -2140,6 +2168,13 @@ export const aiVolumeSlash: {
 } = {
   name: 'volume_slash',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.28.22A.75.75 0 1 0 .22 1.28l4.044 4.045A1.742 1.742 0 0 0 4 6.25v4c0 .966.784 1.75 1.75 1.75h.927a.25.25 0 0 1 .146.047l4.238 3.061a.75.75 0 0 0 1.189-.608v-1.19l2.47 2.47a.75.75 0 1 0 1.06-1.06L1.28.22Zm9.47 11.59L5.5 6.56v3.69c0 .138.112.25.25.25h.927c.368 0 .726.116 1.024.331l3.049 2.202v-1.222Zm0-8.343v4.222l1.5 1.5V2a.75.75 0 0 0-1.19-.608L7.225 4.163l1.074 1.075 2.452-1.771Z"/><path d="M1.28.22A.75.75 0 1 0 .22 1.28l4.044 4.045A1.742 1.742 0 0 0 4 6.25v4c0 .966.784 1.75 1.75 1.75h.927a.25.25 0 0 1 .146.047l4.238 3.061a.75.75 0 0 0 1.189-.608v-1.19l2.47 2.47a.75.75 0 1 0 1.06-1.06L1.28.22Zm9.47 11.59v1.223l-3.049-2.202a1.75 1.75 0 0 0-1.024-.331H5.75a.25.25 0 0 1-.25-.25V6.56l5.25 5.25Zm0-8.343v4.222l1.5 1.5V2a.75.75 0 0 0-1.19-.608L7.225 4.163l1.074 1.075 2.452-1.771Z"/></svg>`
+};
+export const aiWallet: {
+  name: 'wallet';
+  data: string;
+} = {
+  name: 'wallet',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M2.75 2A2.75 2.75 0 0 0 0 4.75v6.5A2.75 2.75 0 0 0 2.75 14h10.5A2.75 2.75 0 0 0 16 11.25v-4a2.75 2.75 0 0 0-2.75-2.75h-9.5a.75.75 0 0 0 0 1.5h9.5c.69 0 1.25.56 1.25 1.25v4c0 .69-.56 1.25-1.25 1.25H2.75c-.69 0-1.25-.56-1.25-1.25v-6.5c0-.69.56-1.25 1.25-1.25h9.5a.75.75 0 0 0 0-1.5h-9.5Z"/><path d="M12 9.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg>`
 };
 export const aiWallpaper: {
   name: 'wallpaper';
@@ -2490,10 +2525,14 @@ export type Amaranth =
   | 'tower_broadcast'
   | 'translate'
   | 'trash_can'
+  | 'tree'
+  | 'trekking_backpack'
   | 'triangle_exclamation'
+  | 'trophy'
   | 'twitter'
   | 'underline'
   | 'undo'
+  | 'universal_access'
   | 'valkyrie_sword'
   | 'video'
   | 'virtual_reality'
@@ -2504,6 +2543,7 @@ export type Amaranth =
   | 'volume_2'
   | 'volume_3'
   | 'volume_slash'
+  | 'wallet'
   | 'wallpaper'
   | 'waveform'
   | 'webhooks_clock'
@@ -2812,10 +2852,14 @@ export const amaranthSet = [
   aiTowerBroadcast,
   aiTranslate,
   aiTrashCan,
+  aiTree,
+  aiTrekkingBackpack,
   aiTriangleExclamation,
+  aiTrophy,
   aiTwitter,
   aiUnderline,
   aiUndo,
+  aiUniversalAccess,
   aiValkyrieSword,
   aiVideo,
   aiVirtualReality,
@@ -2826,6 +2870,7 @@ export const amaranthSet = [
   aiVolume2,
   aiVolume3,
   aiVolumeSlash,
+  aiWallet,
   aiWallpaper,
   aiWaveform,
   aiWebhooksClock,

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Amaranth";
-  src: url("./fonts/Amaranth.woff?b0eee2d63702d16cea446abf49d597b8") format("woff"), url("./fonts/Amaranth.woff2?b0eee2d63702d16cea446abf49d597b8") format("woff2");
+  src: url("./fonts/Amaranth.woff?1e1dfcb4395463b23340a5a096801206") format("woff"), url("./fonts/Amaranth.woff2?1e1dfcb4395463b23340a5a096801206") format("woff2");
 }
 .ai {
   -moz-osx-font-smoothing: grayscale;
@@ -1359,6 +1359,26 @@
 
 .ai.ai-ticket:before {
   content: "\f244";
+}
+
+.ai.ai-tree:before {
+  content: "\f245";
+}
+
+.ai.ai-trekking-backpack:before {
+  content: "\f246";
+}
+
+.ai.ai-trophy:before {
+  content: "\f247";
+}
+
+.ai.ai-universal-access:before {
+  content: "\f248";
+}
+
+.ai.ai-wallet:before {
+  content: "\f249";
 }
 
 /*# sourceMappingURL=Amaranth.css.map */
