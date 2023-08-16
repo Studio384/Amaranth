@@ -51,6 +51,7 @@ export default function Home({ icons }) {
   const { mode, setMode } = useColorScheme();
 
   const [page, setPage] = useState(0);
+  const iconsPerPage = 90;
 
   const { result, needle, setNeedle } = useSearch(icons, [
     "name",
@@ -115,7 +116,7 @@ export default function Home({ icons }) {
               {result.length} icons
             </Typography>
             <Typography color="neutral">
-              Page {page + 1} of {Math.ceil(result.length / 180)}
+              Page {page + 1} of {Math.ceil(result.length / iconsPerPage)}
             </Typography>
           </Stack>
 
@@ -138,7 +139,7 @@ export default function Home({ icons }) {
           }}
         >
           {result
-            .slice(page * 180, (page + 1) * 180)
+            .slice(page * iconsPerPage, (page + 1) * iconsPerPage)
             .map(({ slug, aiIcon }) => (
               <Sheet
                 key="slug"
@@ -211,7 +212,7 @@ export default function Home({ icons }) {
             variant="solid"
             color="primary"
             onClick={() => setPage(prev => prev + 1)}
-            disabled={page === Math.ceil(result.length / 180) - 1}
+            disabled={page === Math.ceil(result.length / iconsPerPage) - 1}
           >
             <AmaranthIcon icon={Icons.aiChevronRight} />
           </IconButton>
