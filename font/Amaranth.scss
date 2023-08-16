@@ -2,8 +2,8 @@ $Amaranth-font: "Amaranth";
 
 @font-face {
   font-family: $Amaranth-font;
-  src: url("./fonts/Amaranth.woff?1e1dfcb4395463b23340a5a096801206") format("woff"),
-url("./fonts/Amaranth.woff2?1e1dfcb4395463b23340a5a096801206") format("woff2");
+  src: url("./fonts/Amaranth.woff?7f6dc7581764b47f7e250a4f3da5cd29") format("woff"),
+url("./fonts/Amaranth.woff2?7f6dc7581764b47f7e250a4f3da5cd29") format("woff2");
 }
 
 .ai {
@@ -400,6 +400,7 @@ $Amaranth-map: (
   "trophy": "\f247",
   "universal-access": "\f248",
   "wallet": "\f249",
+  "shopping-cart": "\f24a",
 );
 
 .ai.ai-a-gum:before {
@@ -1388,4 +1389,7 @@ $Amaranth-map: (
 }
 .ai.ai-wallet:before {
   content: map-get($Amaranth-map, "wallet");
+}
+.ai.ai-shopping-cart:before {
+  content: map-get($Amaranth-map, "shopping-cart");
 }
