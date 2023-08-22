@@ -1,7 +1,7 @@
 ---
-title: Table clock
+title: Table header cell
 categories:
-  - communication
+  - editor
   - business
 tags:
   - spreadsheet

@@ -2,8 +2,8 @@ $Amaranth-font: "Amaranth";
 
 @font-face {
   font-family: $Amaranth-font;
-  src: url("./fonts/Amaranth.woff?7f6dc7581764b47f7e250a4f3da5cd29") format("woff"),
-url("./fonts/Amaranth.woff2?7f6dc7581764b47f7e250a4f3da5cd29") format("woff2");
+  src: url("./fonts/Amaranth.woff?162d58a2bc140d2711520aeecc33880e") format("woff"),
+url("./fonts/Amaranth.woff2?162d58a2bc140d2711520aeecc33880e") format("woff2");
 }
 
 .ai {
@@ -401,6 +401,15 @@ $Amaranth-map: (
   "universal-access": "\f248",
   "wallet": "\f249",
   "shopping-cart": "\f24a",
+  "table-column-insert-left": "\f24b",
+  "table-column-insert-right": "\f24c",
+  "table-column-min": "\f24d",
+  "table-header-cell": "\f24e",
+  "table-min": "\f24f",
+  "table-row-insert-bottom": "\f250",
+  "table-row-insert-top": "\f251",
+  "table-row-min": "\f252",
+  "table-cell-merge": "\f253",
 );
 
 .ai.ai-a-gum:before {
@@ -1392,4 +1401,31 @@ $Amaranth-map: (
 }
 .ai.ai-shopping-cart:before {
   content: map-get($Amaranth-map, "shopping-cart");
+}
+.ai.ai-table-column-insert-left:before {
+  content: map-get($Amaranth-map, "table-column-insert-left");
+}
+.ai.ai-table-column-insert-right:before {
+  content: map-get($Amaranth-map, "table-column-insert-right");
+}
+.ai.ai-table-column-min:before {
+  content: map-get($Amaranth-map, "table-column-min");
+}
+.ai.ai-table-header-cell:before {
+  content: map-get($Amaranth-map, "table-header-cell");
+}
+.ai.ai-table-min:before {
+  content: map-get($Amaranth-map, "table-min");
+}
+.ai.ai-table-row-insert-bottom:before {
+  content: map-get($Amaranth-map, "table-row-insert-bottom");
+}
+.ai.ai-table-row-insert-top:before {
+  content: map-get($Amaranth-map, "table-row-insert-top");
+}
+.ai.ai-table-row-min:before {
+  content: map-get($Amaranth-map, "table-row-min");
+}
+.ai.ai-table-cell-merge:before {
+  content: map-get($Amaranth-map, "table-cell-merge");
 }

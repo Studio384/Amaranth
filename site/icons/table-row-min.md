@@ -1,7 +1,7 @@
 ---
-title: Table clock
+title: Table row min
 categories:
-  - communication
+  - editor
   - business
 tags:
   - spreadsheet

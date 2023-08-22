@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Amaranth";
-  src: url("./fonts/Amaranth.woff?7f6dc7581764b47f7e250a4f3da5cd29") format("woff"), url("./fonts/Amaranth.woff2?7f6dc7581764b47f7e250a4f3da5cd29") format("woff2");
+  src: url("./fonts/Amaranth.woff?162d58a2bc140d2711520aeecc33880e") format("woff"), url("./fonts/Amaranth.woff2?162d58a2bc140d2711520aeecc33880e") format("woff2");
 }
 .ai {
   -moz-osx-font-smoothing: grayscale;
@@ -1383,6 +1383,42 @@
 
 .ai.ai-shopping-cart:before {
   content: "\f24a";
+}
+
+.ai.ai-table-column-insert-left:before {
+  content: "\f24b";
+}
+
+.ai.ai-table-column-insert-right:before {
+  content: "\f24c";
+}
+
+.ai.ai-table-column-min:before {
+  content: "\f24d";
+}
+
+.ai.ai-table-header-cell:before {
+  content: "\f24e";
+}
+
+.ai.ai-table-min:before {
+  content: "\f24f";
+}
+
+.ai.ai-table-row-insert-bottom:before {
+  content: "\f250";
+}
+
+.ai.ai-table-row-insert-top:before {
+  content: "\f251";
+}
+
+.ai.ai-table-row-min:before {
+  content: "\f252";
+}
+
+.ai.ai-table-cell-merge:before {
+  content: "\f253";
 }
 
 /*# sourceMappingURL=Amaranth.css.map */

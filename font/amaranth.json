@@ -328,5 +328,14 @@
     "trophy": 62023,
     "universal-access": 62024,
     "wallet": 62025,
-    "shopping-cart": 62026
+    "shopping-cart": 62026,
+    "table-column-insert-left": 62027,
+    "table-column-insert-right": 62028,
+    "table-column-min": 62029,
+    "table-header-cell": 62030,
+    "table-min": 62031,
+    "table-row-insert-bottom": 62032,
+    "table-row-insert-top": 62033,
+    "table-row-min": 62034,
+    "table-cell-merge": 62035
 }

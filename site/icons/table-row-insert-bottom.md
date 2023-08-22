@@ -1,7 +1,7 @@
 ---
-title: Table clock
+title: Table row insert bottom
 categories:
-  - communication
+  - editor
   - business
 tags:
   - spreadsheet

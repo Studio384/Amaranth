@@ -1,7 +1,7 @@
 ---
-title: Table clock
+title: Table column insert left
 categories:
-  - communication
+  - editor
   - business
 tags:
   - spreadsheet

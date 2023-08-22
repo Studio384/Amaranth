@@ -1,5 +1,5 @@
 ---
-title: Table clock
+title: Table cell merge
 categories:
   - communication
   - business
