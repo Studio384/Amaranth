@@ -1,6 +1,6 @@
 {
   "name": "@studio384/amaranth",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "The iconography.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -47,22 +47,22 @@
     "react": ">=16.x"
   },
   "dependencies": {
-    "html-react-parser": "4.2.0"
+    "html-react-parser": "4.2.1"
   },
   "devDependencies": {
     "@twbs/fantasticon": "2.7.1",
-    "@types/react": "18.2.19",
-    "autoprefixer": "10.4.14",
-    "bundle-scss": "1.5.1",
+    "@types/react": "18.2.21",
+    "autoprefixer": "10.4.15",
+    "bundle-scss": "1.5.2",
     "copyfiles": "2.4.1",
     "nodemon": "3.0.1",
     "npm-run-all": "4.1.5",
     "picocolors": "1.0.0",
-    "postcss": "8.4.27",
+    "postcss": "8.4.28",
     "postcss-cli": "10.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "1.64.2",
+    "sass": "1.66.1",
     "svg-to-ts": "10.0.0",
     "svgo": "3.0.2",
     "typescript": "5.1.6"
