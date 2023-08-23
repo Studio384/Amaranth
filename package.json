@@ -9,16 +9,12 @@
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "fonts": "fantasticon",
     "icons": "npm run icons:clean && npm run icons:ts",
     "icons:clean": "svgo -f ./icons -o ./icons",
     "icons:ts": "svg-to-ts-constants",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pages": "node build/generate-pages.js --verbose",
-    "prod": "npm run icons && npm run fonts && npm run build && npm run scss",
-    "scss": "npm run scss:compile && npm run scss:prefix",
-    "scss:compile": "sass font/Amaranth.scss font/Amaranth.css --no-source-map",
-    "scss:prefix": "postcss -u autoprefixer -r ./font/*.css --map"
+    "prod": "npm run icons && npm run pages && npm run build"
   },
   "repository": {
     "type": "git",
@@ -26,7 +22,6 @@
   },
   "files": [
     "/icons",
-    "/font",
     "/dist"
   ],
   "keywords": [
@@ -50,19 +45,12 @@
     "html-react-parser": "4.2.1"
   },
   "devDependencies": {
-    "@twbs/fantasticon": "2.7.1",
     "@types/react": "18.2.21",
-    "autoprefixer": "10.4.15",
-    "bundle-scss": "1.5.2",
-    "copyfiles": "2.4.1",
     "nodemon": "3.0.1",
     "npm-run-all": "4.1.5",
     "picocolors": "1.0.0",
-    "postcss": "8.4.28",
-    "postcss-cli": "10.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "1.66.1",
     "svg-to-ts": "10.0.0",
     "svgo": "3.0.2",
     "typescript": "5.1.6"
