@@ -34,7 +34,7 @@ export default function Layout() {
               fontSize="xl"
               fontWeight="xl"
               sx={{
-                backgroundImage: "linear-gradient(135deg, #78b500, #00b573)",
+                backgroundImage: 'linear-gradient(135deg, #78b500, #00b573)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent'
               }}

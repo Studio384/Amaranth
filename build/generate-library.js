@@ -43,7 +43,7 @@ async function main(file) {
     icon: ${iconTitle}
   }`
 
-  return [`${iconTitle}`, jsonTemplate];
+  return [`${iconTitle}`, jsonTemplate, iconJson.categories];
 }
 
 (async () => {
@@ -57,16 +57,23 @@ async function main(file) {
 
     const names = [];
     const configs = [];
+    let categories = new Set();
 
     // Read content from each icon
     await Promise.all(files.map(async file => {
-      const [name, config] = await Promise.resolve(main(file));
+      const [name, config, cats] = await Promise.resolve(main(file));
 
       names.push(name);
       configs.push(config);
+
+      cats.map((cat) => {
+        categories.add(cat)
+      })
     }))
 
-    const template = `
+    categories = Array.from(categories).sort()
+
+    const library = `
 import { ${names.map((icon) => `${icon}`)} } from '@studio384/amaranth';
 
 const icons = [${configs.map((page) => `${page}`)}
@@ -74,7 +81,22 @@ const icons = [${configs.map((page) => `${page}`)}
 
 export default icons;`
 
-    await fs.writeFile(path.join(pagesDir, `icons.ts`), template)
+    await fs.writeFile(path.join(pagesDir, `icons.ts`), library)
+
+    const categoriesTemplate = `
+import { aiCircleDashed } from '@studio384/amaranth';
+
+const categories = [${categories.map((cat) => `
+  {
+    slug: "${cat}",
+    title: "${cat}",
+    icon: aiCircleDashed
+  }`)}
+];
+
+export default categories;`
+
+    // await fs.writeFile(path.join(pagesDir, `categories.ts`), categoriesTemplate)
 
     const filesLength = files.length
 

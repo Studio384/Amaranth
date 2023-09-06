@@ -1,8 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 
 import Error from './app/Error';
+import Home from './app/Home';
 import Icon from './app/Icon';
-import Icons from './app/Icons';
 import Usage from './app/Usage';
 import Layout from './design/layout/Layout';
 
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Icons />
+        element: <Home />
       },
       {
         path: '/usage',
