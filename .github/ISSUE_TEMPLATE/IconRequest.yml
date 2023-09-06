@@ -1,6 +1,6 @@
 name: Icon Request
 description: Request a new icon to be added to the set.
-title: "[Icon] Add vi-"
+title: "[Icon] Add ai-"
 labels: [icon, external]
 assignees:
   - studio384

@@ -9,7 +9,7 @@ const picocolors = require('picocolors')
 const version = require('../package.json').version
 
 const iconsDir = path.join(__dirname, '../icons/')
-const pagesDir = path.join(__dirname, '../site/icons/')
+const pagesDir = path.join(__dirname, '../docs/public/data/icons/')
 
 const VERBOSE = process.argv.includes('--verbose')
 
@@ -20,16 +20,15 @@ function capitalizeFirstLetter(string) {
 async function main(file) {
   const iconBasename = path.basename(file, path.extname(file))
   const iconTitle = capitalizeFirstLetter(iconBasename)
-  const pageName = path.join(pagesDir, `${iconBasename}.md`)
+  const pageName = path.join(pagesDir, `${iconBasename}.json`)
 
-  const pageTemplate = `---
-title: ${iconTitle}
-categories:
-tags:
-created: ${version.substring(0, version.indexOf('-'))}
-updated: ${version.substring(0, version.indexOf('-'))}
----
-`
+  const pageTemplate = `{
+  "title": ${iconTitle},
+  "categories": [],
+  "tags": [],
+  "created": ${version},
+  "updated": ${version}
+}`
 
   try {
     await fs.access(pageName, fs.F_OK)

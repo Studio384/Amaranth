@@ -3,7 +3,7 @@ import { Box, SxProps } from "@mui/system";
 import { keyframes } from "@emotion/react";
 import HTMLReactParser from "html-react-parser";
 
-interface ValkyrieProps {
+interface AmaranthProps {
   icon: IAmaranthIcon;
   rotate?: 0 | 90 | 180 | 270 | false;
   flip?: true | "x" | "y" | false;
@@ -11,14 +11,14 @@ interface ValkyrieProps {
   sx?: SxProps;
 }
 
-export default function ValkyrieIcon({
+export default function AmaranthIcon({
   flip = false,
   icon,
   rotate = 0,
   spin = false,
   sx,
   ...props
-}: ValkyrieProps) {
+}: AmaranthProps) {
   const spinAnimation = keyframes`
     from {
       transform: rotate(0deg);
