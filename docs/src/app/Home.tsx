@@ -59,7 +59,6 @@ export default function Home() {
             Categories
           </Typography>
           <List
-            size="sm"
             sx={{
               p: 0,
               gap: 0.25,
