@@ -55,8 +55,8 @@ export default function Home() {
           gap: { xs: 1 }
         }}
       >
-        <Box>
-          <Typography level="title-md" sx={{ mb: 1 }}>
+        <Box sx={{ position: 'sticky', top: 56, height: 'calc(100vh - 40px - 16px)', overflow: 'auto', py: 1.5 }}>
+          <Typography level="title-md" sx={{ mb: 1.5 }}>
             Categories
           </Typography>
           <List
@@ -65,6 +65,7 @@ export default function Home() {
               gap: 0.25,
               '--ListItem-paddingY': 0,
               '--ListItem-radius': '4px',
+              '--ListItem-minHeight': '2.25rem',
               '--ListItemDecorator-size': '1.5rem'
             }}
           >
@@ -73,6 +74,7 @@ export default function Home() {
                 <ListItemButton
                   onClick={() => (category?.slug === _category.slug ? setCategory(null) : setCategory(_category))}
                   selected={category?.slug === _category.slug}
+                  color="primary"
                 >
                   <ListItemDecorator>
                     <AmaranthIcon icon={_category.icon} />
@@ -116,7 +118,7 @@ export default function Home() {
                     underline="none"
                     color="neutral"
                     sx={{
-                      maxWidth: 'calc(100% - 32px)'
+                      maxWidth: 'calc(100% - 16px)'
                     }}
                   >
                     <Typography

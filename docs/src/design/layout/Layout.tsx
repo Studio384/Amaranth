@@ -24,7 +24,7 @@ export default function Layout() {
 
   return (
     <>
-      <Sheet variant="outlined" sx={{ borderWidth: 0, borderBottomWidth: 1 }}>
+      <Sheet variant="outlined" sx={{ borderWidth: 0, borderBottomWidth: 1, position: 'sticky', top: 0, zIndex: 1600 }}>
         <Container maxWidth="xl">
           <Stack direction="row" justifyContent="space-between" sx={{ py: 1.5 }}>
             <Link
