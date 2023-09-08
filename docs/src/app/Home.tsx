@@ -75,22 +75,22 @@ export default function Home() {
               <ListItem key={_category.slug}>
                 <ListItemButton
                   onClick={() => {
-                  if (category?.slug === _category.slug) {
-                    setCategory(null);
+                    if (category?.slug === _category.slug) {
+                      setCategory(null);
                     } else {
-                    setCategory(_category);
+                      setCategory(_category);
                     }
 
                     setPage(0);
                   }}
                   selected={category?.slug === _category.slug}
-                  color="primary"
+                  color="success"
                 >
                   <ListItemDecorator>
                     <AmaranthIcon icon={_category.icon} />
                   </ListItemDecorator>
                   <ListItemContent>
-                    <Typography>{_category.title}</Typography>
+                    <Typography noWrap>{_category.title}</Typography>
                   </ListItemContent>
                 </ListItemButton>
               </ListItem>
@@ -113,9 +113,9 @@ export default function Home() {
                   gap: 0,
                   borderRadius: 'sm',
                   '&:hover, &:focus-within': {
-                    backgroundColor: 'rgba(var(--joy-palette-primary-mainChannel) / .0625)',
+                    backgroundColor: 'rgba(var(--joy-palette-success-mainChannel) / .0625)',
                     '& > div > a > .MuiTypography-root': {
-                      backgroundColor: 'rgba(var(--joy-palette-primary-mainChannel) / .125)'
+                      backgroundColor: 'rgba(var(--joy-palette-success-mainChannel) / .125)'
                     }
                   }
                 }}
@@ -152,10 +152,22 @@ export default function Home() {
       </Box>
 
       <Stack direction="row" justifyContent="center" alignItems="center" gap={1}>
-        <IconButton variant="solid" color="primary" onClick={() => setPage((prev) => prev - 1)} disabled={page === 0}>
+        <IconButton
+          size="sm"
+          variant={page === 0 ? 'plain' : 'solid'}
+          color={page === 0 ? 'neutral' : 'success'}
+          onClick={() => setPage((prev) => prev - 1)}
+          disabled={page === 0}
+        >
           <AmaranthIcon icon={aiChevronLeft} />
         </IconButton>
-        <IconButton variant="solid" color="primary" onClick={() => setPage((prev) => prev + 1)} disabled={page === Math.ceil(result.length / 99) - 1}>
+        <IconButton
+          size="sm"
+          variant={page === Math.ceil(result.length / 99) - 1 ? 'plain' : 'solid'}
+          color={page === Math.ceil(result.length / 99) - 1 ? 'neutral' : 'success'}
+          onClick={() => setPage((prev) => prev + 1)}
+          disabled={page === Math.ceil(result.length / 99) - 1}
+        >
           <AmaranthIcon icon={aiChevronRight} />
         </IconButton>
       </Stack>

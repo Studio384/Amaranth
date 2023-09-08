@@ -40,7 +40,7 @@ export default function Icon() {
       {(icon?.categories || icon?.tags) && (
         <Box sx={{ display: 'flex', gap: 0.5, alignItems: 'center' }}>
           {icon?.categories?.map((cat) => (
-            <Chip variant="solid" color="primary" size="sm" key={cat}>
+            <Chip variant="solid" color="success" size="sm" key={cat}>
               {cat}
             </Chip>
           ))}
@@ -78,12 +78,12 @@ export default function Icon() {
             <AmaranthIcon icon={Icons[reactImport]} /> Inline icon
           </Typography>
           <Box sx={{ mb: 3, display: 'flex', gap: 1 }}>
-            <Button startDecorator={<AmaranthIcon icon={Icons[reactImport]} />}>Button icon</Button>
-            <IconButton color="primary" variant="soft">
+            <Button color="success" startDecorator={<AmaranthIcon icon={Icons[reactImport]} />}>Button icon</Button>
+            <IconButton color="success" variant="outlined">
               <AmaranthIcon icon={Icons[reactImport]} />
             </IconButton>
           </Box>
-          <Input startDecorator={<AmaranthIcon icon={Icons[reactImport]} />} placeholder={icon?.title} />
+          <Input color="success" startDecorator={<AmaranthIcon icon={Icons[reactImport]} />} placeholder={icon?.title} />
         </Card>
       </Stack>
       <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
