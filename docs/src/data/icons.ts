@@ -347,7 +347,7 @@ const icons = [
   },
   {
     component: 'aiAlarmClock',
-    categories: ['time', 'travel'],
+    categories: ['time'],
     tags: ['alerts'],
     slug: 'alarm-clock',
     icon: aiAlarmClock
@@ -606,7 +606,7 @@ const icons = [
   },
   {
     component: 'aiBicycle',
-    categories: ['sport', 'transportation', 'maps', 'nature', 'play'],
+    categories: ['transportation', 'maps', 'nature', 'play'],
     tags: ['riding', 'biking'],
     slug: 'bicycle',
     icon: aiBicycle
@@ -627,14 +627,14 @@ const icons = [
   },
   {
     component: 'aiBookOpen',
-    categories: ['education'],
+    categories: ['education', 'writing'],
     tags: ['read', 'magazine'],
     slug: 'book-open',
     icon: aiBookOpen
   },
   {
     component: 'aiBook',
-    categories: ['business', 'writing'],
+    categories: ['business', 'writing', 'education'],
     tags: ['read', 'magazine'],
     slug: 'book',
     icon: aiBook
@@ -739,7 +739,7 @@ const icons = [
   },
   {
     component: 'aiCar',
-    categories: ['transportation', 'maps', 'automotive'],
+    categories: ['transportation', 'maps'],
     tags: ['auto', 'drive', 'driving'],
     slug: 'car',
     icon: aiCar
@@ -942,8 +942,8 @@ const icons = [
   },
   {
     component: 'aiCoin',
-    categories: ['money'],
-    tags: [],
+    categories: ['money', 'shopping'],
+    tags: ['penny', 'euro'],
     slug: 'coin',
     icon: aiCoin
   },
@@ -956,7 +956,7 @@ const icons = [
   },
   {
     component: 'aiCompassDrafting',
-    categories: ['construction', 'design'],
+    categories: ['design'],
     tags: [],
     slug: 'compass-drafting',
     icon: aiCompassDrafting
@@ -1012,14 +1012,14 @@ const icons = [
   },
   {
     component: 'aiDoor',
-    categories: ['travel', 'security'],
+    categories: ['buildings', 'security'],
     tags: [],
     slug: 'door',
     icon: aiDoor
   },
   {
     component: 'aiEarth',
-    categories: ['travel', 'maps'],
+    categories: ['maps'],
     tags: ['europe'],
     slug: 'earth',
     icon: aiEarth
@@ -1153,7 +1153,7 @@ const icons = [
   {
     component: 'aiFilmstrip',
     categories: ['media'],
-    tags: ['video', 'film'],
+    tags: ['video'],
     slug: 'filmstrip',
     icon: aiFilmstrip
   },
@@ -1250,7 +1250,7 @@ const icons = [
   },
   {
     component: 'aiGauge',
-    categories: ['automotive'],
+    categories: ['transportation'],
     tags: ['speedometer', 'tachometer', 'dashboard'],
     slug: 'gauge',
     icon: aiGauge
@@ -1446,7 +1446,7 @@ const icons = [
   },
   {
     component: 'aiKey',
-    categories: ['security', 'travel'],
+    categories: ['security', 'maps'],
     tags: [],
     slug: 'key',
     icon: aiKey
@@ -1656,7 +1656,7 @@ const icons = [
   },
   {
     component: 'aiMicrophone',
-    categories: ['communication', 'audio', 'social', 'devices'],
+    categories: ['communication', 'media', 'social', 'devices'],
     tags: ['record'],
     slug: 'microphone',
     icon: aiMicrophone
@@ -1845,14 +1845,14 @@ const icons = [
   },
   {
     component: 'aiPhoneArrowDownLeft',
-    categories: ['business', 'communication', 'maps'],
+    categories: ['business', 'communication'],
     tags: ['telephone', 'call', 'incoming'],
     slug: 'phone-arrow-down-left',
     icon: aiPhoneArrowDownLeft
   },
   {
     component: 'aiPhoneArrowUpRightProhibited',
-    categories: ['business', 'communication', 'maps'],
+    categories: ['business', 'communication'],
     tags: ['telephone', 'call', 'outgoing'],
     slug: 'phone-arrow-up-right-prohibited',
     icon: aiPhoneArrowUpRightProhibited
@@ -1908,14 +1908,14 @@ const icons = [
   },
   {
     component: 'aiPlane',
-    categories: ['transportation', 'maps', 'travel'],
+    categories: ['transportation', 'maps'],
     tags: ['flight', 'flying', 'airport', 'aircraft'],
     slug: 'plane',
     icon: aiPlane
   },
   {
     component: 'aiPlateUtensils',
-    categories: ['travel', 'food-beverage'],
+    categories: ['maps', 'food-beverage'],
     tags: ['food', 'eat', 'restaurant'],
     slug: 'plate-utensils',
     icon: aiPlateUtensils
@@ -2398,7 +2398,7 @@ const icons = [
   },
   {
     component: 'aiTicket',
-    categories: ['film'],
+    categories: ['media', 'money'],
     tags: ['pass'],
     slug: 'ticket',
     icon: aiTicket
@@ -2454,7 +2454,7 @@ const icons = [
   },
   {
     component: 'aiTrekkingBackpack',
-    categories: ['nature', 'maps'],
+    categories: ['nature', 'maps', 'play'],
     tags: ['walking', 'exploration'],
     slug: 'trekking-backpack',
     icon: aiTrekkingBackpack
@@ -2573,7 +2573,7 @@ const icons = [
   },
   {
     component: 'aiWallet',
-    categories: ['business', 'money'],
+    categories: ['business', 'money', 'shopping'],
     tags: [],
     slug: 'wallet',
     icon: aiWallet

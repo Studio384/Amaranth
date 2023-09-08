@@ -80,16 +80,6 @@ const categories = [
     icon: aiMoon
   },
   {
-    slug: 'audio',
-    title: 'Audio',
-    icon: aiMicrophone
-  },
-  {
-    slug: 'automotive',
-    title: 'Automotive',
-    icon: aiCar
-  },
-  {
     slug: 'brands',
     title: 'Brands',
     icon: aiAmaranth
@@ -140,11 +130,6 @@ const categories = [
     icon: aiEthernet
   },
   {
-    slug: 'construction',
-    title: 'Construction',
-    icon: aiCompassDrafting
-  },
-  {
     slug: 'design',
     title: 'Design',
     icon: aiSwatchbook
@@ -170,7 +155,7 @@ const categories = [
     icon: aiLightbulb
   },
   {
-    slug: 'files',
+    slug: 'files & folders',
     title: 'Files',
     icon: aiFiles
   },
@@ -241,7 +226,7 @@ const categories = [
   },
   {
     slug: 'play',
-    title: 'Play',
+    title: 'Play & sport',
     icon: aiKite
   },
   {
@@ -280,11 +265,6 @@ const categories = [
     icon: aiSpinnerThird
   },
   {
-    slug: 'sport',
-    title: 'Sport',
-    icon: aiBicycle
-  },
-  {
     slug: 'time',
     title: 'Time',
     icon: aiClock
@@ -303,11 +283,6 @@ const categories = [
     slug: 'transportation',
     title: 'Transportation',
     icon: aiRocket
-  },
-  {
-    slug: 'travel',
-    title: 'Travel',
-    icon: aiPlane
   },
   {
     slug: 'weather',
