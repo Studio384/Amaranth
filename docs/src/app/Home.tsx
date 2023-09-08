@@ -5,15 +5,16 @@ import { Box, IconButton, Input, Link, List, ListItem, ListItemButton, ListItemC
 import categories from '@/data/categories';
 import icons from '@/data/icons';
 import useSearch from '@/hooks/useSearch';
+import { IIconCategory, ILibraryIcon } from '@/types';
 
 import AmaranthIcon, { aiChevronLeft, aiChevronRight, aiMagnifyingGlass, aiXmark } from '@studio384/amaranth';
 
 export default function Home() {
   const [page, setPage] = useState(0);
-  const [category, setCategory] = useState({});
+  const [category, setCategory] = useState<null | IIconCategory>(null);
 
   const searchableList = useMemo(() => {
-    if (category.slug) {
+    if (category?.slug) {
       return icons.filter((icon) => icon.categories.includes(category.slug));
     }
 
@@ -70,8 +71,8 @@ export default function Home() {
             {categories.map((_category) => (
               <ListItem key={_category.slug}>
                 <ListItemButton
-                  onClick={() => (category.slug === _category.slug ? setCategory({}) : setCategory(_category))}
-                  selected={category.slug === _category.slug}
+                  onClick={() => (category?.slug === _category.slug ? setCategory(null) : setCategory(_category))}
+                  selected={category?.slug === _category.slug}
                 >
                   <ListItemDecorator>
                     <AmaranthIcon icon={_category.icon} />
@@ -92,7 +93,7 @@ export default function Home() {
               gap: { xs: 1 }
             }}
           >
-            {result.slice(page * 99, (page + 1) * 99).map((icon) => (
+            {result.slice(page * 99, (page + 1) * 99).map((icon: ILibraryIcon) => (
               <Sheet
                 key={icon.slug}
                 variant="outlined"

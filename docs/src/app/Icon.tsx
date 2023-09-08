@@ -5,12 +5,13 @@ import { Box, Button, Card, Chip, IconButton, Input, Stack, Typography } from '@
 
 import * as Icons from '@studio384/amaranth';
 import AmaranthIcon, { aiArrowLeft } from '@studio384/amaranth';
+import { IIcon } from '@/types';
 
 export default function Icon() {
   const navigate = useNavigate();
   const { slug } = useParams();
 
-  const [icon, setIcon] = useState({});
+  const [icon, setIcon] = useState<IIcon | null>(null);
 
   useEffect(() => {
     fetch(`/data/icons/${slug}.json`)
@@ -18,12 +19,12 @@ export default function Icon() {
       .then((data) => setIcon(data));
   }, [slug]);
 
-  const reactImport = `ai${slug
+  const reactImport = slug ? `ai${slug
     .split('-')
     .map((word) => {
       return word[0].toUpperCase() + word.substring(1);
     })
-    .join('')}`;
+    .join('')}` : '';
 
   return (
     <Stack spacing={2}>
@@ -32,18 +33,18 @@ export default function Icon() {
           <IconButton variant="outlined" size="sm" onClick={() => navigate('/')}>
             <AmaranthIcon icon={aiArrowLeft} />
           </IconButton>
-          <Typography level="h2">{icon.title}</Typography>
+          <Typography level="h2">{icon?.title}</Typography>
         </Stack>
       </Stack>
 
-      {(icon.categories || icon.tags) && (
+      {(icon?.categories || icon?.tags) && (
         <Box sx={{ display: 'flex', gap: 0.5, alignItems: 'center' }}>
-          {icon.categories?.map((cat) => (
+          {icon?.categories?.map((cat) => (
             <Chip variant="solid" color="primary" size="sm" key={cat}>
               {cat}
             </Chip>
           ))}
-          {icon.tags?.map((tag) => (
+          {icon?.tags?.map((tag) => (
             <Chip key={tag} variant="outlined" size="sm">
               {tag}
             </Chip>
@@ -82,7 +83,7 @@ export default function Icon() {
               <AmaranthIcon icon={Icons[reactImport]} />
             </IconButton>
           </Box>
-          <Input startDecorator={<AmaranthIcon icon={Icons[reactImport]} />} placeholder={icon.title} />
+          <Input startDecorator={<AmaranthIcon icon={Icons[reactImport]} />} placeholder={icon?.title} />
         </Card>
       </Stack>
       <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
@@ -104,14 +105,14 @@ export default function Icon() {
         </Box>
       </Stack>
       <Stack direction="row" spacing={3} alignItems="center" justifyContent="center">
-        {icon.created && (
+        {icon?.created && (
           <Stack direction="row" spacing={1} alignItems="baseline">
-            <Typography color="neutral">Created</Typography> <Chip size="sm">{icon.created}</Chip>
+            <Typography color="neutral">Created</Typography> <Chip size="sm">{icon?.created}</Chip>
           </Stack>
         )}
-        {icon.updated && (
+        {icon?.updated && (
           <Stack direction="row" spacing={1} alignItems="baseline">
-            <Typography color="neutral">Last updated</Typography> <Chip size="sm">{icon.updated}</Chip>
+            <Typography color="neutral">Last updated</Typography> <Chip size="sm">{icon?.updated}</Chip>
           </Stack>
         )}
       </Stack>
