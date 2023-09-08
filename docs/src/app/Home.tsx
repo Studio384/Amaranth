@@ -66,13 +66,23 @@ export default function Home() {
               '--ListItem-paddingY': 0,
               '--ListItem-radius': '4px',
               '--ListItem-minHeight': '2.25rem',
+              '--ListItem-paddingLeft': '.5rem',
+              '--ListItem-paddingRight': '.5rem',
               '--ListItemDecorator-size': '1.5rem'
             }}
           >
             {categories.map((_category) => (
               <ListItem key={_category.slug}>
                 <ListItemButton
-                  onClick={() => (category?.slug === _category.slug ? setCategory(null) : setCategory(_category))}
+                  onClick={() => {
+                  if (category?.slug === _category.slug) {
+                    setCategory(null);
+                    } else {
+                    setCategory(_category);
+                    }
+
+                    setPage(0);
+                  }}
                   selected={category?.slug === _category.slug}
                   color="primary"
                 >
