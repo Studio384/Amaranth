@@ -28,8 +28,8 @@ async function main(file) {
   "title": "${iconTitle}",
   "categories": [],
   "tags": [],
-  "created": "${version.substr(0, str.indexOf("-"))}",
-  "updated": "${version.substr(0, str.indexOf("-"))}"
+  "created": "${version.substr(0, version.indexOf("-"))}",
+  "updated": "${version.substr(0, version.indexOf("-"))}"
 }`;
 
   try {
