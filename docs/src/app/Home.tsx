@@ -121,7 +121,9 @@ export default function Home() {
                 }}
               >
                 <Stack gap={3} justifyContent="center" alignItems="center" sx={{ pt: 3, pb: 1 }}>
-                  <AmaranthIcon icon={icon.icon} sx={{ fontSize: 32 }} />
+                  <Typography fontSize={32} lineHeight="1rem">
+                    <AmaranthIcon icon={icon.icon} />
+                  </Typography>
                   <Link
                     overlay
                     href={`/icons/${icon.slug}`}

@@ -16,7 +16,7 @@
     "@emotion/styled": "11.11.0",
     "@mui/joy": "5.0.0-beta.5",
     "@reduxjs/toolkit": "1.9.5",
-    "@studio384/amaranth": "1.0.0-alpha.3",
+    "@studio384/amaranth": "file:..",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-redux": "8.1.2",

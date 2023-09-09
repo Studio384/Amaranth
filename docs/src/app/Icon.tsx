@@ -71,11 +71,11 @@ export default function Icon() {
           <AmaranthIcon icon={Icons[reactImport]} />
         </Card>
         <Card variant="outlined" sx={{ flexGrow: 1 }}>
-          <Typography level="h3" sx={{ mb: 3 }}>
-            <AmaranthIcon icon={Icons[reactImport]} /> Heading icon
+          <Typography level="h3" sx={{ mb: 3 }} startDecorator={<AmaranthIcon icon={Icons[reactImport]} />}>
+            Heading icon
           </Typography>
-          <Typography level="body-md" sx={{ mb: 3 }}>
-            <AmaranthIcon icon={Icons[reactImport]} /> Inline icon
+          <Typography level="body-md" sx={{ mb: 3 }} startDecorator={<AmaranthIcon icon={Icons[reactImport]} />}>
+            Inline icon
           </Typography>
           <Box sx={{ mb: 3, display: 'flex', gap: 1 }}>
             <Button color="success" startDecorator={<AmaranthIcon icon={Icons[reactImport]} />}>Button icon</Button>
@@ -89,17 +89,10 @@ export default function Icon() {
       <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
         <Box sx={{ flexGrow: 1 }}>
           <Typography level="h3" sx={{ mb: 2 }}>
-            HTML
-          </Typography>
-          <Card variant="outlined" sx={{ py: 2 }}>
-            <code>{`<i class="ai ai-${slug}"></i>`}</code>
-          </Card>
-        </Box>
-        <Box sx={{ flexGrow: 1 }}>
-          <Typography level="h3" sx={{ mb: 2 }}>
             React
           </Typography>
           <Card variant="outlined" sx={{ py: 2 }}>
+            <code>{`import AmaranthIcon, { ${reactImport} } from "@studio384/amaranth";`}</code>
             <code>{`<AmaranthIcon icon={${reactImport}} />`}</code>
           </Card>
         </Box>
