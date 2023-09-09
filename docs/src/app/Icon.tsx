@@ -99,12 +99,12 @@ export default function Icon() {
       </Stack>
       <Stack direction="row" spacing={3} alignItems="center" justifyContent="center">
         {icon?.created && (
-          <Stack direction="row" spacing={1} alignItems="baseline">
+          <Stack direction="row" spacing={1}>
             <Typography color="neutral">Created</Typography> <Chip size="sm">{icon?.created}</Chip>
           </Stack>
         )}
         {icon?.updated && (
-          <Stack direction="row" spacing={1} alignItems="baseline">
+          <Stack direction="row" spacing={1}>
             <Typography color="neutral">Last updated</Typography> <Chip size="sm">{icon?.updated}</Chip>
           </Stack>
         )}
