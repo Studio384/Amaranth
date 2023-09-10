@@ -1,11 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
 import { Box, Button, Card, Chip, IconButton, Input, Stack, Typography } from '@mui/joy';
 
-import * as Icons from '@studio384/amaranth';
+import icons from '@/data/icons';
+import { IIcon, ILibraryIcon } from '@/types';
+
 import AmaranthIcon, { aiArrowLeft } from '@studio384/amaranth';
-import { IIcon } from '@/types';
 
 export default function Icon() {
   const navigate = useNavigate();
@@ -19,12 +20,16 @@ export default function Icon() {
       .then((data) => setIcon(data));
   }, [slug]);
 
-  const reactImport = slug ? `ai${slug
-    .split('-')
-    .map((word) => {
-      return word[0].toUpperCase() + word.substring(1);
-    })
-    .join('')}` : '';
+  const reactImport = slug
+    ? `ai${slug
+        .split('-')
+        .map((word) => {
+          return word[0].toUpperCase() + word.substring(1);
+        })
+        .join('')}`
+    : '';
+
+  const aiIcon: ILibraryIcon = useMemo(() => icons.find((icon) => icon.component === reactImport)!, [reactImport]);
 
   return (
     <Stack spacing={2}>
@@ -68,22 +73,24 @@ export default function Icon() {
             height: '20rem'
           }}
         >
-          <AmaranthIcon icon={Icons[reactImport]} />
+          <AmaranthIcon icon={aiIcon?.icon} />
         </Card>
         <Card variant="outlined" sx={{ flexGrow: 1 }}>
-          <Typography level="h3" sx={{ mb: 3 }} startDecorator={<AmaranthIcon icon={Icons[reactImport]} />}>
+          <Typography level="h3" sx={{ mb: 3 }} startDecorator={<AmaranthIcon icon={aiIcon?.icon} />}>
             Heading icon
           </Typography>
-          <Typography level="body-md" sx={{ mb: 3 }} startDecorator={<AmaranthIcon icon={Icons[reactImport]} />}>
+          <Typography level="body-md" sx={{ mb: 3 }} startDecorator={<AmaranthIcon icon={aiIcon?.icon} />}>
             Inline icon
           </Typography>
           <Box sx={{ mb: 3, display: 'flex', gap: 1 }}>
-            <Button color="success" startDecorator={<AmaranthIcon icon={Icons[reactImport]} />}>Button icon</Button>
+            <Button color="success" startDecorator={<AmaranthIcon icon={aiIcon?.icon} />}>
+              Button icon
+            </Button>
             <IconButton color="success" variant="outlined">
-              <AmaranthIcon icon={Icons[reactImport]} />
+              <AmaranthIcon icon={aiIcon?.icon} />
             </IconButton>
           </Box>
-          <Input color="success" startDecorator={<AmaranthIcon icon={Icons[reactImport]} />} placeholder={icon?.title} />
+          <Input color="success" startDecorator={<AmaranthIcon icon={aiIcon?.icon} />} placeholder={icon?.title} />
         </Card>
       </Stack>
       <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
