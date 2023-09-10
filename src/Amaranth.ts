@@ -755,6 +755,13 @@ export const aiDoor: {
   name: 'door',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M10 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M5.25 0A2.75 2.75 0 0 0 2.5 2.75V14.5H.75a.75.75 0 0 0 0 1.5h14.5a.75.75 0 0 0 0-1.5H13.5V2.75A2.75 2.75 0 0 0 10.75 0h-5.5ZM12 14.5H4V2.75c0-.69.56-1.25 1.25-1.25h5.5c.69 0 1.25.56 1.25 1.25V14.5Z"/></svg>`
 };
+export const aiDroplet: {
+  name: 'droplet';
+  data: string;
+} = {
+  name: 'droplet',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M11.128 6.088c.412.604.718 1.273.906 1.979l.228.855a4.41 4.41 0 0 1-.5 3.441c-1.722 2.809-5.802 2.809-7.523 0a4.411 4.411 0 0 1-.501-3.441l.228-.855a6.474 6.474 0 0 1 .906-1.98L8 1.5l3.128 4.588ZM9.24.655a1.5 1.5 0 0 0-2.478 0L3.633 5.243A7.973 7.973 0 0 0 2.516 7.68l-.228.855a5.912 5.912 0 0 0 .672 4.612c2.306 3.763 7.774 3.763 10.08 0a5.911 5.911 0 0 0 .672-4.612l-.228-.855a7.974 7.974 0 0 0-1.117-2.437L9.24.655Z"/></svg>`
+};
 export const aiEarth: {
   name: 'earth';
   data: string;
@@ -2155,6 +2162,27 @@ export const aiTerminal: {
   name: 'terminal',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M.22 12.22a.75.75 0 1 0 1.06 1.06l5-5a.75.75 0 0 0 0-1.06l-5-5A.75.75 0 0 0 .22 3.28l4.47 4.47-4.47 4.47Zm7.53.28a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5h-7.5Z"/></svg>`
 };
+export const aiThermometerEmpty: {
+  name: 'thermometer_empty';
+  data: string;
+} = {
+  name: 'thermometer_empty',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M8 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/><path d="M8 0a3.25 3.25 0 0 0-3.25 3.25v6.418a4 4 0 1 0 6.5 0V3.25A3.25 3.25 0 0 0 8 0ZM5.968 10.543l.282-.392V3.25a1.75 1.75 0 1 1 3.5 0v6.9l.282.393a2.5 2.5 0 1 1-4.064 0Z"/></svg>`
+};
+export const aiThermometerFull: {
+  name: 'thermometer_full';
+  data: string;
+} = {
+  name: 'thermometer_full',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M9.5 12a1.5 1.5 0 1 1-2.25-1.3V3.25a.75.75 0 0 1 1.5 0v7.45c.448.26.75.745.75 1.3Z"/><path d="M4.75 3.25a3.25 3.25 0 1 1 6.5 0v6.418a4 4 0 1 1-6.5 0V3.25Zm1.5 6.9-.282.393a2.5 2.5 0 1 0 4.064 0l-.282-.392V3.25a1.75 1.75 0 1 0-3.5 0v6.9Z"/></svg>`
+};
+export const aiThermometerHalf: {
+  name: 'thermometer_half';
+  data: string;
+} = {
+  name: 'thermometer_half',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M9.5 12a1.5 1.5 0 1 1-2.25-1.3V6.75a.75.75 0 0 1 1.5 0v3.95c.448.26.75.745.75 1.3Z"/><path d="M4.75 3.25a3.25 3.25 0 1 1 6.5 0v6.418a4 4 0 1 1-6.5 0V3.25Zm1.5 6.9-.282.393a2.5 2.5 0 1 0 4.064 0l-.282-.392V3.25a1.75 1.75 0 1 0-3.5 0v6.9Z"/></svg>`
+};
 export const aiThumbstackSlash: {
   name: 'thumbstack_slash';
   data: string;
@@ -2252,6 +2280,13 @@ export const aiTwitter: {
 } = {
   name: 'twitter',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M14.355 4.739c.01.142.01.284.01.426 0 4.335-3.299 9.33-9.33 9.33A9.266 9.266 0 0 1 0 13.023c.264.03.518.04.792.04a6.567 6.567 0 0 0 4.07-1.4 3.285 3.285 0 0 1-3.065-2.275c.203.03.406.051.62.051.294 0 .588-.04.862-.112A3.28 3.28 0 0 1 .65 6.11v-.04c.437.243.945.395 1.483.416A3.277 3.277 0 0 1 .67 3.754c0-.61.162-1.168.447-1.655A9.321 9.321 0 0 0 7.878 5.53a3.702 3.702 0 0 1-.081-.75 3.278 3.278 0 0 1 3.28-3.28 3.27 3.27 0 0 1 2.395 1.036 6.457 6.457 0 0 0 2.081-.792 3.27 3.27 0 0 1-1.441 1.807c.66-.071 1.3-.254 1.888-.508a7.048 7.048 0 0 1-1.645 1.696Z"/></svg>`
+};
+export const aiUmbrella: {
+  name: 'umbrella';
+  data: string;
+} = {
+  name: 'umbrella',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M7.556 0h.479a7.917 7.917 0 0 1 7.903 7.452.99.99 0 0 1-.988 1.048h-6.2v4.875a2.625 2.625 0 0 1-5.25 0v-.625a.75.75 0 0 1 1.5 0v.625a1.125 1.125 0 0 0 2.25 0V8.5H.944A.944.944 0 0 1 0 7.556 7.556 7.556 0 0 1 7.556 0Zm0 1.5A6.056 6.056 0 0 0 1.526 7h12.86a6.418 6.418 0 0 0-6.351-5.5h-.48Z"/></svg>`
 };
 export const aiUnderline: {
   name: 'underline';
@@ -2523,6 +2558,7 @@ export type Amaranth =
   | 'display_cam'
   | 'display'
   | 'door'
+  | 'droplet'
   | 'earth'
   | 'eclipse'
   | 'edge'
@@ -2723,6 +2759,9 @@ export type Amaranth =
   | 'tag'
   | 'tent'
   | 'terminal'
+  | 'thermometer_empty'
+  | 'thermometer_full'
+  | 'thermometer_half'
   | 'thumbstack_slash'
   | 'thumbstack'
   | 'ticket'
@@ -2737,6 +2776,7 @@ export type Amaranth =
   | 'triangle_exclamation'
   | 'trophy'
   | 'twitter'
+  | 'umbrella'
   | 'underline'
   | 'undo'
   | 'universal_access'
@@ -2876,6 +2916,7 @@ export const amaranthSet = [
   aiDisplayCam,
   aiDisplay,
   aiDoor,
+  aiDroplet,
   aiEarth,
   aiEclipse,
   aiEdge,
@@ -3076,6 +3117,9 @@ export const amaranthSet = [
   aiTag,
   aiTent,
   aiTerminal,
+  aiThermometerEmpty,
+  aiThermometerFull,
+  aiThermometerHalf,
   aiThumbstackSlash,
   aiThumbstack,
   aiTicket,
@@ -3090,6 +3134,7 @@ export const amaranthSet = [
   aiTriangleExclamation,
   aiTrophy,
   aiTwitter,
+  aiUmbrella,
   aiUnderline,
   aiUndo,
   aiUniversalAccess,
