@@ -1,6 +1,7 @@
 import { Outlet, useNavigate } from 'react-router-dom';
 
 import {
+  Box,
   Button,
   Container,
   Dropdown,
@@ -16,7 +17,7 @@ import {
   useColorScheme
 } from '@mui/joy';
 
-import AmaranthIcon, { aiCircleHalfInner, aiGithub, aiMoon, aiSun } from '@studio384/amaranth';
+import AmaranthIcon, { aiAmicons, aiCircleHalfInner, aiGithub, aiMoon, aiSun } from '@studio384/amaranth';
 
 export default function Layout() {
   const navigate = useNavigate();
@@ -27,6 +28,9 @@ export default function Layout() {
       <Sheet variant="outlined" sx={{ borderWidth: 0, borderBottomWidth: 1, position: 'sticky', top: 0, zIndex: 1600 }}>
         <Container maxWidth="xl">
           <Stack direction="row" justifyContent="space-between" sx={{ py: 1.5 }}>
+          <Stack direction="row" alignItems="center" gap={1}>
+            <Box sx={{ mt: .625 }}>
+            <AmaranthIcon icon={aiAmicons} /></Box>
             <Link
               color="neutral"
               underline="none"
@@ -40,8 +44,9 @@ export default function Layout() {
               }}
               onClick={() => navigate('/')}
             >
-              Amaranth
+              Amicons
             </Link>
+            </Stack>
             <Stack direction="row" gap={0.5}>
               <Button onClick={() => navigate('/')} variant="plain" size="sm" color="neutral">
                 Icons

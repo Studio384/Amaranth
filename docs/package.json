@@ -12,24 +12,24 @@
     "start": "vite serve --mode dev"
   },
   "dependencies": {
-    "@emotion/react": "11.11.1",
+    "@emotion/react": "11.11.3",
     "@emotion/styled": "11.11.0",
-    "@mui/joy": "5.0.0-beta.19",
+    "@mui/joy": "5.0.0-beta.21",
     "@reduxjs/toolkit": "2.0.1",
     "@studio384/amaranth": "file:../",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-redux": "9.0.4",
-    "react-router-dom": "6.21.0",
+    "react-router-dom": "6.21.1",
     "vite-bundle-visualizer": "1.0.0",
-    "vite-plugin-html": "3.2.0"
+    "vite-plugin-html": "3.2.1"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
-    "@types/react": "18.2.45",
+    "@types/react": "18.2.46",
     "@types/react-dom": "18.2.18",
-    "@typescript-eslint/eslint-plugin": "6.15.0",
-    "@typescript-eslint/parser": "6.15.0",
+    "@typescript-eslint/eslint-plugin": "6.17.0",
+    "@typescript-eslint/parser": "6.17.0",
     "@vitejs/plugin-react-swc": "3.5.0",
     "eslint": "8.56.0",
     "eslint-import-resolver-typescript": "3.6.1",
