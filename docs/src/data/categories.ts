@@ -1,5 +1,5 @@
 import {
-  aiAmaranth,
+  aiAmicons,
   aiArrowUp,
   aiAsterisk,
   aiBel,
@@ -77,7 +77,7 @@ const categories = [
   {
     slug: 'brands',
     title: 'Brands',
-    icon: aiAmaranth
+    icon: aiAmicons
   },
   {
     slug: 'buildings',
@@ -150,8 +150,8 @@ const categories = [
     icon: aiLightbulb
   },
   {
-    slug: 'files & folders',
-    title: 'Files',
+    slug: 'files',
+    title: 'Files & folders',
     icon: aiFiles
   },
   {
