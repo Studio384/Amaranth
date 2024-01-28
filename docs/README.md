@@ -1,3 +1,3 @@
-# Amaranth Docs
+# Amicons Docs
 
-The documentation for the Amaranth icon project.
+The documentation for the Amicons icon project.

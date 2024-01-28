@@ -1,178 +1,61 @@
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 
-import { Box, IconButton, Input, Link, List, ListItem, ListItemButton, ListItemContent, ListItemDecorator, Sheet, Stack, Typography } from '@mui/joy';
+import { Box, Input, Sheet, Stack, Typography, useTheme } from '@mui/joy';
 
-import categories from '@/data/categories';
 import icons from '@/data/icons';
-import useSearch from '@/hooks/useSearch';
-import { IIconCategory, ILibraryIcon } from '@/types';
 
-import AmaranthIcon, { aiChevronLeft, aiChevronRight, aiMagnifyingGlass, aiXmark } from '@studio384/amaranth';
+import AmaranthIcon, { aiAmicons, aiMagnifyingGlass } from '@studio384/amaranth';
 
 export default function Home() {
-  const [page, setPage] = useState(0);
-  const [category, setCategory] = useState<null | IIconCategory>(null);
+  const theme = useTheme();
 
-  const searchableList = useMemo(() => {
-    if (category?.slug) {
-      return icons.filter((icon) => icon.categories.includes(category.slug));
-    }
-
-    return icons;
-  }, [category]);
-
-  const { result, needle, setNeedle } = useSearch(searchableList, ['slug', 'tags']);
+  const [search, setSearch] = useState('');
 
   return (
-    <Stack spacing={2}>
-      <Stack direction="row" spacing={1} justifyContent="space-between" alignItems="center">
-        <Stack direction="row" spacing={1} alignItems="baseline">
-          <Typography level="h2">{result.length} icons</Typography>
-          <Typography color="neutral">
-            Page {page + 1} of {Math.ceil(result.length / 99)}
+    <Stack gap={5} sx={{ my: 5 }}>
+      <Stack direction="row" alignItems="center" justifyContent="space-between" gap={5}>
+        <Box>
+          <Typography level="h1" fontWeight="xl" fontSize={48}>
+            <Typography color="primary">{icons.length}</Typography> amicable icons
+            <br />
+            to delight <Typography color="primary">your</Typography> designs
           </Typography>
-        </Stack>
-
-        <Input
-          startDecorator={<AmaranthIcon icon={aiMagnifyingGlass} />}
-          endDecorator={
-            <IconButton onClick={() => setNeedle('')} disabled={!needle}>
-              <AmaranthIcon icon={aiXmark} />
-            </IconButton>
-          }
-          placeholder="Search"
-          value={needle}
-          onChange={(e) => {
-            setNeedle(e.target.value);
-            setPage(0);
-          }}
-        />
-      </Stack>
-      <Box
-        sx={{
-          display: 'grid',
-          gridTemplateColumns: '200px auto',
-          gap: { xs: 1 }
-        }}
-      >
-        <Box sx={{ position: 'sticky', top: 56, height: 'calc(100vh - 40px - 16px)', overflow: 'auto', py: 1.5 }}>
-          <Typography level="title-md" sx={{ mb: 1.5 }}>
-            Categories
-          </Typography>
-          <List
-            sx={{
-              p: 0,
-              gap: 0.25,
-              '--ListItem-paddingY': 0,
-              '--ListItem-radius': '4px',
-              '--ListItem-minHeight': '2.25rem',
-              '--ListItem-paddingLeft': '.5rem',
-              '--ListItem-paddingRight': '.5rem',
-              '--ListItemDecorator-size': '1.5rem'
-            }}
-          >
-            {categories.map((_category) => (
-              <ListItem key={_category.slug}>
-                <ListItemButton
-                  onClick={() => {
-                    if (category?.slug === _category.slug) {
-                      setCategory(null);
-                    } else {
-                      setCategory(_category);
-                    }
-
-                    setPage(0);
-                  }}
-                  selected={category?.slug === _category.slug}
-                  color="success"
-                >
-                  <ListItemDecorator>
-                    <AmaranthIcon icon={_category.icon} />
-                  </ListItemDecorator>
-                  <ListItemContent>
-                    <Typography noWrap>{_category.title}</Typography>
-                  </ListItemContent>
-                </ListItemButton>
-              </ListItem>
-            ))}
-          </List>
         </Box>
-        <div>
-          <Box
+        <Box>
+          <Sheet
+            variant="outlined"
             sx={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(min(9.5rem, 100%), 1fr))',
-              gap: { xs: 1 }
+              '--Amicon-scale': '16px',
+              color: 'text.primary',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              width: 'calc((var(--Amicon-scale) + 4px) * 16)',
+              height: 'calc((var(--Amicon-scale) + 4px) * 16)',
+              borderRadius: 'sm',
+              backgroundSize: 'var(--Amicon-scale) var(--Amicon-scale)',
+              backgroundPosition: '-1px -1px',
+              backgroundImage: 'linear-gradient(to right, var(--joy-palette-neutral-outlinedBorder) 1px, transparent 1px), linear-gradient(to bottom, var(--joy-palette-neutral-outlinedBorder) 1px, transparent 1px)'
             }}
           >
-            {result.slice(page * 99, (page + 1) * 99).map((icon: ILibraryIcon) => (
-              <Sheet
-                key={icon.slug}
-                variant="outlined"
-                sx={{
-                  gap: 0,
-                  borderRadius: 'sm',
-                  '&:hover, &:focus-within': {
-                    backgroundColor: 'rgba(var(--joy-palette-success-mainChannel) / .0625)',
-                    '& > div > a > .MuiTypography-root': {
-                      backgroundColor: 'rgba(var(--joy-palette-success-mainChannel) / .125)'
-                    }
-                  }
-                }}
-              >
-                <Stack gap={3} justifyContent="center" alignItems="center" sx={{ pt: 3, pb: 1 }}>
-                  <Typography fontSize={32} lineHeight="1rem">
-                    <AmaranthIcon icon={icon.icon} />
-                  </Typography>
-                  <Link
-                    overlay
-                    href={`/icons/${icon.slug}`}
-                    underline="none"
-                    color="neutral"
-                    sx={{
-                      maxWidth: 'calc(100% - 16px)'
-                    }}
-                  >
-                    <Typography
-                      noWrap
-                      level="body-sm"
-                      sx={{
-                        px: 0.5,
-                        py: 0.25,
-                        borderRadius: 'sm',
-                        fontFamily: 'SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace'
-                      }}
-                    >
-                      {icon.slug}
-                    </Typography>
-                  </Link>
-                </Stack>
-              </Sheet>
-            ))}
-          </Box>
-        </div>
-      </Box>
-
-      <Stack direction="row" justifyContent="center" alignItems="center" gap={1}>
-        <IconButton
-          size="sm"
-          variant={page === 0 ? 'plain' : 'solid'}
-          color={page === 0 ? 'neutral' : 'success'}
-          onClick={() => setPage((prev) => prev - 1)}
-          disabled={page === 0}
-        >
-          <AmaranthIcon icon={aiChevronLeft} />
-        </IconButton>
-        <IconButton
-          size="sm"
-          variant={page === Math.ceil(result.length / 99) - 1 ? 'plain' : 'solid'}
-          color={page === Math.ceil(result.length / 99) - 1 ? 'neutral' : 'success'}
-          onClick={() => setPage((prev) => prev + 1)}
-          disabled={page === Math.ceil(result.length / 99) - 1}
-        >
-          <AmaranthIcon icon={aiChevronRight} />
-        </IconButton>
+            <AmaranthIcon icon={aiAmicons} style={{ fontSize: 'calc(var(--Amicon-scale) * 16)' }} />
+          </Sheet>
+        </Box>
       </Stack>
+
+      <Input
+        startDecorator={<AmaranthIcon icon={aiMagnifyingGlass} />}
+        size="lg"
+        placeholder="Find your icon"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        sx={{ borderRadius: 'xl', boxShadow: 'lg', px: 3, py: 2,
+          borderColor: 'primary.100',
+          [theme.getColorSchemeSelector('dark')]: {
+            borderColor: 'primary.800'
+          }
+        }}
+      />
     </Stack>
   );
 }

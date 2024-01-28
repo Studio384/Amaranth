@@ -32,9 +32,9 @@ export default function Icon() {
   const aiIcon: ILibraryIcon = useMemo(() => icons.find((icon) => icon.component === reactImport)!, [reactImport]);
 
   return (
-    <Stack spacing={2}>
-      <Stack direction="row" spacing={1} justifyContent="space-between" alignItems="center">
-        <Stack direction="row" spacing={1} alignItems="center">
+    <Stack gap={2} sx={{my: 2 }}>
+      <Stack direction="row" gap={1} justifyContent="space-between" alignItems="center">
+        <Stack direction="row" gap={1} alignItems="center">
           <IconButton variant="outlined" size="sm" onClick={() => navigate('/')}>
             <AmaranthIcon icon={aiArrowLeft} />
           </IconButton>
@@ -45,7 +45,7 @@ export default function Icon() {
       {(icon?.categories || icon?.tags) && (
         <Box sx={{ display: 'flex', gap: 0.5, alignItems: 'center' }}>
           {icon?.categories?.map((cat) => (
-            <Chip variant="solid" color="success" size="sm" key={cat}>
+            <Chip variant="solid" color="primary" size="sm" key={cat}>
               {cat}
             </Chip>
           ))}
@@ -57,7 +57,7 @@ export default function Icon() {
         </Box>
       )}
 
-      <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
+      <Stack direction={{ xs: 'column', md: 'row' }} gap={2}>
         <Card
           variant="outlined"
           sx={{
@@ -83,17 +83,17 @@ export default function Icon() {
             Inline icon
           </Typography>
           <Box sx={{ mb: 3, display: 'flex', gap: 1 }}>
-            <Button color="success" startDecorator={<AmaranthIcon icon={aiIcon?.icon} />}>
+            <Button color="primary" startDecorator={<AmaranthIcon icon={aiIcon?.icon} />}>
               Button icon
             </Button>
-            <IconButton color="success" variant="outlined">
+            <IconButton color="primary" variant="outlined">
               <AmaranthIcon icon={aiIcon?.icon} />
             </IconButton>
           </Box>
-          <Input color="success" startDecorator={<AmaranthIcon icon={aiIcon?.icon} />} placeholder={icon?.title} />
+          <Input color="primary" startDecorator={<AmaranthIcon icon={aiIcon?.icon} />} placeholder={icon?.title} />
         </Card>
       </Stack>
-      <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
+      <Stack direction={{ xs: 'column', md: 'row' }} gap={2}>
         <Box sx={{ flexGrow: 1 }}>
           <Typography level="h3" sx={{ mb: 2 }}>
             React
@@ -104,15 +104,15 @@ export default function Icon() {
           </Card>
         </Box>
       </Stack>
-      <Stack direction="row" spacing={3} alignItems="center" justifyContent="center">
+      <Stack direction="row" gap={3} alignItems="center" justifyContent="center">
         {icon?.created && (
-          <Stack direction="row" spacing={1}>
-            <Typography color="neutral">Created</Typography> <Chip size="sm">{icon?.created}</Chip>
+          <Stack direction="row" gap={1}>
+            <Typography>Created</Typography> <Chip size="sm" color="primary">{icon?.created}</Chip>
           </Stack>
         )}
         {icon?.updated && (
-          <Stack direction="row" spacing={1}>
-            <Typography color="neutral">Last updated</Typography> <Chip size="sm">{icon?.updated}</Chip>
+          <Stack direction="row" gap={1}>
+            <Typography>Last updated</Typography> <Chip size="sm" color="primary">{icon?.updated}</Chip>
           </Stack>
         )}
       </Stack>

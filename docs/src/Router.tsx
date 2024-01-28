@@ -5,6 +5,7 @@ import Home from './app/Home';
 import Icon from './app/Icon';
 import Usage from './app/Usage';
 import Layout from './design/layout/Layout';
+import Icons from './app/Icons';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />
+      },
+      {
+        path: '/icons',
+        element: <Icons />
       },
       {
         path: '/usage',
