@@ -62,7 +62,7 @@ export default function Home() {
               backgroundSize: 'var(--Amicon-scale) var(--Amicon-scale)',
               backgroundPosition: '-1px -1px',
               backgroundImage:
-                'linear-gradient(to right, var(--joy-palette-neutral-outlinedBorder) 1px, transparent 1px), linear-gradient(to bottom, var(--joy-palette-neutral-outlinedBorder) 1px, transparent 1px)'
+                'linear-gradient(to right, var(--joy-palette-primary-outlinedBorder) 1px, transparent 1px), linear-gradient(to bottom, var(--joy-palette-primary-outlinedBorder) 1px, transparent 1px)'
             }}
           >
             <Divider sx={{ position: 'absolute', top: 'calc(2 * var(--Amicon-scale) - 1px)', left: 0, right: 0, bgcolor: 'primary.500' }} />
