@@ -86,9 +86,7 @@ export default function Layout() {
           </Stack>
         </Container>
       </Sheet>
-      <Container maxWidth="lg">
         <Outlet />
-      </Container>
       <Sheet
         variant="outlined"
         sx={{
