@@ -384,13 +384,6 @@ export const aiBook: {
   name: 'book',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M5.75 3a.75.75 0 0 0 0 1.5h4.5a.75.75 0 0 0 0-1.5z"/><path d="M3.75 0A1.75 1.75 0 0 0 2 1.75v12A2.25 2.25 0 0 0 4.25 16h9a.75.75 0 0 0 0-1.5H12V13h.25A1.75 1.75 0 0 0 14 11.25v-9.5A1.75 1.75 0 0 0 12.25 0zM3.5 1.75a.25.25 0 0 1 .25-.25h8.5a.25.25 0 0 1 .25.25v9.5a.25.25 0 0 1-.25.25h-8q-.396.002-.75.128zm.75 12.75a.75.75 0 0 1 0-1.5h6.25v1.5z"/></svg>`
 };
-export const aiBootstrap: {
-  name: 'bootstrap';
-  data: string;
-} = {
-  name: 'bootstrap',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M9.295 6.823c0-.63-.444-.977-1.224-.977H6.636v2.027h1.21c.934-.003 1.45-.378 1.45-1.05m5.225-.365c-.27-.88-.31-1.958-.28-2.793C14.273 2.797 13.595 2 12.684 2h-9.36c-.914 0-1.59.8-1.558 1.665.029.835-.008 1.914-.279 2.793C1.213 7.341.754 7.898 0 7.97v.811c.752.072 1.213.63 1.486 1.512.27.88.31 1.959.28 2.793-.032.868.645 1.666 1.556 1.666h9.358c.914 0 1.589-.8 1.558-1.666-.029-.834.008-1.913.279-2.793.273-.882.731-1.44 1.483-1.511V7.97c-.749-.071-1.21-.63-1.48-1.512m-6.173 5.31H5.56V4.984h2.773c1.233 0 2.041.666 2.041 1.69 0 .721-.543 1.364-1.238 1.475v.037c.945.103 1.58.758 1.58 1.66 0 1.199-.891 1.922-2.369 1.922m-.284-3.095H6.636v2.232h1.49c.973 0 1.488-.39 1.488-1.124 0-.732-.53-1.108-1.551-1.108"/></svg>`
-};
 export const aiBoxOpenFull: {
   name: 'box_open_full';
   data: string;
@@ -1132,13 +1125,6 @@ export const aiFolder: {
 } = {
   name: 'folder',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M0 4.25A2.75 2.75 0 0 1 2.75 1.5h2.72c.95 0 1.777.647 2.008 1.568a.57.57 0 0 0 .553.432h5.219A2.75 2.75 0 0 1 16 6.25v5.5a2.75 2.75 0 0 1-2.75 2.75H2.75A2.75 2.75 0 0 1 0 11.75zM2.75 3c-.69 0-1.25.56-1.25 1.25v7.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-5.5c0-.69-.56-1.25-1.25-1.25H8.03a2.07 2.07 0 0 1-2.008-1.568A.57.57 0 0 0 5.47 3z"/></svg>`
-};
-export const aiFontAwesome: {
-  name: 'font_awesome';
-  data: string;
-} = {
-  name: 'font_awesome',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M15 1.5V12c-1.969.719-2.562 1-3.719 1-1.969 0-2.719-1-4.687-1-.625 0-1.125.125-1.594.25v-2c.469-.125.969-.25 1.594-.25 1.968 0 2.718 1 4.687 1 .625 0 1.094-.094 1.719-.281v-6.5c-.625.187-1.094.281-1.719.281-1.969 0-2.719-1-4.687-1C5 3.5 4.25 4.156 3 4.406V14c0 .563-.437 1-1 1s-1-.437-1-1V2c0-.562.438-1 1-1s1 .438 1 1v.406c1.25-.25 2-.906 3.594-.906 1.968 0 2.718 1 4.687 1 1.156 0 1.75-.281 3.719-1"/></svg>`
 };
 export const aiForward: {
   name: 'forward';
@@ -2715,7 +2701,6 @@ export type Amaranth =
   | 'bolt'
   | 'book_open'
   | 'book'
-  | 'bootstrap'
   | 'box_open_full'
   | 'box'
   | 'brackets_curly'
@@ -2822,7 +2807,6 @@ export type Amaranth =
   | 'floppy_disk'
   | 'folder_image'
   | 'folder'
-  | 'font_awesome'
   | 'forward'
   | 'gamepad'
   | 'gauge'
@@ -3103,7 +3087,6 @@ export const amaranthSet = [
   aiBolt,
   aiBookOpen,
   aiBook,
-  aiBootstrap,
   aiBoxOpenFull,
   aiBox,
   aiBracketsCurly,
@@ -3210,7 +3193,6 @@ export const amaranthSet = [
   aiFloppyDisk,
   aiFolderImage,
   aiFolder,
-  aiFontAwesome,
   aiForward,
   aiGamepad,
   aiGauge,
