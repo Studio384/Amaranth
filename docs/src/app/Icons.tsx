@@ -1,4 +1,5 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import {
   Box,
@@ -26,6 +27,7 @@ import AmaranthIcon, { aiChevronLeft, aiChevronRight, aiFilterXmark, aiMagnifyin
 
 export default function Icons() {
   const theme = useTheme();
+  const location = useLocation();
 
   const [page, setPage] = useState(0);
   const [category, setCategory] = useState<null | IIconCategory>(null);
@@ -39,6 +41,13 @@ export default function Icons() {
   }, [category]);
 
   const { result, needle, setNeedle } = useSearch(searchableList, ['slug', 'tags']);
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const search = params.get('search');
+
+    setNeedle(search);
+  }, [location.search, setNeedle]);
 
   return (
     <Container>

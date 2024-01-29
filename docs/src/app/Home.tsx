@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { createSearchParams, useNavigate } from 'react-router-dom';
 
-import { Box, Button, Card, Container, Divider, Input, Sheet, Stack, Typography, useTheme } from '@mui/joy';
+import { Box, Button, Card, Container, Divider, IconButton, Input, Sheet, Stack, Typography, useTheme } from '@mui/joy';
 
 import icons from '@/data/icons';
 
@@ -12,6 +12,12 @@ export default function Home() {
   const navigate = useNavigate();
 
   const [search, setSearch] = useState('');
+
+  function onSearchSubmit() {
+    const searchParams = { search };
+    const searchQuery = `?${createSearchParams(searchParams)}`;
+    navigate({ pathname: '/icons', search: searchQuery });
+  }
 
   return (
     <Container>
@@ -26,23 +32,25 @@ export default function Home() {
               </Typography>
             </Box>
 
-            <Input
-              startDecorator={<AmaranthIcon icon={aiMagnifyingGlass} />}
-              size="lg"
-              placeholder="Find your icon"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              sx={{
-                borderRadius: 'xl',
-                boxShadow: 'md',
-                px: 3,
-                py: 2,
-                borderColor: 'primary.100',
-                [theme.getColorSchemeSelector('dark')]: {
-                  borderColor: 'primary.800'
-                }
-              }}
-            />
+            <form onSubmit={onSearchSubmit}>
+              <Input
+                startDecorator={<IconButton type="submit" color="primary" sx={{ borderRadius: 'md'}}><AmaranthIcon icon={aiMagnifyingGlass} /></IconButton>}
+                size="lg"
+                placeholder="Find your icon"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                sx={{
+                  borderRadius: 'xl',
+                  boxShadow: 'md',
+                  px: 4,
+                  py: 2,
+                  borderColor: 'primary.100',
+                  [theme.getColorSchemeSelector('dark')]: {
+                    borderColor: 'primary.800'
+                  }
+                }}
+              />
+            </form>
           </Stack>
           <Sheet
             variant="outlined"
