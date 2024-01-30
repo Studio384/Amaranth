@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { createSearchParams, useNavigate } from 'react-router-dom';
 
-import { Box, Button, Card, Container, Divider, IconButton, Input, Sheet, Stack, Typography, useTheme } from '@mui/joy';
+import { Box, Button, Card, Container, IconButton, Input, Sheet, Stack, Typography, useTheme } from '@mui/joy';
 
 import icons from '@/data/icons';
 
@@ -64,8 +64,8 @@ export default function Home() {
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              width: 'calc((var(--Amicon-scale) + 4px) * 16)',
-              height: 'calc((var(--Amicon-scale) + 4px) * 16)',
+              width: 'calc(var(--Amicon-scale) * 16)',
+              height: 'calc(var(--Amicon-scale) * 16)',
               borderRadius: 'sm',
               backgroundSize: 'var(--Amicon-scale) var(--Amicon-scale)',
               backgroundPosition: '-1px -1px',
@@ -73,16 +73,6 @@ export default function Home() {
                 'linear-gradient(to right, var(--joy-palette-primary-outlinedBorder) 1px, transparent 1px), linear-gradient(to bottom, var(--joy-palette-primary-outlinedBorder) 1px, transparent 1px)'
             }}
           >
-            <Divider sx={{ position: 'absolute', top: 'calc(2 * var(--Amicon-scale) - 1px)', left: 0, right: 0, bgcolor: 'primary.500' }} />
-            <Divider sx={{ position: 'absolute', bottom: 'calc(2 * var(--Amicon-scale) - 2px)', left: 0, right: 0, bgcolor: 'primary.500' }} />
-            <Divider
-              orientation="vertical"
-              sx={{ position: 'absolute', left: 'calc(2 * var(--Amicon-scale) - 1px)', top: 0, bottom: 0, bgcolor: 'primary.500' }}
-            />
-            <Divider
-              orientation="vertical"
-              sx={{ position: 'absolute', right: 'calc(2 * var(--Amicon-scale) - 2px)', top: 0, bottom: 0, bgcolor: 'primary.500' }}
-            />
             <AmaranthIcon icon={aiAmicons} style={{ fontSize: 'calc(var(--Amicon-scale) * 16)' }} />
           </Sheet>
         </Stack>
