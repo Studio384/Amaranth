@@ -39,7 +39,7 @@ import {
   aiShare,
   aiShoePrints,
   aiShoppingCart,
-  aiSpinnerThird,
+  aiSpinner,
   aiSun,
   aiSwatchbook,
   aiToggleOn,
@@ -257,7 +257,7 @@ const categories = [
   {
     slug: 'spinners',
     title: 'Spinners',
-    icon: aiSpinnerThird
+    icon: aiSpinner
   },
   {
     slug: 'time',
