@@ -46,7 +46,7 @@ export default function Icons() {
     const params = new URLSearchParams(location.search);
     const search = params.get('search');
 
-    setNeedle(search);
+    setNeedle(search ?? '');
   }, [location.search, setNeedle]);
 
   return (
