@@ -13,11 +13,11 @@ interface AmaranthProps {
 }
 
 export default function AmaranthIcon({
-  flip = false,
+  flip = undefined,
   icon,
-  rotate = 0,
-  spin = false,
-  beat = false,
+  rotate = undefined,
+  spin = undefined,
+  beat = undefined,
   ...props
 }: AmaranthProps) {
   const spinAnimation = keyframes`
