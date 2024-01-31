@@ -52,7 +52,8 @@ export default function AmaranthIcon({
 
   const rotateClass = css`
     transform: rotate(${rotate}deg);
-    transition: transform var(--ai-transition-duration, .2s) var(--ai-transition-timing-function, ease-in-out);
+    transition: transform var(--ai-transition-duration, 0.2s)
+      var(--ai-transition-timing-function, ease-in-out);
   `;
 
   const flipClass = css`
@@ -64,41 +65,35 @@ export default function AmaranthIcon({
   `;
 
   const spinClass = css`
-    svg {
-      animation-name: ${spinAnimation};
-      animation-timing-function: var(--ai-animation-timing-function, linear);
-      animation-duration: var(--ai-animation-duration, 2s);
-      animation-iteration-count: var(--ai-animation-iteration-count, infinite);
-    }
+    animation-name: ${spinAnimation};
+    animation-timing-function: var(--ai-animation-timing-function, linear);
+    animation-duration: var(--ai-animation-duration, 2s);
+    animation-iteration-count: var(--ai-animation-iteration-count, infinite);
   `;
 
   const spinPulseClass = css`
-    svg {
-      --ai-animation-timing-function: steps(var(--ai-animation-pulse-steps, 8));
-      --ai-animation-duration: 1s;
-    }
-  `
+    --ai-animation-timing-function: steps(var(--ai-animation-pulse-steps, 8));
+    --ai-animation-duration: 1s;
+  `;
 
-  const beatClass = css `
-    svg {
-      animation-name: ${beatAnimation};
-      animation-timing-function: var(--ai-animation-timing-function, ease-in-out);
-      animation-duration: var(--ai-animation-duration, 1s);
-      animation-iteration-count: var(--ai-animation-iteration-count, infinite);
-    }
+  const beatClass = css`
+    animation-name: ${beatAnimation};
+    animation-timing-function: var(--ai-animation-timing-function, ease-in-out);
+    animation-duration: var(--ai-animation-duration, 1s);
+    animation-iteration-count: var(--ai-animation-iteration-count, infinite);
   `;
 
   return (
     <span
-      {...props}
       className={cx({
         [aiClass]: true,
         [rotateClass]: rotate !== null && rotate !== undefined,
         [flipClass]: !!flip,
         [spinClass]: !!spin,
-        [spinPulseClass]: spin === 'pulse',
+        [spinPulseClass]: spin === "pulse",
         [beatClass]: beat
       })}
+      {...props}
     >
       {HTMLReactParser(icon.data)}
     </span>
