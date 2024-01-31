@@ -1,6 +1,6 @@
 import { List, ListItem, ListItemButton, ListItemContent, ListItemDecorator, Typography } from '@mui/joy';
 
-import AmaranthIcon, { aiAmicons, aiArrowRotateRight, aiHeart, aiSpinner } from '../../../../dist/esm';
+import AmaranthIcon, { aiAmicons, aiArrowRotateRight, aiArrowsDownLeftRightUpCenter, aiHeart, aiSpinner } from '../../../../dist/esm';
 
 export default function DocsNavigation() {
   const pages = [
@@ -21,7 +21,7 @@ export default function DocsNavigation() {
     },
     {
       title: 'Flip',
-      icon: aiSpinner,
+      icon: aiArrowsDownLeftRightUpCenter,
       link: '#flip'
     },
     {

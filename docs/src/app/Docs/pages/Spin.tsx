@@ -38,7 +38,7 @@ export default function PageSpin() {
     <Stack id="spin" gap={1} sx={{ scrollMarginTop: 73 }}>
       <Typography level="h3">Spin</Typography>
       <Typography>
-        With the <Code>Spin</Code> property you can make your icons play a rotation animation.
+        With the <Code>spin</Code> property you can make your icons play a rotation animation.
       </Typography>
 
       <Card sx={{ display: 'grid', gridTemplateColumns: 'auto 280px', p: 0, contain: 'paint', gap: 0 }}>
