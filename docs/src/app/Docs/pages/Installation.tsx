@@ -1,7 +1,6 @@
-import { Box, Stack, Typography } from '@mui/joy';
+import { Stack, Typography } from '@mui/joy';
 
 import Codeblock from '@/design/components/Codeblock';
-import Code from '@/design/components/Code';
 
 export default function PageInstallation() {
   return (

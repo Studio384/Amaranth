@@ -15,7 +15,6 @@ export default function Codeblock({ children, ...props }: ICodeblockProps) {
         fontSize: 'sm',
         fontFamily: 'code',
         p: 1,
-        my: 1,
         borderRadius: 'sm'
       }}
       {...props}

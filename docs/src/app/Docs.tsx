@@ -20,7 +20,7 @@ export default function Docs() {
         <Box sx={{ position: 'sticky', top: 57, overflow: 'auto', py: 1.5, alignSelf: 'flex-start' }}>
           <DocsNavigation />
         </Box>
-        <Stack gap={2} sx={{ my: 2 }}>
+        <Stack gap={4} sx={{ my: 2 }}>
           <Typography level="h1">Documentation</Typography>
           <PageInstallation />
           <PageSpin />
