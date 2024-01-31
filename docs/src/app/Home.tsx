@@ -90,7 +90,7 @@ export default function Home() {
             <Button size="lg" startDecorator={<AmaranthIcon icon={aiAmicons} />} onClick={() => navigate('/icons')}>
               Full library
             </Button>
-            <Button size="lg" startDecorator={<AmaranthIcon icon={aiBook} />} onClick={() => navigate('/usage')}>
+            <Button size="lg" startDecorator={<AmaranthIcon icon={aiBook} />} onClick={() => navigate('/docs')}>
               Docs
             </Button>
           </Stack>

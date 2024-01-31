@@ -58,7 +58,7 @@ export default function Icons() {
           gap: { xs: 1 }
         }}
       >
-        <Box sx={{ position: 'sticky', top: 56, height: 'calc(100vh - 40px - 16px)', overflow: 'auto', py: 1.5 }}>
+        <Box sx={{ position: 'sticky', top: 57, overflow: 'auto', py: 1.5, alignSelf: 'flex-start' }}>
           <Typography level="title-md" sx={{ mb: 1.5 }}>
             Categories
           </Typography>

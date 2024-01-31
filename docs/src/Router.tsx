@@ -3,7 +3,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import Error from './app/Error';
 import Home from './app/Home';
 import Icon from './app/Icon';
-import Usage from './app/Usage';
+import Docs from './app/Docs';
 import Layout from './design/layout/Layout';
 import Icons from './app/Icons';
 
@@ -21,12 +21,12 @@ const router = createBrowserRouter([
         element: <Icons />
       },
       {
-        path: '/usage',
-        element: <Usage />
-      },
-      {
         path: '/icons/:slug',
         element: <Icon />
+      },
+      {
+        path: '/docs',
+        element: <Docs />
       }
     ]
   }

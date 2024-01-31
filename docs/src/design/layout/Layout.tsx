@@ -72,12 +72,12 @@ export default function Layout() {
                 Icons
               </Button>
               <Button
-                onClick={() => navigate('/usage')}
-                variant={location?.pathname?.startsWith('/usage') ? 'soft' : 'plain'}
+                onClick={() => navigate('/docs')}
+                variant={location?.pathname?.startsWith('/docs') ? 'soft' : 'plain'}
                 size="sm"
-                color={location?.pathname?.startsWith('/usage') ? 'primary' : 'primary'}
+                color={location?.pathname?.startsWith('/docs') ? 'primary' : 'primary'}
               >
-                Usage
+                Docs
               </Button>
               <IconButton size="sm" variant="plain" color="primary" component="a" href="https://github.com/studio384/amaranth" target="_blank">
                 <AmaranthIcon icon={aiGithub} />
