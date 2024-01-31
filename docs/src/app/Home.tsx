@@ -6,6 +6,7 @@ import { Box, Button, Card, Container, IconButton, Input, Sheet, Stack, Typograp
 import icons from '@/data/icons';
 
 import AmaranthIcon, { aiAmicons, aiBook, aiMagnifyingGlass } from '@studio384/amaranth';
+import Codeblock from '@/design/components/Codeblock';
 
 export default function Home() {
   const theme = useTheme();
@@ -83,9 +84,9 @@ export default function Home() {
         <Card sx={{ p: 3, borderRadius: 'xl' }}>
           <Typography level="h2">Get started</Typography>
           <Typography>Get started with Amicons by installing the npm package.</Typography>
-          <Sheet variant="outlined" color="primary" sx={{ p: 1, borderRadius: 'sm' }}>
-            <code>npm install @studio384/amaranth</code>
-          </Sheet>
+          <Codeblock>
+            npm install @studio384/amaranth
+          </Codeblock>
           <Stack direction="row" gap={1} justifyContent="center">
             <Button size="lg" startDecorator={<AmaranthIcon icon={aiAmicons} />} onClick={() => navigate('/icons')}>
               Full library
