@@ -119,7 +119,7 @@ export default function PageSpin() {
       </Card>
 
       <Typography level="h4">API</Typography>
-      <Sheet variant="outlined" sx={{ borderRadius: 'sm' }}>
+      <Sheet variant="outlined" color="primary" sx={{ borderRadius: 'sm' }}>
         <Table variant="outlined">
           <thead>
             <tr>
@@ -160,7 +160,7 @@ export default function PageSpin() {
         </Table>
       </Sheet>
       <Typography>When setting the property to <Code>pulse</Code>, some additional variables are available while some defaults are changed. The following variables are available or changed, otherwise everything functions the same.</Typography>
-      <Sheet variant="outlined" sx={{ borderRadius: 'sm' }}>
+      <Sheet variant="outlined" color="primary" sx={{ borderRadius: 'sm' }}>
         <Table variant="outlined">
           <thead>
             <tr>

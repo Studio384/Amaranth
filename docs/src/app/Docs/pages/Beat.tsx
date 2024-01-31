@@ -104,7 +104,7 @@ export default function PageBeat() {
       </Card>
 
       <Typography level="h4">API</Typography>
-      <Sheet variant="outlined" sx={{ borderRadius: 'sm' }}>
+      <Sheet variant="outlined" color="primary" sx={{ borderRadius: 'sm' }}>
         <Table variant="outlined">
           <thead>
             <tr>

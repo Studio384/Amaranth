@@ -62,9 +62,9 @@ const joyTheme = extendTheme({
     JoyCard: {
       styleOverrides: {
         root: ({ theme }) => ({
-          borderColor: 'var(--joy-palette-primary-50)',
+          borderColor: 'var(--joy-palette-primary-200)',
           [theme.getColorSchemeSelector('dark')]: {
-            borderColor: 'var(--joy-palette-primary-900)'
+            borderColor: 'var(--joy-palette-primary-800)'
           },
         })
       }
