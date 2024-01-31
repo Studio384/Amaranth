@@ -134,7 +134,7 @@ export default function PageSpin() {
                 <Code>--ai-animation-duration</Code>
               </td>
               <td>
-                <Code>2s</Code>, <Code>1s</Code> for pulse
+                <Code>2s</Code>
               </td>
               <td>Time for a full play through of the animation.</td>
             </tr>
@@ -155,6 +155,29 @@ export default function PageSpin() {
                 <Code>infinite</Code>
               </td>
               <td>Number of times the animation is repeated.</td>
+            </tr>
+          </tbody>
+        </Table>
+      </Sheet>
+      <Typography>When setting the property to <Code>pulse</Code>, some additional variables are available while some defaults are changed. The following variables are available or changed, otherwise everything functions the same.</Typography>
+      <Sheet variant="outlined" sx={{ borderRadius: 'sm' }}>
+        <Table variant="outlined">
+          <thead>
+            <tr>
+              <th style={{ width: '25%' }}>Property name</th>
+              <th style={{ width: '15%' }}>Default</th>
+              <th style={{ width: '60%' }}>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <Code>--ai-animation-duration</Code>
+              </td>
+              <td>
+                <Code>1s</Code>
+              </td>
+              <td>Time for a full play through of the animation.</td>
             </tr>
             <tr>
               <td>
