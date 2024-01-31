@@ -34,7 +34,11 @@ export default function Home() {
 
             <form onSubmit={onSearchSubmit}>
               <Input
-                startDecorator={<IconButton type="submit" color="primary" sx={{ borderRadius: 'md'}}><AmaranthIcon icon={aiMagnifyingGlass} /></IconButton>}
+                startDecorator={
+                  <IconButton type="submit" color="primary" sx={{ borderRadius: 'md' }}>
+                    <AmaranthIcon icon={aiMagnifyingGlass} />
+                  </IconButton>
+                }
                 size="lg"
                 placeholder="Find your icon"
                 value={search}
