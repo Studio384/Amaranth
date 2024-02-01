@@ -38,8 +38,6 @@ export default function PageSpin() {
     ]
   };
 
-  console.log(aiSpinnerThird);
-
   return (
     <Stack id="spin" gap={1} sx={{ scrollMarginTop: 73 }}>
       <Typography level="h3">Spin</Typography>

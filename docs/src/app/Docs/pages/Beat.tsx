@@ -1,36 +1,37 @@
-import { CSSProperties, useMemo, useState } from 'react';
-
-import { Box, Card, Chip, Divider, FormControl, FormLabel, IconButton, Input, Sheet, Stack, Table, Typography } from '@mui/joy';
+import { Sheet, Stack, Table, Typography } from '@mui/joy';
 
 import Code from '@/design/components/Code';
-import Codeblock from '@/design/components/Codeblock';
 
-import AmaranthIcon, { aiPlay, aiHeart, aiExpand, IAmaranthIcon } from '../../../../../dist/esm';
+import { aiExpand, aiHeart, aiPlay } from '../../../../../dist/esm';
+import Playground from '../playground/Playgrond';
 
 export default function PageBeat() {
-  const [playgroundIcon, setPlaygroundIcon] = useState<IAmaranthIcon>(aiHeart);
-  const [playgroundBeat, setPlaygroundBeat] = useState<boolean | undefined>(true);
-  const [playgroundCssVariable, setPlaygroundCssVariable] = useState<CSSProperties>({});
-
-  const iconProperty = useMemo(() => {
-    switch (playgroundIcon) {
-      case aiHeart:
-        return 'aiHeart';
-      case aiExpand:
-        return 'aiExpand';
-      case aiPlay:
-        return 'aiPlay';
-    }
-  }, [playgroundIcon]);
-
-  const beatProperty = useMemo(() => {
-    switch (playgroundBeat) {
-      case true:
-        return ' beat';
-      case false:
-        return '';
-    }
-  }, [playgroundBeat]);
+  const playgroundConfig = {
+    icons: [aiHeart, aiExpand, aiPlay],
+    properties: [
+      {
+        label: 'Beat',
+        type: 'chip',
+        name: 'beat',
+        values: [true, false],
+        default: true
+      }
+    ],
+    cssVariables: [
+      {
+        name: '--ai-animation-duration',
+        default: '1s'
+      },
+      {
+        name: '--ai-animation-timing-function',
+        default: 'ease-in-out'
+      },
+      {
+        name: '--ai-animation-iteration-count',
+        default: 'infinite'
+      }
+    ]
+  };
 
   return (
     <Stack id="beat" gap={1} sx={{ scrollMarginTop: 73 }}>
@@ -39,69 +40,7 @@ export default function PageBeat() {
         With the <Code>beat</Code> property gives you a basic beat animation.
       </Typography>
 
-      <Card sx={{ display: 'grid', gridTemplateColumns: 'auto 280px', p: 0, contain: 'paint', gap: 0 }}>
-        <Stack sx={{ p: 2 }}>
-          <Box sx={{ display: 'flex', flexGrow: 1, justifyContent: 'center', alignItems: 'center', fontSize: 'xl4' }}>
-            <AmaranthIcon icon={playgroundIcon} beat={playgroundBeat} style={playgroundCssVariable} />
-          </Box>
-          <Codeblock>{`<AmaranthIcon icon={${iconProperty}}${beatProperty} />`}</Codeblock>
-        </Stack>
-        <Sheet sx={{ p: 2, borderWidth: '0 0 0 1px' }} variant="outlined" color="primary">
-          <Typography level="title-lg">Playground</Typography>
-          <Divider sx={{ my: 2, mx: -2 }} />
-          <Stack gap={1.5}>
-            <FormControl>
-              <FormLabel>Icon</FormLabel>
-              <Stack direction="row" gap={0.5}>
-                <IconButton variant={playgroundIcon === aiHeart ? 'soft' : 'outlined'} color="primary" onClick={() => setPlaygroundIcon(aiHeart)}>
-                  <AmaranthIcon icon={aiHeart} />
-                </IconButton>
-                <IconButton variant={playgroundIcon === aiExpand ? 'soft' : 'outlined'} color="primary" onClick={() => setPlaygroundIcon(aiExpand)}>
-                  <AmaranthIcon icon={aiExpand} />
-                </IconButton>
-                <IconButton variant={playgroundIcon === aiPlay ? 'soft' : 'outlined'} color="primary" onClick={() => setPlaygroundIcon(aiPlay)}>
-                  <AmaranthIcon icon={aiPlay} />
-                </IconButton>
-              </Stack>
-            </FormControl>
-            <FormControl>
-              <FormLabel>State</FormLabel>
-              <Stack direction="row" gap={0.5}>
-                <Chip onClick={() => setPlaygroundBeat(true)} color="primary" variant={playgroundBeat === true ? 'soft' : 'outlined'}>
-                  true
-                </Chip>
-                <Chip onClick={() => setPlaygroundBeat(false)} color="primary" variant={playgroundBeat === false ? 'soft' : 'outlined'}>
-                  false
-                </Chip>
-              </Stack>
-            </FormControl>
-            <FormControl>
-              <FormLabel>--ai-animation-duration</FormLabel>
-              <Input
-                color="primary"
-                onChange={(e) => setPlaygroundCssVariable((prev) => ({ ...prev, '--ai-animation-duration': e.target.value }))}
-                placeholder={playgroundBeat === 'pulse' ? '2s' : '1s'}
-              />
-            </FormControl>
-            <FormControl>
-              <FormLabel>--ai-animation-timing-function</FormLabel>
-              <Input
-                color="primary"
-                onChange={(e) => setPlaygroundCssVariable((prev) => ({ ...prev, '--ai-animation-timing-function': e.target.value }))}
-                placeholder="linear"
-              />
-            </FormControl>
-            <FormControl>
-              <FormLabel>--ai-animation-iteration-count</FormLabel>
-              <Input
-                color="primary"
-                onChange={(e) => setPlaygroundCssVariable((prev) => ({ ...prev, '--ai-animation-iteration-count': e.target.value }))}
-                placeholder="infinite"
-              />
-            </FormControl>
-          </Stack>
-        </Sheet>
-      </Card>
+      <Playground config={playgroundConfig} />
 
       <Typography level="h4">API</Typography>
       <Sheet variant="outlined" color="primary" sx={{ borderRadius: 'sm' }}>

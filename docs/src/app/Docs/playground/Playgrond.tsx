@@ -42,7 +42,7 @@ export default function Playground({ config }: IPlaygroundProps) {
   const iconProperties = useMemo(() => {
     const props = {};
 
-    config.properties.map((property) => {
+    config.properties?.map((property) => {
       props[property.name] = playgroundProps?.[property.name] ?? property.default;
     });
 
@@ -74,7 +74,7 @@ export default function Playground({ config }: IPlaygroundProps) {
   const iconVariables = useMemo(() => {
     const props = {};
 
-    config.cssVariables.map((variable) => {
+    config.cssVariables?.map((variable) => {
       props[variable.name] = playgroundCssVariable?.[variable.name] ?? variable.default;
     });
 
@@ -146,7 +146,7 @@ export default function Playground({ config }: IPlaygroundProps) {
               ))}
             </Stack>
           </FormControl>
-          {config.properties.map((property) => {
+          {config.properties?.map((property) => {
             switch (property.type) {
               case 'chip': {
                 return (
@@ -169,7 +169,7 @@ export default function Playground({ config }: IPlaygroundProps) {
               }
             }
           })}
-          {config.cssVariables.map((variable) => (
+          {config.cssVariables?.map((variable) => (
             <FormControl key={variable.name}>
               <FormLabel>{variable.name}</FormLabel>
               <Input
