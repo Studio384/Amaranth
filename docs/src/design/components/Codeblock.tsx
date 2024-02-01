@@ -11,15 +11,17 @@ export default function Codeblock({ children, ...props }: ICodeblockProps) {
     <Sheet
       variant="outlined"
       color="primary"
+      component="pre"
       sx={{
         fontSize: 'sm',
         fontFamily: 'code',
         p: 1,
+        m: 0,
         borderRadius: 'sm'
       }}
       {...props}
     >
-      {children}
+      <code>{children}</code>
     </Sheet>
   );
 }

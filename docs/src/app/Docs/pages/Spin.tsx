@@ -1,38 +1,44 @@
-import { CSSProperties, useMemo, useState } from 'react';
 
-import { Box, Card, Chip, Divider, FormControl, FormLabel, IconButton, Input, Sheet, Stack, Table, Typography } from '@mui/joy';
+import { Sheet, Stack, Table, Typography } from '@mui/joy';
 
 import Code from '@/design/components/Code';
-import Codeblock from '@/design/components/Codeblock';
 
-import AmaranthIcon, { aiGear, aiSpinner, aiSpinnerThird, IAmaranthIcon } from '../../../../../dist/esm';
+import { aiGear, aiSpinner, aiSpinnerThird } from '../../../../../dist/esm';
+import Playground from '../playground/Playgrond';
 
 export default function PageSpin() {
-  const [playgroundIcon, setPlaygroundIcon] = useState<IAmaranthIcon>(aiSpinnerThird);
-  const [playgroundSpin, setPlaygroundSpin] = useState<boolean | undefined | 'pulse'>(true);
-  const [playgroundCssVariable, setPlaygroundCssVariable] = useState<CSSProperties>({});
+  const playgroundConfig = {
+    icons: [aiSpinnerThird, aiSpinner, aiGear],
+    properties: [
+      {
+        label: 'Spin',
+        type: 'chip',
+        name: 'spin',
+        values: [true, 'pulse', false],
+        default: true
+      }
+    ],
+    cssVariables: [
+      {
+        name: '--ai-animation-duration',
+        default: '2s'
+      },
+      {
+        name: '--ai-animation-timing-function',
+        default: 'linear'
+      },
+      {
+        name: '--ai-animation-iteration-count',
+        default: 'infinite'
+      },
+      {
+        name: '--ai-animation-pulse-steps',
+        default: 8
+      }
+    ]
+  };
 
-  const iconProperty = useMemo(() => {
-    switch (playgroundIcon) {
-      case aiSpinnerThird:
-        return 'aiSpinnerThird';
-      case aiSpinner:
-        return 'aiSpinner';
-      case aiGear:
-        return 'aiGear';
-    }
-  }, [playgroundIcon]);
-
-  const spinProperty = useMemo(() => {
-    switch (playgroundSpin) {
-      case true:
-        return ' spin';
-      case false:
-        return '';
-      case 'pulse':
-        return ' spin="pulse"';
-    }
-  }, [playgroundSpin]);
+  console.log(aiSpinnerThird);
 
   return (
     <Stack id="spin" gap={1} sx={{ scrollMarginTop: 73 }}>
@@ -41,82 +47,7 @@ export default function PageSpin() {
         With the <Code>spin</Code> property you can make your icons play a rotation animation.
       </Typography>
 
-      <Card sx={{ display: 'grid', gridTemplateColumns: 'auto 280px', p: 0, contain: 'paint', gap: 0 }}>
-        <Stack sx={{ p: 2 }}>
-          <Box sx={{ display: 'flex', flexGrow: 1, justifyContent: 'center', alignItems: 'center', fontSize: 'xl4' }}>
-            <AmaranthIcon icon={playgroundIcon} spin={playgroundSpin} style={playgroundCssVariable} />
-          </Box>
-          <Codeblock>{`<AmaranthIcon icon={${iconProperty}}${spinProperty} />`}</Codeblock>
-        </Stack>
-        <Sheet sx={{ p: 2, borderWidth: '0 0 0 1px' }} variant="outlined" color="primary">
-          <Typography level="title-lg">Playground</Typography>
-          <Divider sx={{ my: 2, mx: -2 }} />
-          <Stack gap={1.5}>
-            <FormControl>
-              <FormLabel>Icon</FormLabel>
-              <Stack direction="row" gap={0.5}>
-                <IconButton variant={playgroundIcon === aiSpinnerThird ? 'soft' : 'outlined'} color="primary" onClick={() => setPlaygroundIcon(aiSpinnerThird)}>
-                  <AmaranthIcon icon={aiSpinnerThird} />
-                </IconButton>
-                <IconButton variant={playgroundIcon === aiSpinner ? 'soft' : 'outlined'} color="primary" onClick={() => setPlaygroundIcon(aiSpinner)}>
-                  <AmaranthIcon icon={aiSpinner} />
-                </IconButton>
-                <IconButton variant={playgroundIcon === aiGear ? 'soft' : 'outlined'} color="primary" onClick={() => setPlaygroundIcon(aiGear)}>
-                  <AmaranthIcon icon={aiGear} />
-                </IconButton>
-              </Stack>
-            </FormControl>
-            <FormControl>
-              <FormLabel>State</FormLabel>
-              <Stack direction="row" gap={0.5}>
-                <Chip onClick={() => setPlaygroundSpin(true)} color="primary" variant={playgroundSpin === true ? 'soft' : 'outlined'}>
-                  true
-                </Chip>
-                <Chip onClick={() => setPlaygroundSpin('pulse')} color="primary" variant={playgroundSpin === 'pulse' ? 'soft' : 'outlined'}>
-                  pulse
-                </Chip>
-                <Chip onClick={() => setPlaygroundSpin(false)} color="primary" variant={playgroundSpin === false ? 'soft' : 'outlined'}>
-                  false
-                </Chip>
-              </Stack>
-            </FormControl>
-            <FormControl>
-              <FormLabel>--ai-animation-duration</FormLabel>
-              <Input
-                color="primary"
-                onChange={(e) => setPlaygroundCssVariable((prev) => ({ ...prev, '--ai-animation-duration': e.target.value }))}
-                placeholder={playgroundSpin === 'pulse' ? '2s' : '1s'}
-              />
-            </FormControl>
-            <FormControl>
-              <FormLabel>--ai-animation-timing-function</FormLabel>
-              <Input
-                color="primary"
-                onChange={(e) => setPlaygroundCssVariable((prev) => ({ ...prev, '--ai-animation-timing-function': e.target.value }))}
-                placeholder="linear"
-              />
-            </FormControl>
-            <FormControl>
-              <FormLabel>--ai-animation-iteration-count</FormLabel>
-              <Input
-                color="primary"
-                onChange={(e) => setPlaygroundCssVariable((prev) => ({ ...prev, '--ai-animation-iteration-count': e.target.value }))}
-                placeholder="infinite"
-              />
-            </FormControl>
-            {playgroundSpin === 'pulse' && (
-              <FormControl>
-                <FormLabel>--ai-animation-pulse-steps</FormLabel>
-                <Input
-                  color="primary"
-                  onChange={(e) => setPlaygroundCssVariable((prev) => ({ ...prev, '--ai-animation-pulse-steps': e.target.value }))}
-                  placeholder="8"
-                />
-              </FormControl>
-            )}
-          </Stack>
-        </Sheet>
-      </Card>
+      <Playground config={playgroundConfig} />
 
       <Typography level="h4">API</Typography>
       <Sheet variant="outlined" color="primary" sx={{ borderRadius: 'sm' }}>
@@ -159,7 +90,10 @@ export default function PageSpin() {
           </tbody>
         </Table>
       </Sheet>
-      <Typography>When setting the property to <Code>pulse</Code>, some additional variables are available while some defaults are changed. The following variables are available or changed, otherwise everything functions the same.</Typography>
+      <Typography>
+        When setting the property to <Code>pulse</Code>, some additional variables are available while some defaults are changed. The following variables are
+        available or changed, otherwise everything functions the same.
+      </Typography>
       <Sheet variant="outlined" color="primary" sx={{ borderRadius: 'sm' }}>
         <Table variant="outlined">
           <thead>
