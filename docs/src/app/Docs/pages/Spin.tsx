@@ -4,7 +4,7 @@ import { Sheet, Stack, Table, Typography } from '@mui/joy';
 import Code from '@/design/components/Code';
 
 import { aiGear, aiSpinner, aiSpinnerThird } from '../../../../../dist/esm';
-import Playground from '../playground/Playgrond';
+import Playground from '../playground/Playground';
 
 export default function PageSpin() {
   const playgroundConfig = {
@@ -48,13 +48,13 @@ export default function PageSpin() {
       <Playground config={playgroundConfig} />
 
       <Typography level="h4">API</Typography>
-      <Sheet variant="outlined" color="primary" sx={{ borderRadius: 'sm' }}>
+      <Sheet variant="outlined" sx={{ borderRadius: 'sm', boxShadow: 'md' }}>
         <Table variant="outlined">
           <thead>
             <tr>
-              <th style={{ width: '25%' }}>Property name</th>
+              <th style={{ width: '30%' }}>Property name</th>
               <th style={{ width: '15%' }}>Default</th>
-              <th style={{ width: '60%' }}>Description</th>
+              <th style={{ width: '55%' }}>Description</th>
             </tr>
           </thead>
           <tbody>
@@ -92,13 +92,13 @@ export default function PageSpin() {
         When setting the property to <Code>pulse</Code>, some additional variables are available while some defaults are changed. The following variables are
         available or changed, otherwise everything functions the same.
       </Typography>
-      <Sheet variant="outlined" color="primary" sx={{ borderRadius: 'sm' }}>
+      <Sheet variant="outlined" sx={{ borderRadius: 'sm', boxShadow: 'md' }}>
         <Table variant="outlined">
           <thead>
             <tr>
-              <th style={{ width: '25%' }}>Property name</th>
+              <th style={{ width: '30%' }}>Property name</th>
               <th style={{ width: '15%' }}>Default</th>
-              <th style={{ width: '60%' }}>Description</th>
+              <th style={{ width: '55%' }}>Description</th>
             </tr>
           </thead>
           <tbody>

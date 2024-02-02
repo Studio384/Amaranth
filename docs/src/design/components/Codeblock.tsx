@@ -17,7 +17,8 @@ export default function Codeblock({ children, ...props }: ICodeblockProps) {
         fontFamily: 'code',
         p: 1,
         m: 0,
-        borderRadius: 'sm'
+        borderRadius: 'sm',
+        backgroundColor: 'rgba(var(--joy-palette-primary-mainChannel) / .1)'
       }}
       {...props}
     >

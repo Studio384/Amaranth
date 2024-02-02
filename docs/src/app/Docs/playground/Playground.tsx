@@ -4,7 +4,7 @@ import { Box, Card, Chip, Divider, FormControl, FormLabel, IconButton, Input, Sh
 
 import Codeblock from '@/design/components/Codeblock';
 
-import AmaranthIcon, { aiBroom, IAmaranthIcon } from '../../../../../dist/esm';
+import AmaranthIcon, { aiBroom, IAmaranthIcon } from '@studio384/amaranth';
 
 interface IPlaygroundProps {
   config: {
@@ -118,7 +118,7 @@ export default function Playground({ config }: IPlaygroundProps) {
   }
 />`}</Codeblock>
       </Stack>
-      <Sheet sx={{ p: 2, borderWidth: '0 0 0 1px' }} variant="outlined" color="primary">
+      <Sheet sx={{ p: 2, borderWidth: '0 0 0 1px' }} variant="outlined">
         <Stack direction="row" justifyContent="space-between" alignItems="center">
           <Typography level="title-lg">Playground</Typography>
           <IconButton
@@ -128,8 +128,6 @@ export default function Playground({ config }: IPlaygroundProps) {
               setPlaygroundCssVariable({});
             }}
             size="sm"
-            color="primary"
-            variant="outlined"
           >
             <AmaranthIcon icon={aiBroom} />
           </IconButton>
@@ -140,7 +138,7 @@ export default function Playground({ config }: IPlaygroundProps) {
             <FormLabel>Icon</FormLabel>
             <Stack direction="row" gap={0.5}>
               {config.icons.map((icon) => (
-                <IconButton variant={playgroundIcon === icon ? 'soft' : 'outlined'} color="primary" onClick={() => setPlaygroundIcon(icon)} key={icon.name}>
+                <IconButton variant={playgroundIcon === icon ? 'soft' : 'outlined'} color={playgroundIcon === icon ? 'primary' : 'neutral'} onClick={() => setPlaygroundIcon(icon)} key={icon.name}>
                   <AmaranthIcon icon={icon} />
                 </IconButton>
               ))}
@@ -157,7 +155,7 @@ export default function Playground({ config }: IPlaygroundProps) {
                         <Chip
                           key={key}
                           onClick={() => setPlaygroundProps((prev) => ({ ...prev, [property.name]: value }))}
-                          color="primary"
+                          color={iconProperties?.[property.name] === value ? 'primary' : 'neutral'}
                           variant={iconProperties?.[property.name] === value ? 'soft' : 'outlined'}
                         >
                           {value.toString()}
@@ -173,7 +171,6 @@ export default function Playground({ config }: IPlaygroundProps) {
             <FormControl key={variable.name}>
               <FormLabel>{variable.name}</FormLabel>
               <Input
-                color="primary"
                 onChange={(e) => setPlaygroundCssVariable((prev) => ({ ...prev, [variable.name]: e.target.value }))}
                 placeholder={variable.default}
                 value={playgroundCssVariable?.[variable.name] ?? ''}

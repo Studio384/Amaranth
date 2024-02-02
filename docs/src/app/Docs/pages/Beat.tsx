@@ -3,7 +3,7 @@ import { Sheet, Stack, Table, Typography } from '@mui/joy';
 import Code from '@/design/components/Code';
 
 import { aiExpand, aiHeart, aiPlay } from '../../../../../dist/esm';
-import Playground from '../playground/Playgrond';
+import Playground from '../playground/Playground';
 
 export default function PageBeat() {
   const playgroundConfig = {
@@ -43,13 +43,13 @@ export default function PageBeat() {
       <Playground config={playgroundConfig} />
 
       <Typography level="h4">API</Typography>
-      <Sheet variant="outlined" color="primary" sx={{ borderRadius: 'sm' }}>
+      <Sheet variant="outlined" sx={{ borderRadius: 'sm', boxShadow: 'md' }}>
         <Table variant="outlined">
           <thead>
             <tr>
-              <th style={{ width: '25%' }}>Property name</th>
+              <th style={{ width: '30%' }}>Property name</th>
               <th style={{ width: '15%' }}>Default</th>
-              <th style={{ width: '60%' }}>Description</th>
+              <th style={{ width: '55%' }}>Description</th>
             </tr>
           </thead>
           <tbody>

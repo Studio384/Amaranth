@@ -1,7 +1,7 @@
 import { extendTheme } from '@mui/joy/styles';
 
 import colors from './colors';
-import { darkColorDarkModeVariables, darkColorLightModeVariables } from './generateColor';
+import { darkColorDarkModeVariables, darkColorLightModeVariables, neutralColorDarkModeVariables, neutralColorLightModeVariables } from './generateColor';
 
 const joyTheme = extendTheme({
   fontFamily: {
@@ -38,35 +38,22 @@ const joyTheme = extendTheme({
     light: {
       palette: {
         primary: darkColorLightModeVariables('primary', colors.amicons),
-        background: {
-          body: '#F3FBF8'
-        }
+        neutral: neutralColorLightModeVariables('neutral', colors.neutral)
       }
     },
     dark: {
       palette: {
         primary: darkColorDarkModeVariables('primary', colors.amicons),
-        background: {
-          body: '#030e18',
-          level1: '#051623',
-          level2: '#061f2d',
-          level3: '#082937',
-          surface: '#051623',
-          popup: '#030e18',
-          tooltip: '#082937'
-        }
+        neutral: neutralColorDarkModeVariables('neutral', colors.neutral)
       }
     }
   },
   components: {
     JoyCard: {
       styleOverrides: {
-        root: ({ theme }) => ({
-          borderColor: 'var(--joy-palette-primary-200)',
-          [theme.getColorSchemeSelector('dark')]: {
-            borderColor: 'var(--joy-palette-primary-800)'
-          },
-        })
+        root: {
+          boxShadow: 'var(--joy-shadow-md)'
+        }
       }
     }
   }

@@ -3,7 +3,7 @@ import { Stack, Typography } from '@mui/joy';
 import Code from '@/design/components/Code';
 
 import { aiAmicons, aiCar, aiMessageSmile } from '../../../../../dist/esm';
-import Playground from '../playground/Playgrond';
+import Playground from '../playground/Playground';
 
 export default function PageFlip() {
   const playgroundConfig = {
