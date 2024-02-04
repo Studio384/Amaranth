@@ -1,5 +1,5 @@
 
-import { aiAGum,aiAddressBook,aiAlarmClock,aiAlignCenter,aiAlignJustify,aiAlignLeft,aiAlignRight,aiAmaranth,aiAmicons,aiAngleDown,aiAngleLeft,aiAngleRight,aiAngleUp,aiAnglesY,aiAppleAppStore,aiArrowDownFromCloud,aiArrowDownShortWide,aiArrowDownToLine,aiArrowDownWideShort,aiArrowDown,aiArrowLeftFromBracket,aiArrowLeftToBracket,aiArrowLeftToLine,aiArrowLeft,aiArrowPointer,aiArrowRightFromBracket,aiArrowRightFromFile,aiArrowRightFromSmartphone,aiArrowRightProhibited,aiArrowRightToBracket,aiArrowRightToFile,aiArrowRightToLine,aiArrowRight,aiArrowRotateRight,aiArrowUpShortWide,aiArrowUpToCloud,aiArrowUpToLine,aiArrowUpWideShort,aiArrowUp,aiArrowsDownLeftRightUpCenter,aiArrowsRotateRight,aiAsterisk,aiAt,aiAzure,aiBackward,aiBarsStaggered,aiBars,aiBeer,aiBel,aiBicycle,aiBlf,aiBold,aiBolt,aiBookOpen,aiBook,aiBoxOpenFull,aiBox,aiBracketsCurly,aiBroom,aiBug,aiBuilding,aiCalendarClock,aiCalendarDay,aiCalendarRangeClock,aiCalendarRange,aiCalendarStars,aiCalendarWeek,aiCalendar,aiCampfire,aiCar,aiChainSlash,aiChain,aiChalkboardPerson,aiChangeWindows,aiChartPie,aiCheck,aiChevronDown,aiChevronLeft,aiChevronRight,aiChevronUp,aiChrome,aiCircleCheck,aiCircleDashed,aiCircleExclamation,aiCircleHalfInner,aiCircleHalf,aiCircleInfo,aiCirclePerson,aiCirclePlus,aiCircleQuestion,aiCircleXmark,aiCircle,aiCity,aiClockRotateLeft,aiClock,aiCloudDrizzle,aiCloudFog,aiCloudHail,aiCloudLightning,aiCloudMoon,aiCloudRain,aiCloudSnow,aiCloudSun,aiCloud,aiCodeBranchUp,aiCodeBranch,aiCode,aiCodeblock,aiCoin,aiCommand,aiCompactDisc,aiCompare,aiCompassDrafting,aiCompass,aiCompress,aiCopy,aiCreditCard,aiDevices,aiDiceFive,aiDiceFour,aiDiceOne,aiDiceSix,aiDiceThree,aiDiceTwo,aiDice,aiDisplayCam,aiDisplay,aiDoor,aiDroplet,aiEarth,aiEclipse,aiEdge,aiEllipsisV,aiEllipsis,aiEnvelope,aiEthernet,aiEuro,aiExpand,aiExport,aiEyeSlash,aiEye,aiFacebookMessenger,aiFacebook,aiFastBackward,aiFastForward,aiFax,aiFile,aiFilesList,aiFiles,aiFilmstrip,aiFilterPlus,aiFilterXmark,aiFilter,aiFingerprint,aiFirefox,aiFlagCheckered,aiFlag,aiFlask,aiFloppyDisk,aiFolderImage,aiFolder,aiForward,aiGamepad,aiGauge,aiGear,aiGift,aiGithub,aiGlobe,aiGooglePlay,aiGrid,aiGripLines,aiHeading1,aiHeading2,aiHeading3,aiHeading4,aiHeading5,aiHeading6,aiHeadset,aiHeartCrack,aiHeartHalf,aiHeart,aiHorizontalLine,aiHourglassEmpty,aiHourglassEnd,aiHourglassHalf,aiHourglassStart,aiHouse,aiIdCard,aiImage,aiInstagram,aiItalic,aiJesterHat,aiKey,aiKite,aiLaptop,aiLaravel,aiLayersPlus,aiLayers,aiLifeRing,aiLightbulbOn,aiLightbulb,aiLine,aiLinkedin,aiListChecksXmark,aiListChecks,aiListClock,aiListOrderedClock,aiListOrdered,aiList,aiLocationPinDot,aiLocationPinSlash,aiLocationPin,aiLocationPinsRoute,aiLockOpen,aiLock,aiMagnifyingGlass,aiMegaphone,aiMessagePen,aiMessageSmile,aiMessageText,aiMessage,aiMicrochip,aiMicrophone,aiMin,aiMoonCloud,aiMoon,aiMusicPause,aiMusic,aiNetwork,aiNext,aiNotes,aiNumpad,aiPager,aiPaperPlane,aiPaper,aiParachuteBox,aiParagraph,aiPatreon,aiPause,aiPen,aiPeopleCircle,aiPeopleXmark,aiPeople,aiPersonClock,aiPersonGear,aiPersonHeadset,aiPersonList,aiPersonLock,aiPersonPlus,aiPersonXmark,aiPerson,aiPhoneArrowDownLeftProhibited,aiPhoneArrowDownLeft,aiPhoneArrowUpRightProhibited,aiPhoneArrowUpRight,aiPhoneClock,aiPhoneGear,aiPhoneList,aiPhoneOffice,aiPhoneVolume,aiPhone,aiPlane,aiPlanetRinged,aiPlateUtensils,aiPlayPause,aiPlay,aiPlus,aiPower,aiPrevious,aiPrinter,aiProhibited,aiPuzzlePiece,aiQuote,aiReact,aiReceipt,aiRectangleP,aiRedo,aiRepeatOnce,aiRepeat,aiRocket,aiSafari,aiScouting,aiServer,aiShare,aiShieldKeyhole,aiShieldPlus,aiShieldXmark,aiShield,aiShoePrints,aiShoppingCart,aiShuffle,aiSidebarLeft,aiSidebarRight,aiSignature,aiSimCard,aiSippy,aiSliders,aiSmartphoneArrowRight,aiSmartphoneHinge,aiSmartphone,aiSnowflake,aiSpeakerGrill,aiSpinnerThird,aiSpinner,aiSpy,aiSquareGum,aiStarHalf,aiStar,aiStarscout,aiStop,aiStopwatch,aiStore,aiStrikethrough,aiSubscript,aiSunCloud,aiSun,aiSunrise,aiSunset,aiSuperscript,aiSwatchbook,aiTableCellMerge,aiTableClock,aiTableColumnInsertLeft,aiTableColumnInsertRight,aiTableColumnMin,aiTableHeaderCell,aiTableHeaderColumn,aiTableHeaderRow,aiTableMin,aiTableRowInsertBottom,aiTableRowInsertTop,aiTableRowMin,aiTable,aiTagGear,aiTagPlus,aiTag,aiTent,aiTerminal,aiThermometerEmpty,aiThermometerFull,aiThermometerHalf,aiThumbstackSlash,aiThumbstack,aiTicket,aiTiktok,aiToggleOff,aiToggleOn,aiTowerBroadcast,aiTranslate,aiTrashCan,aiTree,aiTrekkingBackpack,aiTriangleExclamation,aiTrophy,aiTwitter,aiUmbrella,aiUnderline,aiUndo,aiUniversalAccess,aiValkyrieSword,aiVideo,aiVirtualReality,aiVisualStudio,aiVoicemail,aiVolume0,aiVolume1,aiVolume2,aiVolume3,aiVolumeSlash,aiWallet,aiWallpaper,aiWaveform,aiWebhooksClock,aiWebhooks,aiWind,aiWindow,aiWindows,aiXbox,aiXmark } from '@studio384/amaranth';
+import { aiAGum,aiAddressBook,aiAlarmClock,aiAlignCenter,aiAlignJustify,aiAlignLeft,aiAlignRight,aiAmaranth,aiAmicons,aiAngleDown,aiAngleLeft,aiAngleRight,aiAngleUp,aiAnglesY,aiAppleAppStore,aiArrowDownFromCloud,aiArrowDownShortWide,aiArrowDownToLine,aiArrowDownWideShort,aiArrowDown,aiArrowLeftFromBracket,aiArrowLeftToBracket,aiArrowLeftToLine,aiArrowLeft,aiArrowPointer,aiArrowRightFromBracket,aiArrowRightFromFile,aiArrowRightFromSmartphone,aiArrowRightProhibited,aiArrowRightToBracket,aiArrowRightToFile,aiArrowRightToLine,aiArrowRight,aiArrowRotateRight,aiArrowUpShortWide,aiArrowUpToCloud,aiArrowUpToLine,aiArrowUpWideShort,aiArrowUp,aiArrowsDownLeftRightUpCenter,aiArrowsRotateRight,aiAsterisk,aiAt,aiAzure,aiBackward,aiBarsStaggered,aiBars,aiBeer,aiBel,aiBicycle,aiBlf,aiBold,aiBolt,aiBookOpen,aiBook,aiBoxOpenFull,aiBox,aiBracketsCurly,aiBroom,aiBug,aiBuilding,aiCalendarClock,aiCalendarDay,aiCalendarRangeClock,aiCalendarRange,aiCalendarStars,aiCalendarWeek,aiCalendar,aiCampfire,aiCar,aiChainSlash,aiChain,aiChalkboardPerson,aiChangeWindows,aiChartPie,aiCheck,aiChevronDown,aiChevronLeft,aiChevronRight,aiChevronUp,aiChrome,aiCircleCheck,aiCircleDashed,aiCircleExclamation,aiCircleHalfInner,aiCircleHalf,aiCircleInfo,aiCirclePerson,aiCirclePlus,aiCircleQuestion,aiCircleXmark,aiCircle,aiCity,aiClipboard,aiClockRotateLeft,aiClock,aiCloudDrizzle,aiCloudFog,aiCloudHail,aiCloudLightning,aiCloudMoon,aiCloudRain,aiCloudSnow,aiCloudSun,aiCloud,aiCodeBranchUp,aiCodeBranch,aiCode,aiCodeblock,aiCoin,aiCommand,aiCompactDisc,aiCompare,aiCompassDrafting,aiCompass,aiCompress,aiCopy,aiCreditCard,aiCrop,aiCursor,aiDevices,aiDiceFive,aiDiceFour,aiDiceOne,aiDiceSix,aiDiceThree,aiDiceTwo,aiDice,aiDisplayCam,aiDisplay,aiDoor,aiDroplet,aiEarth,aiEclipse,aiEdge,aiEllipsisH,aiEllipsisV,aiEllipsis,aiEnvelope,aiEthernet,aiEuro,aiExpand,aiExport,aiEyeSlash,aiEye,aiFacebookMessenger,aiFacebook,aiFastBackward,aiFastForward,aiFax,aiFile,aiFilesList,aiFiles,aiFilmstrip,aiFilterPlus,aiFilterXmark,aiFilter,aiFingerprint,aiFirefox,aiFlagCheckered,aiFlag,aiFlask,aiFloppyDisk,aiFolderImage,aiFolder,aiForward,aiFrame,aiGamepad,aiGauge,aiGear,aiGift,aiGithub,aiGlobe,aiGooglePlay,aiGrid,aiGripLines,aiHeading1,aiHeading2,aiHeading3,aiHeading4,aiHeading5,aiHeading6,aiHeadset,aiHeartCrack,aiHeartHalf,aiHeart,aiHorizontalLine,aiHourglassEmpty,aiHourglassEnd,aiHourglassHalf,aiHourglassStart,aiHouse,aiIcons,aiIdCard,aiImage,aiInstagram,aiItalic,aiJesterHat,aiKey,aiKeyboard,aiKite,aiLaptop,aiLaravel,aiLayersPlus,aiLayers,aiLifeRing,aiLightbulbOn,aiLightbulb,aiLine,aiLinkedin,aiListChecksXmark,aiListChecks,aiListClock,aiListOrderedClock,aiListOrdered,aiList,aiLocationPinDot,aiLocationPinSlash,aiLocationPin,aiLocationPinsRoute,aiLockOpen,aiLock,aiMagnifyingGlass,aiMegaphone,aiMessagePen,aiMessageSmile,aiMessageText,aiMessage,aiMicrochip,aiMicrophone,aiMin,aiMoonCloud,aiMoon,aiMusicPause,aiMusic,aiNetwork,aiNext,aiNotes,aiNumpad,aiPager,aiPaperPlane,aiPaper,aiParachuteBox,aiParagraph,aiPatreon,aiPause,aiPen,aiPeopleCircle,aiPeopleXmark,aiPeople,aiPersonClock,aiPersonGear,aiPersonHeadset,aiPersonList,aiPersonLock,aiPersonPlus,aiPersonXmark,aiPerson,aiPhoneArrowDownLeftProhibited,aiPhoneArrowDownLeft,aiPhoneArrowUpRightProhibited,aiPhoneArrowUpRight,aiPhoneClock,aiPhoneGear,aiPhoneList,aiPhoneOffice,aiPhoneVolume,aiPhone,aiPlane,aiPlanetRinged,aiPlateUtensils,aiPlayPause,aiPlay,aiPlus,aiPower,aiPrevious,aiPrinter,aiProhibited,aiPuzzlePiece,aiQuote,aiReact,aiReceipt,aiRectangleP,aiRedo,aiRepeatOnce,aiRepeat,aiRocket,aiSafari,aiScouting,aiServer,aiShare,aiShieldKeyhole,aiShieldPlus,aiShieldXmark,aiShield,aiShoePrints,aiShoppingCart,aiShuffle,aiSidebarLeft,aiSidebarRight,aiSignature,aiSimCard,aiSippy,aiSliders,aiSmartphoneArrowRight,aiSmartphoneHinge,aiSmartphone,aiSnowflake,aiSpeakerGrill,aiSpinnerThird,aiSpinner,aiSpy,aiSquareGum,aiStarHalf,aiStar,aiStarscout,aiStop,aiStopwatch,aiStore,aiStrikethrough,aiSubscript,aiSunCloud,aiSun,aiSunrise,aiSunset,aiSuperscript,aiSwatchbook,aiTableCellMerge,aiTableClock,aiTableColumnInsertLeft,aiTableColumnInsertRight,aiTableColumnMin,aiTableHeaderCell,aiTableHeaderColumn,aiTableHeaderRow,aiTableMin,aiTableRowInsertBottom,aiTableRowInsertTop,aiTableRowMin,aiTable,aiTagGear,aiTagPlus,aiTag,aiTent,aiTerminal,aiThermometerEmpty,aiThermometerFull,aiThermometerHalf,aiThumbstackSlash,aiThumbstack,aiTicket,aiTiktok,aiToggleOff,aiToggleOn,aiTowerBroadcast,aiTranslate,aiTrashCan,aiTree,aiTrekkingBackpack,aiTriangleExclamation,aiTrophy,aiTwitter,aiUmbrella,aiUnderline,aiUndo,aiUniversalAccess,aiValkyrieSword,aiVideo,aiVirtualReality,aiVisualStudio,aiVoicemail,aiVolume0,aiVolume1,aiVolume2,aiVolume3,aiVolumeSlash,aiWallet,aiWallpaper,aiWaveform,aiWebhooksClock,aiWebhooks,aiWind,aiWindow,aiWindows,aiXbox,aiXmark } from '@studio384/amaranth';
 
 const icons = [
   {
@@ -654,6 +654,13 @@ const icons = [
     icon: aiCity
   },
   {
+    component: 'aiClipboard',
+    categories: ["business","writing"],
+    tags: ["copy"],
+    slug: 'clipboard',
+    icon: aiClipboard
+  },
+  {
     component: 'aiClockRotateLeft',
     categories: ["time","arrows"],
     tags: ["history"],
@@ -822,6 +829,20 @@ const icons = [
     icon: aiCreditCard
   },
   {
+    component: 'aiCrop',
+    categories: ["design","editing"],
+    tags: [],
+    slug: 'crop',
+    icon: aiCrop
+  },
+  {
+    component: 'aiCursor',
+    categories: ["writing"],
+    tags: ["cursor"],
+    slug: 'cursor',
+    icon: aiCursor
+  },
+  {
     component: 'aiDevices',
     categories: ["coding","devices"],
     tags: ["laptop","smartphone","mobile"],
@@ -927,9 +948,16 @@ const icons = [
     icon: aiEdge
   },
   {
+    component: 'aiEllipsisH',
+    categories: ["editor"],
+    tags: ["three dots","meatballs","more","overflow"],
+    slug: 'ellipsis-h',
+    icon: aiEllipsisH
+  },
+  {
     component: 'aiEllipsisV',
     categories: ["editor"],
-    tags: ["ellipsis-v","three dots","meatballs","more","overflow"],
+    tags: ["three dots","meatballs","more","overflow"],
     slug: 'ellipsis-v',
     icon: aiEllipsisV
   },
@@ -1137,6 +1165,13 @@ const icons = [
     icon: aiForward
   },
   {
+    component: 'aiFrame',
+    categories: ["design","film"],
+    tags: [],
+    slug: 'frame',
+    icon: aiFrame
+  },
+  {
     component: 'aiGamepad',
     categories: ["devices","gaming"],
     tags: ["controller"],
@@ -1312,6 +1347,13 @@ const icons = [
     icon: aiHouse
   },
   {
+    component: 'aiIcons',
+    categories: ["design"],
+    tags: ["circle","square","xmark","triangle"],
+    slug: 'icons',
+    icon: aiIcons
+  },
+  {
     component: 'aiIdCard',
     categories: ["security","people"],
     tags: ["identification"],
@@ -1352,6 +1394,13 @@ const icons = [
     tags: [],
     slug: 'key',
     icon: aiKey
+  },
+  {
+    component: 'aiKeyboard',
+    categories: ["coding","devices","writing"],
+    tags: ["input"],
+    slug: 'keyboard',
+    icon: aiKeyboard
   },
   {
     component: 'aiKite',
