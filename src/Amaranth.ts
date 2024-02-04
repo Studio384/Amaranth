@@ -965,12 +965,19 @@ export const aiEllipsis: {
   name: 'ellipsis',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M3.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m6 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m6 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/></svg>`
 };
+export const aiEnvelopeOpen: {
+  name: 'envelope_open';
+  data: string;
+} = {
+  name: 'envelope_open',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M8.845.36a1.75 1.75 0 0 0-1.69 0L1.422 3.523A2.75 2.75 0 0 0 0 5.93v7.319A2.75 2.75 0 0 0 2.75 16h10.5A2.75 2.75 0 0 0 16 13.25V5.93a2.75 2.75 0 0 0-1.421-2.407zM7.88 1.673a.25.25 0 0 1 .242 0l5.576 3.077-5.576 3.077a.25.25 0 0 1-.242 0L2.303 4.75zM1.5 6.02l5.655 3.12a1.75 1.75 0 0 0 1.69 0L14.5 6.02v7.23c0 .69-.56 1.25-1.25 1.25H2.75c-.69 0-1.25-.56-1.25-1.25z"/></svg>`
+};
 export const aiEnvelope: {
   name: 'envelope';
   data: string;
 } = {
   name: 'envelope',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M2.75 2A2.75 2.75 0 0 0 0 4.75v6.5A2.75 2.75 0 0 0 2.75 14h10.5A2.75 2.75 0 0 0 16 11.25v-6.5A2.75 2.75 0 0 0 13.25 2zm-.136 1.507Q2.68 3.5 2.75 3.5h10.5q.069 0 .136.007L8.17 8.323a.25.25 0 0 1-.34 0zm-1.096 1.03 5.295 4.888a1.75 1.75 0 0 0 2.374 0l5.295-4.888q.018.104.018.213v6.5c0 .69-.56 1.25-1.25 1.25H2.75c-.69 0-1.25-.56-1.25-1.25v-6.5q0-.109.018-.213"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M2.75 2A2.75 2.75 0 0 0 0 4.75v6.5A2.75 2.75 0 0 0 2.75 14h10.5A2.75 2.75 0 0 0 16 11.25v-6.5A2.75 2.75 0 0 0 13.25 2zm-.02 1.5h10.54L8.152 7.437a.25.25 0 0 1-.304 0zm-1.199.97 5.402 4.155a1.75 1.75 0 0 0 2.134 0l5.402-4.155q.03.136.031.28v6.5c0 .69-.56 1.25-1.25 1.25H2.75c-.69 0-1.25-.56-1.25-1.25v-6.5q0-.144.031-.28"/></svg>`
 };
 export const aiEthernet: {
   name: 'ethernet';
@@ -2840,6 +2847,7 @@ export type Amaranth =
   | 'ellipsis_h'
   | 'ellipsis_v'
   | 'ellipsis'
+  | 'envelope_open'
   | 'envelope'
   | 'ethernet'
   | 'euro'
@@ -3234,6 +3242,7 @@ export const amaranthSet = [
   aiEllipsisH,
   aiEllipsisV,
   aiEllipsis,
+  aiEnvelopeOpen,
   aiEnvelope,
   aiEthernet,
   aiEuro,
