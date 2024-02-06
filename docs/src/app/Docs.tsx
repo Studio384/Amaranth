@@ -9,7 +9,7 @@ import PageSpin from './Docs/pages/Spin';
 
 export default function Docs() {
   return (
-    <Container>
+    <Container sx={{my: 2 }}>
       <Box
         sx={{
           display: 'grid',
@@ -17,11 +17,10 @@ export default function Docs() {
           gap: { xs: 1 }
         }}
       >
-        <Box sx={{ position: 'sticky', top: 57, overflow: 'auto', py: 1.5, maxHeight: 'calc(100dvh - 57px)', alignSelf: 'flex-start' }}>
+        <Box sx={{ position: 'sticky', top: 58 + 32, overflow: 'auto', maxHeight: 'calc(100dvh - 57px)', alignSelf: 'flex-start' }}>
           <DocsNavigation />
         </Box>
-        <Stack gap={4} sx={{ my: 2 }}>
-          <Typography level="h1">Documentation</Typography>
+        <Stack gap={4}>
           <PageInstallation />
           <PageSpin />
           <PageRotate />

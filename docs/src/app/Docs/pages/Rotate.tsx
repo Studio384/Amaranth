@@ -30,7 +30,7 @@ export default function PageRotate() {
   };
 
   return (
-    <Stack id="rotate" gap={1} sx={{ scrollMarginTop: 73 }}>
+    <Stack id="rotate" gap={1} sx={{ scrollMarginTop: 58 + 32 }}>
       <Typography level="h3">Rotate</Typography>
       <Typography>
         With the <Code>rotate</Code> property you can change the default rotation of your icon.

@@ -34,7 +34,7 @@ export default function PageBeat() {
   };
 
   return (
-    <Stack id="beat" gap={1} sx={{ scrollMarginTop: 73 }}>
+    <Stack id="beat" gap={1} sx={{ scrollMarginTop: 58 + 32 }}>
       <Typography level="h3">Beat</Typography>
       <Typography>
         With the <Code>beat</Code> property gives you a basic beat animation.

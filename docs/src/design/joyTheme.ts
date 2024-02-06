@@ -37,13 +37,19 @@ const joyTheme = extendTheme({
   colorSchemes: {
     light: {
       palette: {
-        primary: darkColorLightModeVariables('primary', colors.amicons),
+        background: {
+          channel: '255 255 255'
+        },
+        primary: darkColorLightModeVariables('primary', colors.primary),
         neutral: neutralColorLightModeVariables('neutral', colors.neutral)
       }
     },
     dark: {
       palette: {
-        primary: darkColorDarkModeVariables('primary', colors.amicons),
+        background: {
+          channel: '0 0 0'
+        },
+        primary: darkColorDarkModeVariables('primary', colors.primary),
         neutral: neutralColorDarkModeVariables('neutral', colors.neutral)
       }
     }
