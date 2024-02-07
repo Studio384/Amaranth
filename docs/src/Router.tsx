@@ -1,13 +1,14 @@
 import { createBrowserRouter } from 'react-router-dom';
 
+import Docs from './app/Docs';
 import Error from './app/Error';
 import Home from './app/Home';
 import Icon from './app/Icon';
-import Docs from './app/Docs';
-import Layout from './design/layout/Layout';
 import Icons from './app/Icons';
-import NewLayout from './design/layout/NewLayout';
 import DocsLayout from './design/layout/DocsLayout';
+import IconLayout from './design/layout/IconLayout';
+import Layout from './design/layout/Layout';
+import NewLayout from './design/layout/NewLayout';
 
 const router = createBrowserRouter([
   {
@@ -17,10 +18,6 @@ const router = createBrowserRouter([
       {
         path: '/icons',
         element: <Icons />
-      },
-      {
-        path: '/icons/:slug',
-        element: <Icon />
       }
     ]
   },
@@ -31,6 +28,16 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />
+      }
+    ]
+  },
+  {
+    element: <IconLayout />,
+    errorElement: <Error />,
+    children: [
+      {
+        path: '/icons/:slug',
+        element: <Icon />
       }
     ]
   },
