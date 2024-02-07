@@ -811,6 +811,20 @@ export const aiCompress: {
   name: 'compress',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M10.5 4.25c0 .69.56 1.25 1.25 1.25h2.5a.75.75 0 0 1 0 1.5h-2.5A2.75 2.75 0 0 1 9 4.25v-2.5a.75.75 0 0 1 1.5 0zM4.25 10.5c.69 0 1.25.56 1.25 1.25v2.5a.75.75 0 0 0 1.5 0v-2.5A2.75 2.75 0 0 0 4.25 9h-2.5a.75.75 0 0 0 0 1.5zm6.25 1.25c0-.69.56-1.25 1.25-1.25h2.5a.75.75 0 0 0 0-1.5h-2.5A2.75 2.75 0 0 0 9 11.75v2.5a.75.75 0 0 0 1.5 0zm-5-7.5c0 .69-.56 1.25-1.25 1.25h-2.5a.75.75 0 0 0 0 1.5h2.5A2.75 2.75 0 0 0 7 4.25v-2.5a.75.75 0 0 0-1.5 0z"/></svg>`
 };
+export const aiComputerMouseScrollWheel: {
+  name: 'computer_mouse_scroll_wheel';
+  data: string;
+} = {
+  name: 'computer_mouse_scroll_wheel',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M8.75 3.75a.75.75 0 0 0-1.5 0v1.5a.75.75 0 0 0 1.5 0z"/><path d="M6.75 0A4.75 4.75 0 0 0 2 4.75v5.5A5.75 5.75 0 0 0 7.75 16h.5A5.75 5.75 0 0 0 14 10.25v-5.5A4.75 4.75 0 0 0 9.25 0zM3.5 4.75A3.25 3.25 0 0 1 6.75 1.5h2.5a3.25 3.25 0 0 1 3.25 3.25v5.5a4.25 4.25 0 0 1-4.25 4.25h-.5a4.25 4.25 0 0 1-4.25-4.25z"/></svg>`
+};
+export const aiComputerMouse: {
+  name: 'computer_mouse';
+  data: string;
+} = {
+  name: 'computer_mouse',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M2 4.75A4.75 4.75 0 0 1 6.75 0h2.5A4.75 4.75 0 0 1 14 4.75v5.5A5.75 5.75 0 0 1 8.25 16h-.5A5.75 5.75 0 0 1 2 10.25zm1.51-.25h3.74v-3h-.5a3.25 3.25 0 0 0-3.24 3m5.24-3v3h3.74a3.25 3.25 0 0 0-3.24-3zM12.5 6h-9v4.25a4.25 4.25 0 0 0 4.25 4.25h.5a4.25 4.25 0 0 0 4.25-4.25z"/></svg>`
+};
 export const aiCopy: {
   name: 'copy';
   data: string;
@@ -2825,6 +2839,8 @@ export type Amaranth =
   | 'compass_drafting'
   | 'compass'
   | 'compress'
+  | 'computer_mouse_scroll_wheel'
+  | 'computer_mouse'
   | 'copy'
   | 'credit_card'
   | 'crop'
@@ -3220,6 +3236,8 @@ export const amaranthSet = [
   aiCompassDrafting,
   aiCompass,
   aiCompress,
+  aiComputerMouseScrollWheel,
+  aiComputerMouse,
   aiCopy,
   aiCreditCard,
   aiCrop,
