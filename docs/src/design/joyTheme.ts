@@ -51,8 +51,8 @@ const joyTheme = extendTheme({
         neutral: neutralColorVariables('neutral', dark.neutral),
         background: {
           body: '#000',
-          surface: 'var(--joy-palette-neutral-100)',
-          level1: '#08080b',
+          surface: 'var(--joy-palette-neutral-50)',
+          level1: 'var(--joy-palette-neutral-200)',
           channel: '0 0 0',
           darkBackdrop: 'rgba(0 0 0 / .5)',
           hover: 'rgba(var(--joy-palette-primary-mainChannel) / .125)'

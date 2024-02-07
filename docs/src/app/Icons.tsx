@@ -123,12 +123,8 @@ export default function Icons() {
                     setNeedle(e.target.value);
                     setPage(0);
                   }}
-                  sx={{
-                    borderColor: 'primary.100'
-                  }}
                 />
                 <IconButton
-                  color="primary"
                   variant="outlined"
                   disabled={needle === '' && category === null}
                   onClick={() => {
@@ -150,13 +146,13 @@ export default function Icons() {
               {result.slice(page * 96, (page + 1) * 96).map((icon: ILibraryIcon) => (
                 <Sheet
                   key={icon.slug}
-                  variant="outlined"
                   sx={{
                     gap: 0,
                     borderRadius: 'sm',
-                    borderColor: 'primary.50',
+                    color: 'text.primary',
                     bgcolor: 'neutral.50',
                     '&:hover, &:focus-within': {
+                      color: 'primary.700',
                       backgroundColor: 'primary.100'
                     }
                   }}
