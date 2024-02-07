@@ -15,7 +15,7 @@ export default function Navbar() {
         position: 'sticky',
         zIndex: 1600,
         top: 0,
-        py: 2
+        pt: 2
       }}
     >
       <Sheet
