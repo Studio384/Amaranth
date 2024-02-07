@@ -139,7 +139,7 @@ export default function Playground({ config }: IPlaygroundProps) {
             <Stack direction="row" gap={0.5}>
               {config.icons.map((icon) => (
                 <IconButton
-                  variant={playgroundIcon === icon ? 'soft' : 'outlined'}
+                  variant={playgroundIcon === icon ? 'solid' : 'outlined'}
                   color={playgroundIcon === icon ? 'primary' : 'neutral'}
                   onClick={() => setPlaygroundIcon(icon)}
                   key={icon.name}
@@ -161,7 +161,7 @@ export default function Playground({ config }: IPlaygroundProps) {
                           key={key}
                           onClick={() => setPlaygroundProps((prev) => ({ ...prev, [property.name]: value }))}
                           color={iconProperties?.[property.name] === value ? 'primary' : 'neutral'}
-                          variant={iconProperties?.[property.name] === value ? 'soft' : 'outlined'}
+                          variant={iconProperties?.[property.name] === value ? 'solid' : 'outlined'}
                         >
                           {value.toString()}
                         </Chip>
