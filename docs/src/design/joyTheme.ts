@@ -1,7 +1,8 @@
 import { extendTheme } from '@mui/joy/styles';
 
-import colors from './colors';
-import { darkColorDarkModeVariables, darkColorLightModeVariables, neutralColorDarkModeVariables, neutralColorLightModeVariables } from './generateColor';
+import light from './light';
+import dark from './dark';
+import { darkColorVariables, neutralColorVariables } from './generateColor';
 
 const joyTheme = extendTheme({
   fontFamily: {
@@ -40,17 +41,28 @@ const joyTheme = extendTheme({
         background: {
           channel: '255 255 255'
         },
-        primary: darkColorLightModeVariables('primary', colors.primary),
-        neutral: neutralColorLightModeVariables('neutral', colors.neutral)
+        primary: darkColorVariables('primary', light.primary),
+        neutral: neutralColorVariables('neutral', light.neutral)
       }
     },
     dark: {
       palette: {
+        primary: darkColorVariables('primary', dark.primary),
+        neutral: neutralColorVariables('neutral', dark.neutral),
         background: {
-          channel: '0 0 0'
+          body: '#000',
+          surface: 'var(--joy-palette-neutral-100)',
+          level1: '#08080b',
+          channel: '0 0 0',
+          darkBackdrop: 'rgba(0 0 0 / .5)',
+          hover: 'rgba(var(--joy-palette-primary-mainChannel) / .125)'
         },
-        primary: darkColorDarkModeVariables('primary', colors.primary),
-        neutral: neutralColorDarkModeVariables('neutral', colors.neutral)
+        text: {
+          primary: '#fff',
+          secondary: '#fff',
+          tertiary: 'var(--joy-palette-neutral-800)',
+          icon: '#fff'
+        }
       }
     }
   },

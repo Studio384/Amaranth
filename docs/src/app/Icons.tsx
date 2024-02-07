@@ -124,10 +124,7 @@ export default function Icons() {
                     setPage(0);
                   }}
                   sx={{
-                    borderColor: 'primary.100',
-                    [theme.getColorSchemeSelector('dark')]: {
-                      borderColor: 'primary.800'
-                    }
+                    borderColor: 'primary.100'
                   }}
                 />
                 <IconButton
@@ -158,14 +155,9 @@ export default function Icons() {
                     gap: 0,
                     borderRadius: 'sm',
                     borderColor: 'primary.50',
+                    bgcolor: 'neutral.50',
                     '&:hover, &:focus-within': {
-                      backgroundColor: 'primary.50'
-                    },
-                    [theme.getColorSchemeSelector('dark')]: {
-                      borderColor: 'primary.900',
-                      '&:hover, &:focus-within': {
-                        backgroundColor: 'primary.900'
-                      }
+                      backgroundColor: 'primary.100'
                     }
                   }}
                 >

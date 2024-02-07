@@ -1,9 +1,8 @@
-import { Container, Dropdown, ListItemDecorator, Menu, MenuButton, MenuItem, Sheet, Stack, Typography, useColorScheme, useTheme } from '@mui/joy';
+import { Container, Dropdown, ListItemDecorator, Menu, MenuButton, MenuItem, Sheet, Stack, Typography, useColorScheme } from '@mui/joy';
 
 import AmaranthIcon, { aiCircleHalfInner, aiMoon, aiSun } from '@studio384/amaranth';
 
 export default function Footer() {
-  const theme = useTheme();
   const { mode, setMode } = useColorScheme();
 
   return (
@@ -13,10 +12,7 @@ export default function Footer() {
         borderWidth: 0,
         borderTopWidth: 1,
         bgcolor: 'transparent',
-        borderColor: 'primary.50',
-        [theme.getColorSchemeSelector('dark')]: {
-          borderColor: 'primary.900'
-        }
+        borderColor: 'primary.100'
       }}
     >
       <Container maxWidth="lg" sx={{ py: 2 }}>
