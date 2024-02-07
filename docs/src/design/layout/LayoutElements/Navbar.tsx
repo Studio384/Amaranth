@@ -14,8 +14,8 @@ export default function Navbar() {
       sx={{
         position: 'sticky',
         zIndex: 1600,
-        top: 16,
-        my: 4
+        top: 0,
+        py: 2
       }}
     >
       <Sheet

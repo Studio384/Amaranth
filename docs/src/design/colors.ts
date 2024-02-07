@@ -1,4 +1,3 @@
-
 const colors = {
   primary: {
     50: '#f8f6ff',

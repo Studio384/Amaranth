@@ -138,7 +138,12 @@ export default function Playground({ config }: IPlaygroundProps) {
             <FormLabel>Icon</FormLabel>
             <Stack direction="row" gap={0.5}>
               {config.icons.map((icon) => (
-                <IconButton variant={playgroundIcon === icon ? 'soft' : 'outlined'} color={playgroundIcon === icon ? 'primary' : 'neutral'} onClick={() => setPlaygroundIcon(icon)} key={icon.name}>
+                <IconButton
+                  variant={playgroundIcon === icon ? 'soft' : 'outlined'}
+                  color={playgroundIcon === icon ? 'primary' : 'neutral'}
+                  onClick={() => setPlaygroundIcon(icon)}
+                  key={icon.name}
+                >
                   <AmaranthIcon icon={icon} />
                 </IconButton>
               ))}

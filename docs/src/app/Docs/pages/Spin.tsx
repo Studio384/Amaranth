@@ -1,4 +1,3 @@
-
 import { Sheet, Stack, Table, Typography } from '@mui/joy';
 
 import Code from '@/design/components/Code';

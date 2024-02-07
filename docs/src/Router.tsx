@@ -5,46 +5,31 @@ import Error from './app/Error';
 import Home from './app/Home';
 import Icon from './app/Icon';
 import Icons from './app/Icons';
-import DocsLayout from './design/layout/DocsLayout';
-import IconLayout from './design/layout/IconLayout';
 import Layout from './design/layout/Layout';
-import NewLayout from './design/layout/NewLayout';
 
 const router = createBrowserRouter([
   {
     element: <Layout />,
     errorElement: <Error />,
     children: [
-      {
-        path: '/icons',
-        element: <Icons />
-      }
     ]
   },
   {
-    element: <NewLayout />,
+    element: <Layout />,
     errorElement: <Error />,
     children: [
       {
         path: '/',
         element: <Home />
-      }
-    ]
-  },
-  {
-    element: <IconLayout />,
-    errorElement: <Error />,
-    children: [
+      },
+      {
+        path: '/icons',
+        element: <Icons />
+      },
       {
         path: '/icons/:slug',
         element: <Icon />
-      }
-    ]
-  },
-  {
-    element: <DocsLayout />,
-    errorElement: <Error />,
-    children: [
+      },
       {
         path: '/docs',
         element: <Docs />

@@ -1,4 +1,4 @@
-import { IAmaranthIcon } from "@studio384/amaranth";
+import { IAmaranthIcon } from '@studio384/amaranth';
 
 export interface IIcon {
   title: string;
