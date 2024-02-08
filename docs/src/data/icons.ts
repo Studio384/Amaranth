@@ -1418,15 +1418,15 @@ const icons = [
   },
   {
     component: 'aiKeyboardBrightnessHigh',
-    categories: [],
-    tags: [],
+    categories: ["accessibility","devices"],
+    tags: ["light"],
     slug: 'keyboard-brightness-high',
     icon: aiKeyboardBrightnessHigh
   },
   {
     component: 'aiKeyboardBrightnessLow',
-    categories: [],
-    tags: [],
+    categories: ["accessibility","devices"],
+    tags: ["light"],
     slug: 'keyboard-brightness-low',
     icon: aiKeyboardBrightnessLow
   },
@@ -1551,8 +1551,8 @@ const icons = [
   },
   {
     component: 'aiLoader',
-    categories: [],
-    tags: [],
+    categories: ["spinners"],
+    tags: ["loading","progress"],
     slug: 'loader',
     icon: aiLoader
   },
