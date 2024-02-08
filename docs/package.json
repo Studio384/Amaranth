@@ -14,7 +14,7 @@
   "dependencies": {
     "@emotion/react": "11.11.3",
     "@emotion/styled": "11.11.0",
-    "@mui/joy": "5.0.0-beta.26",
+    "@mui/joy": "5.0.0-beta.27",
     "@reduxjs/toolkit": "2.1.0",
     "@studio384/amaranth": "file:../",
     "react": "18.2.0",
@@ -25,7 +25,7 @@
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
     "@types/react": "18.2.55",
-    "@types/react-dom": "18.2.18",
+    "@types/react-dom": "18.2.19",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
     "@vitejs/plugin-react-swc": "3.6.0",
@@ -37,7 +37,7 @@
     "eslint-plugin-react-refresh": "0.4.5",
     "prettier": "3.2.5",
     "typescript": "5.3.3",
-    "vite": "5.0.12",
+    "vite": "5.1.0",
     "vite-bundle-visualizer": "1.0.1",
     "vite-plugin-html": "3.2.2"
   }

@@ -36,7 +36,10 @@ export default function Navbar() {
           sx={{
             display: 'grid',
             gridTemplateColumns: '1fr auto 1fr',
-            gap: 1
+            gap: 1,
+            '--variant-plainColor': 'var(--joy-palette-common-white)',
+            '--variant-plainHoverBg': 'var(--joy-palette-primary-500)',
+            '--variant-plainActiveBg': 'var(--joy-palette-primary-600)'
           }}
         >
           <Stack direction="row" alignItems="center" gap={1} sx={{ pl: 0.5 }}>
@@ -48,11 +51,6 @@ export default function Navbar() {
           <Stack
             direction="row"
             gap={0.5}
-            sx={{
-              '--variant-plainColor': 'var(--joy-palette-common-white)',
-              '--variant-plainHoverBg': 'var(--joy-palette-primary-500)',
-              '--variant-plainActiveBg': 'var(--joy-palette-primary-600)'
-            }}
           >
             <Button
               onClick={() => navigate('/')}
@@ -83,7 +81,7 @@ export default function Navbar() {
             </IconButton>
           </Stack>
           <Stack direction="row" justifyContent="flex-end">
-            <Button onClick={() => navigate('/')} startDecorator={<AmaranthIcon icon={aiArrowDownToLine} />} size="sm">
+            <Button onClick={() => navigate('/')} startDecorator={<AmaranthIcon icon={aiArrowDownToLine} />} size="sm" variant="plain">
               Download
             </Button>
           </Stack>
