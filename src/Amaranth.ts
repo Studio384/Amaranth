@@ -328,6 +328,69 @@ export const aiBars: {
   name: 'bars',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75M1 8a.75.75 0 0 1 .75-.75h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 8m0 5.25a.75.75 0 0 1 .75-.75h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1-.75-.75"/></svg>`
 };
+export const aiBatteryCharging: {
+  name: 'battery_charging';
+  data: string;
+} = {
+  name: 'battery_charging',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M2.75 3.5h4.87L5.972 5H2.75c-.69 0-1.25.56-1.25 1.25v3.5c0 .69.56 1.25 1.25 1.25h1.701l-.03.074c-.198.471-.175.989.032 1.426H2.75A2.75 2.75 0 0 1 0 9.75v-3.5A2.75 2.75 0 0 1 2.75 3.5m9.5 7.5H9.46l-1.65 1.5h4.44a2.75 2.75 0 0 0 2.705-2.25h.295A.75.75 0 0 0 16 9.5v-3a.75.75 0 0 0-.75-.75h-.295A2.75 2.75 0 0 0 12.25 3.5h-1.272c.203.428.23.934.044 1.399l-.04.101h1.268c.69 0 1.25.56 1.25 1.25v3.5c0 .69-.56 1.25-1.25 1.25"/><path d="M9.824 3.634a.75.75 0 0 1 .27.894L9.106 7h1.324a.75.75 0 0 1 .505 1.305l-4.397 4a.75.75 0 0 1-1.196-.845L6.373 9H5a.75.75 0 0 1-.505-1.305l4.397-4a.75.75 0 0 1 .932-.061"/></svg>`
+};
+export const aiBatteryEmpty: {
+  name: 'battery_empty';
+  data: string;
+} = {
+  name: 'battery_empty',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M0 6.25A2.75 2.75 0 0 1 2.75 3.5h9.5c1.348 0 2.47.97 2.705 2.25h.295a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-.75.75h-.295a2.75 2.75 0 0 1-2.705 2.25h-9.5A2.75 2.75 0 0 1 0 9.75zM2.75 5c-.69 0-1.25.56-1.25 1.25v3.5c0 .69.56 1.25 1.25 1.25h9.5c.69 0 1.25-.56 1.25-1.25v-3.5c0-.69-.56-1.25-1.25-1.25z"/></svg>`
+};
+export const aiBatteryExclamation: {
+  name: 'battery_exclamation';
+  data: string;
+} = {
+  name: 'battery_exclamation',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M2.75 3.5h3.668a1.74 1.74 0 0 0-.168.75V5h-3.5c-.69 0-1.25.56-1.25 1.25v3.5c0 .69.56 1.25 1.25 1.25h3.313a2 2 0 0 0 .205 1.5H2.75A2.75 2.75 0 0 1 0 9.75v-3.5A2.75 2.75 0 0 1 2.75 3.5m9.5 7.5H9.937a2 2 0 0 1-.205 1.5h2.518a2.75 2.75 0 0 0 2.705-2.25h.295A.75.75 0 0 0 16 9.5v-3a.75.75 0 0 0-.75-.75h-.295A2.75 2.75 0 0 0 12.25 3.5H9.582c.108.227.168.482.168.75V5h2.5c.69 0 1.25.56 1.25 1.25v3.5c0 .69-.56 1.25-1.25 1.25M8 3.5a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0v-4.5A.75.75 0 0 1 8 3.5m1 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>`
+};
+export const aiBatteryFull: {
+  name: 'battery_full';
+  data: string;
+} = {
+  name: 'battery_full',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M2.5 6.5v3a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-3A.5.5 0 0 0 12 6H3a.5.5 0 0 0-.5.5"/><path d="M2.75 3.5A2.75 2.75 0 0 0 0 6.25v3.5a2.75 2.75 0 0 0 2.75 2.75h9.5a2.75 2.75 0 0 0 2.705-2.25h.295A.75.75 0 0 0 16 9.5v-3a.75.75 0 0 0-.75-.75h-.295A2.75 2.75 0 0 0 12.25 3.5zM1.5 6.25C1.5 5.56 2.06 5 2.75 5h9.5c.69 0 1.25.56 1.25 1.25v3.5c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25z"/></svg>`
+};
+export const aiBatteryHalf: {
+  name: 'battery_half';
+  data: string;
+} = {
+  name: 'battery_half',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M2.5 6.5v3a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-3A.5.5 0 0 0 7 6H3a.5.5 0 0 0-.5.5"/><path d="M2.75 3.5A2.75 2.75 0 0 0 0 6.25v3.5a2.75 2.75 0 0 0 2.75 2.75h9.5a2.75 2.75 0 0 0 2.705-2.25h.295A.75.75 0 0 0 16 9.5v-3a.75.75 0 0 0-.75-.75h-.295A2.75 2.75 0 0 0 12.25 3.5zM1.5 6.25C1.5 5.56 2.06 5 2.75 5h9.5c.69 0 1.25.56 1.25 1.25v3.5c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25z"/></svg>`
+};
+export const aiBatteryLow: {
+  name: 'battery_low';
+  data: string;
+} = {
+  name: 'battery_low',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M2.5 6.5v3a.5.5 0 0 0 .5.5h.5a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5H3a.5.5 0 0 0-.5.5"/><path d="M2.75 3.5A2.75 2.75 0 0 0 0 6.25v3.5a2.75 2.75 0 0 0 2.75 2.75h9.5a2.75 2.75 0 0 0 2.705-2.25h.295A.75.75 0 0 0 16 9.5v-3a.75.75 0 0 0-.75-.75h-.295A2.75 2.75 0 0 0 12.25 3.5zM1.5 6.25C1.5 5.56 2.06 5 2.75 5h9.5c.69 0 1.25.56 1.25 1.25v3.5c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25z"/></svg>`
+};
+export const aiBatteryQuarter: {
+  name: 'battery_quarter';
+  data: string;
+} = {
+  name: 'battery_quarter',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M2.5 6.5v3a.5.5 0 0 0 .5.5h1.5a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5H3a.5.5 0 0 0-.5.5"/><path d="M2.75 3.5A2.75 2.75 0 0 0 0 6.25v3.5a2.75 2.75 0 0 0 2.75 2.75h9.5a2.75 2.75 0 0 0 2.705-2.25h.295A.75.75 0 0 0 16 9.5v-3a.75.75 0 0 0-.75-.75h-.295A2.75 2.75 0 0 0 12.25 3.5zM1.5 6.25C1.5 5.56 2.06 5 2.75 5h9.5c.69 0 1.25.56 1.25 1.25v3.5c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25z"/></svg>`
+};
+export const aiBatterySlash: {
+  name: 'battery_slash';
+  data: string;
+} = {
+  name: 'battery_slash',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M1.28.22A.75.75 0 1 0 .22 1.28l2.235 2.236A2.75 2.75 0 0 0 0 6.25v3.5a2.75 2.75 0 0 0 2.75 2.75h8.69l3.28 3.28a.75.75 0 1 0 1.06-1.06zM9.94 11H2.75c-.69 0-1.25-.56-1.25-1.25v-3.5C1.5 5.56 2.06 5 2.75 5h1.19zm3.56-1.25c0 .2-.047.39-.131.558l1.086 1.086c.247-.332.422-.72.5-1.144h.295A.75.75 0 0 0 16 9.5v-3a.75.75 0 0 0-.75-.75h-.295A2.75 2.75 0 0 0 12.25 3.5H6.56L8.06 5h4.19c.69 0 1.25.56 1.25 1.25z"/></svg>`
+};
+export const aiBatteryThreeQuarter: {
+  name: 'battery_three_quarter';
+  data: string;
+} = {
+  name: 'battery_three_quarter',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M2.5 6.5v3a.5.5 0 0 0 .5.5h6.5a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5H3a.5.5 0 0 0-.5.5"/><path fill-rule="evenodd" d="M2.75 3.5A2.75 2.75 0 0 0 0 6.25v3.5a2.75 2.75 0 0 0 2.75 2.75h9.5a2.75 2.75 0 0 0 2.705-2.25h.295A.75.75 0 0 0 16 9.5v-3a.75.75 0 0 0-.75-.75h-.295A2.75 2.75 0 0 0 12.25 3.5zM1.5 6.25C1.5 5.56 2.06 5 2.75 5h9.5c.69 0 1.25.56 1.25 1.25v3.5c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25z"/></svg>`
+};
 export const aiBeer: {
   name: 'beer';
   data: string;
@@ -2791,6 +2854,15 @@ export type Amaranth =
   | 'backward'
   | 'bars_staggered'
   | 'bars'
+  | 'battery_charging'
+  | 'battery_empty'
+  | 'battery_exclamation'
+  | 'battery_full'
+  | 'battery_half'
+  | 'battery_low'
+  | 'battery_quarter'
+  | 'battery_slash'
+  | 'battery_three_quarter'
   | 'beer'
   | 'bel'
   | 'bicycle'
@@ -3191,6 +3263,15 @@ export const amaranthSet = [
   aiBackward,
   aiBarsStaggered,
   aiBars,
+  aiBatteryCharging,
+  aiBatteryEmpty,
+  aiBatteryExclamation,
+  aiBatteryFull,
+  aiBatteryHalf,
+  aiBatteryLow,
+  aiBatteryQuarter,
+  aiBatterySlash,
+  aiBatteryThreeQuarter,
   aiBeer,
   aiBel,
   aiBicycle,
