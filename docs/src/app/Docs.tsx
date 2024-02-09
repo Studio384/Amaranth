@@ -17,7 +17,7 @@ export default function Docs() {
           Documentation
         </Typography>
       </Header>
-      <Container sx={{ my: 2 }}>
+      <Container sx={{ my: 5 }}>
         <Box
           sx={{
             display: 'grid',

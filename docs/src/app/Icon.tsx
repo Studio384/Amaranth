@@ -10,11 +10,14 @@ import { IIcon, ILibraryIcon } from '@/types';
 
 import AmaranthIcon, { aiArrowLeft } from '@studio384/amaranth';
 
+import IconCard from './Components/IconCard';
+
 export default function Icon() {
   const navigate = useNavigate();
   const { slug } = useParams();
 
   const [icon, setIcon] = useState<IIcon | null>(null);
+  const firstCategory = icon?.categories?.[0];
 
   useEffect(() => {
     fetch(`/data/icons/${slug}.json`)
@@ -30,6 +33,14 @@ export default function Icon() {
         })
         .join('')}`
     : '';
+
+  const categoryIcons = useMemo(() => {
+    if (firstCategory) {
+      return icons.filter((icon) => icon.categories.includes(firstCategory));
+    }
+
+    return icons;
+  }, [firstCategory]);
 
   const aiIcon: ILibraryIcon = useMemo(() => icons.find((icon) => icon.component === reactImport)!, [reactImport]);
 
@@ -116,7 +127,7 @@ export default function Icon() {
         </Stack>
       </Header>
       <Container>
-        <Stack gap={2} sx={{ my: 2 }}>
+        <Stack gap={4} sx={{ my: 5 }}>
           <Stack direction={{ xs: 'column', md: 'row' }} gap={2}>
             <Card variant="outlined" sx={{ flexGrow: 1 }}>
               <Typography level="h3" sx={{ mb: 3 }} startDecorator={<AmaranthIcon icon={aiIcon?.icon} />}>
@@ -146,6 +157,20 @@ export default function Icon() {
 
 <AmaranthIcon icon={${reactImport}} />`}
               </Codeblock>
+            </Box>
+          </Stack>
+          <Stack gap={2}>
+            <Typography level="h3">More icons in <Typography color="primary">{firstCategory}</Typography></Typography>
+            <Box
+              sx={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(min(9rem, 100%), 1fr))',
+                gap: { xs: 1 }
+              }}
+            >
+              {categoryIcons.slice(0, 20).map((icon: ILibraryIcon) => (
+                <IconCard key={icon.slug} icon={icon} />
+              ))}
             </Box>
           </Stack>
         </Stack>
