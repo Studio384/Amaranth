@@ -6,6 +6,7 @@ import Home from './app/Home';
 import Icon from './app/Icon';
 import Icons from './app/Icons';
 import Layout from './design/layout/Layout';
+import Changelog from './app/Changelog';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: '/docs',
         element: <Docs />
+      },
+      {
+        path: '/changelog',
+        element: <Changelog />
       }
     ]
   }

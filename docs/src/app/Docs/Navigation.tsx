@@ -1,8 +1,8 @@
 import { Fragment } from 'react';
 
-import { Box, List, ListItem, ListItemButton, ListItemContent, ListItemDecorator, ListSubheader, Typography } from '@mui/joy';
+import { List, ListItem, ListItemButton, ListItemContent, ListSubheader, Typography } from '@mui/joy';
 
-import AmaranthIcon, { aiAmicons, aiArrowRotateRight, aiArrowsDownLeftRightUpCenter, aiHeart, aiReact, aiSpinner } from '../../../../dist/esm';
+import AmaranthIcon, { aiAmicons, aiArrowRotateRight, aiArrowUp, aiArrowsDownLeftRightUpCenter, aiHeart, aiReact, aiSpinner } from '../../../../dist/esm';
 
 export default function DocsNavigation() {
   const pages = [
@@ -40,6 +40,17 @@ export default function DocsNavigation() {
           title: 'Beat',
           icon: aiHeart,
           link: '#beat'
+        }
+      ]
+    },
+    {
+      title: 'More',
+      icon: aiArrowUp,
+      pages: [
+        {
+          title: 'Changelog',
+          icon: aiArrowUp,
+          link: '/changelog'
         }
       ]
     }

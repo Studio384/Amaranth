@@ -1,22 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import {
-  Box,
-  Container,
-  IconButton,
-  Input,
-  Link,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemContent,
-  ListItemDecorator,
-  Sheet,
-  Stack,
-  Typography,
-  useTheme
-} from '@mui/joy';
+import { Box, Container, IconButton, Input, List, ListItem, ListItemButton, ListItemContent, ListItemDecorator, Stack, Typography } from '@mui/joy';
 
 import categories from '@/data/categories';
 import icons from '@/data/icons';
@@ -26,8 +11,9 @@ import { IIconCategory, ILibraryIcon } from '@/types';
 
 import AmaranthIcon, { aiChevronLeft, aiChevronRight, aiFilterXmark, aiMagnifyingGlass } from '@studio384/amaranth';
 
+import IconCard from './Components/IconCard';
+
 export default function Icons() {
-  const theme = useTheme();
   const location = useLocation();
 
   const [page, setPage] = useState(0);
@@ -144,48 +130,7 @@ export default function Icons() {
               }}
             >
               {result.slice(page * 96, (page + 1) * 96).map((icon: ILibraryIcon) => (
-                <Sheet
-                  key={icon.slug}
-                  sx={{
-                    gap: 0,
-                    borderRadius: 'sm',
-                    color: 'text.primary',
-                    bgcolor: 'neutral.50',
-                    '&:hover, &:focus-within': {
-                      color: 'primary.700',
-                      backgroundColor: 'primary.100'
-                    }
-                  }}
-                >
-                  <Stack gap={1} justifyContent="center" alignItems="center" sx={{ pt: 2, pb: 1 }}>
-                    <Box sx={{ height: 24, width: 24, fontSize: 24 }} lineHeight="1rem">
-                      <AmaranthIcon icon={icon.icon} />
-                    </Box>
-                    <Link
-                      overlay
-                      href={`/icons/${icon.slug}`}
-                      underline="none"
-                      color="neutral"
-                      sx={{
-                        maxWidth: 'calc(100% - 16px)'
-                      }}
-                    >
-                      <Typography
-                        noWrap
-                        level="body-sm"
-                        sx={{
-                          px: 0.5,
-                          py: 0.25,
-                          borderRadius: 'sm',
-                          fontSize: 12,
-                          fontFamily: 'SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace'
-                        }}
-                      >
-                        {icon.slug}
-                      </Typography>
-                    </Link>
-                  </Stack>
-                </Sheet>
+                <IconCard key={icon.slug} icon={icon} />
               ))}
             </Box>
 
