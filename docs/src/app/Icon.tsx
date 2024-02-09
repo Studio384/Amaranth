@@ -158,13 +158,17 @@ export default function Icon() {
                   gridAutoRows: '140px'
                 }}
               >
-                <Card variant="solid" color="primary" sx={{ fontSize: 'xl4', display: 'flex', justifyContent: 'center', alignItems: 'center', order: 1 }}>
+                <Card
+                  variant="solid"
+                  color="primary"
+                  sx={{ fontSize: 'xl4', display: 'flex', justifyContent: 'center', alignItems: 'center', order: 1, boxShadow: 'none' }}
+                >
                   <AmaranthIcon icon={aiIcon?.icon} />
                 </Card>
                 <Card
                   variant="outlined"
                   color="primary"
-                  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gridColumn: 'span 2', order: 2 }}
+                  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gridColumn: 'span 2', order: 2, boxShadow: 'none' }}
                 >
                   <Typography fontSize="xl4" color="primary" startDecorator={<AmaranthIcon icon={aiIcon?.icon} />} noWrap sx={{ maxWidth: 1 }}>
                     {icon?.title}
@@ -180,7 +184,8 @@ export default function Icon() {
                     alignItems: 'center',
                     bgcolor: 'primary.300',
                     gridColumn: 'span 2',
-                    order: 3
+                    order: 3,
+                    boxShadow: 'none'
                   }}
                 >
                   <Stack direction="row" gap={10}>
@@ -194,10 +199,18 @@ export default function Icon() {
                     </Stack>
                   </Stack>
                 </Card>
-                <Card variant="outlined" color="primary" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', order: { xs: 4, md: 2, lg: 4 } }}>
+                <Card
+                  variant="outlined"
+                  color="primary"
+                  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', order: { xs: 4, md: 2, lg: 4 }, boxShadow: 'none' }}
+                >
                   <Input startDecorator={<AmaranthIcon icon={aiIcon?.icon} />} placeholder={icon?.title} sx={{ maxWidth: 1 }} />
                 </Card>
-                <Card variant="outlined" color="primary" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', order: { xs: 6, sm: 10, lg: 5 } }}>
+                <Card
+                  variant="outlined"
+                  color="primary"
+                  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', order: { xs: 6, sm: 10, lg: 5 }, boxShadow: 'none' }}
+                >
                   <Avatar color="primary" size="lg" variant="solid">
                     <AmaranthIcon icon={aiIcon?.icon} />
                   </Avatar>
@@ -211,7 +224,8 @@ export default function Icon() {
                     justifyContent: 'center',
                     alignItems: 'center',
                     gridColumn: { xs: 'span 2', sm: 'span 3', md: 'span 2', lg: 'span 3' },
-                    order: 7
+                    order: 7,
+                    boxShadow: 'none'
                   }}
                 >
                   <Stack direction="row" gap={10}>
@@ -229,7 +243,7 @@ export default function Icon() {
                     </Stack>
                   </Stack>
                 </Card>
-                <Card variant="outlined" color="primary" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', order: 8 }}>
+                <Card variant="outlined" color="primary" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', order: 8, boxShadow: 'none' }}>
                   <Avatar color="primary" size="lg" variant="outlined" sx={{ borderRadius: 'md', bgcolor: 'primary.200', borderColor: 'primary.400' }}>
                     <AmaranthIcon icon={aiIcon?.icon} />
                   </Avatar>
@@ -237,7 +251,7 @@ export default function Icon() {
                 <Card
                   variant="solid"
                   color="primary"
-                  sx={{ fontSize: 'xl4', display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: 'primary.700', order: 9 }}
+                  sx={{ fontSize: 'xl4', display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: 'primary.700', order: 9, boxShadow: 'none' }}
                 >
                   <Stack justifyContent="center" alignItems="center" gap={1}>
                     <AmaranthIcon icon={aiIcon?.icon} beat />
@@ -253,7 +267,8 @@ export default function Icon() {
                     justifyContent: 'center',
                     alignItems: 'center',
                     gridColumn: { xs: 'span 2', sm: 'span 3', md: 'span 2', lg: 'span 3' },
-                    order: { xs: 10, md: 8, lg: 10 }
+                    order: { xs: 10, md: 8, lg: 10 },
+                    boxShadow: 'none'
                   }}
                 >
                   <Stack direction="row" gap={10}>
@@ -271,7 +286,11 @@ export default function Icon() {
                     </Stack>
                   </Stack>
                 </Card>
-                <Card variant="soft" color="primary" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', order: { xs: 1, sm: 11 } }}>
+                <Card
+                  variant="soft"
+                  color="primary"
+                  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', order: { xs: 1, sm: 11 }, boxShadow: 'none' }}
+                >
                   <Button size="lg" startDecorator={<AmaranthIcon icon={aiIcon?.icon} />}>
                     Button
                   </Button>
@@ -279,7 +298,7 @@ export default function Icon() {
                 <Card
                   variant="outlined"
                   color="primary"
-                  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gridColumn: 'span 2', order: 12 }}
+                  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gridColumn: 'span 2', order: 12, boxShadow: 'none' }}
                 >
                   <Alert
                     variant="outlined"
