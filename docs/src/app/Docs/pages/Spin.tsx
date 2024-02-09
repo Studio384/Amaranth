@@ -39,7 +39,7 @@ export default function PageSpin() {
   };
 
   return (
-    <Stack id="spin" gap={1} sx={{ scrollMarginTop: 58 + 32 }}>
+    <Stack id="spin" gap={2} sx={{ scrollMarginTop: 58 + 32 }}>
       <Typography level="h3">Spin</Typography>
       <Typography>
         With the <Code>spin</Code> property you can make your icons play a rotation animation.
