@@ -1,14 +1,14 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
-import { Box, Button, Card, Chip, Container, IconButton, Input, Sheet, Stack, Typography } from '@mui/joy';
+import { Alert, Avatar, Box, Button, Card, Chip, Container, IconButton, Input, Sheet, Stack, Typography } from '@mui/joy';
 
 import icons from '@/data/icons';
 import Codeblock from '@/design/components/Codeblock';
 import Header from '@/design/layout/LayoutElements/Header';
 import { IIcon, ILibraryIcon } from '@/types';
 
-import AmaranthIcon, { aiArrowLeft } from '@studio384/amaranth';
+import AmaranthIcon, { aiArrowLeft, aiXmark } from '@studio384/amaranth';
 
 import IconCard from './Components/IconCard';
 
@@ -129,25 +129,6 @@ export default function Icon() {
       <Container>
         <Stack gap={4} sx={{ my: 5 }}>
           <Stack direction={{ xs: 'column', md: 'row' }} gap={2}>
-            <Card variant="outlined" sx={{ flexGrow: 1 }}>
-              <Typography level="h3" sx={{ mb: 3 }} startDecorator={<AmaranthIcon icon={aiIcon?.icon} />}>
-                Heading icon
-              </Typography>
-              <Typography level="body-md" sx={{ mb: 3 }} startDecorator={<AmaranthIcon icon={aiIcon?.icon} />}>
-                Inline icon
-              </Typography>
-              <Box sx={{ mb: 3, display: 'flex', gap: 1 }}>
-                <Button color="primary" startDecorator={<AmaranthIcon icon={aiIcon?.icon} />}>
-                  Button icon
-                </Button>
-                <IconButton color="primary" variant="outlined">
-                  <AmaranthIcon icon={aiIcon?.icon} />
-                </IconButton>
-              </Box>
-              <Input color="primary" startDecorator={<AmaranthIcon icon={aiIcon?.icon} />} placeholder={icon?.title} />
-            </Card>
-          </Stack>
-          <Stack direction={{ xs: 'column', md: 'row' }} gap={2}>
             <Box sx={{ flexGrow: 1 }}>
               <Typography level="h3" sx={{ mb: 2 }}>
                 Usage
@@ -157,6 +138,164 @@ export default function Icon() {
 
 <AmaranthIcon icon={${reactImport}} />`}
               </Codeblock>
+            </Box>
+          </Stack>
+          <Stack direction={{ xs: 'column', md: 'row' }} gap={2}>
+            <Box sx={{ flexGrow: 1 }}>
+              <Typography level="h3" sx={{ mb: 2 }}>
+                Examples
+              </Typography>
+              <Box
+                sx={{
+                  display: 'grid',
+                  gap: 3,
+                  gridTemplateColumns: {
+                    xs: 'repeat(2, minmax(0, 1fr))',
+                    sm: 'repeat(3, minmax(0, 1fr))',
+                    md: 'repeat(4, minmax(0, 1fr))',
+                    lg: 'repeat(6, minmax(0, 1fr))'
+                  },
+                  gridAutoRows: '140px'
+                }}
+              >
+                <Card variant="solid" color="primary" sx={{ fontSize: 'xl4', display: 'flex', justifyContent: 'center', alignItems: 'center', order: 1 }}>
+                  <AmaranthIcon icon={aiIcon?.icon} />
+                </Card>
+                <Card
+                  variant="outlined"
+                  color="primary"
+                  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gridColumn: 'span 2', order: 2 }}
+                >
+                  <Typography fontSize="xl4" color="primary" startDecorator={<AmaranthIcon icon={aiIcon?.icon} />} noWrap sx={{ maxWidth: 1 }}>
+                    {icon?.title}
+                  </Typography>
+                </Card>
+                <Card
+                  variant="solid"
+                  color="primary"
+                  sx={{
+                    fontSize: 'xl4',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    bgcolor: 'primary.300',
+                    gridColumn: 'span 2',
+                    order: 3
+                  }}
+                >
+                  <Stack direction="row" gap={10}>
+                    <Stack justifyContent="center" alignItems="center" gap={1}>
+                      <AmaranthIcon icon={aiIcon?.icon} spin />
+                      <Typography sx={{ color: 'primary.800', lineHeight: 1 }}>Spin</Typography>
+                    </Stack>
+                    <Stack justifyContent="center" alignItems="center" gap={1}>
+                      <AmaranthIcon icon={aiIcon?.icon} spin="pulse" />
+                      <Typography sx={{ color: 'primary.800', lineHeight: 1 }}>Pulse</Typography>
+                    </Stack>
+                  </Stack>
+                </Card>
+                <Card variant="outlined" color="primary" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', order: { xs: 4, md: 2, lg: 4 } }}>
+                  <Input startDecorator={<AmaranthIcon icon={aiIcon?.icon} />} placeholder={icon?.title} sx={{ maxWidth: 1 }} />
+                </Card>
+                <Card variant="outlined" color="primary" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', order: { xs: 6, sm: 10, lg: 5 } }}>
+                  <Avatar color="primary" size="lg" variant="solid">
+                    <AmaranthIcon icon={aiIcon?.icon} />
+                  </Avatar>
+                </Card>
+                <Card
+                  variant="soft"
+                  color="primary"
+                  sx={{
+                    fontSize: 'xl4',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    gridColumn: { xs: 'span 2', sm: 'span 3', md: 'span 2', lg: 'span 3' },
+                    order: 7
+                  }}
+                >
+                  <Stack direction="row" gap={10}>
+                    <Stack justifyContent="center" alignItems="center" gap={1}>
+                      <AmaranthIcon icon={aiIcon?.icon} rotate={90} />
+                      <Typography sx={{ lineHeight: 1 }}>90°</Typography>
+                    </Stack>
+                    <Stack justifyContent="center" alignItems="center" gap={1}>
+                      <AmaranthIcon icon={aiIcon?.icon} rotate={180} />
+                      <Typography sx={{ lineHeight: 1 }}>180°</Typography>
+                    </Stack>
+                    <Stack justifyContent="center" alignItems="center" gap={1}>
+                      <AmaranthIcon icon={aiIcon?.icon} rotate={270} />
+                      <Typography sx={{ lineHeight: 1 }}>270°</Typography>
+                    </Stack>
+                  </Stack>
+                </Card>
+                <Card variant="outlined" color="primary" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', order: 8 }}>
+                  <Avatar color="primary" size="lg" variant="outlined" sx={{ borderRadius: 'md', bgcolor: 'primary.200', borderColor: 'primary.400' }}>
+                    <AmaranthIcon icon={aiIcon?.icon} />
+                  </Avatar>
+                </Card>
+                <Card
+                  variant="solid"
+                  color="primary"
+                  sx={{ fontSize: 'xl4', display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: 'primary.700', order: 9 }}
+                >
+                  <Stack justifyContent="center" alignItems="center" gap={1}>
+                    <AmaranthIcon icon={aiIcon?.icon} beat />
+                    <Typography sx={{ color: 'primary.200', lineHeight: 1 }}>Beat</Typography>
+                  </Stack>
+                </Card>
+                <Card
+                  variant="solid"
+                  color="primary"
+                  sx={{
+                    fontSize: 'xl4',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    gridColumn: { xs: 'span 2', sm: 'span 3', md: 'span 2', lg: 'span 3' },
+                    order: { xs: 10, md: 8, lg: 10 }
+                  }}
+                >
+                  <Stack direction="row" gap={10}>
+                    <Stack justifyContent="center" alignItems="center" gap={1}>
+                      <AmaranthIcon icon={aiIcon?.icon} flip />
+                      <Typography sx={{ color: 'common.white', lineHeight: 1 }}>Flip</Typography>
+                    </Stack>
+                    <Stack justifyContent="center" alignItems="center" gap={1}>
+                      <AmaranthIcon icon={aiIcon?.icon} flip="x" />
+                      <Typography sx={{ color: 'common.white', lineHeight: 1 }}>X</Typography>
+                    </Stack>
+                    <Stack justifyContent="center" alignItems="center" gap={1}>
+                      <AmaranthIcon icon={aiIcon?.icon} flip="y" />
+                      <Typography sx={{ color: 'common.white', lineHeight: 1 }}>Y</Typography>
+                    </Stack>
+                  </Stack>
+                </Card>
+                <Card variant="soft" color="primary" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', order: { xs: 1, sm: 11 } }}>
+                  <Button size="lg" startDecorator={<AmaranthIcon icon={aiIcon?.icon} />}>
+                    Button
+                  </Button>
+                </Card>
+                <Card
+                  variant="outlined"
+                  color="primary"
+                  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gridColumn: 'span 2', order: 12 }}
+                >
+                  <Alert
+                    variant="outlined"
+                    color="primary"
+                    sx={{ bgcolor: 'primary.100' }}
+                    startDecorator={<AmaranthIcon icon={aiIcon?.icon} />}
+                    endDecorator={
+                      <IconButton size="sm" variant="solid" color="primary">
+                        <AmaranthIcon icon={aiXmark} />
+                      </IconButton>
+                    }
+                  >
+                    Hi! We're demoing you an icon.
+                  </Alert>
+                </Card>
+              </Box>
             </Box>
           </Stack>
           <Stack gap={2}>
