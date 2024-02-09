@@ -49,10 +49,7 @@ export default function Navbar() {
               Amicons
             </Link>
           </Stack>
-          <Stack
-            direction="row"
-            gap={0.5}
-          >
+          <Stack direction="row" gap={0.5}>
             <Button
               onClick={() => navigate('/')}
               variant={location?.pathname === '/' ? 'solid' : 'plain'}

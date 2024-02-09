@@ -160,7 +160,9 @@ export default function Icon() {
             </Box>
           </Stack>
           <Stack gap={2}>
-            <Typography level="h3">More icons in <Typography color="primary">{firstCategory}</Typography></Typography>
+            <Typography level="h3">
+              More icons in <Typography color="primary">{firstCategory}</Typography>
+            </Typography>
             <Box
               sx={{
                 display: 'grid',

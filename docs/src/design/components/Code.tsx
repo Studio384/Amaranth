@@ -8,7 +8,14 @@ interface ICodeProps extends TypographyProps {
 
 export default function Code({ children, ...props }: ICodeProps) {
   return (
-    <Typography fontSize="sm" fontFamily="code" color="primary" variant="soft" sx={{ display: 'inline', bgcolor: 'primary.200', borderRadius: 'sm' }} {...props}>
+    <Typography
+      fontSize="sm"
+      fontFamily="code"
+      color="primary"
+      variant="soft"
+      sx={{ display: 'inline', bgcolor: 'primary.200', borderRadius: 'sm' }}
+      {...props}
+    >
       {children}
     </Typography>
   );

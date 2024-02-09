@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 
 import { List, ListItem, ListItemButton, ListItemContent, ListSubheader, Typography } from '@mui/joy';
 
-import AmaranthIcon, { aiAmicons, aiArrowRotateRight, aiArrowUp, aiArrowsDownLeftRightUpCenter, aiHeart, aiReact, aiSpinner } from '../../../../dist/esm';
+import AmaranthIcon, { aiAmicons, aiArrowRotateRight, aiArrowsDownLeftRightUpCenter, aiArrowUp, aiHeart, aiReact, aiSpinner } from '../../../../dist/esm';
 
 export default function DocsNavigation() {
   const pages = [
@@ -50,7 +50,7 @@ export default function DocsNavigation() {
         {
           title: 'Changelog',
           icon: aiArrowUp,
-          link: '/changelog'
+          link: '/docs/changelog'
         }
       ]
     }

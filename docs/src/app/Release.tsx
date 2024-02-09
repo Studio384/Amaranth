@@ -33,116 +33,117 @@ export default function Release({
   const updateList = useMemo(() => icons.filter((icon) => updatedIcons?.includes(icon.slug)), [updatedIcons]);
 
   return (
-    <Sheet sx={{ borderRadius: 'lg', p: 3, bgcolor: 'transparent', boxShadow: 'sm'}} variant="outlined">
-    <Stack gap={4}>
-      <Stack direction="row" alignItems="center" gap={2}>
-        <Avatar size="lg" color="primary" variant="solid">
-          <AmaranthIcon icon={aiBoxOpenFull} />
-        </Avatar>
-        <Stack gap={0.5}>
-          <Typography level="h2" lineHeight={1}>
-            {name}
-          </Typography>
-          <Typography level="title-md" lineHeight={1}>
-            Version {version}
-          </Typography>
+    <Sheet sx={{ borderRadius: 'lg', p: 3, bgcolor: 'transparent', boxShadow: 'sm' }} variant="outlined">
+      <Stack gap={4}>
+        <Stack direction="row" alignItems="center" gap={2}>
+          <Avatar size="lg" color="primary" variant="solid">
+            <AmaranthIcon icon={aiBoxOpenFull} />
+          </Avatar>
+          <Stack gap={0.5}>
+            <Typography level="h2" lineHeight={1}>
+              {name}
+            </Typography>
+            <Typography level="title-md" lineHeight={1}>
+              Version {version}
+            </Typography>
+          </Stack>
         </Stack>
+        {added && (
+          <Stack gap={2}>
+            <Typography level="h3">Added</Typography>
+            <List sx={{ '--ListItem-minHeight': '1.5rem', '--ListItem-paddingY': '.125rem', '--ListItemDecorator-size': '1.75rem' }}>
+              {added.map((item: ReactNode, key: number) => (
+                <ListItem key={key}>
+                  <ListItemDecorator>
+                    <AmaranthIcon icon={aiPlus} />
+                  </ListItemDecorator>
+                  <ListItemContent>
+                    <Typography>{item}</Typography>
+                  </ListItemContent>
+                </ListItem>
+              ))}
+            </List>
+          </Stack>
+        )}
+        {changed && (
+          <Stack gap={2}>
+            <Typography level="h3">Changed</Typography>
+            <List sx={{ '--ListItem-minHeight': '1.5rem', '--ListItem-paddingY': '.125rem', '--ListItemDecorator-size': '1.75rem' }}>
+              {changed.map((item: ReactNode, key: number) => (
+                <ListItem key={key}>
+                  <ListItemDecorator>
+                    <AmaranthIcon icon={aiPen} />
+                  </ListItemDecorator>
+                  <ListItemContent>
+                    <Typography>{item}</Typography>
+                  </ListItemContent>
+                </ListItem>
+              ))}
+            </List>
+          </Stack>
+        )}
+        {removed && (
+          <Stack gap={2}>
+            <Typography level="h3">Removed</Typography>
+            <List sx={{ '--ListItem-minHeight': '1.5rem', '--ListItem-paddingY': '.125rem', '--ListItemDecorator-size': '1.75rem' }}>
+              {removed.map((item: ReactNode, key: number) => (
+                <ListItem key={key}>
+                  <ListItemDecorator>
+                    <AmaranthIcon icon={aiTrashCan} />
+                  </ListItemDecorator>
+                  <ListItemContent>
+                    <Typography>{item}</Typography>
+                  </ListItemContent>
+                </ListItem>
+              ))}
+            </List>
+          </Stack>
+        )}
+        {newIcons && (
+          <Stack gap={2}>
+            <Typography level="h3">New icons &middot; {newIcons?.length}</Typography>
+            <Box
+              sx={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(min(9rem, 100%), 1fr))',
+                gap: { xs: 1 }
+              }}
+            >
+              {newList.map((icon: ILibraryIcon) => (
+                <IconCard key={icon.slug} icon={icon} />
+              ))}
+            </Box>
+          </Stack>
+        )}
+        {updatedIcons && (
+          <Stack gap={2}>
+            <Typography level="h3">Updated icons &middot; {updatedIcons?.length}</Typography>
+            <Box
+              sx={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(min(9rem, 100%), 1fr))',
+                gap: { xs: 1 }
+              }}
+            >
+              {updateList.map((icon: ILibraryIcon) => (
+                <IconCard key={icon.slug} icon={icon} />
+              ))}
+            </Box>
+          </Stack>
+        )}
+        {removedIcons && (
+          <Stack gap={2}>
+            <Typography level="h3">Removed icons &middot; {removedIcons?.length}</Typography>
+            <List marker="disc" sx={{ '--ListItem-minHeight': '1.5rem', '--ListItem-paddingY': '.125rem' }}>
+              {removedIcons.map((icon: string) => (
+                <ListItem key={icon.slug}>
+                  <Code>{icon}</Code>
+                </ListItem>
+              ))}
+            </List>
+          </Stack>
+        )}
       </Stack>
-      {added && (
-        <Stack gap={2}>
-          <Typography level="h3">Added</Typography>
-          <List sx={{ '--ListItem-minHeight': '1.5rem', '--ListItem-paddingY': '.125rem', '--ListItemDecorator-size': '1.75rem' }}>
-            {added.map((item: ReactNode, key: number) => (
-              <ListItem key={key}>
-                <ListItemDecorator>
-                  <AmaranthIcon icon={aiPlus} />
-                </ListItemDecorator>
-                <ListItemContent>
-                  <Typography>{item}</Typography>
-                </ListItemContent>
-              </ListItem>
-            ))}
-          </List>
-        </Stack>
-      )}
-      {changed && (
-        <Stack gap={2}>
-          <Typography level="h3">Changed</Typography>
-          <List sx={{ '--ListItem-minHeight': '1.5rem', '--ListItem-paddingY': '.125rem', '--ListItemDecorator-size': '1.75rem' }}>
-            {changed.map((item: ReactNode, key: number) => (
-              <ListItem key={key}>
-                <ListItemDecorator>
-                  <AmaranthIcon icon={aiPen} />
-                </ListItemDecorator>
-                <ListItemContent>
-                  <Typography>{item}</Typography>
-                </ListItemContent>
-              </ListItem>
-            ))}
-          </List>
-        </Stack>
-      )}
-      {removed && (
-        <Stack gap={2}>
-          <Typography level="h3">Removed</Typography>
-          <List sx={{ '--ListItem-minHeight': '1.5rem', '--ListItem-paddingY': '.125rem', '--ListItemDecorator-size': '1.75rem' }}>
-            {removed.map((item: ReactNode, key: number) => (
-              <ListItem key={key}>
-                <ListItemDecorator>
-                  <AmaranthIcon icon={aiTrashCan} />
-                </ListItemDecorator>
-                <ListItemContent>
-                  <Typography>{item}</Typography>
-                </ListItemContent>
-              </ListItem>
-            ))}
-          </List>
-        </Stack>
-      )}
-      {newIcons && (
-        <Stack gap={2}>
-          <Typography level="h3">New icons &middot; {newIcons?.length}</Typography>
-          <Box
-            sx={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(min(9rem, 100%), 1fr))',
-              gap: { xs: 1 }
-            }}
-          >
-            {newList.map((icon: ILibraryIcon) => (
-              <IconCard key={icon.slug} icon={icon} />
-            ))}
-          </Box>
-        </Stack>
-      )}
-      {updatedIcons && (
-        <Stack gap={2}>
-          <Typography level="h3">Updated icons &middot; {updatedIcons?.length}</Typography>
-          <Box
-            sx={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(min(9rem, 100%), 1fr))',
-              gap: { xs: 1 }
-            }}
-          >
-            {updateList.map((icon: ILibraryIcon) => (
-              <IconCard key={icon.slug} icon={icon} />
-            ))}
-          </Box>
-        </Stack>
-      )}
-      {removedIcons && (
-        <Stack gap={2}>
-          <Typography level="h3">Removed icons &middot; {removedIcons?.length}</Typography>
-          <List marker="disc" sx={{ '--ListItem-minHeight': '1.5rem', '--ListItem-paddingY': '.125rem' }}>
-            {removedIcons.map((icon: string) => (
-              <ListItem key={icon.slug}>
-                <Code>{icon}</Code>
-              </ListItem>
-            ))}
-          </List>
-        </Stack>
-      )}
-    </Stack></Sheet>
+    </Sheet>
   );
 }

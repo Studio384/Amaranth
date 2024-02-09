@@ -1,8 +1,8 @@
 import { extendTheme } from '@mui/joy/styles';
 
-import light from './light';
 import dark from './dark';
 import { darkColorVariables, neutralColorVariables } from './generateColor';
+import light from './light';
 
 const joyTheme = extendTheme({
   fontFamily: {

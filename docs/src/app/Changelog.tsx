@@ -1,9 +1,9 @@
 import { Container, Stack, Typography } from '@mui/joy';
 
+import Code from '@/design/components/Code';
 import Header from '@/design/layout/LayoutElements/Header';
 
 import Release from './Release';
-import Code from '@/design/components/Code';
 
 export default function Changelog() {
   return (
@@ -20,13 +20,23 @@ export default function Changelog() {
             version="1.0.0-alpha.7"
             added={[
               <>Introduces a brand new documentation website with improved component documentation with playground, this changelog, and much more.</>,
-              <>The <Code>AmaranthIcon</Code> component now supports the <Code>beat</Code> property.</>,
+              <>
+                The <Code>AmaranthIcon</Code> component now supports the <Code>beat</Code> property.
+              </>
             ]}
             changed={[
               <>We're updating our branding from Amaranth to Amicons, with a brand new logo and mascot to boot.</>,
-              <>The default values for all properties of our <Code>AmaranthIcon</Code> component are now being set to <Code>Undefined</Code> rather than a default truthy value.</>,
-              <>The various CSS variables have been renamed to be more consistent with new variables introduced in this update. See the documentation for more info.</>,
-              <>You can now pass properties to the <Code>AmaranthIcon</Code> component.</>
+              <>
+                The default values for all properties of our <Code>AmaranthIcon</Code> component are now being set to <Code>Undefined</Code> rather than a
+                default truthy value.
+              </>,
+              <>
+                The various CSS variables have been renamed to be more consistent with new variables introduced in this update. See the documentation for more
+                info.
+              </>,
+              <>
+                You can now pass properties to the <Code>AmaranthIcon</Code> component.
+              </>
             ]}
             newIcons={[
               'battery-charging',
@@ -64,7 +74,7 @@ export default function Changelog() {
               'loader',
               'spinner'
             ]}
-            updatedIcons={['envelope', 'patreon', 'shuffle', 'volume-0', 'volume-1', 'volume-2', 'volume-3', 'volume-slash']}
+            updatedIcons={['envelope', 'facebook', 'patreon', 'shuffle', 'volume-0', 'volume-1', 'volume-2', 'volume-3', 'volume-slash']}
             removedIcons={['bootstrap', 'font-awesome']}
           />
           <Release
@@ -91,9 +101,7 @@ export default function Changelog() {
           <Release
             name="Amicon 1.0 alpha 3"
             version="1.0.0-alpha.3"
-            removed={[
-              <>The repository no longer provides font files or CSS files.</>
-            ]}
+            removed={[<>The repository no longer provides font files or CSS files.</>]}
             newIcons={[
               'table-cell-merge',
               'table-column-insert-left',
