@@ -34,7 +34,7 @@ export default function Release({
 
   return (
     <Sheet sx={{ borderRadius: 'lg', p: 3, bgcolor: 'transparent', boxShadow: 'sm'}} variant="outlined">
-    <Stack gap={2}>
+    <Stack gap={4}>
       <Stack direction="row" alignItems="center" gap={2}>
         <Avatar size="lg" color="primary" variant="solid">
           <AmaranthIcon icon={aiBoxOpenFull} />
@@ -49,7 +49,7 @@ export default function Release({
         </Stack>
       </Stack>
       {added && (
-        <Stack gap={1}>
+        <Stack gap={2}>
           <Typography level="h3">Added</Typography>
           <List sx={{ '--ListItem-minHeight': '1.5rem', '--ListItem-paddingY': '.125rem', '--ListItemDecorator-size': '1.75rem' }}>
             {added.map((item: ReactNode, key: number) => (
@@ -66,7 +66,7 @@ export default function Release({
         </Stack>
       )}
       {changed && (
-        <Stack gap={1}>
+        <Stack gap={2}>
           <Typography level="h3">Changed</Typography>
           <List sx={{ '--ListItem-minHeight': '1.5rem', '--ListItem-paddingY': '.125rem', '--ListItemDecorator-size': '1.75rem' }}>
             {changed.map((item: ReactNode, key: number) => (
@@ -83,7 +83,7 @@ export default function Release({
         </Stack>
       )}
       {removed && (
-        <Stack gap={1}>
+        <Stack gap={2}>
           <Typography level="h3">Removed</Typography>
           <List sx={{ '--ListItem-minHeight': '1.5rem', '--ListItem-paddingY': '.125rem', '--ListItemDecorator-size': '1.75rem' }}>
             {removed.map((item: ReactNode, key: number) => (
@@ -100,7 +100,7 @@ export default function Release({
         </Stack>
       )}
       {newIcons && (
-        <Stack gap={1}>
+        <Stack gap={2}>
           <Typography level="h3">New icons &middot; {newIcons?.length}</Typography>
           <Box
             sx={{
@@ -116,7 +116,7 @@ export default function Release({
         </Stack>
       )}
       {updatedIcons && (
-        <Stack gap={1}>
+        <Stack gap={2}>
           <Typography level="h3">Updated icons &middot; {updatedIcons?.length}</Typography>
           <Box
             sx={{
@@ -132,7 +132,7 @@ export default function Release({
         </Stack>
       )}
       {removedIcons && (
-        <Stack gap={1}>
+        <Stack gap={2}>
           <Typography level="h3">Removed icons &middot; {removedIcons?.length}</Typography>
           <List marker="disc" sx={{ '--ListItem-minHeight': '1.5rem', '--ListItem-paddingY': '.125rem' }}>
             {removedIcons.map((icon: string) => (
