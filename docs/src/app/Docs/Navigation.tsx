@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 
 import { List, ListItem, ListItemButton, ListItemContent, ListSubheader, Typography } from '@mui/joy';
 
-import AmaranthIcon, { aiAmicons, aiArrowRotateRight, aiArrowsDownLeftRightUpCenter, aiArrowUp, aiHeart, aiReact, aiSpinner } from '../../../../dist/esm';
+import AmaranthIcon, { aiAmicons, aiArrowRotateRight, aiArrowsDownLeftRightUpCenter, aiHeart, aiReact, aiSpinner, aiStar } from '@studio384/amaranth';
 
 export default function DocsNavigation() {
   const pages = [
@@ -45,11 +45,11 @@ export default function DocsNavigation() {
     },
     {
       title: 'More',
-      icon: aiArrowUp,
+      icon: aiStar,
       pages: [
         {
           title: 'Changelog',
-          icon: aiArrowUp,
+          icon: aiStar,
           link: '/docs/changelog'
         }
       ]

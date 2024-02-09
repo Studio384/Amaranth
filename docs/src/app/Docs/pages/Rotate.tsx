@@ -2,7 +2,8 @@ import { Sheet, Stack, Table, Typography } from '@mui/joy';
 
 import Code from '@/design/components/Code';
 
-import { aiAmicons, aiArrowUp, aiMessageSmile } from '../../../../../dist/esm';
+import { aiAmicons, aiArrowUp, aiMessageSmile } from '@studio384/amaranth';
+
 import Playground from '../playground/Playground';
 
 export default function PageRotate() {

@@ -2,7 +2,8 @@ import { Sheet, Stack, Table, Typography } from '@mui/joy';
 
 import Code from '@/design/components/Code';
 
-import { aiGear, aiSpinner, aiSpinnerThird } from '../../../../../dist/esm';
+import { aiGear, aiSpinner, aiSpinnerThird } from '@studio384/amaranth';
+
 import Playground from '../playground/Playground';
 
 export default function PageSpin() {

@@ -2,7 +2,8 @@ import { Stack, Typography } from '@mui/joy';
 
 import Code from '@/design/components/Code';
 
-import { aiAmicons, aiCar, aiMessageSmile } from '../../../../../dist/esm';
+import { aiAmicons, aiCar, aiMessageSmile } from '@studio384/amaranth';
+
 import Playground from '../playground/Playground';
 
 export default function PageFlip() {

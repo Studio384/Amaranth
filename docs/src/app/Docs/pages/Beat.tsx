@@ -2,7 +2,8 @@ import { Sheet, Stack, Table, Typography } from '@mui/joy';
 
 import Code from '@/design/components/Code';
 
-import { aiExpand, aiHeart, aiPlay } from '../../../../../dist/esm';
+import { aiExpand, aiHeart, aiPlay } from '@studio384/amaranth';
+
 import Playground from '../playground/Playground';
 
 export default function PageBeat() {
