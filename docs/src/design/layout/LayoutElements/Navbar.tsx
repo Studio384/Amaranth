@@ -29,7 +29,8 @@ export default function Navbar() {
           border: '1px solid rgba(var(--joy-palette-primary-mainChannel) / .75)',
           backdropFilter: 'blur(20px)',
           boxShadow: 'xs',
-          height: 58
+          height: 58,
+          '--joy-fontFamily-body': 'var(--joy-fontFamily-display)'
         }}
       >
         <Box
@@ -43,7 +44,7 @@ export default function Navbar() {
           }}
         >
           <Stack direction="row" alignItems="center" gap={1} sx={{ pl: 0.5 }}>
-            <Link color="neutral" underline="none" level="h1" fontSize="xl" fontWeight="xl" sx={{ color: 'common.white' }} onClick={() => navigate('/')}>
+            <Link color="neutral" underline="none" level="h1" fontSize="xl" sx={{ color: 'common.white' }} onClick={() => navigate('/')}>
               <img src="/favicon.png" style={{ width: 24, height: 24, marginRight: 8 }} />
               Amicons
             </Link>

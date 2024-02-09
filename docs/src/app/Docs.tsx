@@ -13,7 +13,7 @@ export default function Docs() {
   return (
     <>
       <Header>
-        <Typography level="h1" fontWeight="xl" fontSize={48}>
+        <Typography level="h1" fontSize={48}>
           Documentation
         </Typography>
       </Header>

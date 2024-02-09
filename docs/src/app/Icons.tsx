@@ -53,7 +53,7 @@ export default function Icons() {
   return (
     <>
       <Header>
-        <Typography level="h1" fontWeight="xl" fontSize={48}>
+        <Typography level="h1" fontSize={48}>
           Icons
         </Typography>
       </Header>

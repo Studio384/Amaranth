@@ -41,7 +41,7 @@ export default function Icon() {
             <IconButton variant="plain" color="primary" onClick={() => navigate('/icons')}>
               <AmaranthIcon icon={aiArrowLeft} />
             </IconButton>
-            <Typography level="h1" fontWeight="xl" fontSize={48}>
+            <Typography level="h1" fontSize={48}>
               {icon?.title}
             </Typography>
 

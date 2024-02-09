@@ -7,7 +7,7 @@ import icons from '@/data/icons';
 import Codeblock from '@/design/components/Codeblock';
 import Header from '@/design/layout/LayoutElements/Header';
 
-import AmaranthIcon, { aiAGum, aiAmicons, aiBook, aiCircleInfo, aiFlag, aiLockOpen, aiMagnifyingGlass, aiPatreon } from '@studio384/amaranth';
+import AmaranthIcon, { aiAGum, aiAmicons, aiBook, aiCircleInfo, aiFlag, aiHeart, aiIcons, aiLockOpen, aiMagnifyingGlass, aiPatreon } from '@studio384/amaranth';
 
 export default function Home() {
   const navigate = useNavigate();
@@ -26,7 +26,7 @@ export default function Home() {
         <Stack direction="row" alignItems="center" justifyContent="space-between" gap={5} sx={{ my: 7 }}>
           <Stack gap={5} sx={{ flexGrow: 1 }}>
             <Box>
-              <Typography level="h1" fontWeight="xl" fontSize={48}>
+              <Typography level="h1" fontSize={48}>
                 <Typography color="primary">{icons.length}</Typography> amicable icons
                 <br />
                 to delight <Typography color="primary">your</Typography> designs
@@ -140,12 +140,13 @@ export default function Home() {
                 height: 300
               }}
             >
-              <AmaranthIcon icon={aiAGum} />
-              <AmaranthIcon icon={aiCircleInfo} />
+              <AmaranthIcon icon={aiAmicons} />
+              <AmaranthIcon icon={aiHeart} />
+              <AmaranthIcon icon={aiIcons} />
             </Box>
             <Stack gap={1} justifyContent="center">
-              <Typography level="h2">Made by hand</Typography>
-              <Typography>The only "AI" in Amicons are these 2 icons. We may do a full alphabet later.</Typography>
+              <Typography level="h2">Icons with love</Typography>
+              <Typography>Every icon is made by hand, and with our heart. We don't include that in the package tho, we still need it.</Typography>
               <Stack direction="row" gap={1} sx={{ mt: 3 }}>
                 <Button startDecorator={<AmaranthIcon icon={aiAmicons} />} onClick={() => navigate('/icons')}>
                   Full library
