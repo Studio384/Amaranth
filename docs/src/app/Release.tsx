@@ -12,6 +12,7 @@ import IconCard from './Components/IconCard';
 
 export default function Release({
   name,
+  date,
   version,
   added,
   changed,
@@ -21,6 +22,7 @@ export default function Release({
   removedIcons
 }: {
   name: string;
+  date: string;
   version: string;
   added?: ReactNode[];
   changed?: ReactNode[];
@@ -44,7 +46,7 @@ export default function Release({
               {name}
             </Typography>
             <Typography level="title-md" lineHeight={1}>
-              Version {version}
+             {date} <Typography sx={{ color: 'neutral.600'}}>&middot; Version {version}</Typography>
             </Typography>
           </Stack>
         </Stack>

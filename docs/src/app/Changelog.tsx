@@ -17,6 +17,7 @@ export default function Changelog() {
         <Stack gap={5}>
           <Release
             name="Amicon 1.0 alpha 7"
+            date="February 2024"
             version="1.0.0-alpha.7"
             added={[
               <>Introduces a brand new documentation website with improved component documentation with playground, this changelog, and much more.</>,
@@ -80,12 +81,14 @@ export default function Changelog() {
           <Release
             name="Amicon 1.0 alpha 6"
             version="1.0.0-alpha.6"
+            date="30 January 2024"
             newIcons={['align-center', 'align-justify', 'align-left', 'align-right', 'amicons', 'subscript', 'superscript']}
           />
-          <Release name="Amicon 1.0 alpha 5" version="1.0.0-alpha.5" newIcons={['circle']} />
+          <Release name="Amicon 1.0 alpha 5" version="1.0.0-alpha.5" date="17 November 2023" newIcons={['circle']} />
           <Release
             name="Amicon 1.0 alpha 4"
             version="1.0.0-alpha.4"
+            date="17 November 2023"
             newIcons={[
               'arrow-down-from-cloud',
               'arrow-right-from-file',
@@ -101,6 +104,7 @@ export default function Changelog() {
           <Release
             name="Amicon 1.0 alpha 3"
             version="1.0.0-alpha.3"
+            date="23 August 2023"
             removed={[<>The repository no longer provides font files or CSS files.</>]}
             newIcons={[
               'table-cell-merge',
@@ -115,6 +119,7 @@ export default function Changelog() {
             ]}
             updatedIcons={['chart-pie', 'circle-dashed', 'table-clcok', 'table-header-column', 'table-header-row', 'table', 'tag-geear', 'tag-plus', 'tag']}
           />
+          <Release name="Amicon 1.0 alpha 2" version="1.0.0-alpha.2" date="22 August 2023" added={[<>Migrations from ChangeWindows to a Studio 384</>]} />
         </Stack>
       </Container>
     </>
