@@ -50,7 +50,6 @@ export default function Changelog() {
               '7',
               '8',
               '9',
-              'a-gum',
               'a',
               'b',
               'battery-charging',
@@ -116,7 +115,7 @@ export default function Changelog() {
               'y',
               'z'
             ]}
-            updatedIcons={['envelope', 'facebook', 'patreon', 'shuffle', 'volume-0', 'volume-1', 'volume-2', 'volume-3', 'volume-slash']}
+            updatedIcons={['a-gum', 'envelope', 'facebook', 'patreon', 'shuffle', 'volume-0', 'volume-1', 'volume-2', 'volume-3', 'volume-slash']}
             renamedIcons={[{ old: 'ellipsis', new: 'ellipsis-h' }]}
             removedIcons={['bootstrap', 'font-awesome']}
           />
