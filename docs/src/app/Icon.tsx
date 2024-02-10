@@ -296,7 +296,7 @@ export default function Icon() {
                 gap: { xs: 1 }
               }}
             >
-              {categoryIcons.slice(0, 20).map((icon: ILibraryIcon) => (
+              {categoryIcons.slice(0, 28).map((icon: ILibraryIcon) => (
                 <IconCard key={icon.slug} icon={icon} />
               ))}
             </Box>

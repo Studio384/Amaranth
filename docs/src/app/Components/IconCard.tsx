@@ -19,8 +19,8 @@ export default function IconCard({ icon }: { icon: ILibraryIcon }) {
         }
       }}
     >
-      <Stack gap={1} justifyContent="center" alignItems="center" sx={{ pt: 2, pb: 1 }}>
-        <Box sx={{ height: 24, width: 24, fontSize: 24 }} lineHeight="1rem">
+      <Stack gap={1} justifyContent="center" alignItems="center" sx={{ pt: 2.5, pb: 1.5 }}>
+        <Box sx={{ height: 28, width: 28, fontSize: 28 }} lineHeight="1rem">
           <AmaranthIcon icon={icon.icon} />
         </Box>
         <Link

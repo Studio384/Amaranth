@@ -6,7 +6,7 @@ import icons from '@/data/icons';
 import Code from '@/design/components/Code';
 import { ILibraryIcon } from '@/types';
 
-import AmaranthIcon, { aiBoxOpenFull, aiPen, aiPlus, aiTrashCan } from '@studio384/amaranth';
+import AmaranthIcon, { aiArrowRight, aiBoxOpenFull, aiPen, aiPlus, aiTrashCan } from '@studio384/amaranth';
 
 import IconCard from './Components/IconCard';
 
@@ -19,6 +19,7 @@ export default function Release({
   removed,
   newIcons,
   updatedIcons,
+  renamedIcons,
   removedIcons
 }: {
   name: string;
@@ -29,6 +30,7 @@ export default function Release({
   removed?: ReactNode[];
   newIcons?: string[];
   updatedIcons?: string[];
+  renamedIcons?: { old: string; new: string }[];
   removedIcons?: string[];
 }) {
   const newList = useMemo(() => icons.filter((icon) => newIcons?.includes(icon.slug)), [newIcons]);
@@ -46,7 +48,7 @@ export default function Release({
               {name}
             </Typography>
             <Typography level="title-md" lineHeight={1}>
-             {date} <Typography sx={{ color: 'neutral.600'}}>&middot; Version {version}</Typography>
+              {date} <Typography sx={{ color: 'neutral.600' }}>&middot; Version {version}</Typography>
             </Typography>
           </Stack>
         </Stack>
@@ -133,12 +135,24 @@ export default function Release({
             </Box>
           </Stack>
         )}
+        {renamedIcons && (
+          <Stack gap={2}>
+            <Typography level="h3">Renamed icons &middot; {renamedIcons?.length}</Typography>
+            <List marker="disc" sx={{ '--ListItem-minHeight': '1.5rem', '--ListItem-paddingY': '.125rem' }}>
+              {renamedIcons.map((icon: { new: string; old: string }) => (
+                <ListItem key={icon.new}>
+                  <Code>{icon.old}</Code> <AmaranthIcon icon={aiArrowRight} style={{ marginInline: 8, top: 2 }} /> <Code>{icon.new}</Code>
+                </ListItem>
+              ))}
+            </List>
+          </Stack>
+        )}
         {removedIcons && (
           <Stack gap={2}>
             <Typography level="h3">Removed icons &middot; {removedIcons?.length}</Typography>
             <List marker="disc" sx={{ '--ListItem-minHeight': '1.5rem', '--ListItem-paddingY': '.125rem' }}>
               {removedIcons.map((icon: string) => (
-                <ListItem key={icon.slug}>
+                <ListItem key={icon}>
                   <Code>{icon}</Code>
                 </ListItem>
               ))}

@@ -32,7 +32,7 @@ export const ai4: {
   data: string;
 } = {
   name: '4',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M10.994.04a.75.75 0 0 1 .506.71v9.5h1.75a.75.75 0 0 1 0 1.5H11.5v3.5a.75.75 0 0 1-1.5 0v-3.5H2.75a.75.75 0 0 1-.591-1.211l8-10.25a.75.75 0 0 1 .835-.248M10 10.25V2.93l-5.713 7.32z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M10.99.04a.75.75 0 0 1 .51.71v9.75h1.75a.75.75 0 0 1 0 1.5H11.5v3.25a.75.75 0 0 1-1.5 0V12H2.75a.75.75 0 0 1-.597-1.204l8-10.5a.75.75 0 0 1 .837-.257M10 10.5V2.972L4.264 10.5z"/></svg>`
 };
 export const ai5: {
   name: '5';
@@ -1104,13 +1104,6 @@ export const aiEllipsisV: {
 } = {
   name: 'ellipsis_v',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M9.5 2a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0 6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0 6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/></svg>`
-};
-export const aiEllipsis: {
-  name: 'ellipsis';
-  data: string;
-} = {
-  name: 'ellipsis',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M3.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m6 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m6 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/></svg>`
 };
 export const aiEnvelopeOpen: {
   name: 'envelope_open';
@@ -3042,7 +3035,6 @@ export type Amaranth =
   | 'edge'
   | 'ellipsis_h'
   | 'ellipsis_v'
-  | 'ellipsis'
   | 'envelope_open'
   | 'envelope'
   | 'ethernet'
@@ -3462,7 +3454,6 @@ export const amaranthSet = [
   aiEdge,
   aiEllipsisH,
   aiEllipsisV,
-  aiEllipsis,
   aiEnvelopeOpen,
   aiEnvelope,
   aiEthernet,
