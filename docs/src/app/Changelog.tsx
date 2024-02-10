@@ -73,6 +73,7 @@ export default function Changelog() {
               'keyboard-brightness-low',
               'keyboard',
               'loader',
+              'share-nodes',
               'spinner'
             ]}
             updatedIcons={['envelope', 'facebook', 'patreon', 'shuffle', 'volume-0', 'volume-1', 'volume-2', 'volume-3', 'volume-slash']}

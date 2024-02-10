@@ -36,7 +36,7 @@ import {
   aiPlus,
   aiRectangleP,
   aiRocket,
-  aiShare,
+  aiShareNodes,
   aiShoePrints,
   aiShoppingCart,
   aiSpinner,
@@ -252,7 +252,7 @@ const categories = [
   {
     slug: 'social',
     title: 'Social',
-    icon: aiShare
+    icon: aiShareNodes
   },
   {
     slug: 'spinners',
