@@ -1,4 +1,5 @@
 import {
+  ai1,
   aiAmicons,
   aiArrowUp,
   aiAsterisk,
@@ -213,6 +214,11 @@ const categories = [
     slug: 'nature',
     title: 'Nature & outdoors',
     icon: aiTree
+  },
+  {
+    slug: 'numbers',
+    title: 'Numbers',
+    icon: ai1
   },
   {
     slug: 'people',
