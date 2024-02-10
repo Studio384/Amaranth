@@ -58,45 +58,63 @@ export default function Footer() {
           </Grid>
           <Grid container xs={12} sm={7} md={6} lg={4}>
             <Grid xs={6}>
-              <Typography level="title-lg" sx={{ ml: 1.5, mb: 1 }}>
+              <Typography level="title-lg" sx={{ ml: 1, mb: 1 }}>
                 Support
               </Typography>
-              <List>
+              <List
+                sx={{
+                  gap: 0.25,
+                  '--ListItem-paddingY': 0,
+                  '--ListItem-radius': 'var(--joy-radius-md)',
+                  '--ListItem-paddingLeft': '.5rem',
+                  '--ListItem-paddingRight': '.5rem',
+                  '--ListItemDecorator-size': '1.5rem'
+                }}
+              >
                 <ListItem>
                   <ListItemButton color="primary" variant="soft" component={NavLink} to="/docs">
                     <ListItemContent>
-                      <Typography level="title-sm">Documentation</Typography>
+                      <Typography>Documentation</Typography>
                     </ListItemContent>
                   </ListItemButton>
                 </ListItem>
                 <ListItem>
                   <ListItemButton color="primary" variant="soft" component={NavLink} to="/docs/changelog">
                     <ListItemContent>
-                      <Typography level="title-sm">Changelog</Typography>
+                      <Typography>Changelog</Typography>
                     </ListItemContent>
                   </ListItemButton>
                 </ListItem>
                 <ListItem>
                   <ListItemButton color="primary" variant="soft" component="a" href="https://github.com/Studio384/Amaranth/issues/new/choose">
                     <ListItemContent>
-                      <Typography level="title-sm">Report a bug</Typography>
+                      <Typography>Report a bug</Typography>
                     </ListItemContent>
                   </ListItemButton>
                 </ListItem>
               </List>
             </Grid>
             <Grid xs={6}>
-              <Typography level="title-lg" sx={{ ml: 1.5, mb: 1 }}>
+              <Typography level="title-lg" sx={{ ml: 1, mb: 1 }}>
                 Community
               </Typography>
-              <List sx={{ '--ListItemDecorator-size': '1.5rem' }}>
+              <List
+                sx={{
+                  gap: 0.25,
+                  '--ListItem-paddingY': 0,
+                  '--ListItem-radius': 'var(--joy-radius-md)',
+                  '--ListItem-paddingLeft': '.5rem',
+                  '--ListItem-paddingRight': '.5rem',
+                  '--ListItemDecorator-size': '1.5rem'
+                }}
+              >
                 <ListItem>
                   <ListItemButton color="primary" variant="soft" component="a" href="https://github.com/studio384/amaranth">
                     <ListItemDecorator>
                       <AmaranthIcon icon={aiGithub} />
                     </ListItemDecorator>
                     <ListItemContent>
-                      <Typography level="title-sm">GitHub</Typography>
+                      <Typography>GitHub</Typography>
                     </ListItemContent>
                   </ListItemButton>
                 </ListItem>
@@ -106,7 +124,7 @@ export default function Footer() {
                       <AmaranthIcon icon={aiTwitter} />
                     </ListItemDecorator>
                     <ListItemContent>
-                      <Typography level="title-sm">Twitter</Typography>
+                      <Typography>Twitter</Typography>
                     </ListItemContent>
                   </ListItemButton>
                 </ListItem>
@@ -116,14 +134,14 @@ export default function Footer() {
                       <AmaranthIcon icon={aiAmaranth} />
                     </ListItemDecorator>
                     <ListItemContent>
-                      <Typography level="title-sm">Studio 384</Typography>
+                      <Typography>Studio 384</Typography>
                     </ListItemContent>
                   </ListItemButton>
                 </ListItem>
               </List>
             </Grid>
           </Grid>
-          <Grid xs={12} sx={{ pt: { xs: 3, md: 5} }}>
+          <Grid xs={12} sx={{ pt: { xs: 3, md: 5 } }}>
             <Stack direction="row" gap={1} justifyContent="space-between" alignItems="center">
               <Typography fontSize="sm">
                 &copy; 2021-2024 &middot;{' '}
