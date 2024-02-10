@@ -1,5 +1,6 @@
 import {
   ai1,
+  aiA,
   aiAmicons,
   aiArrowUp,
   aiAsterisk,
@@ -35,7 +36,6 @@ import {
   aiPlateUtensils,
   aiPlay,
   aiPlus,
-  aiRectangleP,
   aiRocket,
   aiShareNodes,
   aiShoePrints,
@@ -63,7 +63,7 @@ const categories = [
   {
     slug: 'alphabet',
     title: 'Alphabet',
-    icon: aiRectangleP
+    icon: aiA
   },
   {
     slug: 'arrows',
