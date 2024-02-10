@@ -231,8 +231,8 @@ const categories = [
     icon: aiKite
   },
   {
-    slug: 'punctuation',
-    title: 'Punctuation',
+    slug: 'punctuation-symbols',
+    title: 'Punctuation & symbols',
     icon: aiAsterisk
   },
   {

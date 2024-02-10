@@ -60,6 +60,7 @@ export default function Changelog() {
               'battery-slash',
               'battery-three-quarter',
               'broom',
+              'calculator',
               'clipboard',
               'command',
               'computer-mouse-scroll-wheel',
@@ -83,6 +84,8 @@ export default function Changelog() {
               'keyboard-brightness-low',
               'keyboard',
               'loader',
+              'notification',
+              'option',
               'share-nodes',
               'spinner'
             ]}
