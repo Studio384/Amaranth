@@ -1,8 +1,8 @@
 import { Box, Sheet } from '@mui/joy';
 
-import AmaranthIcon, { IAmaranthIcon } from '@studio384/amaranth';
+import Amicon, { IAmicon } from '@studio384/amaranth';
 
-export default function LargeIconGrid({ icon }: { icon: IAmaranthIcon }) {
+export default function LargeIconGrid({ icon }: { icon: IAmicon }) {
   return (
     <Box
       sx={{
@@ -35,7 +35,7 @@ export default function LargeIconGrid({ icon }: { icon: IAmaranthIcon }) {
             'linear-gradient(to right, var(--joy-palette-primary-200) 1px, transparent 1px), linear-gradient(to bottom, var(--joy-palette-primary-200) 1px, transparent 1px)'
         }}
       >
-        <AmaranthIcon icon={icon} style={{ fontSize: 'calc(var(--Amicon-scale) * 16)' }} />
+        <Amicon icon={icon} style={{ fontSize: 'calc(var(--Amicon-scale) * 16)' }} />
       </Sheet>
     </Box>
   );

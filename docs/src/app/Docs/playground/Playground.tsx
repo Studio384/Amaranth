@@ -4,11 +4,11 @@ import { Box, Card, Chip, Divider, FormControl, FormLabel, IconButton, Input, Sh
 
 import Codeblock from '@/design/components/Codeblock';
 
-import AmaranthIcon, { aiBroom, IAmaranthIcon } from '@studio384/amaranth';
+import Amicon, { aiBroom, IAmicon } from '@studio384/amaranth';
 
 interface IPlaygroundProps {
   config: {
-    icons: IAmaranthIcon[];
+    icons: IAmicon[];
     properties: {
       label: string;
       type: 'chip';
@@ -24,7 +24,7 @@ interface IPlaygroundProps {
 }
 
 export default function Playground({ config }: IPlaygroundProps) {
-  const [playgroundIcon, setPlaygroundIcon] = useState<IAmaranthIcon>(config.icons[0]);
+  const [playgroundIcon, setPlaygroundIcon] = useState<IAmicon>(config.icons[0]);
 
   // Get the icon name
   function getIconName(icon: string): string {
@@ -106,9 +106,9 @@ export default function Playground({ config }: IPlaygroundProps) {
     <Card sx={{ display: 'grid', gridTemplateColumns: 'auto 280px', p: 0, contain: 'paint', gap: 0 }}>
       <Stack sx={{ p: 2 }}>
         <Box sx={{ display: 'flex', flexGrow: 1, justifyContent: 'center', alignItems: 'center', fontSize: 'xl4' }}>
-          <AmaranthIcon icon={playgroundIcon} {...iconProperties} style={playgroundCssVariable} />
+          <Amicon icon={playgroundIcon} {...iconProperties} style={playgroundCssVariable} />
         </Box>
-        <Codeblock>{`<AmaranthIcon
+        <Codeblock>{`<Amicon
   icon={${iconName}}${propertyParser}${
     variableParser !== ''
       ? `
@@ -129,7 +129,7 @@ export default function Playground({ config }: IPlaygroundProps) {
             }}
             size="sm"
           >
-            <AmaranthIcon icon={aiBroom} />
+            <Amicon icon={aiBroom} />
           </IconButton>
         </Stack>
         <Divider sx={{ my: 2, mx: -2 }} />
@@ -144,7 +144,7 @@ export default function Playground({ config }: IPlaygroundProps) {
                   onClick={() => setPlaygroundIcon(icon)}
                   key={icon.name}
                 >
-                  <AmaranthIcon icon={icon} />
+                  <Amicon icon={icon} />
                 </IconButton>
               ))}
             </Stack>

@@ -1,11 +1,11 @@
 {
   "srcFiles": ["./icons/**/*.svg"],
   "outputDirectory": "./src",
-  "interfaceName": "IAmaranthIcon",
-  "typeName": "Amaranth",
+  "interfaceName": "IAmicon",
+  "typeName": "Amicons",
   "prefix": "ai",
-  "fileName": "Amaranth",
+  "fileName": "Amicons",
   "additionalModelFile": "./src",
   "compileSources": true,
-  "completeIconSetName": "amaranthSet"
+  "completeIconSetName": "amiconSet"
 }

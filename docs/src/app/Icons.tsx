@@ -9,7 +9,7 @@ import Header from '@/design/layout/LayoutElements/Header';
 import useSearch from '@/hooks/useSearch';
 import { IIconCategory, ILibraryIcon } from '@/types';
 
-import AmaranthIcon, { aiChevronLeft, aiChevronRight, aiFilterXmark, aiMagnifyingGlass } from '@studio384/amaranth';
+import Amicon, { aiChevronLeft, aiChevronRight, aiFilterXmark, aiMagnifyingGlass } from '@studio384/amaranth';
 
 import IconCard from './Components/IconCard';
 
@@ -81,7 +81,7 @@ export default function Icons() {
                     color="primary"
                   >
                     <ListItemDecorator>
-                      <AmaranthIcon icon={_category.icon} />
+                      <Amicon icon={_category.icon} />
                     </ListItemDecorator>
                     <ListItemContent>
                       <Typography noWrap>{_category.title}</Typography>
@@ -102,7 +102,7 @@ export default function Icons() {
 
               <Stack direction="row" gap={0.5} alignItems="baseline">
                 <Input
-                  startDecorator={<AmaranthIcon icon={aiMagnifyingGlass} />}
+                  startDecorator={<Amicon icon={aiMagnifyingGlass} />}
                   placeholder="Search"
                   value={needle}
                   onChange={(e) => {
@@ -118,7 +118,7 @@ export default function Icons() {
                     setCategory(null);
                   }}
                 >
-                  <AmaranthIcon icon={aiFilterXmark} />
+                  <Amicon icon={aiFilterXmark} />
                 </IconButton>
               </Stack>
             </Stack>
@@ -142,7 +142,7 @@ export default function Icons() {
                 onClick={() => setPage((prev) => prev - 1)}
                 disabled={page === 0}
               >
-                <AmaranthIcon icon={aiChevronLeft} />
+                <Amicon icon={aiChevronLeft} />
               </IconButton>
               <IconButton
                 size="sm"
@@ -151,7 +151,7 @@ export default function Icons() {
                 onClick={() => setPage((prev) => prev + 1)}
                 disabled={page === Math.ceil(result.length / 96) - 1}
               >
-                <AmaranthIcon icon={aiChevronRight} />
+                <Amicon icon={aiChevronRight} />
               </IconButton>
             </Stack>
           </Stack>

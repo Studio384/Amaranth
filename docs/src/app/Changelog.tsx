@@ -21,14 +21,15 @@ export default function Changelog() {
             version="1.0.0-alpha.7"
             added={[
               <>Introduces a brand new documentation website with improved component documentation with playground, this changelog, and much more.</>,
+              <>The <Code>AmaranthIcon</Code> component has been renamed to <Code>Amicon</Code>.</>,
               <>
-                The <Code>AmaranthIcon</Code> component now supports the <Code>beat</Code> property.
+                The <Code>Amicon</Code> component now supports the <Code>beat</Code> property.
               </>
             ]}
             changed={[
               <>We're updating our branding from Amaranth to Amicons, with a brand new logo and mascot to boot.</>,
               <>
-                The default values for all properties of our <Code>AmaranthIcon</Code> component are now being set to <Code>Undefined</Code> rather than a
+                The default values for all properties of our <Code>Amicon</Code> component are now being set to <Code>Undefined</Code> rather than a
                 default truthy value.
               </>,
               <>
@@ -36,7 +37,7 @@ export default function Changelog() {
                 info.
               </>,
               <>
-                You can now pass properties to the <Code>AmaranthIcon</Code> component.
+                You can now pass properties to the <Code>Amicon</Code> component.
               </>
             ]}
             newIcons={[

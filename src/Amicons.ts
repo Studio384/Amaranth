@@ -3079,7 +3079,7 @@ export const aiZ: {
   name: 'z',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M3 1.75A.75.75 0 0 1 3.75 1h8.5a.75.75 0 0 1 .62 1.172L5.167 13.5h7.083a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1-.62-1.172L10.833 2.5H3.75A.75.75 0 0 1 3 1.75"/></svg>`
 };
-export type Amaranth =
+export type Amicons =
   | '0'
   | '1'
   | '2'
@@ -3520,14 +3520,14 @@ export type Amaranth =
   | 'xmark'
   | 'y'
   | 'z';
-export interface IAmaranthIcon {
-  name: Amaranth;
+export interface IAmicon {
+  name: Amicons;
   data: string;
 }
-export type IAmaranthIconNameSubset<
-  T extends Readonly<IAmaranthIcon[]>
+export type IAmiconNameSubset<
+  T extends Readonly<IAmicon[]>
 > = T[number]['name'];
-export const amaranthSet = [
+export const amiconSet = [
   ai0,
   ai1,
   ai2,

@@ -1,4 +1,4 @@
-export * from './Amaranth';
-import AmaranthIcon from './AmaranthIcon';
+export * from "./Amicons";
+import Amicon from "./Amicon";
 
-export default AmaranthIcon;
+export default Amicon;

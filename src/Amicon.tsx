@@ -1,10 +1,10 @@
-import { IAmaranthIcon } from ".";
+import { IAmicon } from ".";
 import HTMLReactParser from "html-react-parser";
 import { cx, css, keyframes } from "@emotion/css";
 import { CSSProperties } from "react";
 
-interface AmaranthProps {
-  icon: IAmaranthIcon;
+interface AmiconProps {
+  icon: IAmicon;
   rotate?: 0 | 90 | 180 | 270 | false;
   flip?: true | "x" | "y" | false;
   spin?: boolean | "pulse";
@@ -12,14 +12,14 @@ interface AmaranthProps {
   style?: CSSProperties;
 }
 
-export default function AmaranthIcon({
+export default function Amicon({
   flip = undefined,
   icon,
   rotate = undefined,
   spin = undefined,
   beat = undefined,
   ...props
-}: AmaranthProps) {
+}: AmiconProps) {
   const spinAnimation = keyframes`
     from {
       transform: rotate(0deg);

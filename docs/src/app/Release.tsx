@@ -6,7 +6,7 @@ import icons from '@/data/icons';
 import Code from '@/design/components/Code';
 import { ILibraryIcon } from '@/types';
 
-import AmaranthIcon, { aiArrowRight, aiBoxOpenFull, aiPen, aiPlus, aiTrashCan } from '@studio384/amaranth';
+import Amicon, { aiArrowRight, aiBoxOpenFull, aiPen, aiPlus, aiTrashCan } from '@studio384/amaranth';
 
 import IconCard from './Components/IconCard';
 
@@ -41,7 +41,7 @@ export default function Release({
       <Stack gap={4}>
         <Stack direction="row" alignItems="center" gap={2}>
           <Avatar size="lg" color="primary" variant="solid">
-            <AmaranthIcon icon={aiBoxOpenFull} />
+            <Amicon icon={aiBoxOpenFull} />
           </Avatar>
           <Stack gap={0.5}>
             <Typography level="h2" lineHeight={1}>
@@ -59,7 +59,7 @@ export default function Release({
               {added.map((item: ReactNode, key: number) => (
                 <ListItem key={key}>
                   <ListItemDecorator>
-                    <AmaranthIcon icon={aiPlus} />
+                    <Amicon icon={aiPlus} />
                   </ListItemDecorator>
                   <ListItemContent>
                     <Typography>{item}</Typography>
@@ -76,7 +76,7 @@ export default function Release({
               {changed.map((item: ReactNode, key: number) => (
                 <ListItem key={key}>
                   <ListItemDecorator>
-                    <AmaranthIcon icon={aiPen} />
+                    <Amicon icon={aiPen} />
                   </ListItemDecorator>
                   <ListItemContent>
                     <Typography>{item}</Typography>
@@ -93,7 +93,7 @@ export default function Release({
               {removed.map((item: ReactNode, key: number) => (
                 <ListItem key={key}>
                   <ListItemDecorator>
-                    <AmaranthIcon icon={aiTrashCan} />
+                    <Amicon icon={aiTrashCan} />
                   </ListItemDecorator>
                   <ListItemContent>
                     <Typography>{item}</Typography>
@@ -141,7 +141,7 @@ export default function Release({
             <List marker="disc" sx={{ '--ListItem-minHeight': '1.5rem', '--ListItem-paddingY': '.125rem' }}>
               {renamedIcons.map((icon: { new: string; old: string }) => (
                 <ListItem key={icon.new}>
-                  <Code>{icon.old}</Code> <AmaranthIcon icon={aiArrowRight} style={{ marginInline: 8, top: 2 }} /> <Code>{icon.new}</Code>
+                  <Code>{icon.old}</Code> <Amicon icon={aiArrowRight} style={{ marginInline: 8, top: 2 }} /> <Code>{icon.new}</Code>
                 </ListItem>
               ))}
             </List>

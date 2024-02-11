@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { Container, IconButton, Stack, Typography } from '@mui/joy';
 
-import AmaranthIcon, { aiArrowLeft } from '@studio384/amaranth';
+import Amicon, { aiArrowLeft } from '@studio384/amaranth';
 
 export default function Error() {
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ export default function Error() {
     <Container maxWidth="md" sx={{ py: 5 }}>
       <Stack sx={{ textAlign: 'center' }} alignItems="center">
         <IconButton variant="outlined" onClick={() => navigate('/')} sx={{ mb: 2 }}>
-          <AmaranthIcon icon={aiArrowLeft} />
+          <Amicon icon={aiArrowLeft} />
         </IconButton>
         <Typography level="h1">Welp, nothing to see here.</Typography>
         <Typography level="body-sm">Error 404</Typography>

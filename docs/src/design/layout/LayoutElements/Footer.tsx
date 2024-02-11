@@ -17,7 +17,7 @@ import {
   useColorScheme
 } from '@mui/joy';
 
-import AmaranthIcon, { aiAmaranth, aiCircleHalfInner, aiGithub, aiHeart, aiMoon, aiSun, aiTwitter } from '@studio384/amaranth';
+import Amicon, { aiAmaranth, aiCircleHalfInner, aiGithub, aiHeart, aiMoon, aiSun, aiTwitter } from '@studio384/amaranth';
 
 export default function Footer() {
   const { mode, setMode } = useColorScheme();
@@ -52,7 +52,7 @@ export default function Footer() {
                 </Typography>
               </Stack>
               <Typography sx={{ mt: 1 }}>
-                Amicons is a set of SVG icons made with <AmaranthIcon icon={aiHeart} /> in Belgium.
+                Amicons is a set of SVG icons made with <Amicon icon={aiHeart} /> in Belgium.
               </Typography>
             </Box>
           </Grid>
@@ -111,7 +111,7 @@ export default function Footer() {
                 <ListItem>
                   <ListItemButton color="primary" variant="soft" component="a" href="https://github.com/studio384/amaranth">
                     <ListItemDecorator>
-                      <AmaranthIcon icon={aiGithub} />
+                      <Amicon icon={aiGithub} />
                     </ListItemDecorator>
                     <ListItemContent>
                       <Typography>GitHub</Typography>
@@ -121,7 +121,7 @@ export default function Footer() {
                 <ListItem>
                   <ListItemButton color="primary" variant="soft" component="a" href="https://twitter.com/studio384">
                     <ListItemDecorator>
-                      <AmaranthIcon icon={aiTwitter} />
+                      <Amicon icon={aiTwitter} />
                     </ListItemDecorator>
                     <ListItemContent>
                       <Typography>Twitter</Typography>
@@ -131,7 +131,7 @@ export default function Footer() {
                 <ListItem>
                   <ListItemButton color="primary" variant="soft" component="a" href="https://studio384.be">
                     <ListItemDecorator>
-                      <AmaranthIcon icon={aiAmaranth} />
+                      <Amicon icon={aiAmaranth} />
                     </ListItemDecorator>
                     <ListItemContent>
                       <Typography>Studio 384</Typography>
@@ -151,7 +151,7 @@ export default function Footer() {
               </Typography>
               <Stack direction="row" gap={0.5}>
                 <IconButton color="primary" variant="soft" onClick={() => setMode(mode === 'dark' ? 'light' : mode === 'light' ? 'system' : 'dark')}>
-                  <AmaranthIcon icon={mode === 'dark' ? aiMoon : mode === 'light' ? aiSun : aiCircleHalfInner} />
+                  <Amicon icon={mode === 'dark' ? aiMoon : mode === 'light' ? aiSun : aiCircleHalfInner} />
                 </IconButton>
               </Stack>
             </Stack>

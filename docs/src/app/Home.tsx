@@ -7,7 +7,7 @@ import icons from '@/data/icons';
 import Codeblock from '@/design/components/Codeblock';
 import Header from '@/design/layout/LayoutElements/Header';
 
-import AmaranthIcon, { aiAmicons, aiBook, aiFlag, aiHeart, aiIcons, aiLockOpen, aiMagnifyingGlass, aiPatreon } from '@studio384/amaranth';
+import Amicon, { aiAmicons, aiBook, aiFlag, aiHeart, aiIcons, aiLockOpen, aiMagnifyingGlass, aiPatreon } from '@studio384/amaranth';
 
 import LargeIconGrid from './Components/LargeIconGrid';
 
@@ -39,7 +39,7 @@ export default function Home() {
               <Input
                 startDecorator={
                   <IconButton type="submit" color="primary" sx={{ borderRadius: 'md' }}>
-                    <AmaranthIcon icon={aiMagnifyingGlass} />
+                    <Amicon icon={aiMagnifyingGlass} />
                   </IconButton>
                 }
                 size="lg"
@@ -69,7 +69,7 @@ export default function Home() {
               <Typography>Get started with Amicons by installing the npm package.</Typography>
               <Codeblock>npm install @studio384/amaranth</Codeblock>
               <Stack direction="row" gap={1} sx={{ mt: 3 }}>
-                <Button startDecorator={<AmaranthIcon icon={aiBook} />} onClick={() => navigate('/docs')}>
+                <Button startDecorator={<Amicon icon={aiBook} />} onClick={() => navigate('/docs')}>
                   Documentation
                 </Button>
               </Stack>
@@ -89,8 +89,8 @@ export default function Home() {
                 height: 300
               }}
             >
-              <AmaranthIcon icon={aiFlag} />
-              <AmaranthIcon icon={aiAmicons} />
+              <Amicon icon={aiFlag} />
+              <Amicon icon={aiAmicons} />
             </Box>
           </Box>
           <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
@@ -109,15 +109,15 @@ export default function Home() {
                 height: 300
               }}
             >
-              <AmaranthIcon icon={aiAmicons} />
-              <AmaranthIcon icon={aiHeart} />
-              <AmaranthIcon icon={aiIcons} />
+              <Amicon icon={aiAmicons} />
+              <Amicon icon={aiHeart} />
+              <Amicon icon={aiIcons} />
             </Box>
             <Stack gap={1} justifyContent="center">
               <Typography level="h2">Icons with love</Typography>
               <Typography>Every icon is made by hand, and with our heart. We don't include that in the package tho, we still need it.</Typography>
               <Stack direction="row" gap={1} sx={{ mt: 3 }}>
-                <Button startDecorator={<AmaranthIcon icon={aiAmicons} />} onClick={() => navigate('/icons')}>
+                <Button startDecorator={<Amicon icon={aiAmicons} />} onClick={() => navigate('/icons')}>
                   Full library
                 </Button>
               </Stack>
@@ -128,7 +128,7 @@ export default function Home() {
               <Typography level="h2">Open source. Powered by you.</Typography>
               <Typography>Amicons is open source, and funded by you.</Typography>
               <Stack direction="row" gap={1} sx={{ mt: 3 }}>
-                <Button startDecorator={<AmaranthIcon icon={aiPatreon} />} onClick={() => navigate('/icons')}>
+                <Button startDecorator={<Amicon icon={aiPatreon} />} onClick={() => navigate('/icons')}>
                   Support us at Patreon
                 </Button>
               </Stack>
@@ -148,8 +148,8 @@ export default function Home() {
                 height: 300
               }}
             >
-              <AmaranthIcon icon={aiLockOpen} />
-              <AmaranthIcon icon={aiPatreon} />
+              <Amicon icon={aiLockOpen} />
+              <Amicon icon={aiPatreon} />
             </Box>
           </Box>
         </Stack>

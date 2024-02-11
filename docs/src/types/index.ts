@@ -1,4 +1,4 @@
-import { IAmaranthIcon } from '@studio384/amaranth';
+import { IAmicon } from '@studio384/amaranth';
 
 export interface IIcon {
   title: string;
@@ -13,11 +13,11 @@ export interface ILibraryIcon {
   categories: string[];
   tags: string[];
   slug: string;
-  icon: IAmaranthIcon;
+  icon: IAmicon;
 }
 
 export interface IIconCategory {
   slug: string;
   title: string;
-  icon: IAmaranthIcon;
+  icon: IAmicon;
 }

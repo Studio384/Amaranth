@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 
 import { List, ListItem, ListItemButton, ListItemContent, ListSubheader, Typography } from '@mui/joy';
 
-import AmaranthIcon, { aiAmicons, aiArrowRotateRight, aiArrowsDownLeftRightUpCenter, aiHeart, aiReact, aiSpinner, aiStar } from '@studio384/amaranth';
+import Amicon, { aiAmicons, aiArrowRotateRight, aiArrowsDownLeftRightUpCenter, aiHeart, aiReact, aiSpinner, aiStar } from '@studio384/amaranth';
 
 export default function DocsNavigation() {
   const pages = [
@@ -72,7 +72,7 @@ export default function DocsNavigation() {
       {pages.map((category, key) => (
         <Fragment key={key}>
           <ListSubheader sx={{ '&:not(:first-child)': { mt: 2 } }}>
-            <Typography level="title-sm" textTransform="none" letterSpacing="initial" fontSize="md" startDecorator={<AmaranthIcon icon={category.icon} />}>
+            <Typography level="title-sm" textTransform="none" letterSpacing="initial" fontSize="md" startDecorator={<Amicon icon={category.icon} />}>
               {category.title}
             </Typography>
           </ListSubheader>
