@@ -643,6 +643,13 @@ export const aiCalendar: {
   name: 'calendar',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2m4-1a1 1 0 1 1-2 0 1 1 0 0 1 2 0m2 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-5 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0m2 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/><path d="M3.75 1A2.75 2.75 0 0 0 1 3.75v8.5A2.75 2.75 0 0 0 3.75 15h8.5A2.75 2.75 0 0 0 15 12.25v-8.5A2.75 2.75 0 0 0 12.25 1zM2.5 3.75c0-.69.56-1.25 1.25-1.25h8.5c.69 0 1.25.56 1.25 1.25V4h-11zm0 1.75h11v6.75c0 .69-.56 1.25-1.25 1.25h-8.5c-.69 0-1.25-.56-1.25-1.25z"/></svg>`
 };
+export const aiCamera: {
+  name: 'camera';
+  data: string;
+} = {
+  name: 'camera',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M11.5 8.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.5 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/><path d="M6.986 1a2.75 2.75 0 0 0-2.46 1.52l-.17.342A.25.25 0 0 1 4.132 3H2.75A2.75 2.75 0 0 0 0 5.75v6.5A2.75 2.75 0 0 0 2.75 15h10.5A2.75 2.75 0 0 0 16 12.25v-6.5A2.75 2.75 0 0 0 13.25 3h-1.382a.25.25 0 0 1-.224-.138l-.17-.342A2.75 2.75 0 0 0 9.014 1zM5.868 3.191A1.25 1.25 0 0 1 6.986 2.5h2.028c.473 0 .906.268 1.118.691l.17.342a1.75 1.75 0 0 0 1.566.967h1.382c.69 0 1.25.56 1.25 1.25v6.5c0 .69-.56 1.25-1.25 1.25H2.75c-.69 0-1.25-.56-1.25-1.25v-6.5c0-.69.56-1.25 1.25-1.25h1.382a1.75 1.75 0 0 0 1.565-.967z"/></svg>`
+};
 export const aiCampfire: {
   name: 'campfire';
   data: string;
@@ -3200,6 +3207,7 @@ export type Amicons =
   | 'calendar_stars'
   | 'calendar_week'
   | 'calendar'
+  | 'camera'
   | 'campfire'
   | 'car'
   | 'chain_slash'
@@ -3652,6 +3660,7 @@ export const amiconSet = [
   aiCalendarStars,
   aiCalendarWeek,
   aiCalendar,
+  aiCamera,
   aiCampfire,
   aiCar,
   aiChainSlash,

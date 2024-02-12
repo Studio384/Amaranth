@@ -70,6 +70,7 @@ export default function Changelog() {
               'broom',
               'c',
               'calculator',
+              'camera',
               'clipboard',
               'command',
               'computer-mouse-scroll-wheel',
