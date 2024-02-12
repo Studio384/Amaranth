@@ -7,7 +7,7 @@ import categories from '@/data/categories';
 import icons from '@/data/icons';
 import Header from '@/design/layout/LayoutElements/Header';
 import useSearch from '@/hooks/useSearch';
-import { IIconCategory, ILibraryIcon } from '@/types';
+import { ILibraryIcon } from '@/types';
 
 import Amicon, { aiChevronLeft, aiChevronRight, aiFilterXmark, aiMagnifyingGlass } from '@studio384/amaranth';
 
@@ -17,15 +17,15 @@ export default function Icons() {
   const location = useLocation();
 
   const [page, setPage] = useState(0);
-  const [category, setCategory] = useState<null | IIconCategory>(null);
+  const [searchCategories, setSearchCategories] = useState<string[]>([]);
 
   const searchableList = useMemo(() => {
-    if (category?.slug) {
-      return icons.filter((icon) => icon.categories.includes(category.slug));
+    if (searchCategories.length >= 1) {
+      return icons.filter((icon) => searchCategories.every((_searchCategory) => icon.categories.includes(_searchCategory)));
     }
 
     return icons;
-  }, [category]);
+  }, [searchCategories]);
 
   const { result, needle, setNeedle } = useSearch(searchableList, ['slug', 'tags']);
 
@@ -48,7 +48,7 @@ export default function Icons() {
           sx={{
             display: 'grid',
             gridTemplateColumns: '200px auto',
-            gap: { xs: 1 }
+            gap: 3
           }}
         >
           <Box sx={{ position: 'sticky', top: 58 + 16, overflow: 'auto', maxHeight: 'calc(100dvh - 58px - 16px)', alignSelf: 'flex-start' }}>
@@ -59,36 +59,44 @@ export default function Icons() {
                 gap: 0.25,
                 '--ListItem-paddingY': 0,
                 '--ListItem-radius': 'var(--joy-radius-md)',
-                '--ListItem-minHeight': '2rem',
                 '--ListItem-paddingLeft': '.5rem',
                 '--ListItem-paddingRight': '.5rem',
                 '--ListItemDecorator-size': '1.5rem'
               }}
             >
-              {categories.map((_category) => (
-                <ListItem key={_category.slug}>
-                  <ListItemButton
-                    onClick={() => {
-                      if (category?.slug === _category.slug) {
-                        setCategory(null);
-                      } else {
-                        setCategory(_category);
-                      }
+              {categories.map((_category) => {
+                const categoryIcons = searchableList.filter((icon) => icon.categories.includes(_category.slug));
 
-                      setPage(0);
-                    }}
-                    variant={category?.slug === _category.slug ? 'soft' : 'plain'}
-                    color="primary"
-                  >
-                    <ListItemDecorator>
-                      <Amicon icon={_category.icon} />
-                    </ListItemDecorator>
-                    <ListItemContent>
-                      <Typography noWrap>{_category.title}</Typography>
-                    </ListItemContent>
-                  </ListItemButton>
-                </ListItem>
-              ))}
+                if (categoryIcons.length === 0) {
+                  return;
+                }
+
+                return (
+                  <ListItem key={_category.slug}>
+                    <ListItemButton
+                      onClick={() => {
+                        if (searchCategories.includes(_category.slug)) {
+                          setSearchCategories((prev) => prev.filter((item) => item !== _category.slug));
+                        } else {
+                          setSearchCategories((prev) => [...prev, _category.slug]);
+                        }
+
+                        setPage(0);
+                      }}
+                      variant={searchCategories.includes(_category.slug) ? 'soft' : 'plain'}
+                      color="primary"
+                    >
+                      <ListItemDecorator>
+                        <Amicon icon={_category.icon} />
+                      </ListItemDecorator>
+                      <ListItemContent>
+                        <Typography noWrap>{_category.title}</Typography>
+                      </ListItemContent>
+                      <ListItemContent sx={{ fontFamily: 'display', textAlign: 'right' }}>{categoryIcons.length}</ListItemContent>
+                    </ListItemButton>
+                  </ListItem>
+                );
+              })}
             </List>
           </Box>
           <Stack gap={2} sx={{ my: 2 }}>
@@ -112,10 +120,10 @@ export default function Icons() {
                 />
                 <IconButton
                   variant="outlined"
-                  disabled={needle === '' && category === null}
+                  disabled={needle === '' && searchCategories.length === 0}
                   onClick={() => {
                     setNeedle('');
-                    setCategory(null);
+                    setSearchCategories([]);
                   }}
                 >
                   <Amicon icon={aiFilterXmark} />
