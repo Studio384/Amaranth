@@ -40,6 +40,10 @@ export default function Changelog() {
                 You can now pass properties to the <Code>Amicon</Code> component.
               </>
             ]}
+            fixed={[
+              <>Fixed the <Code>expand</Code> icon including excessive shapes.</>,
+              <>Fixes various issues with the CSS variables in the <Code>Amicon</Code> component.</>
+            ]}
             newIcons={[
               '0',
               '1',

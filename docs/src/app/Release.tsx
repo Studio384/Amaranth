@@ -6,7 +6,7 @@ import icons from '@/data/icons';
 import Code from '@/design/components/Code';
 import { ILibraryIcon } from '@/types';
 
-import Amicon, { aiArrowRight, aiBoxOpenFull, aiPen, aiPlus, aiTrashCan } from '@studio384/amaranth';
+import Amicon, { aiArrowRight, aiBoxOpenFull, aiBug, aiPen, aiPlus, aiTrashCan } from '@studio384/amaranth';
 
 import IconCard from './Components/IconCard';
 
@@ -16,6 +16,7 @@ export default function Release({
   version,
   added,
   changed,
+  fixed,
   removed,
   newIcons,
   updatedIcons,
@@ -27,6 +28,7 @@ export default function Release({
   version: string;
   added?: ReactNode[];
   changed?: ReactNode[];
+  fixed?: ReactNode[];
   removed?: ReactNode[];
   newIcons?: string[];
   updatedIcons?: string[];
@@ -77,6 +79,23 @@ export default function Release({
                 <ListItem key={key}>
                   <ListItemDecorator>
                     <Amicon icon={aiPen} />
+                  </ListItemDecorator>
+                  <ListItemContent>
+                    <Typography>{item}</Typography>
+                  </ListItemContent>
+                </ListItem>
+              ))}
+            </List>
+          </Stack>
+        )}
+        {fixed && (
+          <Stack gap={2}>
+            <Typography level="h3">Fixed</Typography>
+            <List sx={{ '--ListItem-minHeight': '1.5rem', '--ListItem-paddingY': '.125rem', '--ListItemDecorator-size': '1.75rem' }}>
+              {fixed.map((item: ReactNode, key: number) => (
+                <ListItem key={key}>
+                  <ListItemDecorator>
+                    <Amicon icon={aiBug} />
                   </ListItemDecorator>
                   <ListItemContent>
                     <Typography>{item}</Typography>
