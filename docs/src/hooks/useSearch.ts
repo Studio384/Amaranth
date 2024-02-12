@@ -1,14 +1,20 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useCallback, useMemo, useState } from 'react';
 
-export default function useSearch(haystack, keys, initialNeedle) {
-  const [needle, setNeedle] = useState(initialNeedle || '');
+interface ISeachResults {
+  [key: string]: any;
+  _score: number;
+}
 
-  const flattenObject = useCallback((item, prefix = '') => {
-    const flattened = {};
+export default function useSearch(haystack: any[] | undefined, keys: string[], initialNeedle?: string) {
+  const [needle, setNeedle] = useState<string>(initialNeedle || '');
+
+  const flattenObject = useCallback((item: { [key: string]: any }, prefix?: string) => {
+    const flattened: { [key: string]: any } = {};
     prefix = prefix ? prefix + '.' : '';
 
     for (const key in item) {
-      if (typeof item[key] === 'object' && item[key] !== null && !Array.isArray(item[key])) {
+      if (typeof item[key] === 'object' && item[key] !== null) {
         Object.assign(flattened, flattenObject(item[key], prefix + key));
       } else {
         flattened[prefix + key] = item[key];
@@ -18,7 +24,7 @@ export default function useSearch(haystack, keys, initialNeedle) {
     return flattened;
   }, []);
 
-  const scoreHaystackItem = useCallback((item, query) => {
+  const scoreHaystackItem = useCallback((item: string, query: string) => {
     const searchable = item.toString().toLowerCase().trim();
 
     // Check if the string is an exact match to this partial search query
@@ -44,24 +50,18 @@ export default function useSearch(haystack, keys, initialNeedle) {
       return haystack || [];
     }
 
-    const results = [];
+    const results: ISeachResults[] = [];
     const cleanNeedle = needle.trim().toLowerCase();
 
     // Loop through the haystack
     (haystack || []).map((item) => {
-      const flatItem = flattenObject(item);
+      const flatItem: { [key: string]: any } = flattenObject(item);
       let matchScore = 0;
 
       keys.forEach((key) => {
         if (flatItem[key]) {
-          if (Array.isArray(flatItem[key])) {
-            flatItem[key].map((arrayItem) => {
-              matchScore += scoreHaystackItem(arrayItem, cleanNeedle);
-            });
-          } else {
-            // Do a 1:1 comparison between all searchable items
-            matchScore += scoreHaystackItem(flatItem[key], cleanNeedle);
-          }
+          // Do a 1:1 comparison between all searchable items
+          matchScore += scoreHaystackItem(flatItem[key], cleanNeedle);
         }
       });
 

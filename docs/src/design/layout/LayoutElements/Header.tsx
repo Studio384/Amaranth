@@ -1,6 +1,11 @@
 import { Box, Container } from '@mui/joy';
+import { ReactNode } from 'react';
 
-export default function Header({ children }) {
+interface IHeaderProps {
+  children: ReactNode;
+}
+
+export default function Header({ children }: IHeaderProps) {
   return (
     <Box
       sx={{

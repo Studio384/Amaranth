@@ -4,6 +4,14 @@ import dark from './dark';
 import { darkColorVariables, neutralColorVariables } from './generateColor';
 import light from './light';
 
+declare module '@mui/joy/styles' {
+  interface Palette {
+    background: {
+      channel: string;
+    };
+  }
+}
+
 const joyTheme = extendTheme({
   fontFamily: {
     body: "-apple-system, BlinkMacSystemFont, 'Segoe UI Variable Text', 'Segoe UI', Roboto, Noto Sans, Helvetica Neue, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
@@ -53,9 +61,7 @@ const joyTheme = extendTheme({
           body: '#000',
           surface: 'var(--joy-palette-neutral-50)',
           level1: 'var(--joy-palette-neutral-200)',
-          channel: '0 0 0',
-          darkBackdrop: 'rgba(0 0 0 / .5)',
-          hover: 'rgba(var(--joy-palette-primary-mainChannel) / .125)'
+          channel: '0 0 0'
         },
         text: {
           primary: '#fff',

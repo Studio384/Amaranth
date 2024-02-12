@@ -4,10 +4,10 @@ import Code from '@/design/components/Code';
 
 import { aiAmicons, aiArrowUp, aiMessageSmile } from '@studio384/amaranth';
 
-import Playground from '../playground/Playground';
+import Playground, { IPlaygroundConfig } from '../playground/Playground';
 
 export default function PageRotate() {
-  const playgroundConfig = {
+  const playgroundConfig: IPlaygroundConfig = {
     icons: [aiMessageSmile, aiAmicons, aiArrowUp],
     properties: [
       {

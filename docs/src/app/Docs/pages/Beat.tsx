@@ -4,10 +4,10 @@ import Code from '@/design/components/Code';
 
 import { aiExpand, aiHeart, aiPlay } from '@studio384/amaranth';
 
-import Playground from '../playground/Playground';
+import Playground, { IPlaygroundConfig } from '../playground/Playground';
 
 export default function PageBeat() {
-  const playgroundConfig = {
+  const playgroundConfig: IPlaygroundConfig = {
     icons: [aiHeart, aiExpand, aiPlay],
     properties: [
       {

@@ -6,21 +6,23 @@ import Codeblock from '@/design/components/Codeblock';
 
 import Amicon, { aiBroom, IAmicon } from '@studio384/amaranth';
 
-interface IPlaygroundProps {
-  config: {
+export interface IPlaygroundConfig {
     icons: IAmicon[];
-    properties: {
+    properties?: {
       label: string;
       type: 'chip';
       name: string;
       values: unknown[];
       default: unknown;
     }[];
-    cssVariables: {
+    cssVariables?: {
       name: string;
-      default: string;
+      default: string | number | boolean;
     }[];
-  };
+}
+
+interface IPlaygroundProps {
+  config: IPlaygroundConfig;
 }
 
 export default function Playground({ config }: IPlaygroundProps) {
@@ -37,10 +39,10 @@ export default function Playground({ config }: IPlaygroundProps) {
   const iconName = useMemo(() => getIconName(playgroundIcon.name), [playgroundIcon]);
 
   // Properties
-  const [playgroundProps, setPlaygroundProps] = useState({});
+  const [playgroundProps, setPlaygroundProps] = useState<{ [index: string]: string | number }>({});
 
-  const iconProperties = useMemo(() => {
-    const props = {};
+  const iconProperties: { [index: string]: string | number | boolean } = useMemo(() => {
+    const props: { [index: string]: string | number | boolean } = {};
 
     config.properties?.map((property) => {
       props[property.name] = playgroundProps?.[property.name] ?? property.default;
@@ -49,7 +51,7 @@ export default function Playground({ config }: IPlaygroundProps) {
     return props;
   }, [config.properties, playgroundProps]);
 
-  const propertyParser = useMemo(() => {
+  const propertyParser: string = useMemo(() => {
     let exampleString = '';
 
     Object.keys(iconProperties).map((propName) => {
@@ -71,8 +73,8 @@ export default function Playground({ config }: IPlaygroundProps) {
   // CSS Variables
   const [playgroundCssVariable, setPlaygroundCssVariable] = useState<CSSProperties>({});
 
-  const iconVariables = useMemo(() => {
-    const props = {};
+  const iconVariables: { [index: string]: string | number | boolean } = useMemo(() => {
+    const props: { [index: string]: string | number | boolean } = {};
 
     config.cssVariables?.map((variable) => {
       props[variable.name] = playgroundCssVariable?.[variable.name] ?? variable.default;
@@ -86,9 +88,9 @@ export default function Playground({ config }: IPlaygroundProps) {
     let hasProperty = false;
 
     Object.keys(iconVariables).map((varName) => {
-      const variableProperties = config.cssVariables.find((variable) => variable.name === varName);
+      const variableProperties = config.cssVariables?.find((variable) => variable.name === varName);
 
-      if (iconVariables[varName] === variableProperties.default) return;
+      if (iconVariables[varName] === variableProperties?.default) return;
 
       hasProperty = true;
 
