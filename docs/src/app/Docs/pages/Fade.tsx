@@ -2,14 +2,14 @@ import { Stack, Typography } from '@mui/joy';
 
 import Code from '@/design/components/Code';
 
-import { aiExpand, aiHeart, aiPlay } from '@studio384/amaranth';
+import { aiAmicons, aiCircleHalfInner, aiMusic } from '@studio384/amaranth';
 
 import ApiTable from '../playground/ApiTable';
 import Playground, { IPlaygroundConfig } from '../playground/Playground';
 
 export default function PageFade() {
   const playgroundConfig: IPlaygroundConfig = {
-    icons: [aiHeart, aiExpand, aiPlay],
+    icons: [aiAmicons, aiMusic, aiCircleHalfInner],
     properties: [
       {
         label: 'Fade',
