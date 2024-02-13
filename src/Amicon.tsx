@@ -9,6 +9,7 @@ interface AmiconProps {
   flip?: true | "x" | "y" | false;
   spin?: boolean | "pulse";
   beat?: boolean;
+  fade?: boolean;
   style?: CSSProperties;
 }
 
@@ -18,6 +19,7 @@ export default function Amicon({
   rotate = undefined,
   spin = undefined,
   beat = undefined,
+  fade = undefined,
   ...props
 }: AmiconProps) {
   const spinAnimation = keyframes`
@@ -35,6 +37,15 @@ export default function Amicon({
     }
     45% {
       transform: scale(var(--ai-animation-scale, 1.4));
+    }
+  `;
+
+  const fadeAnimation = keyframes`
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: var(--ai-animation-opacity, .4);
     }
   `;
 
@@ -85,6 +96,13 @@ export default function Amicon({
     animation-iteration-count: var(--ai-animation-iteration-count, infinite);
   `;
 
+  const fadeClass = css`
+    animation-name: ${fadeAnimation};
+    animation-timing-function: var(--ai-animation-timing-function, ease-in-out);
+    animation-duration: var(--ai-animation-duration, 1.5s);
+    animation-iteration-count: var(--ai-animation-iteration-count, infinite);
+  `;
+
   return (
     <span
       className={cx({
@@ -93,7 +111,8 @@ export default function Amicon({
         [flipClass]: !!flip,
         [spinClass]: !!spin,
         [spinPulseClass]: spin === "pulse",
-        [beatClass]: beat
+        [beatClass]: beat,
+        [fadeClass]: fade
       })}
       {...props}
     >

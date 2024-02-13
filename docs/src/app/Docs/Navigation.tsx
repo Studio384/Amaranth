@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 
 import { List, ListItem, ListItemButton, ListItemContent, ListSubheader, Typography } from '@mui/joy';
 
-import Amicon, { aiAmicons, aiArrowRotateRight, aiArrowsDownLeftRightUpCenter, aiHeart, aiReact, aiSpinner, aiStar } from '@studio384/amaranth';
+import Amicon, { aiAmicons, aiArrowRotateRight, aiArrowsDownLeftRightUpCenter, aiCircleHalfInner, aiHeart, aiReact, aiSpinner, aiStar } from '@studio384/amaranth';
 
 export default function DocsNavigation() {
   const pages = [
@@ -40,6 +40,11 @@ export default function DocsNavigation() {
           title: 'Beat',
           icon: aiHeart,
           link: '#beat'
+        },
+        {
+          title: 'Fade',
+          icon: aiCircleHalfInner,
+          link: '#fade'
         }
       ]
     },

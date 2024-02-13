@@ -25,7 +25,7 @@ export default function Changelog() {
                 The <Code>AmaranthIcon</Code> component has been renamed to <Code>Amicon</Code>.
               </>,
               <>
-                The <Code>Amicon</Code> component now supports the <Code>beat</Code> property.
+                The <Code>Amicon</Code> component now supports the <Code>beat</Code> and <Code>fade</Code> property.
               </>
             ]}
             changed={[

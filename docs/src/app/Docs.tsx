@@ -8,6 +8,7 @@ import PageFlip from './Docs/pages/Flip';
 import PageInstallation from './Docs/pages/Installation';
 import PageRotate from './Docs/pages/Rotate';
 import PageSpin from './Docs/pages/Spin';
+import PageFade from './Docs/pages/Fade';
 
 export default function Docs() {
   return (
@@ -34,6 +35,7 @@ export default function Docs() {
             <PageRotate />
             <PageFlip />
             <PageBeat />
+            <PageFade />
           </Stack>
         </Box>
       </Container>
