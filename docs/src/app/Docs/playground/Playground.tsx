@@ -1,4 +1,4 @@
-import { CSSProperties, useMemo, useState } from 'react';
+import { CSSProperties, ReactNode, useMemo, useState } from 'react';
 
 import { Box, Card, Chip, Divider, FormControl, FormLabel, IconButton, Input, Sheet, Stack, Typography } from '@mui/joy';
 
@@ -18,6 +18,7 @@ export interface IPlaygroundConfig {
   cssVariables?: {
     name: string;
     default: string | number | boolean;
+    description: ReactNode;
   }[];
 }
 

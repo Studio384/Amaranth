@@ -1,10 +1,11 @@
-import { Sheet, Stack, Table, Typography } from '@mui/joy';
+import { Stack, Typography } from '@mui/joy';
 
 import Code from '@/design/components/Code';
 
 import { aiAmicons, aiArrowUp, aiMessageSmile } from '@studio384/amaranth';
 
 import Playground, { IPlaygroundConfig } from '../playground/Playground';
+import ApiTable from '../playground/ApiTable';
 
 export default function PageRotate() {
   const playgroundConfig: IPlaygroundConfig = {
@@ -21,11 +22,13 @@ export default function PageRotate() {
     cssVariables: [
       {
         name: '--ai-transition-duration',
-        default: '0.2s'
+        default: '0.2s',
+        description: 'Time for a full play through of the animation.'
       },
       {
         name: '--ai-animation-timing-function',
-        default: 'ease-in-out'
+        default: 'ease-in-out',
+        description: 'The timing function used for the animation.'
       }
     ]
   };
@@ -40,37 +43,8 @@ export default function PageRotate() {
       <Playground config={playgroundConfig} />
 
       <Typography level="h4">API</Typography>
-      <Sheet variant="outlined" sx={{ borderRadius: 'sm', boxShadow: 'md' }}>
-        <Table variant="outlined">
-          <thead>
-            <tr>
-              <th style={{ width: '30%' }}>Property name</th>
-              <th style={{ width: '15%' }}>Default</th>
-              <th style={{ width: '55%' }}>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <Code>--ai-transition-duration</Code>
-              </td>
-              <td>
-                <Code>0.2s</Code>
-              </td>
-              <td>Time for a full play through of the animation.</td>
-            </tr>
-            <tr>
-              <td>
-                <Code>--ai-transition-timing-function</Code>
-              </td>
-              <td>
-                <Code>ease-in-out</Code>
-              </td>
-              <td>The timing function used for the animation.</td>
-            </tr>
-          </tbody>
-        </Table>
-      </Sheet>
+
+      <ApiTable cssVariables={playgroundConfig.cssVariables} />
     </Stack>
   );
 }

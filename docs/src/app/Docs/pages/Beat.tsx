@@ -1,10 +1,11 @@
-import { Sheet, Stack, Table, Typography } from '@mui/joy';
+import { Stack, Typography } from '@mui/joy';
 
 import Code from '@/design/components/Code';
 
 import { aiExpand, aiHeart, aiPlay } from '@studio384/amaranth';
 
 import Playground, { IPlaygroundConfig } from '../playground/Playground';
+import ApiTable from '../playground/ApiTable';
 
 export default function PageBeat() {
   const playgroundConfig: IPlaygroundConfig = {
@@ -21,19 +22,23 @@ export default function PageBeat() {
     cssVariables: [
       {
         name: '--ai-animation-duration',
-        default: '1s'
+        default: '1s',
+        description: 'Time for a full play through of the animation.'
       },
       {
         name: '--ai-animation-timing-function',
-        default: 'ease-in-out'
+        default: 'ease-in-out',
+        description: 'The timing function used for the animation.'
       },
       {
         name: '--ai-animation-iteration-count',
-        default: 'infinite'
+        default: 'infinite',
+        description: 'Number of times the animation is repeated.'
       },
       {
         name: '--ai-animation-scale',
-        default: '1.4'
+        default: '1.4',
+        description: 'The scale at which the icon can grow.'
       }
     ]
   };
@@ -48,55 +53,8 @@ export default function PageBeat() {
       <Playground config={playgroundConfig} />
 
       <Typography level="h4">API</Typography>
-      <Sheet variant="outlined" sx={{ borderRadius: 'sm', boxShadow: 'md' }}>
-        <Table variant="outlined">
-          <thead>
-            <tr>
-              <th style={{ width: '30%' }}>Property name</th>
-              <th style={{ width: '15%' }}>Default</th>
-              <th style={{ width: '55%' }}>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <Code>--ai-animation-duration</Code>
-              </td>
-              <td>
-                <Code>1s</Code>
-              </td>
-              <td>Time for a full play through of the animation.</td>
-            </tr>
-            <tr>
-              <td>
-                <Code>--ai-animation-timing-function</Code>
-              </td>
-              <td>
-                <Code>ease-in-out</Code>
-              </td>
-              <td>The timing function used for the animation.</td>
-            </tr>
-            <tr>
-              <td>
-                <Code>--ai-animation-iteration-count</Code>
-              </td>
-              <td>
-                <Code>infinite</Code>
-              </td>
-              <td>Number of times the animation is repeated.</td>
-            </tr>
-            <tr>
-              <td>
-                <Code>--ai-animation-scale</Code>
-              </td>
-              <td>
-                <Code>1.4</Code>
-              </td>
-              <td>The scale at which the icon can grow.</td>
-            </tr>
-          </tbody>
-        </Table>
-      </Sheet>
+
+      <ApiTable cssVariables={playgroundConfig.cssVariables} />
     </Stack>
   );
 }
