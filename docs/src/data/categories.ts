@@ -61,29 +61,14 @@ const categories = [
     icon: aiBel
   },
   {
-    slug: 'alphabet',
-    title: 'Alphabet',
-    icon: aiA
-  },
-  {
     slug: 'arrows',
     title: 'Arrows',
     icon: aiArrowUp
   },
   {
-    slug: 'astronomy',
-    title: 'Astronomy',
-    icon: aiMoon
-  },
-  {
     slug: 'brands',
     title: 'Brands',
     icon: aiAmicons
-  },
-  {
-    slug: 'buildings',
-    title: 'Buildings',
-    icon: aiHouse
   },
   {
     slug: 'business',
@@ -96,19 +81,9 @@ const categories = [
     icon: aiCampfire
   },
   {
-    slug: 'charity',
-    title: 'Charity',
-    icon: aiHeart
-  },
-  {
     slug: 'charts',
     title: 'Charts',
     icon: aiChartPie
-  },
-  {
-    slug: 'clothing',
-    title: 'Clothing',
-    icon: aiShoePrints
   },
   {
     slug: 'coding',
@@ -119,11 +94,6 @@ const categories = [
     slug: 'communication',
     title: 'Communication',
     icon: aiMessageText
-  },
-  {
-    slug: 'connectivity',
-    title: 'Connectivity',
-    icon: aiEthernet
   },
   {
     slug: 'design',
@@ -176,14 +146,14 @@ const categories = [
     icon: aiHeart
   },
   {
-    slug: 'holidays',
-    title: 'Holidays',
-    icon: aiGift
-  },
-  {
     slug: 'human',
     title: 'Human',
     icon: aiEye
+  },
+  {
+    slug: 'letters-numbers',
+    title: 'Letters & numbers',
+    icon: aiA
   },
   {
     slug: 'logistics',
@@ -192,7 +162,7 @@ const categories = [
   },
   {
     slug: 'maps',
-    title: 'Maps',
+    title: 'Maps & buildings',
     icon: aiEarth
   },
   {
@@ -237,7 +207,7 @@ const categories = [
   },
   {
     slug: 'science',
-    title: 'Science',
+    title: 'Science & astronomy',
     icon: aiNetwork
   },
   {
@@ -274,11 +244,6 @@ const categories = [
     slug: 'toggle',
     title: 'Toggle',
     icon: aiToggleOn
-  },
-  {
-    slug: 'tools',
-    title: 'Tools',
-    icon: aiGear
   },
   {
     slug: 'transportation',

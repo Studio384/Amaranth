@@ -47,7 +47,7 @@ export default function Icons() {
         <Box
           sx={{
             display: 'grid',
-            gridTemplateColumns: '200px auto',
+            gridTemplateColumns: '220px auto',
             gap: 3
           }}
         >

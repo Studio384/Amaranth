@@ -4,70 +4,70 @@ import { ai0,ai1,ai2,ai3,ai4,ai5,ai6,ai7,ai8,ai9,aiAGum,aiA,aiAddressBook,aiAlar
 const icons = [
   {
     component: 'ai0',
-    categories: ["numbers"],
+    categories: ["letters-numbers"],
     tags: ["null","zero","nil"],
     slug: '0',
     icon: ai0
   },
   {
     component: 'ai1',
-    categories: ["numbers"],
+    categories: ["letters-numbers"],
     tags: ["one"],
     slug: '1',
     icon: ai1
   },
   {
     component: 'ai2',
-    categories: ["numbers"],
+    categories: ["letters-numbers"],
     tags: ["two"],
     slug: '2',
     icon: ai2
   },
   {
     component: 'ai3',
-    categories: ["numbers"],
+    categories: ["letters-numbers"],
     tags: ["three"],
     slug: '3',
     icon: ai3
   },
   {
     component: 'ai4',
-    categories: ["numbers"],
+    categories: ["letters-numbers"],
     tags: ["four"],
     slug: '4',
     icon: ai4
   },
   {
     component: 'ai5',
-    categories: ["numbers"],
+    categories: ["letters-numbers"],
     tags: ["five"],
     slug: '5',
     icon: ai5
   },
   {
     component: 'ai6',
-    categories: ["numbers"],
+    categories: ["letters-numbers"],
     tags: ["six"],
     slug: '6',
     icon: ai6
   },
   {
     component: 'ai7',
-    categories: ["numbers"],
+    categories: ["letters-numbers"],
     tags: ["seven"],
     slug: '7',
     icon: ai7
   },
   {
     component: 'ai8',
-    categories: ["numbers"],
+    categories: ["letters-numbers"],
     tags: ["eight"],
     slug: '8',
     icon: ai8
   },
   {
     component: 'ai9',
-    categories: ["numbers"],
+    categories: ["letters-numbers"],
     tags: ["nine"],
     slug: '9',
     icon: ai9
@@ -81,7 +81,7 @@ const icons = [
   },
   {
     component: 'aiA',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'a',
     icon: aiA
@@ -186,7 +186,7 @@ const icons = [
   },
   {
     component: 'aiArrowDownFromCloud',
-    categories: ["arrows","connectivity"],
+    categories: ["arrows","communication"],
     tags: ["direction","download","cloud-download"],
     slug: 'arrow-down-from-cloud',
     icon: aiArrowDownFromCloud
@@ -333,7 +333,7 @@ const icons = [
   },
   {
     component: 'aiArrowUpToCloud',
-    categories: ["arrows","connectivity"],
+    categories: ["arrows","communication"],
     tags: ["direction","upload","cloud-upload"],
     slug: 'arrow-up-to-cloud',
     icon: aiArrowUpToCloud
@@ -396,7 +396,7 @@ const icons = [
   },
   {
     component: 'aiB',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'b',
     icon: aiB
@@ -578,14 +578,14 @@ const icons = [
   },
   {
     component: 'aiBuilding',
-    categories: ["buildings","business","maps"],
+    categories: ["business","maps"],
     tags: ["company","enterprise","organization","office"],
     slug: 'building',
     icon: aiBuilding
   },
   {
     component: 'aiC',
-    categories: ["alphabet","spinners"],
+    categories: ["letters-numbers","spinners"],
     tags: [],
     slug: 'c',
     icon: aiC
@@ -655,7 +655,7 @@ const icons = [
   },
   {
     component: 'aiCampfire',
-    categories: ["camping","energy","science"],
+    categories: ["nature","energy","science"],
     tags: ["burning","hot"],
     slug: 'campfire',
     icon: aiCampfire
@@ -823,7 +823,7 @@ const icons = [
   },
   {
     component: 'aiCity',
-    categories: ["buildings","business","maps"],
+    categories: ["business","maps"],
     tags: [],
     slug: 'city',
     icon: aiCity
@@ -907,7 +907,7 @@ const icons = [
   },
   {
     component: 'aiCloud',
-    categories: ["weather","connectivity"],
+    categories: ["weather","communication"],
     tags: [],
     slug: 'cloud',
     icon: aiCloud
@@ -977,7 +977,7 @@ const icons = [
   },
   {
     component: 'aiCompass',
-    categories: ["maps","camping","spinners"],
+    categories: ["maps","nature","spinners"],
     tags: ["location"],
     slug: 'compass',
     icon: aiCompass
@@ -1033,7 +1033,7 @@ const icons = [
   },
   {
     component: 'aiD',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'd',
     icon: aiD
@@ -1110,7 +1110,7 @@ const icons = [
   },
   {
     component: 'aiDoor',
-    categories: ["buildings","security"],
+    categories: ["maps","security"],
     tags: [],
     slug: 'door',
     icon: aiDoor
@@ -1124,21 +1124,21 @@ const icons = [
   },
   {
     component: 'aiE',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'e',
     icon: aiE
   },
   {
     component: 'aiEarth',
-    categories: ["astronomy","maps"],
+    categories: ["science","maps"],
     tags: ["europe"],
     slug: 'earth',
     icon: aiEarth
   },
   {
     component: 'aiEclipse',
-    categories: ["astronomy","weather"],
+    categories: ["science","weather"],
     tags: ["sun","moon"],
     slug: 'eclipse',
     icon: aiEclipse
@@ -1180,7 +1180,7 @@ const icons = [
   },
   {
     component: 'aiEthernet',
-    categories: ["connectivity","devices"],
+    categories: ["devices"],
     tags: ["network","internet"],
     slug: 'ethernet',
     icon: aiEthernet
@@ -1222,7 +1222,7 @@ const icons = [
   },
   {
     component: 'aiF',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'f',
     icon: aiF
@@ -1292,28 +1292,28 @@ const icons = [
   },
   {
     component: 'aiFilterPlus',
-    categories: ["coding","editor"],
+    categories: ["coding"],
     tags: ["sort"],
     slug: 'filter-plus',
     icon: aiFilterPlus
   },
   {
     component: 'aiFilterXmark',
-    categories: ["coding","editor"],
+    categories: ["coding"],
     tags: ["sort"],
     slug: 'filter-xmark',
     icon: aiFilterXmark
   },
   {
     component: 'aiFilter',
-    categories: ["coding","editor"],
+    categories: ["coding"],
     tags: ["sort"],
     slug: 'filter',
     icon: aiFilter
   },
   {
     component: 'aiFingerprint',
-    categories: ["accessibility","security"],
+    categories: ["accessibility","human","security"],
     tags: ["biometrics"],
     slug: 'fingerprint',
     icon: aiFingerprint
@@ -1397,14 +1397,14 @@ const icons = [
   },
   {
     component: 'aiFrame',
-    categories: ["design","film"],
+    categories: ["design"],
     tags: [],
     slug: 'frame',
     icon: aiFrame
   },
   {
     component: 'aiG',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'g',
     icon: aiG
@@ -1425,14 +1425,14 @@ const icons = [
   },
   {
     component: 'aiGear',
-    categories: ["coding","spinners","tools"],
+    categories: ["coding","spinners"],
     tags: ["settings","options","preferences","tools"],
     slug: 'gear',
     icon: aiGear
   },
   {
     component: 'aiGift',
-    categories: ["holidays","maps"],
+    categories: ["maps"],
     tags: ["present"],
     slug: 'gift',
     icon: aiGift
@@ -1446,7 +1446,7 @@ const icons = [
   },
   {
     component: 'aiGlobe',
-    categories: ["astronomy","business","connectivity","maps"],
+    categories: ["science","business","communication","maps"],
     tags: ["planet"],
     slug: 'globe',
     icon: aiGlobe
@@ -1474,7 +1474,7 @@ const icons = [
   },
   {
     component: 'aiH',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'h',
     icon: aiH
@@ -1530,21 +1530,21 @@ const icons = [
   },
   {
     component: 'aiHeartCrack',
-    categories: ["health","charity","shapes"],
+    categories: ["health","shapes"],
     tags: ["love","favorite","heartbreak"],
     slug: 'heart-crack',
     icon: aiHeartCrack
   },
   {
     component: 'aiHeartHalf',
-    categories: ["health","charity","shapes"],
+    categories: ["health","shapes"],
     tags: ["love","favorite"],
     slug: 'heart-half',
     icon: aiHeartHalf
   },
   {
     component: 'aiHeart',
-    categories: ["health","charity","shapes"],
+    categories: ["health","human","shapes"],
     tags: ["love","favorite"],
     slug: 'heart',
     icon: aiHeart
@@ -1586,14 +1586,14 @@ const icons = [
   },
   {
     component: 'aiHouse',
-    categories: ["buildings","maps"],
+    categories: ["maps"],
     tags: ["home"],
     slug: 'house',
     icon: aiHouse
   },
   {
     component: 'aiI',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'i',
     icon: aiI
@@ -1614,7 +1614,7 @@ const icons = [
   },
   {
     component: 'aiImage',
-    categories: ["social","maps"],
+    categories: ["social","files"],
     tags: ["picture","photo"],
     slug: 'image',
     icon: aiImage
@@ -1635,21 +1635,21 @@ const icons = [
   },
   {
     component: 'aiJ',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'j',
     icon: aiJ
   },
   {
     component: 'aiJesterHat',
-    categories: ["clothing"],
+    categories: ["human"],
     tags: [],
     slug: 'jester-hat',
     icon: aiJesterHat
   },
   {
     component: 'aiK',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'k',
     icon: aiK
@@ -1691,7 +1691,7 @@ const icons = [
   },
   {
     component: 'aiL',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'l',
     icon: aiL
@@ -1852,7 +1852,7 @@ const icons = [
   },
   {
     component: 'aiM',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'm',
     icon: aiM
@@ -1929,7 +1929,7 @@ const icons = [
   },
   {
     component: 'aiMoon',
-    categories: ["astronomy","weather"],
+    categories: ["science","weather"],
     tags: ["clear sky"],
     slug: 'moon',
     icon: aiMoon
@@ -1950,14 +1950,14 @@ const icons = [
   },
   {
     component: 'aiN',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'n',
     icon: aiN
   },
   {
     component: 'aiNetwork',
-    categories: ["charts","science","communication","connectivity"],
+    categories: ["charts","science","communication"],
     tags: [],
     slug: 'network',
     icon: aiNetwork
@@ -1985,7 +1985,7 @@ const icons = [
   },
   {
     component: 'aiO',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'o',
     icon: aiO
@@ -1999,7 +1999,7 @@ const icons = [
   },
   {
     component: 'aiP',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'p',
     icon: aiP
@@ -2027,7 +2027,7 @@ const icons = [
   },
   {
     component: 'aiParachuteBox',
-    categories: ["charity"],
+    categories: ["logistics"],
     tags: [],
     slug: 'parachute-box',
     icon: aiParachuteBox
@@ -2216,7 +2216,7 @@ const icons = [
   },
   {
     component: 'aiPlanetRinged',
-    categories: ["astronomy"],
+    categories: ["science"],
     tags: ["planet"],
     slug: 'planet-ringed',
     icon: aiPlanetRinged
@@ -2286,7 +2286,7 @@ const icons = [
   },
   {
     component: 'aiQ',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'q',
     icon: aiQ
@@ -2300,7 +2300,7 @@ const icons = [
   },
   {
     component: 'aiR',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'r',
     icon: aiR
@@ -2321,7 +2321,7 @@ const icons = [
   },
   {
     component: 'aiRectangleP',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'rectangle-p',
     icon: aiRectangleP
@@ -2349,14 +2349,14 @@ const icons = [
   },
   {
     component: 'aiRocket',
-    categories: ["astronomy","transportation","science"],
+    categories: ["science","transportation"],
     tags: ["launch"],
     slug: 'rocket',
     icon: aiRocket
   },
   {
     component: 'aiS',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 's',
     icon: aiS
@@ -2426,7 +2426,7 @@ const icons = [
   },
   {
     component: 'aiShoePrints',
-    categories: ["clothing","maps"],
+    categories: ["human","maps"],
     tags: ["walking"],
     slug: 'shoe-prints',
     icon: aiShoePrints
@@ -2559,14 +2559,14 @@ const icons = [
   },
   {
     component: 'aiStar',
-    categories: ["astronomy","shapes","social"],
+    categories: ["science","shapes","social"],
     tags: ["favorite"],
     slug: 'star',
     icon: aiStar
   },
   {
     component: 'aiStarscout',
-    categories: ["astronomy","brands"],
+    categories: ["science","brands"],
     tags: ["falling star","star"],
     slug: 'starscout',
     icon: aiStarscout
@@ -2587,7 +2587,7 @@ const icons = [
   },
   {
     component: 'aiStore',
-    categories: ["buildings","maps","business"],
+    categories: ["business","maps"],
     tags: ["shop"],
     slug: 'store',
     icon: aiStore
@@ -2615,7 +2615,7 @@ const icons = [
   },
   {
     component: 'aiSun',
-    categories: ["astronomy","weather"],
+    categories: ["science","weather"],
     tags: ["clear sky"],
     slug: 'sun',
     icon: aiSun
@@ -2650,7 +2650,7 @@ const icons = [
   },
   {
     component: 'aiT',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 't',
     icon: aiT
@@ -2769,7 +2769,7 @@ const icons = [
   },
   {
     component: 'aiTent',
-    categories: ["buildings","camping"],
+    categories: ["maps","nature"],
     tags: ["shelter"],
     slug: 'tent',
     icon: aiTent
@@ -2909,7 +2909,7 @@ const icons = [
   },
   {
     component: 'aiU',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'u',
     icon: aiU
@@ -2944,7 +2944,7 @@ const icons = [
   },
   {
     component: 'aiV',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'v',
     icon: aiV
@@ -2958,7 +2958,7 @@ const icons = [
   },
   {
     component: 'aiVideo',
-    categories: ["communication","film","social","devices"],
+    categories: ["communication","media","social","devices"],
     tags: ["record"],
     slug: 'video',
     icon: aiVideo
@@ -3021,7 +3021,7 @@ const icons = [
   },
   {
     component: 'aiW',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'w',
     icon: aiW
@@ -3084,7 +3084,7 @@ const icons = [
   },
   {
     component: 'aiX',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'x',
     icon: aiX
@@ -3098,21 +3098,21 @@ const icons = [
   },
   {
     component: 'aiXmark',
-    categories: ["editor","mathematics"],
+    categories: ["editor","mathematics","punctuation-symbols"],
     tags: ["close","cancel"],
     slug: 'xmark',
     icon: aiXmark
   },
   {
     component: 'aiY',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'y',
     icon: aiY
   },
   {
     component: 'aiZ',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'z',
     icon: aiZ

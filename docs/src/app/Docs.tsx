@@ -21,8 +21,8 @@ export default function Docs() {
         <Box
           sx={{
             display: 'grid',
-            gridTemplateColumns: '200px auto',
-            gap: { xs: 1 }
+            gridTemplateColumns: '220px auto',
+            gap: 3
           }}
         >
           <Box sx={{ position: 'sticky', top: 58 + 32, overflow: 'auto', maxHeight: 'calc(100dvh - 58px - 32px)', alignSelf: 'flex-start' }}>

@@ -63,7 +63,6 @@ export default function DocsNavigation() {
         gap: 0.25,
         '--ListItem-paddingY': 0,
         '--ListItem-radius': 'var(--joy-radius-md)',
-        '--ListItem-minHeight': '2rem',
         '--ListItem-paddingLeft': '.5rem',
         '--ListItem-paddingRight': '.5rem',
         '--ListItemDecorator-size': '1.5rem'
