@@ -1,5 +1,6 @@
-import { Box, Container } from '@mui/joy';
 import { ReactNode } from 'react';
+
+import { Box, Container } from '@mui/joy';
 
 interface IHeaderProps {
   children: ReactNode;

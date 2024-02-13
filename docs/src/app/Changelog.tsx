@@ -21,7 +21,9 @@ export default function Changelog() {
             version="1.0.0-alpha.7"
             added={[
               <>Introduces a brand new documentation website with improved component documentation with playground, this changelog, and much more.</>,
-              <>The <Code>AmaranthIcon</Code> component has been renamed to <Code>Amicon</Code>.</>,
+              <>
+                The <Code>AmaranthIcon</Code> component has been renamed to <Code>Amicon</Code>.
+              </>,
               <>
                 The <Code>Amicon</Code> component now supports the <Code>beat</Code> property.
               </>
@@ -29,8 +31,8 @@ export default function Changelog() {
             changed={[
               <>We're updating our branding from Amaranth to Amicons, with a brand new logo and mascot to boot.</>,
               <>
-                The default values for all properties of our <Code>Amicon</Code> component are now being set to <Code>Undefined</Code> rather than a
-                default truthy value.
+                The default values for all properties of our <Code>Amicon</Code> component are now being set to <Code>Undefined</Code> rather than a default
+                truthy value.
               </>,
               <>
                 The various CSS variables have been renamed to be more consistent with new variables introduced in this update. See the documentation for more
@@ -38,11 +40,16 @@ export default function Changelog() {
               </>,
               <>
                 You can now pass properties to the <Code>Amicon</Code> component.
-              </>
+              </>,
+              <>Various updates to the categorization of icons in the documentation.</>
             ]}
             fixed={[
-              <>Fixed the <Code>expand</Code> icon including excessive shapes.</>,
-              <>Fixes various issues with the CSS variables in the <Code>Amicon</Code> component.</>
+              <>
+                Fixed the <Code>expand</Code> icon including excessive shapes.
+              </>,
+              <>
+                Fixes various issues with the CSS variables in the <Code>Amicon</Code> component.
+              </>
             ]}
             newIcons={[
               '0',

@@ -7,18 +7,18 @@ import Codeblock from '@/design/components/Codeblock';
 import Amicon, { aiBroom, IAmicon } from '@studio384/amaranth';
 
 export interface IPlaygroundConfig {
-    icons: IAmicon[];
-    properties?: {
-      label: string;
-      type: 'chip';
-      name: string;
-      values: unknown[];
-      default: unknown;
-    }[];
-    cssVariables?: {
-      name: string;
-      default: string | number | boolean;
-    }[];
+  icons: IAmicon[];
+  properties?: {
+    label: string;
+    type: 'chip';
+    name: string;
+    values: unknown[];
+    default: unknown;
+  }[];
+  cssVariables?: {
+    name: string;
+    default: string | number | boolean;
+  }[];
 }
 
 interface IPlaygroundProps {

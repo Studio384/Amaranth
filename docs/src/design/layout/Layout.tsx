@@ -2,9 +2,9 @@ import { Outlet } from 'react-router-dom';
 
 import { Box } from '@mui/joy';
 
+import ScrollToTop from '../components/ScrollToTop';
 import Footer from './LayoutElements/Footer';
 import Navbar from './LayoutElements/Navbar';
-import ScrollToTop from '../components/ScrollToTop';
 
 export default function Layout() {
   return (
