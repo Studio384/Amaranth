@@ -34,7 +34,7 @@ export default function Amicon({
       transform: scale(1);
     }
     45% {
-      transform: scale(1.4);
+      transform: scale(var(--ai-animation-scale, 1.4));
     }
   `;
 

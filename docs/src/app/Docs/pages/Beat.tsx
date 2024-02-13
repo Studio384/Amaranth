@@ -30,6 +30,10 @@ export default function PageBeat() {
       {
         name: '--ai-animation-iteration-count',
         default: 'infinite'
+      },
+      {
+        name: '--ai-animation-scale',
+        default: '1.4'
       }
     ]
   };
@@ -80,6 +84,15 @@ export default function PageBeat() {
                 <Code>infinite</Code>
               </td>
               <td>Number of times the animation is repeated.</td>
+            </tr>
+            <tr>
+              <td>
+                <Code>--ai-animation-scale</Code>
+              </td>
+              <td>
+                <Code>1.4</Code>
+              </td>
+              <td>The scale at which the icon can grow.</td>
             </tr>
           </tbody>
         </Table>
