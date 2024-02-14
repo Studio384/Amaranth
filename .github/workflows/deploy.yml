@@ -46,7 +46,7 @@ jobs:
         working-directory: docs
     steps:
       - name: Download artifact
-        working-directory: '.'
+        working-directory: /
         id: download
         uses: actions/download-artifact@v4
         with:
