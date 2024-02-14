@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { createSearchParams, useNavigate } from 'react-router-dom';
 
-import { Box, Button, Container, IconButton, Input, Stack, Typography } from '@mui/joy';
+import { Alert, Box, Button, Container, IconButton, Input, Stack, Typography } from '@mui/joy';
 
 import icons from '@/data/icons';
 import Codeblock from '@/design/components/Codeblock';
 import Header from '@/design/layout/LayoutElements/Header';
 
-import Amicon, { aiAmicons, aiBook, aiFlag, aiHeart, aiIcons, aiLockOpen, aiMagnifyingGlass, aiPatreon } from '@studio384/amaranth';
+import Amicon, { aiAmicons, aiBook, aiCircleExclamation, aiFlag, aiHeart, aiIcons, aiLockOpen, aiMagnifyingGlass, aiPatreon } from '@studio384/amaranth';
 
 import LargeIconGrid from './Components/LargeIconGrid';
 
@@ -62,8 +62,11 @@ export default function Home() {
         </Stack>
       </Header>
       <Container>
-        <Stack gap={10} sx={{ my: 5 }}>
-          <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+        <Stack gap={5} sx={{ my: 5 }}>
+          <Alert color="danger" variant="solid" startDecorator={<Amicon icon={aiCircleExclamation} />} size="lg" sx={{ borderRadius: 'xl' }}>
+            We're still working on this, a lot can change.
+          </Alert>
+          <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 5 }}>
             <Stack gap={1} justifyContent="center">
               <Typography level="h2">Get started</Typography>
               <Typography>Get started with Amicons by installing the npm package.</Typography>
@@ -93,7 +96,7 @@ export default function Home() {
               <Amicon icon={aiAmicons} />
             </Box>
           </Box>
-          <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+          <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 5 }}>
             <Box
               sx={{
                 p: 3,
@@ -123,7 +126,7 @@ export default function Home() {
               </Stack>
             </Stack>
           </Box>
-          <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+          <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 5 }}>
             <Stack gap={1} justifyContent="center">
               <Typography level="h2">Open source. Powered by you.</Typography>
               <Typography>Amicons is open source, and funded by you.</Typography>
