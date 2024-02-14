@@ -16,6 +16,9 @@ concurrency:
 
 jobs:
   build:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -42,6 +45,5 @@ jobs:
         with:
           path: './docs/dist'
       - name: Deploy to GitHub Pages
-        working-directory: docs
         id: deployment
         uses: actions/deploy-pages@v1
