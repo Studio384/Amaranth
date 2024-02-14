@@ -3,7 +3,7 @@ import HTMLReactParser from "html-react-parser";
 import { cx, css, keyframes } from "@emotion/css";
 import { ComponentPropsWithoutRef } from "react";
 
-interface AmiconProps extends ComponentPropsWithoutRef<"span"> {
+interface AmiconProps {
   icon: IAmicon;
   rotate?: 0 | 90 | 180 | 270 | false;
   flip?: true | "x" | "y" | false;
@@ -21,7 +21,7 @@ export default function Amicon({
   fade = undefined,
   className,
   ...props
-}: AmiconProps) {
+}: AmiconProps & ComponentPropsWithoutRef<"span">) {
   const spinAnimation = keyframes`
     from {
       transform: rotate(0deg);
