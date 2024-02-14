@@ -46,7 +46,7 @@ export default function Footer() {
           >
             <Box>
               <Stack direction="row" alignItems="center">
-                <img src="/favicon.png" style={{ width: 36, height: 36, marginRight: 8 }} />
+                <img src="favicon.png" style={{ width: 36, height: 36, marginRight: 8 }} />
                 <Typography level="h1" fontSize="xl3">
                   Amicons
                 </Typography>
