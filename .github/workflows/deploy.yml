@@ -33,7 +33,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: amicons
-          path: dist
+          path: |
+            dist
+            node_modules
 
   deploy:
     needs: build
@@ -57,7 +59,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: amicons
-          path: dist
       - name: Install dependencies
         if: steps.download.outcome == 'success'
         run: npm install

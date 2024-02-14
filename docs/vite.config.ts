@@ -20,9 +20,6 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src')
     }
   },
-  optimizeDeps: {
-    include: ['react/jsx-runtime']
-  },
   base: '/Amaranth/',
   envPrefix: 'AMICONS_'
 });
