@@ -36,7 +36,6 @@ jobs:
         working-directory: docs
         run: npm run build
       - name: Setup Pages
-        working-directory: docs
         uses: actions/configure-pages@v3
       - name: Upload artifact
         working-directory: docs
