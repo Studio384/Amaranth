@@ -29,46 +29,21 @@ jobs:
         run: npm install
       - name: Production build
         run: npm run prod
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: amicons
-          path: dist
-
-  deploy:
-    needs: build
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: docs
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'npm'
-      - name: Download artifact
-        id: download
-        uses: actions/download-artifact@v4
-        with:
-          name: amicons
-          path: ../dist
       - name: Install dependencies
-        if: steps.download.outcome == 'success'
+        working-directory: docs
         run: npm install
       - name: Build
+        working-directory: docs
         run: npm run build
       - name: Setup Pages
+        working-directory: docs
         uses: actions/configure-pages@v3
       - name: Upload artifact
+        working-directory: docs
         uses: actions/upload-pages-artifact@v1
         with:
           path: './dist'
       - name: Deploy to GitHub Pages
+        working-directory: docs
         id: deployment
         uses: actions/deploy-pages@v1
