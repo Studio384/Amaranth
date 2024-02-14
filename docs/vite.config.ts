@@ -20,6 +20,6 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src')
     }
   },
-  base: '/Amaranth/',
+  base: '/',
   envPrefix: 'AMICONS_'
 });

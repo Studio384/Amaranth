@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import { Box, Link, Sheet, Stack, Typography } from '@mui/joy';
 
 import { ILibraryIcon } from '@/types';
@@ -25,7 +27,8 @@ export default function IconCard({ icon }: { icon: ILibraryIcon }) {
         </Box>
         <Link
           overlay
-          href={`/icons/${icon.slug}`}
+          component={NavLink}
+          to={`/icons/${icon.slug}`}
           underline="none"
           color="neutral"
           sx={{

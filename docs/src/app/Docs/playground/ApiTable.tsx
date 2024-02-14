@@ -1,6 +1,7 @@
 import { Sheet, Table } from '@mui/joy';
 
 import Code from '@/design/components/Code';
+
 import { IIconCssVariables } from './Playground';
 
 interface IApiTableProps {

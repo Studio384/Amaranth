@@ -1,8 +1,18 @@
 import { Fragment } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import { List, ListItem, ListItemButton, ListItemContent, ListSubheader, Typography } from '@mui/joy';
 
-import Amicon, { aiAmicons, aiArrowRotateRight, aiArrowsDownLeftRightUpCenter, aiCircleHalfInner, aiHeart, aiReact, aiSpinner, aiStar } from '@studio384/amaranth';
+import Amicon, {
+  aiAmicons,
+  aiArrowRotateRight,
+  aiArrowsDownLeftRightUpCenter,
+  aiCircleHalfInner,
+  aiHeart,
+  aiReact,
+  aiSpinner,
+  aiStar
+} from '@studio384/amaranth';
 
 export default function DocsNavigation() {
   const pages = [
@@ -82,7 +92,7 @@ export default function DocsNavigation() {
           </ListSubheader>
           {category.pages.map((page) => (
             <ListItem key={page.link}>
-              <ListItemButton component="a" href={page.link} color="primary">
+              <ListItemButton component={NavLink} to={page.link} color="primary">
                 <ListItemContent>
                   <Typography noWrap>{page.title}</Typography>
                 </ListItemContent>

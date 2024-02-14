@@ -4,8 +4,8 @@ import Code from '@/design/components/Code';
 
 import { aiAmicons, aiArrowUp, aiMessageSmile } from '@studio384/amaranth';
 
-import Playground, { IIconCssVariables, IPlaygroundConfig } from '../playground/Playground';
 import ApiTable from '../playground/ApiTable';
+import Playground, { IIconCssVariables, IPlaygroundConfig } from '../playground/Playground';
 
 export default function PageRotate() {
   const playgroundConfig: IPlaygroundConfig = {
