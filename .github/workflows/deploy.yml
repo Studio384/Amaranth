@@ -49,7 +49,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: 'amicons'
-          path: '../'
+          path: '../dist'
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set up Node
