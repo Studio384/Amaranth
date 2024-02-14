@@ -1,15 +1,10 @@
-import { ReactNode } from 'react';
-
 import { Sheet, Table } from '@mui/joy';
 
 import Code from '@/design/components/Code';
+import { IIconCssVariables } from './Playground';
 
 interface IApiTableProps {
-  cssVariables: {
-    name: string;
-    default: string | number | boolean;
-    description: ReactNode;
-  }[];
+  cssVariables: IIconCssVariables[];
 }
 
 export default function ApiTable({ cssVariables }: IApiTableProps) {

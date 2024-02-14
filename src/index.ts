@@ -1,4 +1,5 @@
 export * from "./Amicons";
-import Amicon from "./Amicon";
+import Amicon, { IAmiconStyle } from "./Amicon";
 
 export default Amicon;
+export { IAmiconStyle };

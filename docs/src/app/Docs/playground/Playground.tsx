@@ -1,25 +1,29 @@
-import { CSSProperties, ReactNode, useMemo, useState } from 'react';
+import { ReactNode, useMemo, useState } from 'react';
 
 import { Box, Card, Chip, Divider, FormControl, FormLabel, IconButton, Input, Sheet, Stack, Typography } from '@mui/joy';
 
 import Codeblock from '@/design/components/Codeblock';
 
-import Amicon, { aiBroom, IAmicon } from '@studio384/amaranth';
+import Amicon, { aiBroom, IAmicon, IAmiconStyle } from '@studio384/amaranth';
 
 export interface IPlaygroundConfig {
   icons: IAmicon[];
-  properties?: {
-    label: string;
-    type: 'chip';
-    name: string;
-    values: unknown[];
-    default: unknown;
-  }[];
-  cssVariables?: {
-    name: string;
-    default: string | number | boolean;
-    description: ReactNode;
-  }[];
+  properties?: IIconProperties[];
+  cssVariables?: IIconCssVariables[];
+}
+
+export interface IIconProperties {
+  label: string;
+  type: 'chip';
+  name: string;
+  values: unknown[];
+  default: unknown;
+}
+
+export interface IIconCssVariables {
+  name: string;
+  default: string | number | boolean;
+  description: ReactNode;
 }
 
 interface IPlaygroundProps {
@@ -72,13 +76,13 @@ export default function Playground({ config }: IPlaygroundProps) {
   }, [iconProperties]);
 
   // CSS Variables
-  const [playgroundCssVariable, setPlaygroundCssVariable] = useState<CSSProperties>({});
+  const [playgroundCssVariable, setPlaygroundCssVariable] = useState<IAmiconStyle>({});
 
   const iconVariables: { [index: string]: string | number | boolean } = useMemo(() => {
     const props: { [index: string]: string | number | boolean } = {};
 
     config.cssVariables?.map((variable) => {
-      props[variable.name] = playgroundCssVariable?.[variable.name] ?? variable.default;
+      props[variable.name] = playgroundCssVariable?.[variable.name as keyof IAmiconStyle] ?? variable.default;
     });
 
     return props;
@@ -162,11 +166,11 @@ export default function Playground({ config }: IPlaygroundProps) {
                       {property.values.map((value, key) => (
                         <Chip
                           key={key}
-                          onClick={() => setPlaygroundProps((prev) => ({ ...prev, [property.name]: value }))}
+                          onClick={() => setPlaygroundProps((prev) => ({ ...prev, [property.name as string]: value as string | number }))}
                           color={iconProperties?.[property.name] === value ? 'primary' : 'neutral'}
                           variant={iconProperties?.[property.name] === value ? 'solid' : 'outlined'}
                         >
-                          {value.toString()}
+                          {value?.toString()}
                         </Chip>
                       ))}
                     </Stack>
@@ -180,8 +184,8 @@ export default function Playground({ config }: IPlaygroundProps) {
               <FormLabel>{variable.name}</FormLabel>
               <Input
                 onChange={(e) => setPlaygroundCssVariable((prev) => ({ ...prev, [variable.name]: e.target.value }))}
-                placeholder={variable.default}
-                value={playgroundCssVariable?.[variable.name] ?? ''}
+                placeholder={variable.default.toString()}
+                value={playgroundCssVariable?.[variable.name as keyof IAmiconStyle] ?? ''}
               />
             </FormControl>
           ))}

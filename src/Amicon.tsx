@@ -1,16 +1,25 @@
 import { IAmicon } from ".";
 import HTMLReactParser from "html-react-parser";
 import { cx, css, keyframes } from "@emotion/css";
-import { CSSProperties } from "react";
+import { CSSProperties, HTMLProps } from "react";
 
-interface AmiconProps {
+export interface IAmiconStyle extends CSSProperties {
+  "--ai-animation-duration"?: string;
+  "--ai-animation-iteration-count"?: string;
+  "--ai-animation-opacity"?: string;
+  "--ai-animation-pulse-steps"?: string;
+  "--ai-animation-scale"?: string;
+  "--ai-animation-timing-function"?: string;
+}
+
+interface AmiconProps extends HTMLProps<HTMLSpanElement> {
   icon: IAmicon;
   rotate?: 0 | 90 | 180 | 270 | false;
   flip?: true | "x" | "y" | false;
   spin?: boolean | "pulse";
   beat?: boolean;
   fade?: boolean;
-  style?: CSSProperties;
+  style?: IAmiconStyle;
 }
 
 export default function Amicon({
@@ -20,6 +29,7 @@ export default function Amicon({
   spin = undefined,
   beat = undefined,
   fade = undefined,
+  className,
   ...props
 }: AmiconProps) {
   const spinAnimation = keyframes`
@@ -105,15 +115,18 @@ export default function Amicon({
 
   return (
     <span
-      className={cx({
-        [aiClass]: true,
-        [rotateClass]: rotate !== null && rotate !== undefined,
-        [flipClass]: !!flip,
-        [spinClass]: !!spin,
-        [spinPulseClass]: spin === "pulse",
-        [beatClass]: beat,
-        [fadeClass]: fade
-      })}
+      className={cx(
+        {
+          [aiClass]: true,
+          [rotateClass]: rotate !== null && rotate !== undefined,
+          [flipClass]: !!flip,
+          [spinClass]: !!spin,
+          [spinPulseClass]: spin === "pulse",
+          [beatClass]: beat,
+          [fadeClass]: fade
+        },
+        className
+      )}
       {...props}
     >
       {HTMLReactParser(icon.data)}

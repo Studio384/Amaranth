@@ -4,7 +4,7 @@ import Code from '@/design/components/Code';
 
 import { aiExpand, aiHeart, aiPlay } from '@studio384/amaranth';
 
-import Playground, { IPlaygroundConfig } from '../playground/Playground';
+import Playground, { IIconCssVariables, IPlaygroundConfig } from '../playground/Playground';
 import ApiTable from '../playground/ApiTable';
 
 export default function PageBeat() {
@@ -54,7 +54,7 @@ export default function PageBeat() {
 
       <Typography level="h4">API</Typography>
 
-      <ApiTable cssVariables={playgroundConfig.cssVariables} />
+      <ApiTable cssVariables={playgroundConfig.cssVariables as IIconCssVariables[]} />
     </Stack>
   );
 }

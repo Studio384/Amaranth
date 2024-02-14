@@ -5,7 +5,7 @@ import Code from '@/design/components/Code';
 import { aiAmicons, aiCircleHalfInner, aiMusic } from '@studio384/amaranth';
 
 import ApiTable from '../playground/ApiTable';
-import Playground, { IPlaygroundConfig } from '../playground/Playground';
+import Playground, { IIconCssVariables, IPlaygroundConfig } from '../playground/Playground';
 
 export default function PageFade() {
   const playgroundConfig: IPlaygroundConfig = {
@@ -54,7 +54,7 @@ export default function PageFade() {
 
       <Typography level="h4">API</Typography>
 
-      <ApiTable cssVariables={playgroundConfig.cssVariables} />
+      <ApiTable cssVariables={playgroundConfig.cssVariables as IIconCssVariables[]} />
     </Stack>
   );
 }

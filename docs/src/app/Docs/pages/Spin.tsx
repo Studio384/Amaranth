@@ -5,7 +5,7 @@ import Code from '@/design/components/Code';
 import { aiGear, aiSpinner, aiSpinnerThird } from '@studio384/amaranth';
 
 import ApiTable from '../playground/ApiTable';
-import Playground, { IPlaygroundConfig } from '../playground/Playground';
+import Playground, { IIconCssVariables, IPlaygroundConfig } from '../playground/Playground';
 
 export default function PageSpin() {
   const playgroundConfig: IPlaygroundConfig = {
@@ -66,7 +66,7 @@ export default function PageSpin() {
         When setting the property to <Code>pulse</Code>, some additional variables are available while some defaults are changed.
       </Typography>
 
-      <ApiTable cssVariables={playgroundConfig.cssVariables} />
+      <ApiTable cssVariables={playgroundConfig.cssVariables as IIconCssVariables[]} />
     </Stack>
   );
 }
