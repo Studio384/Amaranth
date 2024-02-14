@@ -45,12 +45,6 @@ jobs:
       run:
         working-directory: docs
     steps:
-      - name: Download artifact
-        id: download
-        uses: actions/download-artifact@v4
-        with:
-          name: amicons
-          path: ../dist
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set up Node
@@ -58,6 +52,12 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
+      - name: Download artifact
+        id: download
+        uses: actions/download-artifact@v4
+        with:
+          name: amicons
+          path: ../dist
       - name: Install dependencies
         if: steps.download.outcome == 'success'
         run: npm install
