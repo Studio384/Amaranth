@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
 
 import Changelog from './app/Changelog';
 import Docs from './app/Docs';
@@ -8,7 +8,7 @@ import Icon from './app/Icon';
 import Icons from './app/Icons';
 import Layout from './design/layout/Layout';
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   [
     {
       element: <Layout />,
