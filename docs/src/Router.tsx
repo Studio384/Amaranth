@@ -8,33 +8,38 @@ import Icon from './app/Icon';
 import Icons from './app/Icons';
 import Layout from './design/layout/Layout';
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      element: <Layout />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: '/',
+          element: <Home />
+        },
+        {
+          path: '/icons',
+          element: <Icons />
+        },
+        {
+          path: '/icons/:slug',
+          element: <Icon />
+        },
+        {
+          path: '/docs',
+          element: <Docs />
+        },
+        {
+          path: '/docs/changelog',
+          element: <Changelog />
+        }
+      ]
+    }
+  ],
   {
-    element: <Layout />,
-    errorElement: <Error />,
-    children: [
-      {
-        path: '/',
-        element: <Home />
-      },
-      {
-        path: '/icons',
-        element: <Icons />
-      },
-      {
-        path: '/icons/:slug',
-        element: <Icon />
-      },
-      {
-        path: '/docs',
-        element: <Docs />
-      },
-      {
-        path: '/docs/changelog',
-        element: <Changelog />
-      }
-    ]
+    basename: '/Amaranth'
   }
-]);
+);
 
 export default router;
