@@ -1,9 +1,9 @@
 import { IAmicon } from ".";
 import HTMLReactParser from "html-react-parser";
 import { cx, css, keyframes } from "@emotion/css";
-import { HTMLProps } from "react";
+import { ComponentPropsWithoutRef } from "react";
 
-interface AmiconProps extends HTMLProps<HTMLSpanElement> {
+interface AmiconProps extends ComponentPropsWithoutRef<"span"> {
   icon: IAmicon;
   rotate?: 0 | 90 | 180 | 270 | false;
   flip?: true | "x" | "y" | false;
