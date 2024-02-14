@@ -4,7 +4,7 @@ import { Box, Card, Chip, Divider, FormControl, FormLabel, IconButton, Input, Sh
 
 import Codeblock from '@/design/components/Codeblock';
 
-import Amicon, { aiBroom, IAmicon, IAmiconStyle } from '@studio384/amaranth';
+import Amicon, { aiBroom, IAmicon } from '@studio384/amaranth';
 
 export interface IPlaygroundConfig {
   icons: IAmicon[];
@@ -76,13 +76,13 @@ export default function Playground({ config }: IPlaygroundProps) {
   }, [iconProperties]);
 
   // CSS Variables
-  const [playgroundCssVariable, setPlaygroundCssVariable] = useState<IAmiconStyle>({});
+  const [playgroundCssVariable, setPlaygroundCssVariable] = useState<{ [cssVar: string]: string }>({});
 
   const iconVariables: { [index: string]: string | number | boolean } = useMemo(() => {
     const props: { [index: string]: string | number | boolean } = {};
 
     config.cssVariables?.map((variable) => {
-      props[variable.name] = playgroundCssVariable?.[variable.name as keyof IAmiconStyle] ?? variable.default;
+      props[variable.name] = playgroundCssVariable?.[variable.name as string] ?? variable.default;
     });
 
     return props;
@@ -185,7 +185,7 @@ export default function Playground({ config }: IPlaygroundProps) {
               <Input
                 onChange={(e) => setPlaygroundCssVariable((prev) => ({ ...prev, [variable.name]: e.target.value }))}
                 placeholder={variable.default.toString()}
-                value={playgroundCssVariable?.[variable.name as keyof IAmiconStyle] ?? ''}
+                value={playgroundCssVariable?.[variable.name as string] ?? ''}
               />
             </FormControl>
           ))}

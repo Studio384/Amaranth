@@ -1,16 +1,7 @@
 import { IAmicon } from ".";
 import HTMLReactParser from "html-react-parser";
 import { cx, css, keyframes } from "@emotion/css";
-import { CSSProperties, HTMLProps } from "react";
-
-export interface IAmiconStyle extends CSSProperties {
-  "--ai-animation-duration"?: string;
-  "--ai-animation-iteration-count"?: string;
-  "--ai-animation-opacity"?: string;
-  "--ai-animation-pulse-steps"?: string;
-  "--ai-animation-scale"?: string;
-  "--ai-animation-timing-function"?: string;
-}
+import { HTMLProps } from "react";
 
 interface AmiconProps extends HTMLProps<HTMLSpanElement> {
   icon: IAmicon;
@@ -19,7 +10,6 @@ interface AmiconProps extends HTMLProps<HTMLSpanElement> {
   spin?: boolean | "pulse";
   beat?: boolean;
   fade?: boolean;
-  style?: IAmiconStyle;
 }
 
 export default function Amicon({
