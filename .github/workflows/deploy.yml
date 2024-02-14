@@ -1,31 +1,21 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ['1.0']
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
 concurrency:
   group: 'pages'
   cancel-in-progress: true
 
-defaults:
-  run:
-    working-directory: docs
-
 jobs:
-  # Single deploy job since we're just deploying
-  deploy:
+  build:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -36,7 +26,37 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm install
+      - name: Production build
+        run: npm run prod
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 'amicons'
+          path: './dist'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: docs
+    steps:
+      - name: Download artifact
+        with:
+          name: 'amicons'
+          path: '../'
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
           cache: 'npm'
       - name: Install dependencies
         run: npm install
