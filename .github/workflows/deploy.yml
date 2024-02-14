@@ -16,9 +16,6 @@ concurrency:
 
 jobs:
   build:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -32,18 +29,46 @@ jobs:
         run: npm install
       - name: Production build
         run: npm run prod
-      - name: Install dependencies
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: amicons
+          path: dist
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    defaults:
+      run:
         working-directory: docs
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+      - name: Download artifact
+        id: download
+        uses: actions/download-artifact@v4
+        with:
+          name: amicons
+          path: /dist
+      - name: Install dependencies
+        if: steps.download.outcome == 'success'
         run: npm install
       - name: Build
-        working-directory: docs
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: './docs/dist'
+          path: ./docs/dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
