@@ -32,8 +32,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: 'amicons'
-          path: './dist'
+          name: amicons
+          path: dist
 
   deploy:
     needs: build
@@ -46,11 +46,12 @@ jobs:
         working-directory: docs
     steps:
       - name: Download artifact
+        working-directory: .
         id: download
         uses: actions/download-artifact@v4
         with:
-          name: 'amicons'
-          path: '../dist'
+          name: amicons
+          path: dist
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set up Node
@@ -68,7 +69,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: './dist'
+          path: './docs/dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
