@@ -16,11 +16,9 @@
     "@emotion/react": "11.11.3",
     "@emotion/styled": "11.11.0",
     "@mui/joy": "5.0.0-beta.28",
-    "@reduxjs/toolkit": "2.2.0",
     "@studio384/amaranth": "file:../",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-redux": "9.1.0",
     "react-router-dom": "6.22.0"
   },
   "devDependencies": {
@@ -38,7 +36,7 @@
     "eslint-plugin-react-refresh": "0.4.5",
     "prettier": "3.2.5",
     "typescript": "5.3.3",
-    "vite": "5.1.1",
+    "vite": "5.1.2",
     "vite-bundle-visualizer": "1.0.1",
     "vite-plugin-html": "3.2.2"
   }

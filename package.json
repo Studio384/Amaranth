@@ -41,7 +41,7 @@
     "react": ">=16.x"
   },
   "dependencies": {
-    "html-react-parser": "5.1.4"
+    "html-react-parser": "5.1.5"
   },
   "devDependencies": {
     "@types/react": "18.2.55",
