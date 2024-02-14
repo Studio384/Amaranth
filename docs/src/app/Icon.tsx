@@ -21,7 +21,7 @@ export default function Icon() {
   const firstCategory = icon?.categories?.[0];
 
   useEffect(() => {
-    fetch(`/data/icons/${slug}.json`)
+    fetch(`data/icons/${slug}.json`)
       .then((res) => res.json())
       .then((data) => setIcon(data));
   }, [slug]);
