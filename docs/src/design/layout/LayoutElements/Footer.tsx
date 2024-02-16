@@ -17,7 +17,7 @@ import {
   useColorScheme
 } from '@mui/joy';
 
-import Amicon, { aiAmaranth, aiCircleHalfInner, aiGithub, aiHeart, aiMoon, aiSun, aiTwitter } from '@studio384/amaranth';
+import Amicon, { aiStudio384, aiCircleHalfInner, aiGithub, aiHeart, aiMoon, aiSun, aiTwitter } from '@studio384/amaranth';
 
 export default function Footer() {
   const { mode, setMode } = useColorScheme();
@@ -131,7 +131,7 @@ export default function Footer() {
                 <ListItem>
                   <ListItemButton color="primary" variant="soft" component="a" href="https://studio384.be">
                     <ListItemDecorator>
-                      <Amicon icon={aiAmaranth} />
+                      <Amicon icon={aiStudio384} />
                     </ListItemDecorator>
                     <ListItemContent>
                       <Typography>Studio 384</Typography>
