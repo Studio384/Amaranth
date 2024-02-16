@@ -127,6 +127,7 @@ export default function Changelog() {
               'spinner',
               'square-dashed',
               'square',
+              'studio-384',
               't',
               'toast',
               'train-track',
@@ -154,8 +155,11 @@ export default function Changelog() {
               'volume-3',
               'volume-slash'
             ]}
-            renamedIcons={[{ old: 'ellipsis', new: 'ellipsis-h' }]}
-            removedIcons={['bootstrap', 'font-awesome']}
+            renamedIcons={[
+              { old: 'amaranth', new: 'amicons' },
+              { old: 'ellipsis', new: 'ellipsis-h' }
+            ]}
+            removedIcons={['amaranth', 'bootstrap', 'font-awesome']}
           />
           <Release
             name="Amicon 1.0 alpha 6"

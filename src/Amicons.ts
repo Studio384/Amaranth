@@ -125,13 +125,6 @@ export const aiAlignRight: {
   name: 'align_right',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 2.5a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 6 2.5M1 6.25a.75.75 0 0 1 .75-.75h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 6.25M6 10a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 6 10m-5 3.75a.75.75 0 0 1 .75-.75h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1-.75-.75"/></svg>`
 };
-export const aiAmaranth: {
-  name: 'amaranth';
-  data: string;
-} = {
-  name: 'amaranth',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M.764 1.713c.368.407.784 1.221 1.165 2.384.371 1.132.676 2.484.88 3.865s.303 2.765.275 3.955c-.03 1.224-.192 2.123-.426 2.62a1.026 1.026 0 0 0 1.854.875c.424-.897.592-2.151.622-3.447.032-1.329-.079-2.83-.296-4.302s-.546-2.942-.96-4.205c-.404-1.231-.927-2.384-1.592-3.12A1.025 1.025 0 0 0 .764 1.713m8.184 8.68c-1.078.854-2.083 1.779-2.872 2.654.031-.354.049-.71.057-1.058a23 23 0 0 0-.036-1.862 29 29 0 0 1 3.245-2.571c.614.182 1.22.338 1.804.46q.515.108 1.044.186c-1.033.568-2.164 1.336-3.242 2.19M7.23 5.767a29 29 0 0 1-1.9-.83 23 23 0 0 0-.503-1.79c-.109-.333-.229-.67-.361-1 1.008.61 2.24 1.206 3.52 1.713 1.298.514 2.621.926 3.786 1.17 1.199.252 2.111.299 2.648.184a1.025 1.025 0 0 1 .43 2.005c-.97.208-2.23.084-3.498-.181-1.302-.273-2.738-.724-4.122-1.271"/></svg>`
-};
 export const aiAmicons: {
   name: 'amicons';
   data: string;
@@ -2624,6 +2617,13 @@ export const aiStrikethrough: {
   name: 'strikethrough',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M3 4.75A3.75 3.75 0 0 1 6.75 1h4.5a.75.75 0 0 1 0 1.5h-4.5a2.25 2.25 0 0 0-2.016 3.25h-1.6a3.8 3.8 0 0 1-.134-1m12.25 2.5a.75.75 0 0 1 0 1.5h-2.692A4 4 0 0 1 9.25 15h-5.5a.75.75 0 0 1 0-1.5h5.5a2.5 2.5 0 0 0 1.091-4.75H.75a.75.75 0 0 1 0-1.5z"/></svg>`
 };
+export const aiStudio384: {
+  name: 'studio_384';
+  data: string;
+} = {
+  name: 'studio_384',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M2.478 7.706.528 6.609a1 1 0 0 1 0-1.743l7-3.938a1 1 0 0 1 .98 0l7 3.938a1 1 0 0 1 0 1.743l-1.951 1.097a1.67 1.67 0 0 0-.84-1.186l-2.062-1.16-1.16-2.063c-.649-1.152-2.307-1.152-2.955 0L5.38 5.36 3.317 6.52c-.479.27-.759.713-.84 1.186"/><path d="M6.088 6.257 3.77 7.562a.5.5 0 0 0 0 .872l2.3 1.294h.003q.132.077.21.208l1.297 2.308a.5.5 0 0 0 .872 0l.044-.08.013-.02 1.238-2.201a.56.56 0 0 1 .211-.213l.004-.002 2.2-1.238.02-.012.08-.045a.5.5 0 0 0 0-.872l-.094-.053-.005-.003-2.201-1.238-.005-.003a.56.56 0 0 1-.21-.213l-1.238-2.2-.007-.012-.05-.09a.5.5 0 0 0-.872 0L6.278 6.068l-.002.002a.6.6 0 0 1-.188.188"/><path d="m.527 9.386 1.95-1.097c.081.473.361.916.84 1.185l2.063 1.16 1.16 2.064c.648 1.152 2.306 1.152 2.954 0l1.16-2.063 2.064-1.16c.478-.27.758-.713.839-1.187l1.95 1.098a1 1 0 0 1 0 1.743l-7 3.937a1 1 0 0 1-.98 0l-7-3.937a1 1 0 0 1 0-1.743"/></svg>`
+};
 export const aiSubscript: {
   name: 'subscript';
   data: string;
@@ -3196,7 +3196,6 @@ export type Amicons =
   | 'align_justify'
   | 'align_left'
   | 'align_right'
-  | 'amaranth'
   | 'amicons'
   | 'angle_down'
   | 'angle_left'
@@ -3553,6 +3552,7 @@ export type Amicons =
   | 'stopwatch'
   | 'store'
   | 'strikethrough'
+  | 'studio_384'
   | 'subscript'
   | 'sun_cloud'
   | 'sun'
@@ -3658,7 +3658,6 @@ export const amiconSet = [
   aiAlignJustify,
   aiAlignLeft,
   aiAlignRight,
-  aiAmaranth,
   aiAmicons,
   aiAngleDown,
   aiAngleLeft,
@@ -4015,6 +4014,7 @@ export const amiconSet = [
   aiStopwatch,
   aiStore,
   aiStrikethrough,
+  aiStudio384,
   aiSubscript,
   aiSunCloud,
   aiSun,
