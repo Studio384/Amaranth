@@ -125,9 +125,13 @@ export default function Changelog() {
               's',
               'share-nodes',
               'spinner',
+              'square-dashed',
+              'square',
               't',
               'toast',
               'train-track',
+              'triangle-dashed',
+              'triangle',
               'truck-pickup',
               'truck-tow',
               'u',
@@ -137,7 +141,19 @@ export default function Changelog() {
               'y',
               'z'
             ]}
-            updatedIcons={['a-gum', 'envelope', 'facebook', 'patreon', 'shuffle', 'volume-0', 'volume-1', 'volume-2', 'volume-3', 'volume-slash']}
+            updatedIcons={[
+              'a-gum',
+              'envelope',
+              'facebook',
+              'patreon',
+              'shuffle',
+              'triangle-exclamation',
+              'volume-0',
+              'volume-1',
+              'volume-2',
+              'volume-3',
+              'volume-slash'
+            ]}
             renamedIcons={[{ old: 'ellipsis', new: 'ellipsis-h' }]}
             removedIcons={['bootstrap', 'font-awesome']}
           />

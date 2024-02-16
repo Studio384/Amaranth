@@ -10,7 +10,6 @@ import {
   aiBox,
   aiCampfire,
   aiChartPie,
-  aiCircleDashed,
   aiClock,
   aiCode,
   aiDevices,
@@ -19,13 +18,13 @@ import {
   aiEye,
   aiFax,
   aiFiles,
+  aiFlask,
   aiGamepad,
   aiHeart,
   aiKite,
   aiLightbulb,
   aiLock,
   aiMessageText,
-  aiNetwork,
   aiPen,
   aiPerson,
   aiPlateUtensils,
@@ -35,6 +34,7 @@ import {
   aiShareNodes,
   aiShoppingCart,
   aiSpinner,
+  aiSquareDashed,
   aiSun,
   aiSwatchbook,
   aiToggleOn,
@@ -202,7 +202,7 @@ const categories = [
   {
     slug: 'science',
     title: 'Science & astronomy',
-    icon: aiNetwork
+    icon: aiFlask
   },
   {
     slug: 'security',
@@ -212,7 +212,7 @@ const categories = [
   {
     slug: 'shapes',
     title: 'Shapes',
-    icon: aiCircleDashed
+    icon: aiSquareDashed
   },
   {
     slug: 'shopping',
