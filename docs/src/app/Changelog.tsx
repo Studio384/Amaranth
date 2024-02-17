@@ -161,6 +161,7 @@ export default function Changelog() {
               'heading-5',
               'heading-6',
               'patreon',
+              'safari',
               'shuffle',
               'triangle-exclamation',
               'volume-0',
