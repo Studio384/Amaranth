@@ -163,6 +163,7 @@ export default function Changelog() {
               'patreon',
               'safari',
               'shuffle',
+              'translate',
               'triangle-exclamation',
               'volume-0',
               'volume-1',
