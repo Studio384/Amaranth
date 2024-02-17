@@ -218,7 +218,7 @@ export default function Changelog() {
             ]}
             updatedIcons={['chart-pie', 'circle-dashed', 'table-clcok', 'table-header-column', 'table-header-row', 'table', 'tag-geear', 'tag-plus', 'tag']}
           />
-          <Release name="Amicons 1.0 alpha 2" version="1.0.0-alpha.2" date="22 August 2023" added={[<>Migrations from ChangeWindows to a Studio 384</>]} />
+          <Release name="Amicons 1.0 alpha 2" version="1.0.0-alpha.2" date="22 August 2023" changed={[<>Migrations from ChangeWindows to Studio 384</>]} />
         </Stack>
       </Container>
     </>
