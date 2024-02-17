@@ -29,7 +29,11 @@ export default function Changelog() {
               </>
             ]}
             changed={[
-              <>We're updating our branding from Amaranth to Amicons, with a brand new logo and mascot to boot. While the <Code>Amaranth</Code> and <Code>Amicons</Code> icons have existed at the same time in the previous version, we consider the removal of the <Code>Amaranth</Code> icon a rename.</>,
+              <>
+                We're updating our branding from Amaranth to Amicons, with a brand new logo and mascot to boot. While the <Code>Amaranth</Code> and{' '}
+                <Code>Amicons</Code> icons have existed at the same time in the previous version, we consider the removal of the <Code>Amaranth</Code> icon a
+                rename.
+              </>,
               <>
                 The default values for all properties of our <Code>Amicon</Code> component are now being set to <Code>Undefined</Code> rather than a default
                 truthy value.
@@ -132,6 +136,7 @@ export default function Changelog() {
               'square',
               'studio-384',
               't',
+              'threads',
               'toast',
               'train-track',
               'triangle-dashed',
