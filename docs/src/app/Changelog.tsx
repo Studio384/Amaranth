@@ -48,6 +48,9 @@ export default function Changelog() {
                 Fixed the <Code>expand</Code> icon including excessive shapes.
               </>,
               <>
+                Fixed the misalignment in the <Code>heading-2</Code> icon to better map the icon to a pixel grid.
+              </>,
+              <>
                 Fixes various issues with the CSS variables in the <Code>Amicon</Code> component.
               </>
             ]}
