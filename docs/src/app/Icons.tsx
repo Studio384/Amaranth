@@ -1,7 +1,21 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { useLocation, useSearchParams } from 'react-router-dom';
 
-import { Box, Container, IconButton, Input, List, ListItem, ListItemButton, ListItemContent, ListItemDecorator, Stack, Typography } from '@mui/joy';
+import {
+  Box,
+  Chip,
+  ChipDelete,
+  Container,
+  IconButton,
+  Input,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemContent,
+  ListItemDecorator,
+  Stack,
+  Typography
+} from '@mui/joy';
 
 import categories from '@/data/categories';
 import icons from '@/data/icons';
@@ -20,11 +34,12 @@ export default function Icons() {
 
   const [page, setPage] = useState(0);
 
-  const searchCategories = useMemo(() => {
+  const [searchCategories, searchQuery]: [string[], string] = useMemo(() => {
     const params = new URLSearchParams(location.search);
     const categories = params.get('category');
+    const query = params.get('search');
 
-    return categories?.split(',').filter((item) => item !== '') ?? [];
+    return [categories?.split(',').filter((item) => item !== '') ?? [], query ?? ''];
   }, [location.search]);
 
   const searchableList = useMemo(() => {
@@ -35,17 +50,12 @@ export default function Icons() {
     return icons;
   }, [searchCategories]);
 
-  const { result, needle, setNeedle } = useSearch(searchableList, ['slug', 'tags']);
+  const { result } = useSearch(searchableList, ['slug', 'tags'], searchQuery);
 
-  useEffect(() => {
-    const params = new URLSearchParams(location.search);
-    const search = params.get('search');
-
-    setNeedle(search ?? '');
-  }, [location.search, setNeedle]);
-
+  // c: categories
+  // q: query
   function setSearchQuery(type: 'q' | 'c', value: string) {
-    const search = searchParams.get('search');
+    let search = searchParams.get('search');
     let category =
       searchParams
         .get('category')
@@ -59,6 +69,10 @@ export default function Icons() {
         } else {
           category.push(value);
         }
+        break;
+      }
+      case 'q': {
+        search = value;
         break;
       }
     }
@@ -137,18 +151,16 @@ export default function Icons() {
                 <Input
                   startDecorator={<Amicon icon={aiMagnifyingGlass} />}
                   placeholder="Search"
-                  value={needle}
+                  value={searchQuery}
                   onChange={(e) => {
-                    setNeedle(e.target.value);
+                    setSearchQuery('q', e.target.value);
                     setPage(0);
                   }}
                 />
                 <IconButton
                   variant="outlined"
-                  disabled={needle === '' && searchCategories.length === 0}
+                  disabled={searchQuery === '' && searchCategories.length === 0}
                   onClick={() => {
-                    setNeedle('');
-
                     setSearchParams({
                       search: '',
                       category: ''
@@ -159,6 +171,29 @@ export default function Icons() {
                 </IconButton>
               </Stack>
             </Stack>
+            {(searchQuery || searchCategories.length >= 1) && (
+              <Stack direction="row" gap={0.5} sx={{ '--_Chip-minHeight': '2rem' }}>
+                {searchQuery && (
+                  <Chip
+                    size="lg"
+                    sx={{ fontSize: 'sm', fontWeight: '300', gap: 1.25, fontFamily: 'display', '--_Chip-minHeight': '2rem' }}
+                    endDecorator={<ChipDelete onClick={() => setSearchQuery('q', '')} />}
+                  >
+                    "{searchQuery}"
+                  </Chip>
+                )}
+                {searchCategories.map((category) => (
+                  <Chip
+                    key={category}
+                    size="lg"
+                    sx={{ fontSize: 'sm', fontWeight: '300', gap: 1.25, fontFamily: 'display', '--_Chip-minHeight': '2rem' }}
+                    endDecorator={<ChipDelete onClick={() => setSearchQuery('c', category)} />}
+                  >
+                    {category}
+                  </Chip>
+                ))}
+              </Stack>
+            )}
             <Box
               sx={{
                 display: 'grid',

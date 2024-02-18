@@ -1,14 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useMemo } from 'react';
 
 interface ISeachResults {
   [key: string]: any;
   _score: number;
 }
 
-export default function useSearch(haystack: any[] | undefined, keys: string[], initialNeedle?: string) {
-  const [needle, setNeedle] = useState<string>(initialNeedle || '');
-
+export default function useSearch(haystack: any[] | undefined, keys: string[], needle?: string) {
   const flattenObject = useCallback((item: { [key: string]: any }, prefix?: string) => {
     const flattened: { [key: string]: any } = {};
     prefix = prefix ? prefix + '.' : '';
@@ -74,5 +72,5 @@ export default function useSearch(haystack: any[] | undefined, keys: string[], i
     return results.sort((a, b) => (a._score < b._score ? -1 : 1));
   }, [flattenObject, haystack, keys, needle, scoreHaystackItem]);
 
-  return { result, needle, setNeedle };
+  return { result, needle };
 }
