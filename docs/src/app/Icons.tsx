@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useSearchParams } from 'react-router-dom';
 
 import { Box, Container, IconButton, Input, List, ListItem, ListItemButton, ListItemContent, ListItemDecorator, Stack, Typography } from '@mui/joy';
 
@@ -16,8 +16,16 @@ import IconCard from './Components/IconCard';
 export default function Icons() {
   const location = useLocation();
 
+  const [searchParams, setSearchParams] = useSearchParams();
+
   const [page, setPage] = useState(0);
-  const [searchCategories, setSearchCategories] = useState<string[]>([]);
+
+  const searchCategories = useMemo(() => {
+    const params = new URLSearchParams(location.search);
+    const categories = params.get('category');
+
+    return categories?.split(',').filter((item) => item !== '') ?? [];
+  }, [location.search]);
 
   const searchableList = useMemo(() => {
     if (searchCategories.length >= 1) {
@@ -35,6 +43,31 @@ export default function Icons() {
 
     setNeedle(search ?? '');
   }, [location.search, setNeedle]);
+
+  function setSearchQuery(type: 'q' | 'c', value: string) {
+    const search = searchParams.get('search');
+    let category =
+      searchParams
+        .get('category')
+        ?.split(',')
+        .filter((item) => item !== '') ?? [];
+
+    switch (type) {
+      case 'c': {
+        if (category.includes(value)) {
+          category = category.filter((item) => item !== value);
+        } else {
+          category.push(value);
+        }
+        break;
+      }
+    }
+
+    setSearchParams({
+      search: search ?? '',
+      category: category.join(',') ?? ''
+    });
+  }
 
   return (
     <>
@@ -74,15 +107,7 @@ export default function Icons() {
                 return (
                   <ListItem key={_category.slug}>
                     <ListItemButton
-                      onClick={() => {
-                        if (searchCategories.includes(_category.slug)) {
-                          setSearchCategories((prev) => prev.filter((item) => item !== _category.slug));
-                        } else {
-                          setSearchCategories((prev) => [...prev, _category.slug]);
-                        }
-
-                        setPage(0);
-                      }}
+                      onClick={() => setSearchQuery('c', _category.slug)}
                       variant={searchCategories.includes(_category.slug) ? 'soft' : 'plain'}
                       color="primary"
                     >
@@ -123,7 +148,11 @@ export default function Icons() {
                   disabled={needle === '' && searchCategories.length === 0}
                   onClick={() => {
                     setNeedle('');
-                    setSearchCategories([]);
+
+                    setSearchParams({
+                      search: '',
+                      category: ''
+                    });
                   }}
                 >
                   <Amicon icon={aiFilterXmark} />

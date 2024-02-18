@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { createSearchParams, useNavigate, useParams } from 'react-router-dom';
 
-import { Alert, Avatar, Box, Button, Card, Chip, Container, IconButton, Input, Stack, Typography } from '@mui/joy';
+import { Alert, Avatar, Box, Button, Card, Chip, Container, IconButton, Input, Link, Stack, Typography } from '@mui/joy';
 
 import icons from '@/data/icons';
 import Codeblock from '@/design/components/Codeblock';
@@ -287,7 +287,10 @@ export default function Icon() {
           </Stack>
           <Stack gap={2}>
             <Typography level="h3">
-              More icons in <Typography color="primary">{firstCategory}</Typography>
+              More icons in{' '}
+              <Link color="primary" onClick={() => navigate({ pathname: '/icons', search: `?${createSearchParams({ category: firstCategory })}` })}>
+                {firstCategory}
+              </Link>
             </Typography>
             <Box
               sx={{
