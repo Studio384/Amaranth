@@ -17,8 +17,7 @@ export default function Pagination(props: PaginationProps) {
                 size="sm"
                 color={selected ? 'primary' : 'neutral'}
                 variant={selected ? 'solid' : 'plain'}
-                sx={{ lineHeight: 'sm' }}
-                disabled={page === null || disabled}
+                disabled={disabled}
                 {...props}
                 key={key}
               >
@@ -31,8 +30,7 @@ export default function Pagination(props: PaginationProps) {
                 size="sm"
                 color={selected ? 'primary' : 'neutral'}
                 variant={selected ? 'solid' : 'plain'}
-                sx={{ lineHeight: 'sm' }}
-                disabled={page === null || disabled}
+                disabled={disabled}
                 startDecorator={<Amicon icon={aiArrowLeft} />}
                 {...props}
                 key={key}
@@ -46,8 +44,7 @@ export default function Pagination(props: PaginationProps) {
                 size="sm"
                 color={selected ? 'primary' : 'neutral'}
                 variant={selected ? 'solid' : 'plain'}
-                sx={{ lineHeight: 'sm' }}
-                disabled={page === null || disabled}
+                disabled={disabled}
                 endDecorator={<Amicon icon={aiArrowRight} />}
                 {...props}
                 key={key}
@@ -62,8 +59,7 @@ export default function Pagination(props: PaginationProps) {
                 size="sm"
                 color={selected ? 'primary' : 'neutral'}
                 variant={selected ? 'solid' : 'plain'}
-                sx={{ lineHeight: 'sm' }}
-                disabled={page === null || disabled}
+                disabled={disabled}
                 {...props}
                 key={key}
               >
