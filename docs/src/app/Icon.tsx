@@ -285,25 +285,27 @@ export default function Icon() {
               </Box>
             </Box>
           </Stack>
-          <Stack gap={2}>
-            <Typography level="h3">
-              More icons in{' '}
-              <Link color="primary" onClick={() => navigate({ pathname: '/icons', search: `?${createSearchParams({ category: firstCategory })}` })}>
-                {firstCategory}
-              </Link>
-            </Typography>
-            <Box
-              sx={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(min(9rem, 100%), 1fr))',
-                gap: { xs: 1 }
-              }}
-            >
-              {categoryIcons.slice(0, 28).map((icon: ILibraryIcon) => (
-                <IconCard key={icon.slug} icon={icon} />
-              ))}
-            </Box>
-          </Stack>
+          {firstCategory && categoryIcons.length >= 1 && (
+            <Stack gap={2}>
+              <Typography level="h3">
+                More icons in{' '}
+                <Link color="primary" onClick={() => navigate({ pathname: '/icons', search: `?${createSearchParams({ category: firstCategory })}` })}>
+                  {firstCategory}
+                </Link>
+              </Typography>
+              <Box
+                sx={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(min(9rem, 100%), 1fr))',
+                  gap: { xs: 1 }
+                }}
+              >
+                {categoryIcons.slice(0, 28).map((icon: ILibraryIcon) => (
+                  <IconCard key={icon.slug} icon={icon} />
+                ))}
+              </Box>
+            </Stack>
+          )}
         </Stack>
       </Container>
     </>
