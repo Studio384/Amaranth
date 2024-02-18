@@ -216,7 +216,7 @@ export default function Icons() {
               ))}
             </Box>
 
-            {result.length > 0 && <Pagination count={Math.ceil(result.length / 96)} page={searchPage} onChange={(e, page) => setSearchQuery('p', page)} />}
+            {result.length > 0 && <Pagination count={Math.ceil(result.length / 96)} page={searchPage} onChange={(_, page) => setSearchQuery('p', page)} />}
           </Stack>
         </Box>
       </Container>
