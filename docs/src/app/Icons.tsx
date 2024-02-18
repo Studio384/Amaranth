@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { useLocation, useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 
 import {
   Box,
@@ -29,18 +29,15 @@ import IconCard from './Components/IconCard';
 import Pagination from './Components/Pagination';
 
 export default function Icons() {
-  const location = useLocation();
-
   const [searchParams, setSearchParams] = useSearchParams();
 
   const [searchCategories, searchQuery, searchPage]: [string[], string, number] = useMemo(() => {
-    const params = new URLSearchParams(location.search);
-    const categories = params.get('category');
-    const query = params.get('search');
-    const page = Number(params.get('page') ?? 1);
+    const categories = searchParams.get('category');
+    const query = searchParams.get('search');
+    const page = Number(searchParams.get('page') ?? 1);
 
     return [categories?.split(',').filter((item) => item !== '') ?? [], query ?? '', page ?? 1];
-  }, [location.search]);
+  }, [searchParams]);
 
   const searchableList = useMemo(() => {
     if (searchCategories.length >= 1) {
@@ -55,9 +52,9 @@ export default function Icons() {
   // c: categories
   // q: query
   // p: page
-  function setSearchQuery(type: 'q' | 'c' | 'p', value: string) {
+  function setSearchQuery(type: 'q' | 'c' | 'p', value: string | number) {
     let search = searchParams.get('search');
-    let page = searchParams.get('page');
+    let page = Number(searchParams.get('page'));
     let category =
       searchParams
         .get('category')
@@ -66,6 +63,8 @@ export default function Icons() {
 
     switch (type) {
       case 'c': {
+        if (typeof(value) === 'number') return;
+
         if (category.includes(value)) {
           category = category.filter((item) => item !== value);
         } else {
@@ -74,10 +73,14 @@ export default function Icons() {
         break;
       }
       case 'q': {
+        if (typeof(value) === 'number') return;
+
         search = value;
         break;
       }
       case 'p': {
+        if (typeof(value) === 'string') return;
+
         page = value;
         break;
       }
