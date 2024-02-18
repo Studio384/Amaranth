@@ -6,7 +6,7 @@ interface ISeachResults {
   _score: number;
 }
 
-export default function useSearch(haystack: any[] | undefined, keys: string[], needle?: string) {
+export default function useSearch(haystack: any[] | undefined, keys: string[], needle: string) {
   const flattenObject = useCallback((item: { [key: string]: any }, prefix?: string) => {
     const flattened: { [key: string]: any } = {};
     prefix = prefix ? prefix + '.' : '';
