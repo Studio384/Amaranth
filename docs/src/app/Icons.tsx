@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import { useLocation, useSearchParams } from 'react-router-dom';
 
 import {
@@ -23,23 +23,23 @@ import Header from '@/design/layout/LayoutElements/Header';
 import useSearch from '@/hooks/useSearch';
 import { ILibraryIcon } from '@/types';
 
-import Amicon, { aiChevronLeft, aiChevronRight, aiFilterXmark, aiMagnifyingGlass } from '@studio384/amaranth';
+import Amicon, { aiFilterXmark, aiMagnifyingGlass } from '@studio384/amaranth';
 
 import IconCard from './Components/IconCard';
+import Pagination from './Components/Pagination';
 
 export default function Icons() {
   const location = useLocation();
 
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const [page, setPage] = useState(0);
-
-  const [searchCategories, searchQuery]: [string[], string] = useMemo(() => {
+  const [searchCategories, searchQuery, searchPage]: [string[], string, number] = useMemo(() => {
     const params = new URLSearchParams(location.search);
     const categories = params.get('category');
     const query = params.get('search');
+    const page = Number(params.get('page') ?? 1);
 
-    return [categories?.split(',').filter((item) => item !== '') ?? [], query ?? ''];
+    return [categories?.split(',').filter((item) => item !== '') ?? [], query ?? '', page ?? 1];
   }, [location.search]);
 
   const searchableList = useMemo(() => {
@@ -54,8 +54,10 @@ export default function Icons() {
 
   // c: categories
   // q: query
-  function setSearchQuery(type: 'q' | 'c', value: string) {
+  // p: page
+  function setSearchQuery(type: 'q' | 'c' | 'p', value: string) {
     let search = searchParams.get('search');
+    let page = searchParams.get('page');
     let category =
       searchParams
         .get('category')
@@ -75,9 +77,14 @@ export default function Icons() {
         search = value;
         break;
       }
+      case 'p': {
+        page = value;
+        break;
+      }
     }
 
     setSearchParams({
+      page: (page ?? 1).toString(),
       search: search ?? '',
       category: category.join(',') ?? ''
     });
@@ -143,7 +150,7 @@ export default function Icons() {
               <Stack direction="row" gap={1} alignItems="baseline">
                 <Typography level="h2">{result.length} icons</Typography>
                 <Typography color="neutral">
-                  Page {page + 1} of {Math.ceil(result.length / 96)}
+                  Page {searchPage} of {Math.ceil(result.length / 96)}
                 </Typography>
               </Stack>
 
@@ -154,7 +161,7 @@ export default function Icons() {
                   value={searchQuery}
                   onChange={(e) => {
                     setSearchQuery('q', e.target.value);
-                    setPage(0);
+                    setSearchQuery('p', 0);
                   }}
                 />
                 <IconButton
@@ -201,31 +208,12 @@ export default function Icons() {
                 gap: { xs: 1 }
               }}
             >
-              {result.slice(page * 96, (page + 1) * 96).map((icon: ILibraryIcon) => (
+              {result.slice((searchPage - 1) * 96, searchPage * 96).map((icon: ILibraryIcon) => (
                 <IconCard key={icon.slug} icon={icon} />
               ))}
             </Box>
 
-            <Stack direction="row" justifyContent="center" alignItems="center" gap={1}>
-              <IconButton
-                size="sm"
-                variant={page === 0 ? 'plain' : 'solid'}
-                color={page === 0 ? 'neutral' : 'primary'}
-                onClick={() => setPage((prev) => prev - 1)}
-                disabled={page === 0}
-              >
-                <Amicon icon={aiChevronLeft} />
-              </IconButton>
-              <IconButton
-                size="sm"
-                variant={page === Math.ceil(result.length / 96) - 1 ? 'plain' : 'solid'}
-                color={page === Math.ceil(result.length / 96) - 1 ? 'neutral' : 'primary'}
-                onClick={() => setPage((prev) => prev + 1)}
-                disabled={page === Math.ceil(result.length / 96) - 1}
-              >
-                <Amicon icon={aiChevronRight} />
-              </IconButton>
-            </Stack>
+            {result.length > 0 && <Pagination count={Math.ceil(result.length / 96)} page={searchPage} onChange={(e, page) => setSearchQuery('p', page)} />}
           </Stack>
         </Box>
       </Container>

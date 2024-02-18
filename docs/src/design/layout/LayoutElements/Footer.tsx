@@ -17,7 +17,7 @@ import {
   useColorScheme
 } from '@mui/joy';
 
-import Amicon, { aiStudio384, aiCircleHalfInner, aiGithub, aiHeart, aiMoon, aiSun, aiTwitter } from '@studio384/amaranth';
+import Amicon, { aiCircleHalfInner, aiGithub, aiHeart, aiMoon, aiStudio384, aiSun, aiTwitter } from '@studio384/amaranth';
 
 export default function Footer() {
   const { mode, setMode } = useColorScheme();
