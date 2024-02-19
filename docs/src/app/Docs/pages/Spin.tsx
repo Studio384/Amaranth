@@ -52,15 +52,15 @@ export default function PageSpin() {
   };
 
   return (
-    <Stack id="spin" gap={2} sx={{ scrollMarginTop: 58 + 32 }}>
-      <Typography level="h3">Spin</Typography>
+    <Stack gap={2}>
+      <Typography level="h2">Spin</Typography>
       <Typography>
         With the <Code>spin</Code> property you can make your icons play a rotation animation.
       </Typography>
 
       <Playground config={playgroundConfig} />
 
-      <Typography level="h4">API</Typography>
+      <Typography level="h3">API</Typography>
 
       <Typography>
         When setting the property to <Code>pulse</Code>, some additional variables are available while some defaults are changed.

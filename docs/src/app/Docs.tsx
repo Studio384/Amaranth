@@ -1,14 +1,10 @@
+import { Outlet } from 'react-router-dom';
+
 import { Box, Container, Stack, Typography } from '@mui/joy';
 
 import Header from '@/design/layout/LayoutElements/Header';
 
 import DocsNavigation from './Docs/Navigation';
-import PageBeat from './Docs/pages/Beat';
-import PageFade from './Docs/pages/Fade';
-import PageFlip from './Docs/pages/Flip';
-import PageInstallation from './Docs/pages/Installation';
-import PageRotate from './Docs/pages/Rotate';
-import PageSpin from './Docs/pages/Spin';
 
 export default function Docs() {
   return (
@@ -30,12 +26,7 @@ export default function Docs() {
             <DocsNavigation />
           </Box>
           <Stack gap={4}>
-            <PageInstallation />
-            <PageSpin />
-            <PageRotate />
-            <PageFlip />
-            <PageBeat />
-            <PageFade />
+            <Outlet />
           </Stack>
         </Box>
       </Container>

@@ -8,7 +8,7 @@ import { ILibraryIcon } from '@/types';
 
 import Amicon, { aiArrowRight, aiBoxOpenFull, aiBug, aiPen, aiPlus, aiTrashCan } from '@studio384/amaranth';
 
-import IconCard from './Components/IconCard';
+import IconCard from '../../Components/IconCard';
 
 export default function Release({
   name,

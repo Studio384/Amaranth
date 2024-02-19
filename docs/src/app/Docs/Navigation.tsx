@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 import { List, ListItem, ListItemButton, ListItemContent, ListSubheader, Typography } from '@mui/joy';
 
@@ -15,6 +15,8 @@ import Amicon, {
 } from '@studio384/amaranth';
 
 export default function DocsNavigation() {
+  const location = useLocation();
+
   const pages = [
     {
       title: 'Get started',
@@ -23,7 +25,7 @@ export default function DocsNavigation() {
         {
           title: 'Installation',
           icon: aiAmicons,
-          link: '#installation'
+          link: '/docs/installation'
         }
       ]
     },
@@ -34,27 +36,27 @@ export default function DocsNavigation() {
         {
           title: 'Spin',
           icon: aiSpinner,
-          link: '#spin'
+          link: '/docs/spin'
         },
         {
           title: 'Rotate',
           icon: aiArrowRotateRight,
-          link: '#rotate'
+          link: '/docs/rotate'
         },
         {
           title: 'Flip',
           icon: aiArrowsDownLeftRightUpCenter,
-          link: '#flip'
+          link: '/docs/flip'
         },
         {
           title: 'Beat',
           icon: aiHeart,
-          link: '#beat'
+          link: '/docs/beat'
         },
         {
           title: 'Fade',
           icon: aiCircleHalfInner,
-          link: '#fade'
+          link: '/docs/fade'
         }
       ]
     },
@@ -92,7 +94,7 @@ export default function DocsNavigation() {
           </ListSubheader>
           {category.pages.map((page) => (
             <ListItem key={page.link}>
-              <ListItemButton component={NavLink} to={page.link} color="primary">
+              <ListItemButton component={NavLink} to={page.link} color="primary" selected={location.pathname.includes(page.link)}>
                 <ListItemContent>
                   <Typography noWrap>{page.title}</Typography>
                 </ListItemContent>

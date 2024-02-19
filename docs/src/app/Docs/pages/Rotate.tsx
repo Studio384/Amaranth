@@ -34,15 +34,15 @@ export default function PageRotate() {
   };
 
   return (
-    <Stack id="rotate" gap={2} sx={{ scrollMarginTop: 58 + 32 }}>
-      <Typography level="h3">Rotate</Typography>
+    <Stack gap={2}>
+      <Typography level="h2">Rotate</Typography>
       <Typography>
         With the <Code>rotate</Code> property you can change the default rotation of your icon.
       </Typography>
 
       <Playground config={playgroundConfig} />
 
-      <Typography level="h4">API</Typography>
+      <Typography level="h3">API</Typography>
 
       <ApiTable cssVariables={playgroundConfig.cssVariables as IIconCssVariables[]} />
     </Stack>

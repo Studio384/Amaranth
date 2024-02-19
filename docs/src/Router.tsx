@@ -1,7 +1,13 @@
-import { createHashRouter } from 'react-router-dom';
+import { Navigate, createHashRouter, redirect } from 'react-router-dom';
 
-import Changelog from './app/Changelog';
 import Docs from './app/Docs';
+import PageBeat from './app/Docs/pages/Beat';
+import Changelog from './app/Docs/pages/Changelog';
+import PageFade from './app/Docs/pages/Fade';
+import PageFlip from './app/Docs/pages/Flip';
+import PageInstallation from './app/Docs/pages/Installation';
+import PageRotate from './app/Docs/pages/Rotate';
+import PageSpin from './app/Docs/pages/Spin';
 import Error from './app/Error';
 import Home from './app/Home';
 import Icon from './app/Icon';
@@ -27,11 +33,42 @@ const router = createHashRouter([
       },
       {
         path: '/docs',
-        element: <Docs />
-      },
-      {
-        path: '/docs/changelog',
-        element: <Changelog />
+        element: <Docs />,
+        errorElement: <Error />,
+        children: [
+          {
+            index: true,
+            element: <Navigate to="installation" replace />
+          },
+          {
+            path: 'installation',
+            element: <PageInstallation />
+          },
+          {
+            path: 'spin',
+            element: <PageSpin />
+          },
+          {
+            path: 'rotate',
+            element: <PageRotate />
+          },
+          {
+            path: 'flip',
+            element: <PageFlip />
+          },
+          {
+            path: 'beat',
+            element: <PageBeat />
+          },
+          {
+            path: 'fade',
+            element: <PageFade />
+          },
+          {
+            path: 'changelog',
+            element: <Changelog />
+          }
+        ]
       }
     ]
   }

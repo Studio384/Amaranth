@@ -44,15 +44,15 @@ export default function PageBeat() {
   };
 
   return (
-    <Stack id="beat" gap={2} sx={{ scrollMarginTop: 58 + 32 }}>
-      <Typography level="h3">Beat</Typography>
+    <Stack gap={2}>
+      <Typography level="h2">Beat</Typography>
       <Typography>
         With the <Code>beat</Code> property gives you a basic beat animation.
       </Typography>
 
       <Playground config={playgroundConfig} />
 
-      <Typography level="h4">API</Typography>
+      <Typography level="h3">API</Typography>
 
       <ApiTable cssVariables={playgroundConfig.cssVariables as IIconCssVariables[]} />
     </Stack>

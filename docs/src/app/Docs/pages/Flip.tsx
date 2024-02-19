@@ -21,8 +21,8 @@ export default function PageFlip() {
   };
 
   return (
-    <Stack id="flip" gap={2} sx={{ scrollMarginTop: 58 + 32 }}>
-      <Typography level="h3">Flip</Typography>
+    <Stack gap={2}>
+      <Typography level="h2">Flip</Typography>
       <Typography>
         With the <Code>flip</Code> property you can mirror your icon on its x-axis, y-axis or both.
       </Typography>

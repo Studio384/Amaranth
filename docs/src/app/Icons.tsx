@@ -132,7 +132,7 @@ export default function Icons() {
                   <ListItem key={_category.slug}>
                     <ListItemButton
                       onClick={() => setSearchQuery('c', _category.slug)}
-                      variant={searchCategories.includes(_category.slug) ? 'soft' : 'plain'}
+                      selected={searchCategories.includes(_category.slug)}
                       color="primary"
                     >
                       <ListItemDecorator>

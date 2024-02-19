@@ -44,15 +44,15 @@ export default function PageFade() {
   };
 
   return (
-    <Stack id="fade" gap={2} sx={{ scrollMarginTop: 58 + 32 }}>
-      <Typography level="h3">Fade</Typography>
+    <Stack gap={2}>
+      <Typography level="h2">Fade</Typography>
       <Typography>
         With the <Code>fade</Code> property gives you a basic fade animation.
       </Typography>
 
       <Playground config={playgroundConfig} />
 
-      <Typography level="h4">API</Typography>
+      <Typography level="h3">API</Typography>
 
       <ApiTable cssVariables={playgroundConfig.cssVariables as IIconCssVariables[]} />
     </Stack>
