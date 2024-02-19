@@ -1,11 +1,10 @@
-import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 import { Box, Button, Container, IconButton, Link, Sheet, Stack } from '@mui/joy';
 
-import IAmicon, { aiArrowDownToLine, aiGithub } from '@studio384/amaranth';
+import IAmicon, { aiGithub } from '@studio384/amaranth';
 
 export default function Navbar() {
-  const navigate = useNavigate();
   const location = useLocation();
 
   return (
@@ -77,14 +76,11 @@ export default function Navbar() {
             >
               Docs
             </Button>
+          </Stack>
+          <Stack direction="row" justifyContent="flex-end">
             <IconButton size="sm" variant="plain" color="primary" component="a" href="https://github.com/studio384/amaranth" target="_blank">
               <IAmicon icon={aiGithub} />
             </IconButton>
-          </Stack>
-          <Stack direction="row" justifyContent="flex-end">
-            <Button onClick={() => navigate('/')} startDecorator={<IAmicon icon={aiArrowDownToLine} />} size="sm" variant="plain">
-              Download
-            </Button>
           </Stack>
         </Box>
       </Sheet>
