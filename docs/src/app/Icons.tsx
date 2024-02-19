@@ -70,12 +70,15 @@ export default function Icons() {
         } else {
           category.push(value);
         }
+
+        page = 1; // Always reset page
         break;
       }
       case 'q': {
         if (typeof value === 'number') return;
 
         search = value;
+        page = 1; // Always reset page
         break;
       }
       case 'p': {
@@ -87,7 +90,7 @@ export default function Icons() {
     }
 
     setSearchParams({
-      page: (page ?? 1).toString(),
+      page: (page || 1).toString(),
       search: search ?? '',
       category: category.join(',') ?? ''
     });
@@ -160,7 +163,7 @@ export default function Icons() {
                   value={searchQuery}
                   onChange={(e) => {
                     setSearchQuery('q', e.target.value);
-                    setSearchQuery('p', 0);
+                    setSearchQuery('p', 1);
                   }}
                 />
                 <IconButton
