@@ -63,7 +63,7 @@ export default function Icons() {
 
     switch (type) {
       case 'c': {
-        if (typeof(value) === 'number') return;
+        if (typeof value === 'number') return;
 
         if (category.includes(value)) {
           category = category.filter((item) => item !== value);
@@ -73,13 +73,13 @@ export default function Icons() {
         break;
       }
       case 'q': {
-        if (typeof(value) === 'number') return;
+        if (typeof value === 'number') return;
 
         search = value;
         break;
       }
       case 'p': {
-        if (typeof(value) === 'string') return;
+        if (typeof value === 'string') return;
 
         page = value;
         break;
@@ -130,11 +130,7 @@ export default function Icons() {
 
                 return (
                   <ListItem key={_category.slug}>
-                    <ListItemButton
-                      onClick={() => setSearchQuery('c', _category.slug)}
-                      selected={searchCategories.includes(_category.slug)}
-                      color="primary"
-                    >
+                    <ListItemButton onClick={() => setSearchQuery('c', _category.slug)} selected={searchCategories.includes(_category.slug)} color="primary">
                       <ListItemDecorator>
                         <Amicon icon={_category.icon} />
                       </ListItemDecorator>

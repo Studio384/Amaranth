@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { createSearchParams, useNavigate } from 'react-router-dom';
+import { createSearchParams, NavLink, useNavigate } from 'react-router-dom';
 
 import { Alert, Box, Button, Container, IconButton, Input, Stack, Typography } from '@mui/joy';
 
@@ -72,7 +72,7 @@ export default function Home() {
               <Typography>Get started with Amicons by installing the npm package.</Typography>
               <Codeblock>npm install @studio384/amaranth</Codeblock>
               <Stack direction="row" gap={1} sx={{ mt: 3 }}>
-                <Button startDecorator={<Amicon icon={aiBook} />} onClick={() => navigate('/docs')}>
+                <Button startDecorator={<Amicon icon={aiBook} />} component={NavLink} to="/docs">
                   Documentation
                 </Button>
               </Stack>
@@ -120,7 +120,7 @@ export default function Home() {
               <Typography level="h2">Icons with love</Typography>
               <Typography>Every icon is made by hand, and with our heart. We don't include that in the package tho, we still need it.</Typography>
               <Stack direction="row" gap={1} sx={{ mt: 3 }}>
-                <Button startDecorator={<Amicon icon={aiAmicons} />} onClick={() => navigate('/icons')}>
+                <Button startDecorator={<Amicon icon={aiAmicons} />} component={NavLink} to="/icons">
                   Full library
                 </Button>
               </Stack>
@@ -131,7 +131,7 @@ export default function Home() {
               <Typography level="h2">Open source. Powered by you.</Typography>
               <Typography>Amicons is open source, and funded by you.</Typography>
               <Stack direction="row" gap={1} sx={{ mt: 3 }}>
-                <Button startDecorator={<Amicon icon={aiPatreon} />} onClick={() => navigate('/icons')}>
+                <Button startDecorator={<Amicon icon={aiPatreon} />} component={NavLink} to="/icons">
                   Support us at Patreon
                 </Button>
               </Stack>

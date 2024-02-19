@@ -13,14 +13,7 @@ export default function Pagination(props: PaginationProps) {
         switch (type) {
           case 'page':
             return (
-              <IconButton
-                size="sm"
-                color={selected ? 'primary' : 'neutral'}
-                variant={selected ? 'solid' : 'plain'}
-                disabled={disabled}
-                {...props}
-                key={key}
-              >
+              <IconButton size="sm" color={selected ? 'primary' : 'neutral'} variant={selected ? 'solid' : 'plain'} disabled={disabled} {...props} key={key}>
                 {page}
               </IconButton>
             );
@@ -55,14 +48,7 @@ export default function Pagination(props: PaginationProps) {
           case 'start-ellipsis':
           case 'end-ellipsis':
             return (
-              <IconButton
-                size="sm"
-                color={selected ? 'primary' : 'neutral'}
-                variant={selected ? 'solid' : 'plain'}
-                disabled={disabled}
-                {...props}
-                key={key}
-              >
+              <IconButton size="sm" color={selected ? 'primary' : 'neutral'} variant={selected ? 'solid' : 'plain'} disabled={disabled} {...props} key={key}>
                 <Amicon icon={aiEllipsisH} />
               </IconButton>
             );

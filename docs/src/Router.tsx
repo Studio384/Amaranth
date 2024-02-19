@@ -1,4 +1,4 @@
-import { Navigate, createHashRouter, redirect } from 'react-router-dom';
+import { createHashRouter, Navigate } from 'react-router-dom';
 
 import Docs from './app/Docs';
 import PageBeat from './app/Docs/pages/Beat';

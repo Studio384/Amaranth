@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 
 import { Box, Button, Container, IconButton, Link, Sheet, Stack } from '@mui/joy';
 
@@ -44,14 +44,15 @@ export default function Navbar() {
           }}
         >
           <Stack direction="row" alignItems="center" gap={1} sx={{ pl: 0.5 }}>
-            <Link color="neutral" underline="none" level="h1" fontSize="xl" sx={{ color: 'common.white' }} onClick={() => navigate('/')}>
+            <Link color="neutral" underline="none" level="h1" fontSize="xl" sx={{ color: 'common.white' }} component={NavLink} to="/">
               <img src="favicon.png" style={{ width: 24, height: 24, marginRight: 8 }} />
               Amicons
             </Link>
           </Stack>
           <Stack direction="row" gap={0.5}>
             <Button
-              onClick={() => navigate('/')}
+              component={NavLink}
+              to="/"
               variant={location?.pathname === '/' ? 'solid' : 'plain'}
               size="sm"
               color={location?.pathname === '/' ? 'primary' : 'primary'}
@@ -59,7 +60,8 @@ export default function Navbar() {
               Home
             </Button>
             <Button
-              onClick={() => navigate('/icons')}
+              component={NavLink}
+              to="/icons"
               variant={location?.pathname?.startsWith('/icons') ? 'solid' : 'plain'}
               size="sm"
               color={location?.pathname?.startsWith('/icons') ? 'primary' : 'primary'}
@@ -67,7 +69,8 @@ export default function Navbar() {
               Icons
             </Button>
             <Button
-              onClick={() => navigate('/docs')}
+              component={NavLink}
+              to="/docs"
               variant={location?.pathname?.startsWith('/docs') ? 'solid' : 'plain'}
               size="sm"
               color={location?.pathname?.startsWith('/docs') ? 'primary' : 'primary'}
