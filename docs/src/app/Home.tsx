@@ -25,10 +25,10 @@ export default function Home() {
   return (
     <>
       <Header>
-        <Stack direction="row" alignItems="center" justifyContent="space-between" gap={5} sx={{ my: 7 }}>
-          <Stack gap={5} sx={{ flexGrow: 1 }}>
+        <Stack direction={{ xs: 'column', md: 'row' }} alignItems="center" justifyContent="space-between" gap={5} sx={{ my: 7 }}>
+          <Stack gap={5} sx={{ flexGrow: 1, order: { xs: 2, md: 1 } }}>
             <Box>
-              <Typography level="h1" fontSize={48}>
+              <Typography level="h1" fontSize={{ xs: 36, md: 48 }} sx={{ textAlign: { xs: 'center', md: 'initial' } }}>
                 <Typography color="primary">{icons.length}</Typography> amicable icons
                 <br />
                 to delight <Typography color="primary">your</Typography> designs
@@ -58,7 +58,7 @@ export default function Home() {
               />
             </form>
           </Stack>
-          <LargeIconGrid icon={aiAmicons} />
+          <LargeIconGrid icon={aiAmicons} sx={{ order: { xs: 1, md: 2 }, '--Amicon-scale': { xs: '8px', md: '16px' } }} />
         </Stack>
       </Header>
       <Container>
@@ -66,8 +66,8 @@ export default function Home() {
           <Alert color="danger" variant="solid" startDecorator={<Amicon icon={aiCircleExclamation} />} size="lg" sx={{ borderRadius: 'xl' }}>
             We're still working on this, a lot can change.
           </Alert>
-          <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 5 }}>
-            <Stack gap={1} justifyContent="center">
+          <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1f', md: '1fr 1fr' }, gap: 5 }}>
+            <Stack gap={1} justifyContent="center" sx={{ order: { xs: 2, md: 1 } }}>
               <Typography level="h2">Get started</Typography>
               <Typography>Get started with Amicons by installing the npm package.</Typography>
               <Codeblock>npm install @studio384/amaranth</Codeblock>
@@ -79,6 +79,7 @@ export default function Home() {
             </Stack>
             <Box
               sx={{
+                order: { xs: 1, md: 2 },
                 p: 3,
                 borderRadius: 'xl',
                 backgroundImage:
@@ -89,16 +90,17 @@ export default function Home() {
                 gap: 3,
                 fontSize: 'xl4',
                 border: '1px solid var(--joy-palette-primary-outlinedBorder)',
-                height: 300
+                height: { xs: 120, md: 300 }
               }}
             >
               <Amicon icon={aiFlag} />
               <Amicon icon={aiAmicons} />
             </Box>
           </Box>
-          <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 5 }}>
+          <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1f', md: '1fr 1fr' }, gap: 5 }}>
             <Box
               sx={{
+                order: { xs: 1, md: 2 },
                 p: 3,
                 borderRadius: 'xl',
                 backgroundImage:
@@ -109,14 +111,14 @@ export default function Home() {
                 gap: 3,
                 fontSize: 'xl4',
                 border: '1px solid var(--joy-palette-success-outlinedBorder)',
-                height: 300
+                height: { xs: 120, md: 300 }
               }}
             >
               <Amicon icon={aiAmicons} />
               <Amicon icon={aiHeart} />
               <Amicon icon={aiIcons} />
             </Box>
-            <Stack gap={1} justifyContent="center">
+            <Stack gap={1} justifyContent="center" sx={{ order: { xs: 1, md: 2 } }}>
               <Typography level="h2">Icons with love</Typography>
               <Typography>Every icon is made by hand, and with our heart. We don't include that in the package tho, we still need it.</Typography>
               <Stack direction="row" gap={1} sx={{ mt: 3 }}>
@@ -126,8 +128,8 @@ export default function Home() {
               </Stack>
             </Stack>
           </Box>
-          <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 5 }}>
-            <Stack gap={1} justifyContent="center">
+          <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1f', md: '1fr 1fr' }, gap: 5 }}>
+            <Stack gap={1} justifyContent="center" sx={{ order: { xs: 2, md: 1 } }}>
               <Typography level="h2">Open source. Powered by you.</Typography>
               <Typography>Amicons is open source, and funded by you.</Typography>
               <Stack direction="row" gap={1} sx={{ mt: 3 }}>
@@ -138,6 +140,7 @@ export default function Home() {
             </Stack>
             <Box
               sx={{
+                order: { xs: 1, md: 2 },
                 p: 3,
                 borderRadius: 'xl',
                 backgroundImage:
@@ -148,7 +151,7 @@ export default function Home() {
                 gap: 3,
                 fontSize: 'xl4',
                 border: '1px solid var(--joy-palette-danger-outlinedBorder)',
-                height: 300
+                height: { xs: 120, md: 300 }
               }}
             >
               <Amicon icon={aiLockOpen} />
