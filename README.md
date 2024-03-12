@@ -11,7 +11,7 @@ npm install @studio384/amaranth
 Amicons includes a number of ways to use it. Our package will include the individual SVG files, a React-component and JavaScript implementation with TypeScript definitions, as well as an old-school webfont.
 
 # About
-Amicons is an icon set built for ChangeWindows, Starscout and more projects, based on [Valkyrie](https://github.com/sippy-platform/valkyrie) and the original Amicons project.
+Amicons is an icon set built for ChangeWindows, Starscout and more projects, sharing code with [Valkyrie](https://github.com/sippy-platform/valkyrie) and the original ChangeWindows Amaranth project.
 
 # License
 AGPL v3
