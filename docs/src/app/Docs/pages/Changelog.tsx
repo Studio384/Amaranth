@@ -9,7 +9,7 @@ export default function Changelog() {
     <Stack gap={5}>
       <Release
         name="Amicons 1.0 alpha 7"
-        date="February 2024"
+        date="March 2024"
         version="1.0.0-alpha.7"
         added={[
           <>
@@ -63,6 +63,7 @@ export default function Changelog() {
           '8',
           '9',
           'a',
+          'arrow-down-arrow-up',
           'arrow-up-right-from-square',
           'b',
           'battery-charging',
@@ -98,12 +99,20 @@ export default function Changelog() {
           'envelope-open',
           'export',
           'f',
+          'file-audio',
+          'file-excel',
+          'file-powerpoint',
+          'file-text',
+          'file-word',
+          'file-zip',
           'flask',
           'folder-min',
           'folder-open',
           'folder-plus',
           'frame',
           'g',
+          'grip-dots-v',
+          'grip-dots',
           'h',
           'i',
           'icons',

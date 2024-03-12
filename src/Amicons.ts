@@ -1266,6 +1266,48 @@ export const aiFax: {
   name: 'fax',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M9.5 7.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1A.5.5 0 0 1 8 9V8a.5.5 0 0 1 .5-.5zm3 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1A.5.5 0 0 1 11 9V8a.5.5 0 0 1 .5-.5zm-4 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/><path d="M13.5 3.914v1.097A2.75 2.75 0 0 1 16 7.75v4.5A2.75 2.75 0 0 1 13.25 15H2.75A2.75 2.75 0 0 1 0 12.25v-7.5A2.75 2.75 0 0 1 2.75 2h1A2.75 2.75 0 0 1 6.5 4.75V5h1V2.75C7.5 1.784 8.284 1 9.25 1h1.336c.464 0 .909.184 1.237.513l1.164 1.164c.329.328.513.773.513 1.237M9 2.75V5h3V3.914a.25.25 0 0 0-.073-.177l-1.164-1.164a.25.25 0 0 0-.177-.073H9.25a.25.25 0 0 0-.25.25M6.5 13.5h6.75c.69 0 1.25-.56 1.25-1.25v-4.5c0-.69-.56-1.25-1.25-1.25H6.5zm-1.5 0V4.75c0-.69-.56-1.25-1.25-1.25h-1c-.69 0-1.25.56-1.25 1.25v7.5c0 .69.56 1.25 1.25 1.25z"/></svg>`,
 };
+export const aiFileAudio: {
+  name: 'file_audio';
+  data: string;
+} = {
+  name: 'file_audio',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M11.212 6.159a.75.75 0 0 1 .288.591V11A1.5 1.5 0 1 1 10 9.5V7.71l-2.5.626V12A1.5 1.5 0 1 1 6 10.5V7.75a.75.75 0 0 1 .568-.728l4-1a.75.75 0 0 1 .644.137"/><path d="M4.75 0A2.75 2.75 0 0 0 2 2.75v10.5A2.75 2.75 0 0 0 4.75 16h6.5A2.75 2.75 0 0 0 14 13.25v-9a.75.75 0 0 0-.22-.53l-3.5-3.5A.75.75 0 0 0 9.75 0zM3.5 2.75c0-.69.56-1.25 1.25-1.25H9v2.75c0 .414.336.75.75.75h2.75v8.25c0 .69-.56 1.25-1.25 1.25h-6.5c-.69 0-1.25-.56-1.25-1.25z"/></svg>`,
+};
+export const aiFileExcel: {
+  name: 'file_excel';
+  data: string;
+} = {
+  name: 'file_excel',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M6.864 6.82a.75.75 0 0 0-1.228.86l1.449 2.07-1.45 2.07a.75.75 0 1 0 1.23.86L8 11.058l1.136 1.622a.75.75 0 1 0 1.228-.86L8.915 9.75l1.45-2.07a.75.75 0 1 0-1.23-.86L8 8.442z"/><path d="M4.75 0A2.75 2.75 0 0 0 2 2.75v10.5A2.75 2.75 0 0 0 4.75 16h6.5A2.75 2.75 0 0 0 14 13.25v-9a.75.75 0 0 0-.22-.53l-3.5-3.5A.75.75 0 0 0 9.75 0zM3.5 2.75c0-.69.56-1.25 1.25-1.25H9v2.75c0 .414.336.75.75.75h2.75v8.25c0 .69-.56 1.25-1.25 1.25h-6.5c-.69 0-1.25-.56-1.25-1.25z"/></svg>`,
+};
+export const aiFilePowerpoint: {
+  name: 'file_powerpoint';
+  data: string;
+} = {
+  name: 'file_powerpoint',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M6.75 6.5a.75.75 0 0 0-.75.75v5a.75.75 0 0 0 1.5 0v-1.5h1.375a2.125 2.125 0 0 0 0-4.25zm2.125 2.75H7.5V8h1.375a.625.625 0 1 1 0 1.25"/><path d="M4.75 0A2.75 2.75 0 0 0 2 2.75v10.5A2.75 2.75 0 0 0 4.75 16h6.5A2.75 2.75 0 0 0 14 13.25v-9a.75.75 0 0 0-.22-.53l-3.5-3.5A.75.75 0 0 0 9.75 0zM3.5 2.75c0-.69.56-1.25 1.25-1.25H9v2.75c0 .414.336.75.75.75h2.75v8.25c0 .69-.56 1.25-1.25 1.25h-6.5c-.69 0-1.25-.56-1.25-1.25z"/></svg>`,
+};
+export const aiFileText: {
+  name: 'file_text';
+  data: string;
+} = {
+  name: 'file_text',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M5.75 6.5a.75.75 0 0 0 0 1.5h4.5a.75.75 0 0 0 0-1.5zm0 2.5a.75.75 0 0 0 0 1.5H8.5a.75.75 0 0 0 0-1.5zm0 2.5a.75.75 0 0 0 0 1.5H9.5a.75.75 0 0 0 0-1.5z"/><path d="M4.75 0A2.75 2.75 0 0 0 2 2.75v10.5A2.75 2.75 0 0 0 4.75 16h6.5A2.75 2.75 0 0 0 14 13.25v-9a.75.75 0 0 0-.22-.53l-3.5-3.5A.75.75 0 0 0 9.75 0zM3.5 2.75c0-.69.56-1.25 1.25-1.25H9v2.75c0 .414.336.75.75.75h2.75v8.25c0 .69-.56 1.25-1.25 1.25h-6.5c-.69 0-1.25-.56-1.25-1.25z"/></svg>`,
+};
+export const aiFileWord: {
+  name: 'file_word';
+  data: string;
+} = {
+  name: 'file_word',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M5.978 7.068a.75.75 0 0 0-1.456.364l1.25 5a.75.75 0 0 0 1.399.153L8 10.927l.83 1.658a.75.75 0 0 0 1.398-.153l1.25-5a.75.75 0 0 0-1.456-.364l-.758 3.033-.593-1.186a.75.75 0 0 0-1.342 0L6.736 10.1z"/><path d="M4.75 0A2.75 2.75 0 0 0 2 2.75v10.5A2.75 2.75 0 0 0 4.75 16h6.5A2.75 2.75 0 0 0 14 13.25v-9a.75.75 0 0 0-.22-.53l-3.5-3.5A.75.75 0 0 0 9.75 0zM3.5 2.75c0-.69.56-1.25 1.25-1.25H9v2.75c0 .414.336.75.75.75h2.75v8.25c0 .69-.56 1.25-1.25 1.25h-6.5c-.69 0-1.25-.56-1.25-1.25z"/></svg>`,
+};
+export const aiFileZip: {
+  name: 'file_zip';
+  data: string;
+} = {
+  name: 'file_zip',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M6 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zm-.5 2.5A.5.5 0 0 1 6 5h1a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5M6.25 7a.75.75 0 0 0-.732.587l-.375 1.687a1.39 1.39 0 1 0 2.714 0l-.375-1.687A.75.75 0 0 0 6.75 7z"/><path d="M2 2.75A2.75 2.75 0 0 1 4.75 0h5a.75.75 0 0 1 .53.22l3.5 3.5c.141.14.22.331.22.53v9A2.75 2.75 0 0 1 11.25 16h-6.5A2.75 2.75 0 0 1 2 13.25zM4.75 1.5c-.69 0-1.25.56-1.25 1.25v10.5c0 .69.56 1.25 1.25 1.25h6.5c.69 0 1.25-.56 1.25-1.25V5H9.75A.75.75 0 0 1 9 4.25V1.5H7.5A.5.5 0 0 1 7 2H6a.5.5 0 0 1-.5-.5z"/></svg>`,
+};
 export const aiFile: {
   name: 'file';
   data: string;
@@ -3387,6 +3429,12 @@ export type Amicons =
   | 'fast_backward'
   | 'fast_forward'
   | 'fax'
+  | 'file_audio'
+  | 'file_excel'
+  | 'file_powerpoint'
+  | 'file_text'
+  | 'file_word'
+  | 'file_zip'
   | 'file'
   | 'files_list'
   | 'files'
@@ -3852,6 +3900,12 @@ export const amiconSet = [
   aiFastBackward,
   aiFastForward,
   aiFax,
+  aiFileAudio,
+  aiFileExcel,
+  aiFilePowerpoint,
+  aiFileText,
+  aiFileWord,
+  aiFileZip,
   aiFile,
   aiFilesList,
   aiFiles,
