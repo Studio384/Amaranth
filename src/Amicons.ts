@@ -174,6 +174,13 @@ export const aiAppleAppStore: {
   name: 'apple_app_store',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M13.5 1h-11A1.5 1.5 0 0 0 1 2.5v11A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-11A1.5 1.5 0 0 0 13.5 1M4.969 12.016a.624.624 0 1 1-1.082-.625l.447-.772q.755-.23 1.238.356zm4.34-1.685H3.625A.627.627 0 0 1 3 9.706c0-.343.281-.625.625-.625h1.594l2.043-3.537-.64-1.106a.626.626 0 0 1 .228-.854.626.626 0 0 1 .853.228l.278.482.278-.481a.624.624 0 1 1 1.082.624L6.659 9.082H8.6c.631 0 .984.74.71 1.25m3.066 0h-.906l.612 1.06c.172.3.069.68-.228.853a.626.626 0 0 1-.853-.228C9.972 10.238 9.203 8.9 8.688 8.012c-.522-.906-.15-1.812.221-2.118q.614 1.065 1.841 3.187h1.625a.625.625 0 1 1 0 1.25"/></svg>`,
 };
+export const aiArrowDownArrowUp: {
+  name: 'arrow_down_arrow_up';
+  data: string;
+} = {
+  name: 'arrow_down_arrow_up',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M1.28 10.47a.75.75 0 0 0-1.06 1.06l3.25 3.25a.75.75 0 0 0 1.06 0l3.25-3.25a.75.75 0 1 0-1.06-1.06l-1.97 1.97V1.75a.75.75 0 0 0-1.5 0v10.69zm13.44-4.94a.75.75 0 1 0 1.06-1.06l-3.25-3.25a.75.75 0 0 0-1.06 0L8.22 4.47a.75.75 0 0 0 1.06 1.06l1.97-1.97v10.69a.75.75 0 0 0 1.5 0V3.56z"/></svg>`,
+};
 export const aiArrowDownFromCloud: {
   name: 'arrow_down_from_cloud';
   data: string;
@@ -1461,6 +1468,20 @@ export const aiGrid: {
 } = {
   name: 'grid',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.75 1A1.75 1.75 0 0 0 1 2.75v2.5C1 6.216 1.784 7 2.75 7h2.5A1.75 1.75 0 0 0 7 5.25v-2.5A1.75 1.75 0 0 0 5.25 1zM2.5 2.75a.25.25 0 0 1 .25-.25h2.5a.25.25 0 0 1 .25.25v2.5a.25.25 0 0 1-.25.25h-2.5a.25.25 0 0 1-.25-.25zM2.75 9A1.75 1.75 0 0 0 1 10.75v2.5c0 .966.784 1.75 1.75 1.75h2.5A1.75 1.75 0 0 0 7 13.25v-2.5A1.75 1.75 0 0 0 5.25 9zm-.25 1.75a.25.25 0 0 1 .25-.25h2.5a.25.25 0 0 1 .25.25v2.5a.25.25 0 0 1-.25.25h-2.5a.25.25 0 0 1-.25-.25zm6.5-8C9 1.784 9.784 1 10.75 1h2.5c.966 0 1.75.784 1.75 1.75v2.5A1.75 1.75 0 0 1 13.25 7h-2.5A1.75 1.75 0 0 1 9 5.25zm1.75-.25a.25.25 0 0 0-.25.25v2.5c0 .138.112.25.25.25h2.5a.25.25 0 0 0 .25-.25v-2.5a.25.25 0 0 0-.25-.25zm0 6.5A1.75 1.75 0 0 0 9 10.75v2.5c0 .966.784 1.75 1.75 1.75h2.5A1.75 1.75 0 0 0 15 13.25v-2.5A1.75 1.75 0 0 0 13.25 9zm-.25 1.75a.25.25 0 0 1 .25-.25h2.5a.25.25 0 0 1 .25.25v2.5a.25.25 0 0 1-.25.25h-2.5a.25.25 0 0 1-.25-.25z"/></svg>`,
+};
+export const aiGripDotsV: {
+  name: 'grip_dots_v';
+  data: string;
+} = {
+  name: 'grip_dots_v',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M6 13a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2m4 12a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/></svg>`,
+};
+export const aiGripDots: {
+  name: 'grip_dots';
+  data: string;
+} = {
+  name: 'grip_dots',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M3 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M3 10a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>`,
 };
 export const aiGripLines: {
   name: 'grip_lines';
@@ -3210,6 +3231,7 @@ export type Amicons =
   | 'angle_up'
   | 'angles_y'
   | 'apple_app_store'
+  | 'arrow_down_arrow_up'
   | 'arrow_down_from_cloud'
   | 'arrow_down_short_wide'
   | 'arrow_down_to_line'
@@ -3394,6 +3416,8 @@ export type Amicons =
   | 'globe'
   | 'google_play'
   | 'grid'
+  | 'grip_dots_v'
+  | 'grip_dots'
   | 'grip_lines'
   | 'h'
   | 'heading_1'
@@ -3672,6 +3696,7 @@ export const amiconSet = [
   aiAngleUp,
   aiAnglesY,
   aiAppleAppStore,
+  aiArrowDownArrowUp,
   aiArrowDownFromCloud,
   aiArrowDownShortWide,
   aiArrowDownToLine,
@@ -3856,6 +3881,8 @@ export const amiconSet = [
   aiGlobe,
   aiGooglePlay,
   aiGrid,
+  aiGripDotsV,
+  aiGripDots,
   aiGripLines,
   aiH,
   aiHeading1,
