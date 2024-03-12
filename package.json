@@ -41,10 +41,10 @@
     "react": ">=16.x"
   },
   "dependencies": {
-    "html-react-parser": "5.1.7"
+    "html-react-parser": "5.1.8"
   },
   "devDependencies": {
-    "@types/react": "18.2.58",
+    "@types/react": "18.2.65",
     "nodemon": "3.1.0",
     "npm-run-all": "4.1.5",
     "picocolors": "1.0.0",
@@ -52,7 +52,7 @@
     "react-dom": "18.2.0",
     "svg-to-ts": "12.0.0",
     "svgo": "3.2.0",
-    "typescript": "5.3.3"
+    "typescript": "5.4.2"
   },
   "browserslist": {
     "production": [
