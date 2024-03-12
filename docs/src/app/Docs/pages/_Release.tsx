@@ -6,7 +6,7 @@ import icons from '@/data/icons';
 import Code from '@/design/components/Code';
 import { ILibraryIcon } from '@/types';
 
-import Amicon, { aiArrowRight, aiBoxOpenFull, aiBug, aiPen, aiPlus, aiTrashCan } from '@studio384/amaranth';
+import Amicon, { aiArrowRight, aiAmicons, aiBug, aiPen, aiPlus, aiTrashCan } from '@studio384/amaranth';
 
 import IconCard from '../../Components/IconCard';
 
@@ -43,7 +43,7 @@ export default function Release({
       <Stack gap={4}>
         <Stack direction="row" alignItems="center" gap={2}>
           <Avatar size="lg" color="primary" variant="solid">
-            <Amicon icon={aiBoxOpenFull} />
+            <Amicon icon={aiAmicons} />
           </Avatar>
           <Stack gap={0.5}>
             <Typography level="h2" lineHeight={1}>
