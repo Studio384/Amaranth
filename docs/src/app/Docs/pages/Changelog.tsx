@@ -7,7 +7,7 @@ import Release from './_Release';
 export default function Changelog() {
   return (
     <Stack gap={5}>
-      <Release name="Amicons 1.0 alpha 8" version="1.0.0-alpha.8" date="April 2024" newIcons={['magnifying-glass-min', 'magnifying-glass-plus']}
+      <Release name="Amicons 1.0 alpha 8" version="1.0.0-alpha.8" date="April 2024" newIcons={['arrow-rotate-left', 'magnifying-glass-min', 'magnifying-glass-plus']}
         updatedIcons={[
           'magnifying-glass'
         ]} />

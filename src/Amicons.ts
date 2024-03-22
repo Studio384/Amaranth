@@ -307,6 +307,13 @@ export const aiArrowRight: {
   name: 'arrow_right',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.47 13.78a.75.75 0 0 1 0-1.06l3.97-3.97H1.75a.75.75 0 0 1 0-1.5h10.69L8.47 3.28a.75.75 0 0 1 1.06-1.06l5.25 5.25a.75.75 0 0 1 0 1.06l-5.25 5.25a.75.75 0 0 1-1.06 0"/></svg>`,
 };
+export const aiArrowRotateLeft: {
+  name: 'arrow_rotate_left';
+  data: string;
+} = {
+  name: 'arrow_rotate_left',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M2.59 5.5a6.126 6.126 0 1 1 1.643 7.355c-.326-.269-.808-.28-1.106.018-.288.288-.295.755.012 1.021A7.625 7.625 0 1 0 1.5 4.347V2.25a.75.75 0 0 0-1.5 0v4c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5z"/></svg>`,
+};
 export const aiArrowRotateRight: {
   name: 'arrow_rotate_right';
   data: string;
@@ -3306,6 +3313,7 @@ export type Amicons =
   | 'arrow_right_to_file'
   | 'arrow_right_to_line'
   | 'arrow_right'
+  | 'arrow_rotate_left'
   | 'arrow_rotate_right'
   | 'arrow_up_right_from_square'
   | 'arrow_up_short_wide'
@@ -3779,6 +3787,7 @@ export const amiconSet = [
   aiArrowRightToFile,
   aiArrowRightToLine,
   aiArrowRight,
+  aiArrowRotateLeft,
   aiArrowRotateRight,
   aiArrowUpRightFromSquare,
   aiArrowUpShortWide,
