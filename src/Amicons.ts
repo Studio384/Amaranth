@@ -1917,12 +1917,26 @@ export const aiM: {
   name: 'm',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M1.495 1.045a.75.75 0 0 1 .831.225L8 8.078l5.674-6.808A.75.75 0 0 1 15 1.75v12.5a.75.75 0 0 1-1.5 0V3.822L8.576 9.73a.75.75 0 0 1-1.152 0L2.5 3.822V14.25a.75.75 0 0 1-1.5 0V1.75a.75.75 0 0 1 .495-.705"/></svg>`,
 };
+export const aiMagnifyingGlassMin: {
+  name: 'magnifying_glass_min';
+  data: string;
+} = {
+  name: 'magnifying_glass_min',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M6.75 6.25a.75.75 0 0 0 0 1.5h4.5a.75.75 0 0 0 0-1.5z"/><path d="M9 13a6 6 0 1 0-4.74-2.32l-3.04 3.04a.75.75 0 1 0 1.06 1.06l3.04-3.04A5.97 5.97 0 0 0 9 13m0-1.5a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9"/></svg>`,
+};
+export const aiMagnifyingGlassPlus: {
+  name: 'magnifying_glass_plus';
+  data: string;
+} = {
+  name: 'magnifying_glass_plus',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M9.75 4.75a.75.75 0 0 0-1.5 0v1.5h-1.5a.75.75 0 0 0 0 1.5h1.5v1.5a.75.75 0 0 0 1.5 0v-1.5h1.5a.75.75 0 0 0 0-1.5h-1.5z"/><path d="M9 13a6 6 0 1 0-4.74-2.32l-3.04 3.04a.75.75 0 1 0 1.06 1.06l3.04-3.04A5.97 5.97 0 0 0 9 13m0-1.5a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9"/></svg>`,
+};
 export const aiMagnifyingGlass: {
   name: 'magnifying_glass';
   data: string;
 } = {
   name: 'magnifying_glass',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M15 6.5a5.5 5.5 0 0 1-8.823 4.383L2.28 14.78a.75.75 0 0 1-1.06-1.06l3.897-3.897A5.5 5.5 0 1 1 15 6.5m-1.5 0a4 4 0 1 0-8 0 4 4 0 0 0 8 0"/></svg>`,
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M15 7a6 6 0 0 1-9.68 4.74l-3.04 3.04a.75.75 0 0 1-1.06-1.06l3.04-3.04A6 6 0 1 1 15 7m-1.5 0a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0"/></svg>`,
 };
 export const aiMegaphone: {
   name: 'megaphone';
@@ -3522,6 +3536,8 @@ export type Amicons =
   | 'lock_open'
   | 'lock'
   | 'm'
+  | 'magnifying_glass_min'
+  | 'magnifying_glass_plus'
   | 'magnifying_glass'
   | 'megaphone'
   | 'message_pen'
@@ -3993,6 +4009,8 @@ export const amiconSet = [
   aiLockOpen,
   aiLock,
   aiM,
+  aiMagnifyingGlassMin,
+  aiMagnifyingGlassPlus,
   aiMagnifyingGlass,
   aiMegaphone,
   aiMessagePen,
