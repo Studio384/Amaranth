@@ -312,8 +312,8 @@ const icons = [
   },
   {
     component: 'aiArrowRotateLeft',
-    categories: [],
-    tags: [],
+    categories: ["arrows","spinners","editor","media"],
+    tags: ["refresh","reload"],
     slug: 'arrow-rotate-left',
     icon: aiArrowRotateLeft
   },
