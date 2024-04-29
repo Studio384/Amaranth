@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
 import {
@@ -52,7 +52,7 @@ export default function Icons() {
   // c: categories
   // q: query
   // p: page
-  function setSearchQuery(type: 'q' | 'c' | 'p', value: string | number) {
+  const setSearchQuery = useCallback((type: 'q' | 'c' | 'p', value: string | number)  => {
     let search = searchParams.get('search');
     let page = Number(searchParams.get('page'));
     let category =
@@ -94,7 +94,7 @@ export default function Icons() {
       search: search ?? '',
       category: category.join(',') ?? ''
     });
-  }
+  }, [searchParams, setSearchParams]);
 
   return (
     <>
@@ -161,10 +161,7 @@ export default function Icons() {
                   startDecorator={<Amicon icon={aiMagnifyingGlass} />}
                   placeholder="Search"
                   value={searchQuery}
-                  onChange={(e) => {
-                    setSearchQuery('q', e.target.value);
-                    setSearchQuery('p', 1);
-                  }}
+                  onChange={(e) => setSearchQuery('q', e.target.value)}
                 />
                 <IconButton
                   variant="outlined"
