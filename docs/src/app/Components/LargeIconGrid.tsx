@@ -11,7 +11,6 @@ export default function LargeIconGrid({ icon, sx }: { icon: IAmicon; sx?: SxProp
           p: 'calc(var(--Amicon-scale, 16px) * 2)',
           background: 'rgba(var(--joy-palette-background-channel) / .5)',
           borderRadius: 'xl',
-          boxShadow: 'var(--joy-shadowRing, 0 0 #000),0px 2px 8px -2px rgba(var(--joy-palette-primary-mainChannel, 21 21 21) / var(--joy-shadowOpacity, 0.08)),0px 12px 16px -4px rgba(var(--joy-palette-primary-mainChannel, 21 21 21) / var(--joy-shadowOpacity, 0.08))',
           backdropFilter: 'blur(20px)',
           border: '1px solid rgba(var(--joy-palette-background-channel) / .5)'
         },
