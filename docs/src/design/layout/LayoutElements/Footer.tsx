@@ -145,7 +145,7 @@ export default function Footer() {
             <Stack direction="row" gap={1} justifyContent="space-between" alignItems="center">
               <Typography fontSize="sm">
                 &copy; 2021-2024 &middot;{' '}
-                <Link href="https://studio384.be" color="primary" sx={{ fontFamily: 'Century Gothic', fontWeight: 'lg' }}>
+                <Link href="https://studio384.be" color="primary" sx={{ fontFamily: 'Century Gothic, Segoe UI Variable Display, Segoe UI', fontWeight: 'lg' }}>
                   Studio 384
                 </Link>
               </Typography>
