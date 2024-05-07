@@ -82,8 +82,7 @@ export default function Home() {
                 order: { xs: 1, md: 2 },
                 p: 3,
                 borderRadius: 'xl',
-                backgroundImage:
-                  'radial-gradient(49% 81% at 45% 47%, #032CFF26 0%, #0309FF00 100%),radial-gradient(113% 91% at 17% -2%, #00FFEC1C 0%, #00FFEC00 100%),radial-gradient(142% 91% at 83% 7%, #008BFF36 0%, #00C9FF00 100%),radial-gradient(142% 91% at -6% 74%, #0045FF1C 0%, #0045FF00 100%),radial-gradient(142% 91% at 111% 84%, #007BFF26 0%, #007BFF12 100%)',
+                bgcolor: 'primary.100',
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
@@ -103,8 +102,7 @@ export default function Home() {
                 order: { xs: 1, md: 2 },
                 p: 3,
                 borderRadius: 'xl',
-                backgroundImage:
-                  'radial-gradient(49% 81% at 45% 47%, #5EFFAC21 0%, #073AFF00 100%),radial-gradient(113% 91% at 81% 41%, #8BFF5E1F 0%, #FF000000 100%),radial-gradient(142% 91% at 83% 7%, #B8FF001A 0%, #FF000000 100%),radial-gradient(142% 91% at -6% 74%, #5EFF6700 0%, #5EFF6C2B 100%),radial-gradient(142% 91% at 111% 84%, #FFFFFF00 0%, #FFFFFF00 100%)',
+                bgcolor: 'success.100',
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
@@ -143,8 +141,7 @@ export default function Home() {
                 order: { xs: 1, md: 2 },
                 p: 3,
                 borderRadius: 'xl',
-                backgroundImage:
-                  'radial-gradient(49% 81% at 45% 47%, #FFE20326 0%, #FFE20300 100%),radial-gradient(113% 91% at 17% -2%, #FF5A0021 0%, #FF5A0000 100%),radial-gradient(142% 91% at 83% 7%, #FFDB0036 0%, #FFDB0000 100%),radial-gradient(142% 91% at -6% 74%, #FF004917 0%, #FF004900 100%),radial-gradient(142% 91% at 111% 84%, #FF700026 0%, #FF000014 100%)',
+                bgcolor: 'danger.100',
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
