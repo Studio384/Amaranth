@@ -86,7 +86,7 @@ export default function Footer() {
                   </ListItemButton>
                 </ListItem>
                 <ListItem>
-                  <ListItemButton color="primary" variant="soft" component="a" href="https://github.com/Studio384/Amaranth/issues/new/choose">
+                  <ListItemButton color="primary" variant="soft" component="a" href="https://github.com/Studio384/amicons/issues/new/choose">
                     <ListItemContent>
                       <Typography>Report a bug</Typography>
                     </ListItemContent>
@@ -109,7 +109,7 @@ export default function Footer() {
                 }}
               >
                 <ListItem>
-                  <ListItemButton color="primary" variant="soft" component="a" href="https://github.com/studio384/amaranth">
+                  <ListItemButton color="primary" variant="soft" component="a" href="https://github.com/studio384/amicons">
                     <ListItemDecorator>
                       <Amicon icon={aiGithub} />
                     </ListItemDecorator>

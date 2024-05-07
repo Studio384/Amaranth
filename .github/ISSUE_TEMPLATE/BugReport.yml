@@ -60,5 +60,5 @@ body:
           required: true
         - label: The reproduction is included and is the minimum test case to recreate the faulty behavior.
           required: true
-        - label: I have [searched the issues](https://github.com/studio384/amaranth/issues) for any possible duplications of this bug report.
+        - label: I have [searched the issues](https://github.com/studio384/amicons/issues) for any possible duplications of this bug report.
           required: true

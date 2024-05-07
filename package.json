@@ -1,5 +1,5 @@
 {
-  "name": "@studio384/amaranth",
+  "name": "@studio384/amicons",
   "version": "1.0.0-alpha.7",
   "description": "The iconography.",
   "main": "./dist/cjs/index.js",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/studio384/amaranth.git"
+    "url": "git+https://github.com/studio384/amicons.git"
   },
   "files": [
     "/icons",
@@ -33,9 +33,9 @@
   "author": "",
   "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/studio384/amaranth/issues"
+    "url": "https://github.com/studio384/amicons/issues"
   },
-  "homepage": "https://studio384.github.io/amaranth",
+  "homepage": "https://studio384.github.io/amicons",
   "peerDependencies": {
     "@emotion/css": "^11.11.2",
     "react": ">=16.x"
