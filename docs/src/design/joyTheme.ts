@@ -50,13 +50,19 @@ const joyTheme = extendTheme({
           channel: '255 255 255'
         },
         primary: darkColorVariables('primary', light.primary),
-        neutral: neutralColorVariables('neutral', light.neutral)
+        neutral: neutralColorVariables('neutral', light.neutral),
+        success: darkColorVariables('success', light.green),
+        danger: darkColorVariables('danger', light.red),
+        warning: darkColorVariables('warning', light.amber)
       }
     },
     dark: {
       palette: {
         primary: darkColorVariables('primary', dark.primary),
         neutral: neutralColorVariables('neutral', dark.neutral),
+        success: darkColorVariables('success', dark.green),
+        danger: darkColorVariables('danger', dark.red),
+        warning: darkColorVariables('warning', dark.amber),
         background: {
           body: '#000',
           surface: 'var(--joy-palette-neutral-50)',
