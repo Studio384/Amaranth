@@ -160,12 +160,19 @@ export const aiAngleUp: {
   name: 'angle_up',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M11.53 10.03a.75.75 0 0 1-1.06 0L8 7.56l-2.47 2.47a.75.75 0 1 1-1.06-1.06l3-3a.75.75 0 0 1 1.06 0l3 3a.75.75 0 0 1 0 1.06"/></svg>`,
 };
+export const aiAnglesX: {
+  name: 'angles_x';
+  data: string;
+} = {
+  name: 'angles_x',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M6.78 5.53a.75.75 0 0 0-1.06-1.06l-3 3a.75.75 0 0 0 0 1.06l3 3a.75.75 0 0 0 1.06-1.06L4.31 8zm2.44 4.94a.75.75 0 1 0 1.06 1.06l3-3a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06L11.69 8z"/></svg>`,
+};
 export const aiAnglesY: {
   name: 'angles_y';
   data: string;
 } = {
   name: 'angles_y',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.47 6.78a.75.75 0 1 0 1.06-1.06l-3-3a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 0 0 1.06 1.06L8 4.31zM5.53 9.22a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06L8 11.69z"/><path d="M10.47 6.78a.75.75 0 1 0 1.06-1.06l-3-3a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 0 0 1.06 1.06L8 4.31zM5.53 9.22a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06L8 11.69z"/></svg>`,
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M10.47 6.78a.75.75 0 1 0 1.06-1.06l-3-3a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 0 0 1.06 1.06L8 4.31zM5.53 9.22a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06L8 11.69z"/></svg>`,
 };
 export const aiAppleAppStore: {
   name: 'apple_app_store';
@@ -173,6 +180,13 @@ export const aiAppleAppStore: {
 } = {
   name: 'apple_app_store',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M13.5 1h-11A1.5 1.5 0 0 0 1 2.5v11A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-11A1.5 1.5 0 0 0 13.5 1M4.969 12.016a.624.624 0 1 1-1.082-.625l.447-.772q.755-.23 1.238.356zm4.34-1.685H3.625A.627.627 0 0 1 3 9.706c0-.343.281-.625.625-.625h1.594l2.043-3.537-.64-1.106a.626.626 0 0 1 .228-.854.626.626 0 0 1 .853.228l.278.482.278-.481a.624.624 0 1 1 1.082.624L6.659 9.082H8.6c.631 0 .984.74.71 1.25m3.066 0h-.906l.612 1.06c.172.3.069.68-.228.853a.626.626 0 0 1-.853-.228C9.972 10.238 9.203 8.9 8.688 8.012c-.522-.906-.15-1.812.221-2.118q.614 1.065 1.841 3.187h1.625a.625.625 0 1 1 0 1.25"/></svg>`,
+};
+export const aiApple: {
+  name: 'apple';
+  data: string;
+} = {
+  name: 'apple',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M11.96 8.397c-.007-1.147.512-2.013 1.562-2.65-.588-.84-1.475-1.303-2.647-1.394C9.765 4.266 8.553 5 8.109 5c-.468 0-1.543-.616-2.387-.616-1.744.028-3.597 1.391-3.597 4.163q0 1.228.45 2.537c.4 1.147 1.844 3.96 3.35 3.913.788-.019 1.344-.56 2.369-.56.993 0 1.51.56 2.387.56 1.519-.022 2.825-2.578 3.207-3.728-2.038-.96-1.929-2.813-1.929-2.872m-1.77-5.131c.854-1.013.776-1.935.75-2.266-.752.044-1.624.513-2.121 1.09-.547.62-.869 1.385-.8 2.248.815.062 1.56-.357 2.172-1.072"/></svg>`,
 };
 export const aiArrowDownArrowUp: {
   name: 'arrow_down_arrow_up';
@@ -333,7 +347,7 @@ export const aiArrowUpRightFromSquare: {
   data: string;
 } = {
   name: 'arrow_up_right_from_square',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M9.75 0a.75.75 0 0 0 0 1.5h3.69L7.22 7.72a.75.75 0 0 0 1.06 1.06l6.22-6.22v3.69a.75.75 0 0 0 1.5 0V.75a.75.75 0 0 0-.75-.75z"/><path d="M2.75 2A2.75 2.75 0 0 0 0 4.75v8.5A2.75 2.75 0 0 0 2.75 16h8.5A2.75 2.75 0 0 0 14 13.25v-4.5a.75.75 0 0 0-1.5 0v4.5c0 .69-.56 1.25-1.25 1.25h-8.5c-.69 0-1.25-.56-1.25-1.25v-8.5c0-.69.56-1.25 1.25-1.25h4.5a.75.75 0 0 0 0-1.5z"/></svg>`,
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M9.75 0a.75.75 0 0 0 0 1.5h3.69L7.22 7.72a.75.75 0 0 0 1.06 1.06l6.22-6.22v3.69a.75.75 0 0 0 1.5 0V.75a.75.75 0 0 0-.75-.75zm-7 2A2.75 2.75 0 0 0 0 4.75v8.5A2.75 2.75 0 0 0 2.75 16h8.5A2.75 2.75 0 0 0 14 13.25v-4.5a.75.75 0 0 0-1.5 0v4.5c0 .69-.56 1.25-1.25 1.25h-8.5c-.69 0-1.25-.56-1.25-1.25v-8.5c0-.69.56-1.25 1.25-1.25h4.5a.75.75 0 0 0 0-1.5z"/></svg>`,
 };
 export const aiArrowUpShortWide: {
   name: 'arrow_up_short_wide';
@@ -601,6 +615,13 @@ export const aiBuilding: {
   name: 'building',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M3.5 2.75c0-.69.56-1.25 1.25-1.25h6.5c.69 0 1.25.56 1.25 1.25V16H14V2.75A2.75 2.75 0 0 0 11.25 0h-6.5A2.75 2.75 0 0 0 2 2.75V16h1.5z"/><path d="M5.5 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 11a1 1 0 0 0-1 1v4h3v-4a1 1 0 0 0-1-1z"/></svg>`,
 };
+export const aiBurgerGlass: {
+  name: 'burger_glass';
+  data: string;
+} = {
+  name: 'burger_glass',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M13.327 13.5h-2.45a3.4 3.4 0 0 1-.874 1.5h3.324a1.75 1.75 0 0 0 1.744-1.61l.918-11.472A.85.85 0 0 0 15.142 1H6.858a.85.85 0 0 0-.847.918l.253 3.164c.967.133 1.842.43 2.584.918h5.31l-.582 7.27a.25.25 0 0 1-.25.23m-5.605-9-.16-2h6.876l-.16 2z"/><path d="M.223 10.717a1.6 1.6 0 0 1-.22-.877c.034-.854.355-1.875 1.255-2.667C2.147 6.391 3.41 6 5 6s2.853.391 3.742 1.173c.9.792 1.22 1.813 1.255 2.667.013.327-.07.625-.22.877a.75.75 0 0 1 .002 1.065c.14.237.221.513.221.809A2.41 2.41 0 0 1 7.59 15H2.41A2.41 2.41 0 0 1 0 12.59c0-.295.08-.571.22-.808a.75.75 0 0 1 .003-1.065M7.953 8.5a2.4 2.4 0 0 0-.48-.412.5.5 0 1 1-.634-.312 5 5 0 0 0-1.399-.264q.059.108.06.238a.5.5 0 1 1-.94-.238 5 5 0 0 0-1.4.264.5.5 0 1 1-.633.312 2.4 2.4 0 0 0-.529.47c-.193.236-.32.492-.398.75-.06.2-.09.4-.098.592-.002.055.043.1.098.1h6.8c.055 0 .1-.045.098-.1a2.4 2.4 0 0 0-.098-.592 2.15 2.15 0 0 0-.448-.808m-6.362 4a.09.09 0 0 0-.091.09.91.91 0 0 0 .91.91h5.18a.91.91 0 0 0 .91-.91.09.09 0 0 0-.09-.09z"/></svg>`,
+};
 export const aiC: {
   name: 'c';
   data: string;
@@ -732,7 +753,7 @@ export const aiCheck: {
   data: string;
 } = {
   name: 'check',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M14.78 4.22a.75.75 0 0 1 0 1.06l-8 8a.75.75 0 0 1-1.06 0l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.97 3.97 7.47-7.47a.75.75 0 0 1 1.06 0"/></svg>`,
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M14.78 3.22a.75.75 0 0 1 0 1.06l-8 8a.75.75 0 0 1-1.06 0l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.97 3.97 7.47-7.47a.75.75 0 0 1 1.06 0"/></svg>`,
 };
 export const aiChevronDown: {
   name: 'chevron_down';
@@ -774,7 +795,7 @@ export const aiCircleCheck: {
   data: string;
 } = {
   name: 'circle_check',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M11.53 7.03a.75.75 0 0 0-1.06-1.06L7.25 9.19 5.53 7.47a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.06 0z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>`,
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M11.78 6.78a.75.75 0 0 0-1.06-1.06L7.25 9.19 5.28 7.22a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>`,
 };
 export const aiCircleDashed: {
   name: 'circle_dashed';
@@ -923,6 +944,13 @@ export const aiCloudSnow: {
   name: 'cloud_snow',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M16 6.5a3.5 3.5 0 0 0-2.447-3.339 4 4 0 0 0-4.57-2.03 4.5 4.5 0 0 0-7.258 1.963A3.75 3.75 0 0 0 3.75 10h8.749A3.5 3.5 0 0 0 16 6.5m-6-4a2.5 2.5 0 0 1 2.45 2h.05a2 2 0 1 1 0 4H3.75a2.25 2.25 0 0 1-.726-4.38 3 3 0 0 1 5.545-1.17A2.5 2.5 0 0 1 10 2.5m-1.25 9.25a.75.75 0 0 0-1.5 0v.5h-.5a.75.75 0 0 0 0 1.5h.5v.5a.75.75 0 0 0 1.5 0v-.5h.5a.75.75 0 0 0 0-1.5h-.5zm-5 1a.75.75 0 0 0-1.5 0v.5h-.5a.75.75 0 0 0 0 1.5h.5v.5a.75.75 0 0 0 1.5 0v-.5h.5a.75.75 0 0 0 0-1.5h-.5zM13 12a.75.75 0 0 1 .75.75v.5h.5a.75.75 0 0 1 0 1.5h-.5v.5a.75.75 0 0 1-1.5 0v-.5h-.5a.75.75 0 0 1 0-1.5h.5v-.5A.75.75 0 0 1 13 12"/></svg>`,
 };
+export const aiCloudSoftphone: {
+  name: 'cloud_softphone';
+  data: string;
+} = {
+  name: 'cloud_softphone',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M.545 2.73C0 3.8 0 5.2 0 8s0 4.2.545 5.27a5 5 0 0 0 2.185 2.185C3.8 16 5.2 16 8 16s4.2 0 5.27-.545a5 5 0 0 0 2.185-2.185C16 12.2 16 10.8 16 8s0-4.2-.545-5.27A5 5 0 0 0 13.27.545C12.2 0 10.8 0 8 0S3.8 0 2.73.545A5 5 0 0 0 .545 2.73m8.98 11.766L6.082 8.694a2.23 2.23 0 0 1 .029-2.326c.888-1.377 2.907-1.373 3.788.012l4.095 6.435a3.5 3.5 0 0 1-1.404 1.303c-.288.147-.686.258-1.427.319-.452.037-.981.052-1.636.059m-1.741.004c-1.309 0-2.226-.004-2.946-.063-.74-.06-1.139-.172-1.427-.319a3.5 3.5 0 0 1-1.404-1.303l2.504-3.936q.115.3.28.58zm-2.94-8.938-.008.013-3.3 5.185C1.502 10.062 1.5 9.185 1.5 8c0-1.425.001-2.403.063-3.162.06-.74.172-1.139.318-1.427a3.5 3.5 0 0 1 1.53-1.53c.288-.146.686-.257 1.427-.318C5.597 1.501 6.575 1.5 8 1.5s2.403.001 3.162.063c.74.06 1.139.172 1.427.318a3.5 3.5 0 0 1 1.53 1.53c.146.288.257.686.318 1.427.062.759.063 1.737.063 3.162 0 1.185 0 2.062-.037 2.76l-3.315-5.21c-1.466-2.304-4.83-2.304-6.296 0z"/></svg>`,
+};
 export const aiCloudSun: {
   name: 'cloud_sun';
   data: string;
@@ -1069,6 +1097,13 @@ export const aiDevices: {
 } = {
   name: 'devices',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3.75 1.5c-.69 0-1.25.56-1.25 1.25V9H7v2H1.25C.56 11 0 10.44 0 9.75A.75.75 0 0 1 .75 9H1V2.75A2.75 2.75 0 0 1 3.75 0h8.5A2.75 2.75 0 0 1 15 2.75v.683a3.7 3.7 0 0 0-1.5-.425V2.75c0-.69-.56-1.25-1.25-1.25zM9.5 6.75c0-.69.56-1.25 1.25-1.25h2.5c.69 0 1.25.56 1.25 1.25v6.5c0 .69-.56 1.25-1.25 1.25h-2.5c-.69 0-1.25-.56-1.25-1.25zM10.75 4A2.75 2.75 0 0 0 8 6.75v6.5A2.75 2.75 0 0 0 10.75 16h2.5A2.75 2.75 0 0 0 16 13.25v-6.5A2.75 2.75 0 0 0 13.25 4z"/></svg>`,
+};
+export const aiDiagram: {
+  name: 'diagram';
+  data: string;
+} = {
+  name: 'diagram',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M5 2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-.25v1.25H12c.966 0 1.75.784 1.75 1.75v1H14a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h.25V9a.25.25 0 0 0-.25-.25H4a.25.25 0 0 0-.25.25v1H4a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h.25V9c0-.966.784-1.75 1.75-1.75h3.25V6H7a2 2 0 0 1-2-2zm2-.5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V2a.5.5 0 0 0-.5-.5zm-5 10a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5zm12 0h-2a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5"/></svg>`,
 };
 export const aiDiceFive: {
   name: 'dice_five';
@@ -1265,6 +1300,13 @@ export const aiFacebook: {
 } = {
   name: 'facebook',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M16 8a8 8 0 0 0-8-8 8 8 0 0 0-8 8c0 3.75 2.584 6.9 6.069 7.766v-5.322h-1.65V8h1.65V6.947c0-2.722 1.231-3.984 3.906-3.984.506 0 1.381.1 1.74.2v2.212a11 11 0 0 0-.924-.031c-1.313 0-1.82.497-1.82 1.787V8h2.613l-.45 2.444H8.97v5.497A8 8 0 0 0 16 8"/></svg>`,
+};
+export const aiFanvil: {
+  name: 'fanvil';
+  data: string;
+} = {
+  name: 'fanvil',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 1A1.5 1.5 0 0 0 1 2.5v11A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-11A1.5 1.5 0 0 0 13.5 1zM7 3a3 3 0 0 0-3 3v7h2V9h6V7H6V6a1 1 0 0 1 1-1h5V3z"/></svg>`,
 };
 export const aiFastBackward: {
   name: 'fast_backward';
@@ -1511,6 +1553,13 @@ export const aiGithub: {
   name: 'github',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M5.352 12.561c0 .065-.075.116-.168.116-.107.01-.18-.041-.18-.116 0-.064.073-.116.167-.116.097-.01.18.042.18.116m-1.004-.145c-.022.065.042.139.14.158.083.033.18 0 .2-.064.018-.065-.043-.139-.14-.168-.083-.023-.177.01-.2.074m1.426-.055c-.093.023-.158.084-.148.158.01.065.093.107.19.084.094-.022.158-.084.149-.148-.01-.062-.097-.103-.19-.094M7.897 0C3.423 0 0 3.397 0 7.871c0 3.577 2.252 6.639 5.468 7.716.413.074.558-.18.558-.39 0-.2-.01-1.303-.01-1.98 0 0-2.258.483-2.732-.962 0 0-.368-.939-.897-1.18 0 0-.739-.507.052-.498 0 0 .803.065 1.245.833.706 1.245 1.89.887 2.351.674.075-.516.284-.874.517-1.087-1.804-.2-3.623-.461-3.623-3.565 0-.887.245-1.332.761-1.9-.084-.21-.358-1.074.084-2.19.674-.21 2.226.87 2.226.87a7.6 7.6 0 0 1 2.026-.273c.687 0 1.38.093 2.026.274 0 0 1.551-1.084 2.225-.871.442 1.12.168 1.98.084 2.19.516.571.832 1.016.832 1.9 0 3.113-1.9 3.361-3.703 3.565.297.255.549.739.549 1.496 0 1.088-.01 2.433-.01 2.697 0 .21.148.465.558.39C13.813 14.51 16 11.449 16 7.872 16 3.397 12.371 0 7.897 0M3.135 11.126c-.041.032-.032.106.023.168.052.051.126.074.168.032.042-.033.032-.107-.023-.168-.051-.051-.126-.074-.168-.032m-.348-.261c-.022.041.01.093.074.125.052.033.116.023.139-.022.023-.042-.01-.094-.074-.126-.065-.02-.116-.01-.139.022m1.045 1.148c-.051.042-.032.139.042.2.074.074.168.084.21.032.042-.042.022-.138-.042-.2-.071-.074-.168-.084-.21-.032m-.367-.474c-.052.032-.052.116 0 .19.051.074.138.107.18.074.052-.042.052-.126 0-.2-.045-.074-.129-.106-.18-.064"/></svg>`,
 };
+export const aiGlass: {
+  name: 'glass';
+  data: string;
+} = {
+  name: 'glass',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M2.061 1.379A1.25 1.25 0 0 1 3.304 0h9.392c.74 0 1.32.641 1.243 1.379l-1.35 13.051a1.75 1.75 0 0 1-1.74 1.57H5.151a1.75 1.75 0 0 1-1.74-1.57zm1.52.121.285 2.75h8.268l.284-2.75zm8.398 4.25H4.02l.882 8.526a.25.25 0 0 0 .249.224h5.696a.25.25 0 0 0 .249-.224z"/></svg>`,
+};
 export const aiGlobe: {
   name: 'globe';
   data: string;
@@ -1531,6 +1580,13 @@ export const aiGrid: {
 } = {
   name: 'grid',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.75 1A1.75 1.75 0 0 0 1 2.75v2.5C1 6.216 1.784 7 2.75 7h2.5A1.75 1.75 0 0 0 7 5.25v-2.5A1.75 1.75 0 0 0 5.25 1zM2.5 2.75a.25.25 0 0 1 .25-.25h2.5a.25.25 0 0 1 .25.25v2.5a.25.25 0 0 1-.25.25h-2.5a.25.25 0 0 1-.25-.25zM2.75 9A1.75 1.75 0 0 0 1 10.75v2.5c0 .966.784 1.75 1.75 1.75h2.5A1.75 1.75 0 0 0 7 13.25v-2.5A1.75 1.75 0 0 0 5.25 9zm-.25 1.75a.25.25 0 0 1 .25-.25h2.5a.25.25 0 0 1 .25.25v2.5a.25.25 0 0 1-.25.25h-2.5a.25.25 0 0 1-.25-.25zm6.5-8C9 1.784 9.784 1 10.75 1h2.5c.966 0 1.75.784 1.75 1.75v2.5A1.75 1.75 0 0 1 13.25 7h-2.5A1.75 1.75 0 0 1 9 5.25zm1.75-.25a.25.25 0 0 0-.25.25v2.5c0 .138.112.25.25.25h2.5a.25.25 0 0 0 .25-.25v-2.5a.25.25 0 0 0-.25-.25zm0 6.5A1.75 1.75 0 0 0 9 10.75v2.5c0 .966.784 1.75 1.75 1.75h2.5A1.75 1.75 0 0 0 15 13.25v-2.5A1.75 1.75 0 0 0 13.25 9zm-.25 1.75a.25.25 0 0 1 .25-.25h2.5a.25.25 0 0 1 .25.25v2.5a.25.25 0 0 1-.25.25h-2.5a.25.25 0 0 1-.25-.25z"/></svg>`,
+};
+export const aiGripDotsH: {
+  name: 'grip_dots_h';
+  data: string;
+} = {
+  name: 'grip_dots_h',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M3 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M3 10a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>`,
 };
 export const aiGripDotsV: {
   name: 'grip_dots_v';
@@ -2001,6 +2057,13 @@ export const aiMicrochip: {
   name: 'microchip',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M5 6v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1m1.5 3.5v-3h3v3z"/><path d="M5 0a.75.75 0 0 1 .75.75V2h1.5V.75a.75.75 0 0 1 1.5 0V2h1.5V.75a.75.75 0 0 1 1.5 0v1.345a3 3 0 0 1 2.156 2.155h1.344a.75.75 0 0 1 0 1.5H14v1.5h1.25a.75.75 0 0 1 0 1.5H14v1.5h1.25a.75.75 0 0 1 0 1.5h-1.344a3 3 0 0 1-2.156 2.156v1.344a.75.75 0 0 1-1.5 0V14h-1.5v1.25a.75.75 0 0 1-1.5 0V14h-1.5v1.25a.75.75 0 0 1-1.5 0v-1.344a3 3 0 0 1-2.155-2.156H.75a.75.75 0 0 1 0-1.5H2v-1.5H.75a.75.75 0 0 1 0-1.5H2v-1.5H.75a.75.75 0 0 1 0-1.5h1.345A3 3 0 0 1 4.25 2.095V.75A.75.75 0 0 1 5 0m6 3.5H5A1.5 1.5 0 0 0 3.5 5v6A1.5 1.5 0 0 0 5 12.5h6a1.5 1.5 0 0 0 1.5-1.5V5A1.5 1.5 0 0 0 11 3.5"/></svg>`,
 };
+export const aiMicrophoneSlash: {
+  name: 'microphone_slash';
+  data: string;
+} = {
+  name: 'microphone_slash',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M4.5 5.56.22 1.28A.75.75 0 1 1 1.28.22l14.5 14.5a.75.75 0 1 1-1.06 1.06l-3.634-3.633a6 6 0 0 1-2.336.807V14.5h1.75a.75.75 0 0 1 0 1.5h-5a.75.75 0 0 1 0-1.5h1.75v-1.546A6 6 0 0 1 2 7V5.75a.75.75 0 0 1 1.5 0V7a4.5 4.5 0 0 0 6.481 4.042l-.76-.76A3.5 3.5 0 0 1 4.5 7zM7.938 9 6.001 7.061a2 2 0 0 0 1.937 1.937M10 3.5v3.44l1.281 1.28c.142-.38.219-.79.219-1.22V3.5a3.5 3.5 0 0 0-6.588-1.649l1.15 1.15A2 2 0 0 1 10 3.5m2.042 5.481A4.5 4.5 0 0 0 12.5 7V5.75a.75.75 0 0 1 1.5 0V7a5.97 5.97 0 0 1-.853 3.086z"/></svg>`,
+};
 export const aiMicrophone: {
   name: 'microphone';
   data: string;
@@ -2028,6 +2091,13 @@ export const aiMoon: {
 } = {
   name: 'moon',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M11.337.727A8 8 0 0 0 8 0a8 8 0 1 0 7.139 11.614l.01-.02q.165-.325.3-.67c.197-.503-.623-.88-1.083-.595a5 5 0 0 1-.36.2l-.02.01A4.5 4.5 0 1 1 12 2c.372.001.64-.528.327-.73a8 8 0 0 0-.99-.542m1.396 11.729A6.5 6.5 0 1 1 8.636 1.53a6 6 0 0 0 4.097 10.925"/></svg>`,
+};
+export const aiMoped: {
+  name: 'moped';
+  data: string;
+} = {
+  name: 'moped',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M7.75 2a.75.75 0 0 1 .75-.75h1.22a1.75 1.75 0 0 1 1.697 1.326l.277 1.108.337-.27A.75.75 0 0 1 13.25 4v1.5a.75.75 0 0 1-.92.73l.2.798a5 5 0 0 1 2.976 1.408c.296.29.225.766-.106 1.014-.332.249-.797.174-1.11-.097a3.5 3.5 0 0 0-5.755 2.149C8.496 11.775 8.276 12 8 12H7a3 3 0 1 1-6 0H.75a.75.75 0 0 1-.75-.75v-1.5A3.75 3.75 0 0 1 3.75 6h3a.75.75 0 0 1 .75.75v3.068A5 5 0 0 1 11.002 7.1l-1.04-4.16a.25.25 0 0 0-.243-.19H8.5A.75.75 0 0 1 7.75 2m-4 5.5A2.25 2.25 0 0 0 1.5 9.75v.75H6v-3zM2.5 12a1.5 1.5 0 0 0 3 0z"/><path d="M3 4.25a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5h-3A.75.75 0 0 1 3 4.25M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6m0-1.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/></svg>`,
 };
 export const aiMusicPause: {
   name: 'music_pause';
@@ -2161,6 +2231,13 @@ export const aiParagraph: {
 } = {
   name: 'paragraph',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M4.904 2.5a2.5 2.5 0 1 0 0 5H9v-5zm5.596 0v11.75a.75.75 0 0 1-1.5 0V9H4.904a4 4 0 0 1 0-8h9.346a.75.75 0 0 1 0 1.5h-.75v11.75a.75.75 0 0 1-1.5 0V2.5z"/></svg>`,
+};
+export const aiPassword: {
+  name: 'password';
+  data: string;
+} = {
+  name: 'password',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><circle cx="3" cy="8" r="2"/><circle cx="9" cy="8" r="2"/><path fill-rule="evenodd" d="M13.75 2a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-1.5 0V2.75a.75.75 0 0 1 .75-.75"/></svg>`,
 };
 export const aiPatreon: {
   name: 'patreon';
@@ -2323,6 +2400,13 @@ export const aiPhoneVolume: {
   name: 'phone_volume',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M9.742 4.057C9.341 3.955 9 3.628 9 3.214s.338-.756.747-.688a4.5 4.5 0 0 1 3.691 3.691c.069.409-.274.747-.688.747s-.74-.34-.843-.742a3 3 0 0 0-2.165-2.165"/><path d="M15.25 6.964c-.414 0-.745-.337-.8-.748a5.5 5.5 0 0 0-4.702-4.701C9.338 1.459 9 1.128 9 .715c0-.415.337-.755.749-.711a7 7 0 0 1 6.211 6.211c.044.412-.296.75-.71.75M4.695.042a1 1 0 0 1 1.046.495l1.74 3.095a1.75 1.75 0 0 1-.45 2.239l-1.07.831a.2.2 0 0 0-.074.098c-.008.025-.005.037-.002.044.527 1.405 1.867 2.706 3.27 3.258.01.005.025.008.051 0a.2.2 0 0 0 .102-.077l.821-1.056a1.75 1.75 0 0 1 2.24-.45l3.094 1.74a1 1 0 0 1 .495 1.046l-.683 3.869a1 1 0 0 1-.985.826H13c-3.25 0-6.494-1.683-8.905-4.095C1.683 9.494 0 6.251 0 3V1.71A1 1 0 0 1 .826.725zm-.088 1.539L1.5 2.129V3c0 2.75 1.442 5.631 3.655 7.845S10.251 14.5 13 14.5h.87l.549-3.107-2.786-1.567a.25.25 0 0 0-.32.064l-.821 1.056c-.412.53-1.157.84-1.886.552-1.771-.696-3.439-2.297-4.125-4.127-.272-.724.043-1.451.56-1.853l1.069-.831a.25.25 0 0 0 .064-.32z"/></svg>`,
 };
+export const aiPhoneXmark: {
+  name: 'phone_xmark';
+  data: string;
+} = {
+  name: 'phone_xmark',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M14.72 6.78a.75.75 0 1 0 1.06-1.06L13.56 3.5l2.22-2.22A.75.75 0 0 0 14.72.22L12.5 2.44 10.28.22a.75.75 0 1 0-1.06 1.06l2.22 2.22-2.22 2.22a.75.75 0 0 0 1.06 1.06l2.22-2.22z"/><path d="M4.695.042a1 1 0 0 1 1.046.495l1.74 3.095a1.75 1.75 0 0 1-.45 2.239l-1.07.831a.2.2 0 0 0-.074.098c-.008.025-.005.037-.002.044.527 1.405 1.867 2.706 3.27 3.258.01.005.025.008.051 0a.2.2 0 0 0 .102-.077l.821-1.056a1.75 1.75 0 0 1 2.24-.45l3.094 1.74a1 1 0 0 1 .495 1.046l-.683 3.869a1 1 0 0 1-.985.826H13c-3.25 0-6.494-1.683-8.905-4.095C1.683 9.494 0 6.251 0 3V1.71A1 1 0 0 1 .826.725zm-.088 1.539L1.5 2.129V3c0 2.75 1.442 5.631 3.655 7.845S10.251 14.5 13 14.5h.87l.549-3.107-2.786-1.567a.25.25 0 0 0-.32.064l-.821 1.056c-.412.53-1.157.84-1.886.552-1.771-.696-3.439-2.297-4.125-4.127-.272-.724.043-1.451.56-1.853l1.069-.831a.25.25 0 0 0 .064-.32z"/></svg>`,
+};
 export const aiPhone: {
   name: 'phone';
   data: string;
@@ -2482,7 +2566,7 @@ export const aiRocket: {
   data: string;
 } = {
   name: 'rocket',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M12.5 5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/><path d="M5.978 3.5H3.14a2 2 0 0 0-1.962 1.608L.74 7.304A1 1 0 0 0 1.72 8.5h2.727q.036.042.075.082l2.897 2.897q.04.04.082.075v3.102a1 1 0 0 0 1.287.958l2.288-.686a2 2 0 0 0 1.425-1.916v-2.99a8.24 8.24 0 0 0 3.378-7.255l-.09-1.255a1.404 1.404 0 0 0-1.3-1.3l-1.255-.09A8.24 8.24 0 0 0 5.978 3.5m.473 2.186a6.74 6.74 0 0 1 6.675-4.068l1.172.084.084 1.172a6.74 6.74 0 0 1-4.068 6.675l-1.893.812L5.64 7.579zM5.113 5l-.041.095L4.255 7H2.33l.32-1.598A.5.5 0 0 1 3.14 5zM11 10.887v2.125a.5.5 0 0 1-.356.479L9 13.984v-2.24l1.905-.816z"/><path d="M5.268 10.732a2.5 2.5 0 0 1 0 3.536C4.29 15.244 1.476 16.476.5 15.5s.256-3.791 1.232-4.768a2.5 2.5 0 0 1 3.536 0m-1.06 1.06a1 1 0 0 0-1.415 0c-.278.279-.726 1-.983 1.788a3.2 3.2 0 0 0-.164.774 3.2 3.2 0 0 0 .774-.164c.789-.257 1.51-.705 1.787-.983a1 1 0 0 0 0-1.414"/></svg>`,
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M12.5 5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/><path d="M5.977 3.5H3.14a2 2 0 0 0-1.962 1.608L.74 7.304A1 1 0 0 0 1.72 8.5h2.727q.035.042.075.082l2.897 2.897q.04.04.082.075v3.102a1 1 0 0 0 1.287.958l2.288-.686a2 2 0 0 0 1.425-1.916v-2.99a8.24 8.24 0 0 0 3.378-7.255l-.09-1.255a1.404 1.404 0 0 0-1.3-1.3l-1.255-.09A8.24 8.24 0 0 0 5.977 3.5m.474 2.186a6.74 6.74 0 0 1 6.675-4.068l1.172.084.084 1.172a6.74 6.74 0 0 1-4.068 6.675l-1.893.812L5.64 7.579zM5.113 5l-.041.095L4.255 7H2.33l.32-1.598A.5.5 0 0 1 3.14 5zM11 10.887v2.125a.5.5 0 0 1-.356.479L9 13.984v-2.24l1.905-.816z"/><path d="M5.268 10.732a2.5 2.5 0 0 1 0 3.536C4.29 15.244 1.476 16.476.5 15.5s.256-3.791 1.232-4.768a2.5 2.5 0 0 1 3.536 0m-1.06 1.06a1 1 0 0 0-1.415 0c-.278.279-.726 1-.983 1.788a3.2 3.2 0 0 0-.164.774 3.2 3.2 0 0 0 .774-.164c.789-.257 1.509-.705 1.787-.983a1 1 0 0 0 0-1.414"/></svg>`,
 };
 export const aiS: {
   name: 's';
@@ -2918,6 +3002,13 @@ export const aiTag: {
   name: 'tag',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M5 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/><path d="M3.75 1A2.75 2.75 0 0 0 1 3.75v2.672c0 .729.29 1.428.805 1.944l5.75 5.75a2.75 2.75 0 0 0 3.89 0l2.694-2.694a2.75 2.75 0 0 0 .032-3.857L8.628 1.838A2.75 2.75 0 0 0 6.652 1zM2.5 3.75c0-.69.56-1.25 1.25-1.25h2.902c.339 0 .663.137.899.38l5.542 5.728a1.25 1.25 0 0 1-.014 1.753l-2.695 2.694a1.25 1.25 0 0 1-1.768 0l-5.75-5.75a1.25 1.25 0 0 1-.366-.883z"/></svg>`,
 };
+export const aiTeams: {
+  name: 'teams';
+  data: string;
+} = {
+  name: 'teams',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M9 5.95v.55h7V11a2.5 2.5 0 0 1-3.738 2.173A3 3 0 0 1 9.5 15H9a3 3 0 0 1-2.959-2.5H1.5A1.5 1.5 0 0 1 0 11V5a1.5 1.5 0 0 1 1.5-1.5H7a2.5 2.5 0 1 1 2 2.45m.5-1.45a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-1.915 7.998A1.5 1.5 0 0 0 9 13.5h.5A1.5 1.5 0 0 0 11 12V8H9v3a1.5 1.5 0 0 1-1.415 1.498M12.5 11a1 1 0 1 0 2 0V8h-2zM3.75 7v3.5h1.5V7H7V5.5H2V7z"/><path d="M14 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg>`,
+};
 export const aiTent: {
   name: 'tent';
   data: string;
@@ -2960,18 +3051,18 @@ export const aiThreads: {
   name: 'threads',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M11.36 7.366c.068.028.13.059.196.087.913.44 1.582 1.1 1.932 1.919.49 1.14.537 2.994-.947 4.475-1.132 1.131-2.51 1.64-4.457 1.656h-.009c-2.194-.015-3.878-.753-5.012-2.194-1.01-1.28-1.529-3.065-1.547-5.3v-.015c.015-2.235.534-4.019 1.543-5.3C4.194 1.254 5.881.516 8.075.5h.01c2.196.016 3.903.75 5.071 2.184q.864 1.066 1.269 2.553l-1.263.338c-.221-.806-.556-1.494-1.006-2.044-.912-1.118-2.281-1.694-4.078-1.706-1.781.016-3.128.588-4.006 1.7C3.253 4.565 2.828 6.072 2.812 8c.016 1.928.441 3.434 1.26 4.478.875 1.113 2.225 1.685 4.006 1.7 1.606-.012 2.669-.394 3.553-1.278 1.01-1.006.99-2.244.669-2.997-.19-.444-.534-.812-.997-1.09-.116.84-.369 1.509-.772 2.024Q9.73 11.86 8.26 11.942c-.737.04-1.447-.138-1.997-.5a2.33 2.33 0 0 1-1.071-1.854c-.079-1.509 1.115-2.593 2.975-2.7a8.3 8.3 0 0 1 1.85.088q-.114-.695-.457-1.1c-.312-.366-.8-.553-1.443-.556h-.022c-.519 0-1.219.144-1.666.822l-1.075-.738c.6-.91 1.572-1.41 2.744-1.41h.025c1.956.013 3.122 1.235 3.24 3.366l-.006.007zm-4.876 2.15c.041.784.888 1.15 1.707 1.103.8-.044 1.706-.357 1.859-2.288a6.4 6.4 0 0 0-1.356-.137q-.225 0-.45.012c-1.34.075-1.788.725-1.756 1.306z"/></svg>`,
 };
-export const aiThumbstackSlash: {
-  name: 'thumbstack_slash';
+export const aiThumbtackSlash: {
+  name: 'thumbtack_slash';
   data: string;
 } = {
-  name: 'thumbstack_slash',
+  name: 'thumbtack_slash',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M1.28.22A.75.75 0 1 0 .22 1.28l3.592 3.593-.127.025c-1.37.274-1.882 1.965-.894 2.954L4.939 10 .22 14.72a.75.75 0 1 0 1.061 1.06L6 11.06l2.148 2.15c.989.987 2.68.475 2.954-.895l.025-.127 3.593 3.592a.75.75 0 1 0 1.06-1.06zm8.573 10.693-.222 1.108a.25.25 0 0 1-.422.127L3.852 6.791a.25.25 0 0 1 .127-.422l1.108-.222zm1.2-2.938-.01.008 1.065 1.064 3.083-2.596a2 2 0 0 0 .126-2.944L12.493.683A2 2 0 0 0 9.55.808L6.953 3.892l1.064 1.064.008-.008 2.672-3.173a.5.5 0 0 1 .736-.032l2.824 2.824a.5.5 0 0 1-.032.736z"/></svg>`,
 };
-export const aiThumbstack: {
-  name: 'thumbstack';
+export const aiThumbtack: {
+  name: 'thumbtack';
   data: string;
 } = {
-  name: 'thumbstack',
+  name: 'thumbtack',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M12.493.683A2 2 0 0 0 9.55.808L6.877 3.981a1.25 1.25 0 0 1-.71.42l-2.482.497c-1.37.274-1.882 1.965-.894 2.954L4.939 10 .22 14.72a.75.75 0 1 0 1.061 1.06L6 11.06l2.148 2.15c.989.987 2.68.475 2.954-.895l.496-2.481a1.25 1.25 0 0 1 .42-.711l3.173-2.672a2 2 0 0 0 .126-2.944zm-1.796 1.092a.5.5 0 0 1 .736-.032l2.824 2.824a.5.5 0 0 1-.032.736l-3.172 2.672a2.75 2.75 0 0 0-.926 1.564l-.496 2.482a.25.25 0 0 1-.422.127L3.852 6.791a.25.25 0 0 1 .127-.422l2.482-.496a2.75 2.75 0 0 0 1.564-.925z"/></svg>`,
 };
 export const aiTicket: {
@@ -3273,7 +3364,7 @@ export const aiWindows: {
   data: string;
 } = {
   name: 'windows',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M1 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2zm7.75-.5v4.75h4.75V3a.5.5 0 0 0-.5-.5zm-1.5 0H3a.5.5 0 0 0-.5.5v4.25h4.75zM2.5 8.75V13a.5.5 0 0 0 .5.5h4.25V8.75zm6.25 4.75H13a.5.5 0 0 0 .5-.5V8.75H8.75z"/></svg>`,
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M2 1a1 1 0 0 0-1 1v5.5h6.5V1zm6.5 0v6.5H15V2a1 1 0 0 0-1-1zM15 8.5H8.5V15H14a1 1 0 0 0 1-1zM7.5 15V8.5H1V14a1 1 0 0 0 1 1z"/></svg>`,
 };
 export const aiX: {
   name: 'x';
@@ -3302,6 +3393,13 @@ export const aiY: {
 } = {
   name: 'y',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path d="M3.291 1.157a.75.75 0 0 1 1.052.134L8 6.023l3.656-4.732a.75.75 0 0 1 1.187.918L8.75 7.506v6.744a.75.75 0 0 1-1.5 0V7.506L3.157 2.209a.75.75 0 0 1 .134-1.052"/></svg>`,
+};
+export const aiYealink: {
+  name: 'yealink';
+  data: string;
+} = {
+  name: 'yealink',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="ai" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm3.983 8.261L3.04 3h2.363L8 7.123 10.596 3h2.364L8.983 9.315 8.766 13H6.763z"/></svg>`,
 };
 export const aiZ: {
   name: 'z';
@@ -3334,8 +3432,10 @@ export type Amicons =
   | 'angle_left'
   | 'angle_right'
   | 'angle_up'
+  | 'angles_x'
   | 'angles_y'
   | 'apple_app_store'
+  | 'apple'
   | 'arrow_down_arrow_up'
   | 'arrow_down_from_cloud'
   | 'arrow_down_short_wide'
@@ -3397,6 +3497,7 @@ export type Amicons =
   | 'broom'
   | 'bug'
   | 'building'
+  | 'burger_glass'
   | 'c'
   | 'calculator'
   | 'calendar_clock'
@@ -3443,6 +3544,7 @@ export type Amicons =
   | 'cloud_moon'
   | 'cloud_rain'
   | 'cloud_snow'
+  | 'cloud_softphone'
   | 'cloud_sun'
   | 'cloud'
   | 'code_branch_up'
@@ -3464,6 +3566,7 @@ export type Amicons =
   | 'cursor'
   | 'd'
   | 'devices'
+  | 'diagram'
   | 'dice_five'
   | 'dice_four'
   | 'dice_one'
@@ -3492,6 +3595,7 @@ export type Amicons =
   | 'f'
   | 'facebook_messenger'
   | 'facebook'
+  | 'fanvil'
   | 'fast_backward'
   | 'fast_forward'
   | 'fax'
@@ -3527,9 +3631,11 @@ export type Amicons =
   | 'gear'
   | 'gift'
   | 'github'
+  | 'glass'
   | 'globe'
   | 'google_play'
   | 'grid'
+  | 'grip_dots_h'
   | 'grip_dots_v'
   | 'grip_dots'
   | 'grip_lines'
@@ -3597,10 +3703,12 @@ export type Amicons =
   | 'message_text'
   | 'message'
   | 'microchip'
+  | 'microphone_slash'
   | 'microphone'
   | 'min'
   | 'moon_cloud'
   | 'moon'
+  | 'moped'
   | 'music_pause'
   | 'music'
   | 'n'
@@ -3620,6 +3728,7 @@ export type Amicons =
   | 'paper'
   | 'parachute_box'
   | 'paragraph'
+  | 'password'
   | 'patreon'
   | 'pause'
   | 'pen'
@@ -3643,6 +3752,7 @@ export type Amicons =
   | 'phone_list'
   | 'phone_office'
   | 'phone_volume'
+  | 'phone_xmark'
   | 'phone'
   | 'plane'
   | 'planet_ringed'
@@ -3728,14 +3838,15 @@ export type Amicons =
   | 'tag_gear'
   | 'tag_plus'
   | 'tag'
+  | 'teams'
   | 'tent'
   | 'terminal'
   | 'thermometer_empty'
   | 'thermometer_full'
   | 'thermometer_half'
   | 'threads'
-  | 'thumbstack_slash'
-  | 'thumbstack'
+  | 'thumbtack_slash'
+  | 'thumbtack'
   | 'ticket'
   | 'tiktok'
   | 'toast'
@@ -3783,6 +3894,7 @@ export type Amicons =
   | 'xbox'
   | 'xmark'
   | 'y'
+  | 'yealink'
   | 'z';
 export interface IAmicon {
   name: Amicons;
@@ -3814,8 +3926,10 @@ export const amiconSet = [
   aiAngleLeft,
   aiAngleRight,
   aiAngleUp,
+  aiAnglesX,
   aiAnglesY,
   aiAppleAppStore,
+  aiApple,
   aiArrowDownArrowUp,
   aiArrowDownFromCloud,
   aiArrowDownShortWide,
@@ -3877,6 +3991,7 @@ export const amiconSet = [
   aiBroom,
   aiBug,
   aiBuilding,
+  aiBurgerGlass,
   aiC,
   aiCalculator,
   aiCalendarClock,
@@ -3923,6 +4038,7 @@ export const amiconSet = [
   aiCloudMoon,
   aiCloudRain,
   aiCloudSnow,
+  aiCloudSoftphone,
   aiCloudSun,
   aiCloud,
   aiCodeBranchUp,
@@ -3944,6 +4060,7 @@ export const amiconSet = [
   aiCursor,
   aiD,
   aiDevices,
+  aiDiagram,
   aiDiceFive,
   aiDiceFour,
   aiDiceOne,
@@ -3972,6 +4089,7 @@ export const amiconSet = [
   aiF,
   aiFacebookMessenger,
   aiFacebook,
+  aiFanvil,
   aiFastBackward,
   aiFastForward,
   aiFax,
@@ -4007,9 +4125,11 @@ export const amiconSet = [
   aiGear,
   aiGift,
   aiGithub,
+  aiGlass,
   aiGlobe,
   aiGooglePlay,
   aiGrid,
+  aiGripDotsH,
   aiGripDotsV,
   aiGripDots,
   aiGripLines,
@@ -4077,10 +4197,12 @@ export const amiconSet = [
   aiMessageText,
   aiMessage,
   aiMicrochip,
+  aiMicrophoneSlash,
   aiMicrophone,
   aiMin,
   aiMoonCloud,
   aiMoon,
+  aiMoped,
   aiMusicPause,
   aiMusic,
   aiN,
@@ -4100,6 +4222,7 @@ export const amiconSet = [
   aiPaper,
   aiParachuteBox,
   aiParagraph,
+  aiPassword,
   aiPatreon,
   aiPause,
   aiPen,
@@ -4123,6 +4246,7 @@ export const amiconSet = [
   aiPhoneList,
   aiPhoneOffice,
   aiPhoneVolume,
+  aiPhoneXmark,
   aiPhone,
   aiPlane,
   aiPlanetRinged,
@@ -4208,14 +4332,15 @@ export const amiconSet = [
   aiTagGear,
   aiTagPlus,
   aiTag,
+  aiTeams,
   aiTent,
   aiTerminal,
   aiThermometerEmpty,
   aiThermometerFull,
   aiThermometerHalf,
   aiThreads,
-  aiThumbstackSlash,
-  aiThumbstack,
+  aiThumbtackSlash,
+  aiThumbtack,
   aiTicket,
   aiTiktok,
   aiToast,
@@ -4263,5 +4388,6 @@ export const amiconSet = [
   aiXbox,
   aiXmark,
   aiY,
+  aiYealink,
   aiZ,
 ];
