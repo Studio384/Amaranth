@@ -10,19 +10,39 @@ export default function Changelog() {
       <Release
         name="Amicons 1.0 alpha 8"
         version="1.0.0-alpha.8"
-        date="April 2024"
+        date="17 November 2024"
         newIcons={[
+          'angles-x',
+          'apple',
           'arrow-left-arrow-right',
           'arrow-rotate-left',
           'bars-uneven',
+          'burger-glass',
+          'cloud-softphone',
+          'diagram',
+          'fanvil',
+          'glass',
+          'grip-dots-h',
+          'magnifying-glass-min',
           'magnifying-glass-min',
           'magnifying-glass-plus',
+          'magnifying-glass-plus',
+          'microphone-slash',
+          'moped',
           'order-alphabetical-asc',
           'order-alphabetical-desc',
           'order-numerical-asc',
-          'order-numerical-desc'
+          'order-numerical-desc',
+          'password',
+          'phone-xmark',
+          'teams',
+          'yealink'
         ]}
-        updatedIcons={['magnifying-glass']}
+        updatedIcons={['angles-y', 'magnifying-glass', 'windows']}
+        renamedIcons={[
+          { old: 'thumbstack', new: 'thumbtack' },
+          { old: 'thumbstack-slash', new: 'thumbtack-slash' }
+        ]}
       />
       <Release
         name="Amicons 1.0 alpha 7"

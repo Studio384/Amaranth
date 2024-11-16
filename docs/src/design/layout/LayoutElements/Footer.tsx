@@ -79,7 +79,7 @@ export default function Footer() {
                   </ListItemButton>
                 </ListItem>
                 <ListItem>
-                  <ListItemButton color="primary" variant="soft" component={NavLink} to="/docs/changelog">
+                  <ListItemButton color="primary" variant="soft" component={NavLink} to="/changelog">
                     <ListItemContent>
                       <Typography>Changelog</Typography>
                     </ListItemContent>

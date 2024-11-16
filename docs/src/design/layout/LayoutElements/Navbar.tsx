@@ -78,6 +78,15 @@ export default function Navbar() {
             >
               Docs
             </Button>
+            <Button
+              component={NavLink}
+              to="/changelog"
+              variant={location?.pathname?.startsWith('/changelog') ? 'solid' : 'plain'}
+              size="sm"
+              color={location?.pathname?.startsWith('/changelog') ? 'primary' : 'primary'}
+            >
+              Changelog
+            </Button>
           </Stack>
           <Stack direction="row" justifyContent="flex-end">
             <IconButton size="sm" variant="plain" color="primary" component="a" href="https://github.com/studio384/amaranth" target="_blank">
