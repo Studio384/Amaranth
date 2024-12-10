@@ -17,7 +17,7 @@
     "@emotion/styled": "11.14.0",
     "@mui/joy": "5.0.0-beta.48",
     "@mui/material": "6.1.10",
-    "@studio384/amaranth": "file:../",
+    "@studio384/amaranth": "file:../amicons/",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-router-dom": "7.0.2"
