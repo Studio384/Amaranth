@@ -13,7 +13,7 @@ const pagesDir = path.join(__dirname, "../docs/src/data/");
 function getReactImportName(string) {
   return `ai${string
     .split("-")
-    .map(word => {
+    .map((word) => {
       return word[0].toUpperCase() + word.substring(1);
     })
     .join("")}`;
@@ -61,24 +61,24 @@ async function main(file) {
 
     // Read content from each icon
     await Promise.all(
-      files.map(async file => {
+      files.map(async (file) => {
         const [name, config, cats] = await Promise.resolve(main(file));
 
         names.push(name);
         configs.push(config);
 
-        cats.map(cat => {
+        cats.map((cat) => {
           categories.add(cat);
         });
-      })
+      }),
     );
 
     categories = Array.from(categories).sort();
 
     const library = `
-import { ${names.map(icon => `${icon}`)} } from '@studio384/amaranth';
+import { ${names.map((icon) => `${icon}`)} } from '@studio384/amaranth';
 
-const icons = [${configs.map(page => `${page}`)}
+const icons = [${configs.map((page) => `${page}`)}
 ];
 
 export default icons;`;
@@ -89,12 +89,12 @@ export default icons;`;
 import { aiCircleDashed } from '@studio384/amaranth';
 
 const categories = [${categories.map(
-      cat => `
+      (cat) => `
   {
     slug: "${cat}",
     title: "${cat}",
     icon: aiCircleDashed
-  }`
+  }`,
     )}
 ];
 
@@ -107,7 +107,7 @@ export default categories;`;
     console.log(
       picocolors.green("\nSuccess, %s icon%s written to library!"),
       filesLength,
-      filesLength !== 1 ? "s" : ""
+      filesLength !== 1 ? "s" : "",
     );
     console.timeEnd(timeLabel);
   } catch (error) {
