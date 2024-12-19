@@ -1,6 +1,6 @@
 {
   "name": "@studio384/amicons",
-  "version": "1.0.0-alpha.8",
+  "version": "1.0.0-alpha.9",
   "description": "The iconography.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
