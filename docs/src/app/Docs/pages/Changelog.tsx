@@ -7,6 +7,7 @@ import Release from './_Release';
 export default function Changelog() {
   return (
     <Stack gap={5}>
+      <Release name="Amicons 1.0 alpha 9" version="1.0.0-alpha.9" date="19 December 2024" added={[<>Amicons now supports React 19.</>]} />
       <Release
         name="Amicons 1.0 alpha 8"
         version="1.0.0-alpha.8"
