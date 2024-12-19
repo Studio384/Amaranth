@@ -9,7 +9,7 @@ const picocolors = require("picocolors");
 const version = require("../package.json").version;
 
 const iconsDir = path.join(__dirname, "../icons/");
-const pagesDir = path.join(__dirname, "../docs/public/data/icons/");
+const pagesDir = path.join(__dirname, "../../docs/public/data/icons/");
 
 const VERBOSE = process.argv.includes("--verbose");
 
@@ -37,13 +37,13 @@ async function main(file) {
 
     if (VERBOSE) {
       console.log(
-        `☑️ ${picocolors.cyan(iconBasename)}: Already exists, skipping`
+        `☑️ ${picocolors.cyan(iconBasename)}: Already exists, skipping`,
       );
     }
   } catch {
     await fs.writeFile(pageName, pageTemplate);
     console.log(
-      `✅ ${picocolors.cyan(iconBasename)}: ${picocolors.green("Page created")}`
+      `✅ ${picocolors.cyan(iconBasename)}: ${picocolors.green("Page created")}`,
     );
   }
 }
@@ -57,14 +57,14 @@ async function main(file) {
 
     const files = await fs.readdir(iconsDir);
 
-    await Promise.all(files.map(file => main(file)));
+    await Promise.all(files.map((file) => main(file)));
 
     const filesLength = files.length;
 
     console.log(
       picocolors.green("\nSuccess, %s page%s created!"),
       filesLength,
-      filesLength !== 1 ? "s" : ""
+      filesLength !== 1 ? "s" : "",
     );
     console.timeEnd(timeLabel);
   } catch (error) {

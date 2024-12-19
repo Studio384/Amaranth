@@ -7,8 +7,8 @@ const fst = require("fs");
 const path = require("path");
 const picocolors = require("picocolors");
 
-const iconsDir = path.join(__dirname, "../docs/public/data/icons");
-const pagesDir = path.join(__dirname, "../docs/src/data/");
+const iconsDir = path.join(__dirname, "../../docs/public/data/icons");
+const pagesDir = path.join(__dirname, "../../docs/src/data/");
 
 function getReactImportName(string) {
   return `ai${string
