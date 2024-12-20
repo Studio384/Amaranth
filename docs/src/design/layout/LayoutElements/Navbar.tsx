@@ -89,7 +89,7 @@ export default function Navbar() {
             </Button>
           </Stack>
           <Stack direction="row" justifyContent="flex-end">
-            <IconButton size="sm" variant="plain" color="primary" component="a" href="https://github.com/studio384/amaranth" target="_blank">
+            <IconButton size="sm" variant="plain" color="primary" component="a" href="https://github.com/studio384/amicons" target="_blank">
               <IAmicon icon={aiGithub} />
             </IconButton>
           </Stack>
