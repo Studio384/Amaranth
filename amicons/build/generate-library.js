@@ -76,7 +76,7 @@ async function main(file) {
     categories = Array.from(categories).sort();
 
     const library = `
-import { ${names.map((icon) => `${icon}`)} } from '@studio384/amaranth';
+import { ${names.map((icon) => `${icon}`)} } from '@studio384/amicons';
 
 const icons = [${configs.map((page) => `${page}`)}
 ];
@@ -86,7 +86,7 @@ export default icons;`;
     await fs.writeFile(path.join(pagesDir, `icons.ts`), library);
 
     const categoriesTemplate = `
-import { aiCircleDashed } from '@studio384/amaranth';
+import { aiCircleDashed } from '@studio384/amicons';
 
 const categories = [${categories.map(
       (cat) => `

@@ -12,6 +12,11 @@ export default function Changelog() {
         name="Amicons 1.0 alpha 8"
         version="1.0.0-alpha.8"
         date="17 November 2024"
+        changed={[
+          <>
+            Changes the import from <Code>@studio384/amaranth</Code> to <Code>@studio384/amicons</Code>.
+          </>
+        ]}
         newIcons={[
           'angles-x',
           'apple',
@@ -219,14 +224,14 @@ export default function Changelog() {
         removedIcons={['amaranth', 'bootstrap', 'font-awesome']}
       />
       <Release
-        name="Amicons 1.0 alpha 6"
+        name="Amaranth 1.0 alpha 6"
         version="1.0.0-alpha.6"
         date="30 January 2024"
         newIcons={['align-center', 'align-justify', 'align-left', 'align-right', 'amicons', 'subscript', 'superscript']}
       />
-      <Release name="Amicons 1.0 alpha 5" version="1.0.0-alpha.5" date="17 November 2023" newIcons={['circle']} />
+      <Release name="Amaranth 1.0 alpha 5" version="1.0.0-alpha.5" date="17 November 2023" newIcons={['circle']} />
       <Release
-        name="Amicons 1.0 alpha 4"
+        name="Amaranth 1.0 alpha 4"
         version="1.0.0-alpha.4"
         date="17 November 2023"
         newIcons={[
@@ -242,7 +247,7 @@ export default function Changelog() {
         ]}
       />
       <Release
-        name="Amicons 1.0 alpha 3"
+        name="Amaranth 1.0 alpha 3"
         version="1.0.0-alpha.3"
         date="23 August 2023"
         removed={[<>The repository no longer provides font files or CSS files.</>]}
@@ -259,7 +264,7 @@ export default function Changelog() {
         ]}
         updatedIcons={['chart-pie', 'circle-dashed', 'table-clcok', 'table-header-column', 'table-header-row', 'table', 'tag-geear', 'tag-plus', 'tag']}
       />
-      <Release name="Amicons 1.0 alpha 2" version="1.0.0-alpha.2" date="22 August 2023" changed={[<>Migrations from ChangeWindows to Studio 384</>]} />
+      <Release name="Amaranth 1.0 alpha 2" version="1.0.0-alpha.2" date="22 August 2023" changed={[<>Migrations from ChangeWindows to Studio 384</>]} />
     </Stack>
   );
 }
