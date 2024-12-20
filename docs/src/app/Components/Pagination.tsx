@@ -2,7 +2,7 @@ import { Button, Divider, IconButton, Stack } from '@mui/joy';
 import { PaginationProps } from '@mui/material';
 import usePagination from '@mui/material/usePagination/usePagination';
 
-import Amicon, { aiArrowLeft, aiArrowRight, aiEllipsisH } from '@studio384/amaranth';
+import Amicon, { aiArrowLeft, aiArrowRight, aiEllipsisH } from '@studio384/amicons';
 
 export default function Pagination(props: PaginationProps) {
   const { items } = usePagination(props);

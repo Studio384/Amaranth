@@ -41,7 +41,7 @@ import {
   aiTree,
   aiUniversalAccess,
   aiVideo
-} from '@studio384/amaranth';
+} from '@studio384/amicons';
 
 const categories = [
   {

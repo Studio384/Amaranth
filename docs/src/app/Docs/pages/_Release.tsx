@@ -6,7 +6,7 @@ import icons from '@/data/icons';
 import Code from '@/design/components/Code';
 import { ILibraryIcon } from '@/types';
 
-import Amicon, { aiArrowRight, aiAmicons, aiBug, aiPen, aiPlus, aiTrashCan } from '@studio384/amaranth';
+import Amicon, { aiAmicons, aiArrowRight, aiBug, aiPen, aiPlus, aiTrashCan } from '@studio384/amicons';
 
 import IconCard from '../../Components/IconCard';
 

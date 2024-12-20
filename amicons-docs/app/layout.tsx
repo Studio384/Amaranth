@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
-import Amicon, { aiAmicons, aiGithub } from "@studio384/amaranth";
+import Amicon, { aiAmicons, aiGithub } from "@studio384/amicons";
 import { Lexend } from "next/font/google";
 
 const lexend = Lexend({

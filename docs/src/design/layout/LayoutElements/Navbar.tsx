@@ -2,7 +2,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 
 import { Box, Button, Container, IconButton, Link, Sheet, Stack } from '@mui/joy';
 
-import IAmicon, { aiGithub } from '@studio384/amaranth';
+import IAmicon, { aiGithub } from '@studio384/amicons';
 
 export default function Navbar() {
   const location = useLocation();

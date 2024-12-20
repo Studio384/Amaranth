@@ -1,4 +1,4 @@
-import Amicon, { aiAmicons, aiTriangleExclamation } from "@studio384/amaranth";
+import Amicon, { aiAmicons, aiTriangleExclamation } from "@studio384/amicons";
 
 export default function Home() {
   return (

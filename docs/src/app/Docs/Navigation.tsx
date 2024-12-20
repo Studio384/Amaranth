@@ -12,7 +12,7 @@ import Amicon, {
   aiReact,
   aiSpinner,
   aiStar
-} from '@studio384/amaranth';
+} from '@studio384/amicons';
 
 export default function DocsNavigation() {
   const location = useLocation();

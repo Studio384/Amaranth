@@ -7,7 +7,7 @@ import icons from '@/data/icons';
 import Codeblock from '@/design/components/Codeblock';
 import Header from '@/design/layout/LayoutElements/Header';
 
-import Amicon, { aiAmicons, aiBook, aiCircleExclamation, aiFlag, aiHeart, aiIcons, aiLockOpen, aiMagnifyingGlass, aiPatreon } from '@studio384/amaranth';
+import Amicon, { aiAmicons, aiBook, aiCircleExclamation, aiFlag, aiHeart, aiIcons, aiLockOpen, aiMagnifyingGlass, aiPatreon } from '@studio384/amicons';
 
 import LargeIconGrid from './Components/LargeIconGrid';
 
@@ -70,7 +70,7 @@ export default function Home() {
             <Stack gap={1} justifyContent="center" sx={{ order: { xs: 2, md: 1 } }}>
               <Typography level="h2">Get started</Typography>
               <Typography>Get started with Amicons by installing the npm package.</Typography>
-              <Codeblock>npm install @studio384/amaranth</Codeblock>
+              <Codeblock>npm install @studio384/amicons</Codeblock>
               <Stack direction="row" gap={1} sx={{ mt: 3 }}>
                 <Button startDecorator={<Amicon icon={aiBook} />} component={NavLink} to="/docs">
                   Documentation

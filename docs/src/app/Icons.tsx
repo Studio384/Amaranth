@@ -23,7 +23,7 @@ import Header from '@/design/layout/LayoutElements/Header';
 import useSearch from '@/hooks/useSearch';
 import { ILibraryIcon } from '@/types';
 
-import Amicon, { aiFilterXmark, aiMagnifyingGlass } from '@studio384/amaranth';
+import Amicon, { aiFilterXmark, aiMagnifyingGlass } from '@studio384/amicons';
 
 import IconCard from './Components/IconCard';
 import Pagination from './Components/Pagination';
@@ -52,49 +52,52 @@ export default function Icons() {
   // c: categories
   // q: query
   // p: page
-  const setSearchQuery = useCallback((type: 'q' | 'c' | 'p', value: string | number)  => {
-    let search = searchParams.get('search');
-    let page = Number(searchParams.get('page'));
-    let category =
-      searchParams
-        .get('category')
-        ?.split(',')
-        .filter((item) => item !== '') ?? [];
+  const setSearchQuery = useCallback(
+    (type: 'q' | 'c' | 'p', value: string | number) => {
+      let search = searchParams.get('search');
+      let page = Number(searchParams.get('page'));
+      let category =
+        searchParams
+          .get('category')
+          ?.split(',')
+          .filter((item) => item !== '') ?? [];
 
-    switch (type) {
-      case 'c': {
-        if (typeof value === 'number') return;
+      switch (type) {
+        case 'c': {
+          if (typeof value === 'number') return;
 
-        if (category.includes(value)) {
-          category = category.filter((item) => item !== value);
-        } else {
-          category.push(value);
+          if (category.includes(value)) {
+            category = category.filter((item) => item !== value);
+          } else {
+            category.push(value);
+          }
+
+          page = 1; // Always reset page
+          break;
         }
+        case 'q': {
+          if (typeof value === 'number') return;
 
-        page = 1; // Always reset page
-        break;
+          search = value;
+          page = 1; // Always reset page
+          break;
+        }
+        case 'p': {
+          if (typeof value === 'string') return;
+
+          page = value;
+          break;
+        }
       }
-      case 'q': {
-        if (typeof value === 'number') return;
 
-        search = value;
-        page = 1; // Always reset page
-        break;
-      }
-      case 'p': {
-        if (typeof value === 'string') return;
-
-        page = value;
-        break;
-      }
-    }
-
-    setSearchParams({
-      page: (page || 1).toString(),
-      search: search ?? '',
-      category: category.join(',') ?? ''
-    });
-  }, [searchParams, setSearchParams]);
+      setSearchParams({
+        page: (page || 1).toString(),
+        search: search ?? '',
+        category: category.join(',') ?? ''
+      });
+    },
+    [searchParams, setSearchParams]
+  );
 
   return (
     <>

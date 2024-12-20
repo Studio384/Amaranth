@@ -2,7 +2,7 @@ import { Stack, Typography } from '@mui/joy';
 
 import Code from '@/design/components/Code';
 
-import { aiExpand, aiHeart, aiPlay } from '@studio384/amaranth';
+import { aiExpand, aiHeart, aiPlay } from '@studio384/amicons';
 
 import ApiTable from '../playground/ApiTable';
 import Playground, { IIconCssVariables, IPlaygroundConfig } from '../playground/Playground';

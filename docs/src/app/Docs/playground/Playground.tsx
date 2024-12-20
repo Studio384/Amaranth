@@ -4,7 +4,7 @@ import { Box, Card, Chip, Divider, FormControl, FormLabel, IconButton, Input, Sh
 
 import Codeblock from '@/design/components/Codeblock';
 
-import Amicon, { aiBroom, IAmicon } from '@studio384/amaranth';
+import Amicon, { aiBroom, IAmicon } from '@studio384/amicons';
 
 export interface IPlaygroundConfig {
   icons: IAmicon[];

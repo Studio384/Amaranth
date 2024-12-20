@@ -1,4 +1,4 @@
-import { IAmicon } from '@studio384/amaranth';
+import { IAmicon } from '@studio384/amicons';
 
 export interface IIcon {
   title: string;

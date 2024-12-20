@@ -4,7 +4,7 @@ import { Box, Link, Sheet, Stack, Typography } from '@mui/joy';
 
 import { ILibraryIcon } from '@/types';
 
-import Amicon from '@studio384/amaranth';
+import Amicon from '@studio384/amicons';
 
 export default function IconCard({ icon }: { icon: ILibraryIcon }) {
   return (

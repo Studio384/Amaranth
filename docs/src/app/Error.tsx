@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { Container, IconButton, Stack, Typography } from '@mui/joy';
 
-import Amicon, { aiArrowLeft } from '@studio384/amaranth';
+import Amicon, { aiArrowLeft } from '@studio384/amicons';
 
 export default function Error() {
   const navigate = useNavigate();

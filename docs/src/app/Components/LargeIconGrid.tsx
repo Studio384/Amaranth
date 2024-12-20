@@ -1,7 +1,7 @@
 import { Box, Sheet } from '@mui/joy';
 import { SxProps } from '@mui/joy/styles/types';
 
-import Amicon, { IAmicon } from '@studio384/amaranth';
+import Amicon, { IAmicon } from '@studio384/amicons';
 
 export default function LargeIconGrid({ icon, sx }: { icon: IAmicon; sx?: SxProps }) {
   return (

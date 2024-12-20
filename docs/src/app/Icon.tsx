@@ -8,7 +8,7 @@ import Codeblock from '@/design/components/Codeblock';
 import Header from '@/design/layout/LayoutElements/Header';
 import { IIcon, ILibraryIcon } from '@/types';
 
-import Amicon, { aiArrowLeft, aiXmark } from '@studio384/amaranth';
+import Amicon, { aiArrowLeft, aiXmark } from '@studio384/amicons';
 
 import IconCard from './Components/IconCard';
 import LargeIconGrid from './Components/LargeIconGrid';
@@ -102,7 +102,7 @@ export default function Icon() {
                 Usage
               </Typography>
               <Codeblock>
-                {`import Amicon, { ${reactImport} } from "@studio384/amaranth";
+                {`import Amicon, { ${reactImport} } from "@studio384/amicons";
 
 <Amicon icon={${reactImport}} />`}
               </Codeblock>
